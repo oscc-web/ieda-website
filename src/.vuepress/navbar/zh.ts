@@ -107,6 +107,14 @@ export const zhNavbar = navbar([
             prefix: "subject/",
             children: []
         }, {
+            text: "开发任务",
+            prefix: "tasks/",
+            children: [
+                "collaborate",
+                "contents",
+                "standards"
+            ]
+        }, {
             text: "学术成果",
             prefix: "achieve/",
             children: [

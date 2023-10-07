@@ -52,7 +52,7 @@ export default hopeTheme({
     copyright: false,
     displayFooter: true,
     // 杂项
-    toc: false,
+    toc: true,
 
     // 主题外观配置
     iconAssets: "fontawesome",
