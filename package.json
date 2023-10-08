@@ -5,21 +5,30 @@
     "license": "GPL-3.0",
     "type": "module",
     "scripts": {
-      "build-local": "vuepress build src",
-      "build-deploy-pre": "mkdir -p var; rm -rf var/dist;",
-      "build-deploy-aft": "cp -rv src/.vuepress/dist/ var/; rm -rf var/dist/res/.git ",
-      "build-deploy": "npm run build-deploy-pre; npm run build-local; npm run build-deploy-aft",
-      "dev": "vuepress dev src",
-      "deploy": "node ./deploy/index.mjs",
-      "clean": "vuepress dev src --clean-cache",
-      "update": "npx vp-update"
+        "build-local": "rm -rf src/.vuepress/.temp; vuepress build src --debug",
+        "build-deploy-pre": "mkdir -p var; rm -rf var/dist;",
+        "build-deploy-aft": "cp -rv src/.vuepress/dist/ var/; rm -rf var/dist/res/.git ",
+        "build-deploy": "npm run build-deploy-pre; npm run build-local; npm run build-deploy-aft",
+        "dev": "vuepress dev src --debug",
+        "deploy": "node ./deploy/index.mjs",
+        "clean": "vuepress dev src --clean-cache",
+        "update": "npx vp-update"
     },
     "devDependencies": {
-      "@vuepress/client": "2.0.0-beta.66",
-      "colors": "^1.4.0",
-      "vue": "^3.2.47",
-      "vuepress": "2.0.0-beta.66",
-      "vuepress-theme-hope": "2.0.0-beta.233"
+        "@vuepress/client": "2.0.0-beta.66",
+        "@vuepress/plugin-register-components": "2.0.0-beta.66",
+        "colors": "^1.4.0",
+        "unplugin-auto-import": "^0.16.6",
+        "unplugin-icons": "^0.17.0",
+        "unplugin-vue-components": "^0.25.2",
+        "vue": "^3.2.47",
+        "vuepress": "2.0.0-beta.66",
+        "vuepress-plugin-search-pro": "2.0.0-beta.233",
+        "vuepress-theme-hope": "2.0.0-beta.233"
     },
-    "deploy": "ieda"
-  }
+    "deploy": "ieda",
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.1.0",
+        "element-plus": "^2.3.14"
+    }
+}
