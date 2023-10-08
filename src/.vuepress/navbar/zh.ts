@@ -5,9 +5,11 @@ export const zhNavbar = navbar([
     {
         text: "项目和团队",
         prefix: "/project/",
-        children: ["intro",
-                   "plan",
-                   "team"]
+        children: [
+            "intro",
+            "plan",
+            "team"
+        ]
     }, {
         text: "知识和训练",
         prefix: "/train/",
