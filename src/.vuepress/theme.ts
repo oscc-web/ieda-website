@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-    // 主题基本配置
+    // Basic
     hostname: "https://xxx.github.io",
     author: {
         name: "Miao Yuyang",
@@ -12,8 +12,8 @@ export default hopeTheme({
     },
     favicon: "/res/images/logo/logo.png",
 
-    // 主题布局配置
-    // 导航栏
+    // Layout
+    // Navbar
     navbarIcon: true,
     navbarLayout: {
         start: ["Brand"],
@@ -27,34 +27,33 @@ export default hopeTheme({
     repoLabel: "GitHub",
     navbarAutoHide: "mobile",
     hideSiteNameOnMobile: true,
-    // 侧边栏
+    // Sidebar
     sidebarIcon: true,
     sidebarSorter: ["readme", "order", "title", "filename"],
     headerDepth: 2,
-    // 路径
+    // Route Navgation
     breadcrumb: false,
     breadcrumbIcon: true,
     prevLink: true,
     nextLink: true,
-    // 标题
+    // Title
     titleIcon: true,
-    // pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
     pageInfo: false,
-    // 基础
+    // Meta
     lastUpdated: true,
     contributors: true,
     editLink: false,
     docsRepo: "repo",
     docsBranch: "main",
     docsDir: "src",
-    // 页脚
+    // Footer
     footer: "GPL协议 | 版权所有 © 2023-现在 开源EDA团队",
     copyright: false,
     displayFooter: true,
-    // 杂项
+    // Others
     toc: true,
 
-    // 主题外观配置
+    // Appearance
     iconAssets: "fontawesome",
     darkmode: "toggle",
     themeColor: false,
@@ -63,7 +62,7 @@ export default hopeTheme({
     pure: false,
     print: false,
 
-    // 主题语言配置
+    // i18N
     locales: {
         "/": {
             navbar: zhNavbar,
@@ -74,7 +73,7 @@ export default hopeTheme({
         }
     },
 
-    // 主题插件配置
+    // Plugins
     plugins: {
         blog: false,
         comment: false,
@@ -138,14 +137,16 @@ export default hopeTheme({
         },
         pwa: false,
         components: {
-            components: ["AudioPlayer",
-                        "Badge",
-                        "BiliBili",
-                        "CodePen",
-                        "PDF",
-                        "StackBlitz",
-                        "VideoPlayer",
-                        "YouTube"]
+            components: [
+                "AudioPlayer",
+                "Badge",
+                "BiliBili",
+                "CodePen",
+                "PDF",
+                "StackBlitz",
+                "VideoPlayer",
+                "YouTube"
+            ]
         },
         git: true,
         prismjs: true,
@@ -153,7 +154,7 @@ export default hopeTheme({
         readingTime: {
             wordPerMinute: 300
         },
-        seo: true,
-        sitemap: true
+        seo: false,
+        sitemap: false
     }
 });
