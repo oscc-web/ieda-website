@@ -1,4 +1,10 @@
 // place your custom styles here
+.vp-navbar .vp-nav-links,
+.dropdown-wrapper .dropdown-subtitle,
+.dropdown-wrapper .nav-link {
+    font-size: 0.95rem;
+}
 .dropdown-wrapper .dropdown-subtitle {
     text-transform: none;
+    color: var(--dark-grey);
 }
