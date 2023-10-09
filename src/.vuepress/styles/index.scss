@@ -8,3 +8,9 @@
     text-transform: none;
     color: var(--dark-grey);
 }
+.home .vp-page-title {
+    display: none;
+}
+.home .theme-hope-content {
+    max-width: var(--home-page-width);
+}
