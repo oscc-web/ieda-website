@@ -1,5 +1,5 @@
 <template>
-    <div class="home-features">
+    <div class="home-component home-features">
         <el-divider />
         <el-text>平台特性</el-text>
         <el-row
@@ -89,17 +89,6 @@
 
 <style lang="scss" scoped>
     .home-features {
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        .el-text {
-            margin-bottom: 30px;
-            font-size: 25px;
-        }
-        .el-row {
-            width: 100%;
-        }
         .el-card {
             height: 500px;
             .features-icon {

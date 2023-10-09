@@ -14,3 +14,17 @@
 .home .theme-hope-content {
     max-width: var(--home-page-width);
 }
+.home .home-component {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.home .el-divider + .el-text {
+    margin-bottom: 30px;
+    font-size: 25px;
+    + .el-row {
+        width: 100%;
+    }
+}
+
