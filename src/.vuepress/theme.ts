@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-    // Basic
+    // Theme Basic
     hostname: "https://xxx.github.io",
     author: {
         name: "Miao Yuyang",
@@ -11,8 +11,7 @@ export default hopeTheme({
         email: "myyerrol@126.com"
     },
     favicon: "/res/images/logo/logo.png",
-
-    // Layout
+    // Theme Layout
     // Navbar
     navbarIcon: true,
     navbarLayout: {
@@ -52,8 +51,7 @@ export default hopeTheme({
     displayFooter: true,
     // Others
     toc: true,
-
-    // Appearance
+    // Theme Appearance
     iconAssets: "fontawesome",
     darkmode: "toggle",
     themeColor: false,
@@ -61,8 +59,7 @@ export default hopeTheme({
     backToTop: true,
     pure: false,
     print: false,
-
-    // i18N
+    // Theme i18N
     locales: {
         "/": {
             navbar: zhNavbar,
@@ -72,8 +69,7 @@ export default hopeTheme({
             }
         }
     },
-
-    // Plugins
+    // Theme Plugins
     plugins: {
         blog: false,
         comment: false,
