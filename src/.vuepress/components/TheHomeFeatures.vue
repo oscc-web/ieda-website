@@ -7,11 +7,11 @@
             justify="center"
             align="middle">
             <el-col
-                v-for="(item, i) in featureItemList"
+                v-for="(item, i) in featuresItemList"
                 :key="i"
                 :span="6">
                 <el-card
-                    :body-style="cardBodyStyle"
+                    :body-style="featuresBodyStyle"
                     shadow="always">
                     <div>
                         <el-image
@@ -49,12 +49,12 @@
     import { ref } from "vue";
     import { ArrowRight } from "@element-plus/icons-vue";
 
-    const featureItemList = ref([{
+    const featuresItemList = ref([{
         icon: "https://taichi-lang.cn/language/hpc.svg",
         name: "高性能并行计算",
         type: "video",
         media:  "https://taichi-lang.cn/language/hpc.mp4",
-        text: "10 亿粒子 MPM 仿真，据我们所知世界上最高分辨率的单 GPU 仿真",
+        text: "10亿粒子MPM仿真，据我们所知世界上最高分辨率的单GPU仿真",
         note: ""
     }, {
         icon: "https://taichi-lang.cn/language/automatic-differentiation.svg",
@@ -62,13 +62,13 @@
         type: "video",
         media:  "https://taichi-lang.cn/language/automatic-differentiation.mp4",
         text: "使用自动微分实现软体机器人控制",
-        note: "* 比 PyTorch、TensorFlow、JAX 等框架<a href='https://arxiv.org/pdf/1910.00935.pdf' target='_bank'>显著提速</a>"
+        note: "* 比PyTorch、TensorFlow、JAX等框架<a href='https://arxiv.org/pdf/1910.00935.pdf' target='_bank'>显著提速</a>"
     }, {
         icon: "https://taichi-lang.cn/language/flexible-layout.svg",
         name: "灵活数据布局",
         type: "image",
         media:  "https://taichi-lang.cn/language/flexible-layout.png",
-        text: "使用 SNode 语法，不改变计算代码即可快速尝试行优先、列优先等高性能内存排布",
+        text: "使用SNode语法，不改变计算代码即可快速尝试行优先、列优先等高性能内存排布",
         note: ""
     }, {
         icon: "https://taichi-lang.cn/language/spatially-sparse-data-structures.svg",
@@ -78,7 +78,7 @@
         text: "使用空间稀疏数据结构实现的流体仿真",
         note: ""
     }]);
-    const cardBodyStyle = ref({
+    const featuresBodyStyle = ref({
         "display": "flex",
         "flex-direction": "column",
         "justify-content": "space-between",
@@ -90,6 +90,12 @@
 <style lang="scss" scoped>
     .el-card {
         height: 500px;
+        .el-button {
+            font-size: var(--el-font-size-large)
+        }
+        .el-image {
+            pointer-events: none;
+        }
         .features-icon {
             height: 75px;
         }
@@ -105,9 +111,6 @@
         div:nth-child(5) {
             margin-top: 15px;
             font-size: var(--el-font-size-small)
-        }
-        .el-button {
-            font-size: var(--el-font-size-large)
         }
     }
 </style>

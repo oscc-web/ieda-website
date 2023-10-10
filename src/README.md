@@ -13,4 +13,5 @@ home: false
 <TheHomeEvaluations />
 <TheHomeNews />
 <TheHomePartners />
+<TheSponsors />
 <TheFooter />

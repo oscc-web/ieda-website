@@ -57,7 +57,7 @@ export default hopeTheme({
     themeColor: false,
     fullscreen: false,
     backToTop: true,
-    pure: false,
+    pure: true,
     print: false,
     // Theme i18N
     locales: {
