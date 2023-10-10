@@ -1,5 +1,5 @@
 <template>
-    <div class="home-component home-features">
+    <div class="home-components">
         <el-divider />
         <el-text>平台特性</el-text>
         <el-row
@@ -88,28 +88,26 @@
 </script>
 
 <style lang="scss" scoped>
-    .home-features {
-        .el-card {
-            height: 500px;
-            .features-icon {
-                height: 75px;
-            }
-            .features-image,
-            video {
-                height: 135px;
-                margin-bottom: 25px;
-            }
-            div:nth-child(2) {
-                margin: 15px 0px 25px 0px;
-                font-size: 20px;
-            }
-            div:nth-child(5) {
-                margin-top: 15px;
-                font-size: var(--el-font-size-small)
-            }
-            .el-button {
-                font-size: var(--el-font-size-medium)
-            }
+    .el-card {
+        height: 500px;
+        .features-icon {
+            height: 75px;
+        }
+        .features-image,
+        video {
+            height: 135px;
+            margin-bottom: 25px;
+        }
+        div:nth-child(2) {
+            margin: 15px 0px 25px 0px;
+            font-size: 20px;
+        }
+        div:nth-child(5) {
+            margin-top: 15px;
+            font-size: var(--el-font-size-small)
+        }
+        .el-button {
+            font-size: var(--el-font-size-large)
         }
     }
 </style>

@@ -14,11 +14,14 @@
 .home .theme-hope-content {
     max-width: var(--home-page-width);
 }
-.home .home-component {
+.home .home-components {
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+}
+.home .el-divider {
+    margin: 40px;
 }
 .home .el-divider + .el-text {
     margin-bottom: 30px;
