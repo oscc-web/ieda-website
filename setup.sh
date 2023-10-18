@@ -37,9 +37,11 @@ if [ ! -d ${PATH_NODE} ]; then
     echo "Downloading Node.js packages..."
     npm install
 else
+    echo ""
     echo -n "Do you want to update Node.js packages? [Y/n]: "
     read choice
     if [ ${choice} == "Y" ]; then
         npm install
     fi
+    echo "Already up to date."
 fi
