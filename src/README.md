@@ -3,7 +3,7 @@ lastUpdated: false
 contributors: false
 toc: false
 containerClass: "home"
-home: false
+home: true
 ---
 
 <TheHomeCarousel />
