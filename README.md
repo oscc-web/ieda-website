@@ -60,7 +60,7 @@ $> git pull
 
 ## 开发
 
-## 内容维护
+### 内容维护
 
 - 网站所有的资源文件（图片、视频、文件等）是以一个独立的GitHub仓库进行维护的。在执行仓库根目录中的`setup.sh`脚本时，系统会自动将当前网站相配套的资源仓库下载到`src/.vuepress/public/res`目录下。用户在文章中添加新图片`xxx.png`时，首先需要将其复制到`src/.vuepress/public/res/images`中的某个子目录`yyy`（最好跟导航栏中的目录名保持一致，没有可创建）中，然后在Markdown文件中使用下面格式进行引用即可：
 
@@ -74,9 +74,15 @@ $> git pull
 
 - 本网站主体基于[VuePress Theme Hope](https://theme-hope.vuejs.press)进行开发，该框架对传统的Markdown进行了定制优化，支持更加丰富的功能。**所以，请务必在开始编写文章前，仔细阅读[《Markdown》](https://theme-hope.vuejs.press/zh/guide/get-started/markdown.html)和[《Markdown增强》](https://theme-hope.vuejs.press/zh/guide/markdown)这两篇指南**，了解框架提供了哪些强大的组件，并考虑如何将它们应用到自己的文章中，让整体的表现形式更加多样化，从而使得生成的网站文章更容易被大众接受。
 
-## 网站维护
+### 网站维护
 
 - 为了实现展示复杂界面的需求，目前网站集成了[Element Plus](https://element-plus.gitee.io/en-US)前端框架，其所有组件和图标都已经注册到项目中，可以直接在Vue组件中使用（图标貌似还得在Vue组件中手动导入）。网站定制的Vue组件都放置在`src/.vuepress/components`目录下，用户可根据需要创建新组件，但是需要注意的是**被引用到文章中的组件必须放置在`components`目录下（不能放在子目录中），否则会出现引用失败的错误。**
+
+- 使用以下命令可一键将网站部署到服务器上（账号需要有部署权限，找系统管理员开通）。建议先在本地进行测试，没有问题后再部署到服务器上，防止出现各种未知的错误。
+
+    ```sh
+    $> npm run deploy
+    ```
 
 ## 感谢
 
