@@ -57,3 +57,17 @@ $> npm run dev
 $> cd your-workspaces/ieda-website
 $> git pull
 ```
+
+## 开发
+
+## 内容维护
+
+- 网站所有的资源文件（图片、视频、文件等）是以一个独立的GitHub仓库进行维护的。在执行仓库根目录中的`setup.sh`脚本时，系统会自动将当前网站相配套的资源仓库下载到`src/.vuepress/public/res`目录下。用户在文章中添加新图片`xxx.png`时，首先需要将其复制到`src/.vuepress/public/res/images`中的某个子目录`yyy`（最好跟导航栏中的目录名保持一致，没有可创建）中，然后在Markdown文件中使用下面格式进行引用即可：
+
+    ```md
+    ![xxx](/res/images/yyy/xxx.png)
+    ```
+
+    **注意：在确认本地资源目录下的新增文件不再发生变化后，需要将终端切换到`src/.vuepress/public/res`目录，然后使用Git提交并Push到远程，保证内容不丢失。**
+
+## 网站维护
