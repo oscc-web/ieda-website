@@ -10,7 +10,7 @@
         "build-deploy-aft": "cp -rv src/.vuepress/dist/ var/; rm -rf var/dist/res/.git ",
         "build-deploy": "npm run build-deploy-pre; npm run build-local; npm run build-deploy-aft",
         "dev": "vuepress dev src --debug",
-        "deploy": "node ./deploy/index.mjs",
+        "deploy": "node ./common/deploy/index.mjs",
         "clean": "vuepress dev src --clean-cache",
         "update": "npx vp-update"
     },
