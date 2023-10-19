@@ -70,4 +70,6 @@ $> git pull
 
     **注意：在确认本地资源目录下的新增文件不再发生变化后，需要将终端切换到`src/.vuepress/public/res`目录，然后使用Git提交并Push到远程，保证内容不丢失。**
 
+- 网站的导航栏和侧边栏配置分别位于`src/.vuepress/navbar/zh.ts`和`src/.vuepress/sidebar/zh.ts`文件中，可以根据需要进行添加或修改。其中需要注意的是，侧边栏排序目前采用的是`structure`模式，即框架会读取文件结构自动生成侧边栏，可大大降低用户配置的工作量。但是在这种模式下，侧边栏会按照文件名的标题文字以当前语言进行排序，所以往往生成的顺序并不是我们想要的，为解决这个问题可以在文章的`Frontmatter`区域添加`order`属性，具体说明可参考这篇[教程](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html#自动生成侧边栏)。
+
 ## 网站维护
