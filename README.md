@@ -48,7 +48,7 @@ $> ./setup.sh
 ### 运行网站
 
 ```sh
-$> npm run dev
+$> npm run command -- dev
 ```
 
 ### 更新仓库
@@ -81,7 +81,7 @@ $> git pull
 - 使用以下命令可一键将网站部署到服务器上（账号需要有部署权限，找系统管理员开通）。建议先在本地进行测试，没有问题后再部署到服务器上，防止出现各种未知的错误。
 
     ```sh
-    $> npm run deploy
+    $> npm run command -- deploy
     ```
 
 ## 感谢
