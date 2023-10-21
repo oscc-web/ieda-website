@@ -9,7 +9,9 @@
             <el-col
                 v-for="(item, i) in evaluationsItemList"
                 :key="i"
-                :span="12">
+                :md="12"
+                :sm="12"
+                :xs="24">
                 <el-card
                     :body-style="evaluationsBodyStyle"
                     shadow="always"
@@ -31,7 +33,7 @@
     const evaluationsItemList = ref([{
         text: "Taichi编程语⾔和传统的GPU编程⽅式⽐起来，<span class='evaluations-highlight'>极其容易学习</span>。并且，Taichi程序⼀次开发后，可在iOS、Android、PC等<span class='evaluations-highlight'>多平台运⾏</span>，满⾜了快⼿魔法表情快速迭代的需求，对繁重的设备部署⼯作起到了<span class='evaluations-highlight'>加速作⽤</span>。",
         author: "马重阳",
-        identity: "快手 Y-tech 图形 AI 团队负责人",
+        identity: "快手Y-tech图形AI团队负责人",
         style: ""
     }, {
         text: "我们使用Taichi替代部分GPU shader代码，大大<span class='evaluations-highlight'>简化了开发难度</span>（特别是在调试上）。Taichi的<span class='evaluations-highlight'>提前编译模式</span>让我们能够在诸如安卓手机之类的不同平台上运行代码。Taichi让创造出色的、基于物理的算法变得如此<span class='evaluations-highlight'>容易</span>！",
@@ -53,7 +55,7 @@
         "display": "flex",
         "flex-direction": "column",
         "justify-content": "space-between",
-        "height": "160px"
+        "height": "200px"
     });
 </script>
 
@@ -64,14 +66,8 @@
 </style>
 
 <style lang="scss" scoped>
-    .el-row {
-        margin: auto;
-        width: 100%;
-        height: 450px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
+    .el-col {
+        padding-bottom: 20px;
     }
     .evaluations-info {
         display: flex;

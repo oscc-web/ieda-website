@@ -9,7 +9,9 @@
             <el-col
                 v-for="(item, i) in featuresItemList"
                 :key="i"
-                :span="6">
+                :md="6"
+                :sm="12"
+                :xs="24">
                 <el-card
                     :body-style="featuresBodyStyle"
                     shadow="always">
@@ -82,12 +84,15 @@
         "display": "flex",
         "flex-direction": "column",
         "justify-content": "space-between",
-        "height": "98%",
+        // "height": "98%",
         "text-align": "center"
     });
 </script>
 
 <style lang="scss" scoped>
+    .el-col {
+        padding-bottom: 20px;
+    }
     .el-card {
         height: 500px;
         .el-button {
@@ -101,6 +106,7 @@
         }
         .features-image,
         video {
+            width: 230px;
             height: 135px;
             margin-bottom: 25px;
         }

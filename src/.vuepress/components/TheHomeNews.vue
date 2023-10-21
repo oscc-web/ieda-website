@@ -9,7 +9,9 @@
             <el-col
                 v-for="(item, i) in newsItemList"
                 :key="i"
-                :span="8">
+                :md="8"
+                :sm="8"
+                :xs="24">
                 <el-card
                     :body-style="newsBodyStyle"
                     shadow="always">
@@ -56,6 +58,9 @@
 </script>
 
 <style scoped lang="scss">
+    .el-col {
+        padding-bottom: 20px;
+    }
     .el-card {
         height: 450px;
         cursor: pointer;
