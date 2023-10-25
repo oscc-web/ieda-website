@@ -69,5 +69,5 @@ export default defineUserConfig({
             sortStrategy: "max"
         })
     ],
-    theme
+    theme: theme
 });

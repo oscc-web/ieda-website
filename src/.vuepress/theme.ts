@@ -153,4 +153,6 @@ export default hopeTheme({
         seo: false,
         sitemap: false
     }
+}, {
+    custom: true
 });

@@ -14,26 +14,27 @@
 .vp-hero-info-wrapper {
     display: none;
 }
-.home .vp-page-title {
-    display: none;
-}
-.home .theme-hope-content {
-    max-width: var(--home-page-width);
-}
-.home .home-components {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-.home .el-divider {
-    margin: 40px;
-}
-.home .el-divider + .el-text {
-    margin-bottom: 30px;
-    font-size: 25px;
-    + .el-row {
-        width: 100%;
+.home {
+    .vp-page-title {
+        display: none;
+    }
+    .theme-hope-content {
+        max-width: var(--home-page-width);
+    }
+    .home-components {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .el-divider {
+        margin: 40px;
+    }
+    .el-divider + .el-text {
+        margin-bottom: 30px;
+        font-size: 25px;
+        + .el-row {
+            width: 100%;
+        }
     }
 }
-
