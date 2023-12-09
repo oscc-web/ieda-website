@@ -11,6 +11,7 @@ export default hopeTheme({
         email: "myyerrol@126.com"
     },
     favicon: "/res/images/logo/logo.png",
+
     // Theme Layout
     // Navbar
     navbarIcon: true,
@@ -50,15 +51,17 @@ export default hopeTheme({
     copyright: false,
     displayFooter: true,
     // Others
-    toc: true,
+    toc: false,
+
     // Theme Appearance
     iconAssets: "fontawesome",
     darkmode: "toggle",
     themeColor: false,
     fullscreen: false,
     backToTop: true,
-    pure: true,
+    pure: false,
     print: false,
+
     // Theme i18N
     locales: {
         "/": {
@@ -69,6 +72,7 @@ export default hopeTheme({
             }
         }
     },
+
     // Theme Plugins
     plugins: {
         blog: false,
