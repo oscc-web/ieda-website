@@ -10,7 +10,7 @@ export default hopeTheme({
         url: "https://myyerrol.github.io",
         email: "myyerrol@126.com"
     },
-    favicon: "/res/images/logo/logo.png",
+    favicon: "/res/images/logo/ieda_logo2.png",
 
     // Theme Layout
     // Navbar
@@ -20,8 +20,8 @@ export default hopeTheme({
         center: ["Links"],
         end: ["Language", "Repo", "Outlook", "Search"]
     },
-    logo: "/res/images/logo/logo.png",
-    logoDark: "/res/images/logo/logo.png",
+    logo: "/res/images/logo/ieda_logo2.png",
+    logoDark: "/res/images/logo/ieda_logo2.png",
     repo: "oscc-web/oseda-website",
     repoDisplay: false,
     repoLabel: "GitHub",
