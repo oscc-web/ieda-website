@@ -74,7 +74,7 @@ export const zhNavbar = navbar([
         }]
     }, {
         text: "智能和数据",
-        prefix: "/data/",
+        prefix: "/aieda/",
         children: [{
             text: "iBM数据集",
             prefix: "ibm/",
@@ -85,7 +85,7 @@ export const zhNavbar = navbar([
             ]
         }, {
             text: "AiEDA模型",
-            prefix: "aieda-model/",
+            prefix: "aieda/-model/",
             children: [
                 "aimp",
                 "aimap",
@@ -93,7 +93,7 @@ export const zhNavbar = navbar([
             ]
         }, {
             text: "AiEDA框架",
-            prefix: "aieda-framework/",
+            prefix: "aieda/-framework/",
             children: [
                 "intro",
                 "api",
