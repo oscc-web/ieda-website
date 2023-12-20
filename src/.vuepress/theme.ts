@@ -47,7 +47,7 @@ export default hopeTheme({
     docsBranch: "main",
     docsDir: "src",
     // Footer
-    footer: "GPL协议 | 版权所有 © 2023-现在 iEDA团队",
+    footer: "GPL协议 | 版权所有 © 2023-现在  iEDA社区",
     copyright: false,
     displayFooter: true,
     // Others

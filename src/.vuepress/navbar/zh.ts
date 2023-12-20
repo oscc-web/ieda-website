@@ -85,7 +85,7 @@ export const zhNavbar = navbar([
             ]
         }, {
             text: "AiEDA模型",
-            prefix: "aieda/-model/",
+            prefix: "aieda-model/",
             children: [
                 "aimp",
                 "aimap",
@@ -93,7 +93,7 @@ export const zhNavbar = navbar([
             ]
         }, {
             text: "AiEDA框架",
-            prefix: "aieda/-framework/",
+            prefix: "aieda-framework/",
             children: [
                 "intro",
                 "api",
@@ -130,11 +130,32 @@ export const zhNavbar = navbar([
     }, {
         text: "活动和交流",
         prefix: "/activities/",
-        children: [
-            "tape-out",
-            "competition",
-            "conference"
-        ]
+        children: [{
+            text: "学术会议",
+            prefix: "conference/",
+            children: [
+                "CCF-DAC-23-EDA-session",
+                "first-GBA-EDA-workshop-23",
+                "second-OSEDA-workshop-23"
+            ]
+        }, {
+            text: "学术竞赛",
+            prefix: "contest/",
+            children: [
+                "openDACS-23-contest-t1",
+                "openDACS-23-contest-t2",
+                "openDACS-23-contest-t3"
+            ]
+        }, {
+            text: "流片计划",
+            prefix: "tape-out/",
+            children: [
+                "iEDA-Chip-001",
+                "iEDA-Chip-002",
+                "iEDA-Chip-003",
+                "iEDA-Chip-004"
+            ]
+        }]
     }, {
         text: "招聘和联系",
         prefix: "/job/",

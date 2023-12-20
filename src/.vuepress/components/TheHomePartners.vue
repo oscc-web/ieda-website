@@ -10,37 +10,58 @@
                 v-for="(item, i) in partnersItemList"
                 :key="i"
                 :span="4">
-                <el-image :src="`/res/images/partners/` + item.image"></el-image>
+                <el-image :src="`/res/images/index/` + item.image"></el-image>
             </el-col>
         </el-row>
     </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+       imageUrl: 'example.jpg',
+       imageWidth: 100,
+       imageHeight: 100
+    }
+  },
+  mounted () {
+    this.imageWidth = this.$el.offsetWidth;
+    this.imageHeight = this.$el.offsetHeight;
+  }
+}
+</script>
 <script setup>
     import { ref } from "vue";
-
+    
     const partnersItemList = ref([{
-        image: "pcl.jpg"
+        image: "pcl.png"
     }, {
         image: "ict.jpg"
     }, {
         image: "bosc.jpg"
     }, {
-        image: "ustc.jpg"
-    }, {
         image: "ucas.jpg"
-    }, {
-        image: "gdut.jpg"
-    }, {
-        image: "szu.jpg"
-    }, {
-        image: "sysu.jpg"
     }, {
         image: "fzu.jpg"
     }, {
-        image: "mnnu.jpg"
+        image: "mnnu.png"
     }, {
-        image: "pku.jpg"
+        image: "gdut.png"
+    }, {
+        image: "szu.jpg"
+    }, {
+        image: "ustc.png"
+    }, {
+        image: "cuhk.jpg"
+    }, {
+        image: "sysu.jpg"
+    }, {
+        image: "pku.png"
+    }, {
+        image: "imecas.jpg"
+    }, {
+        image: "bhu.jpg"
     }, {
         image: "hkust.jpg"
     }]);
@@ -54,5 +75,13 @@
     }
     .el-image {
         pointer-events: none;
+    }
+    .container{
+        width: 10%;
+        margin: auto;
+    }
+    .image{
+        width: 10px;
+        height: 100px;
     }
 </style>

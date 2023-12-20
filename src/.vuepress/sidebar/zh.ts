@@ -72,6 +72,21 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     }],
-    "/activities/": "structure",
+    "/activities/": [{
+        text: "学术会议",
+        prefix: "conference/",
+        children: "structure",
+        collapsible: true
+    }, {
+        text: "学术竞赛",
+        prefix: "contest/",
+        children: "structure",
+        collapsible: true
+    }, {
+        text: "流片计划",
+        prefix: "tape-out/",
+        children: "structure",
+        collapsible: true
+    }],
     "/job/": "structure"
 });
