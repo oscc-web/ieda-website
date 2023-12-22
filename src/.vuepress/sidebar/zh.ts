@@ -58,7 +58,7 @@ export const zhSidebar = sidebar({
     }],
     "/research/": [{
         text: "研究课题",
-        prefix: "subject/",
+        prefix: "subjects/",
         children: "structure",
         collapsible: true
     }, {
@@ -88,5 +88,25 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     }],
-    "/job/": "structure"
+    "/publicity/": [{
+        text: "宣传",
+        prefix: "publicity/",
+        children: "structure",
+        collapsible: true
+    }, {
+        text: "合作",
+        prefix: "collaborate/",
+        children: "structure",
+        collapsible: true
+    }, {
+        text: "招聘",
+        prefix: "recruit/",
+        children: "structure",
+        collapsible: true
+    },{
+        text: "业务",
+        prefix: "business/",
+        children: "structure",
+        collapsible: true
+    }],
 });

@@ -4,11 +4,21 @@ order: 2
 ---
 ## 赛题2：增量式时序优化算法
 
-出题单位：鹏城实验室，openDACS工委会SIG3
+**主办单位：** 工业和信息化部、江苏省人民政府、湖南省人民政府
 
-赛题Chair：李兴权
+ **承办单位：** 开放原子开源基金会、央视网、江苏省工业和信息化厅、无锡市人民政府、江苏软件产业人才发展基金会、苏州工业园区、无锡高新区等
 
-赛题宣讲嘉宾：黄志鹏
+ **联合承办单位：** openDACS工作委员会、中国科学院计算技术研究所、中国科学院微电子研究所、北京大学、复旦大学、清华大学、北京开源芯片研究院、深圳微纳研究院、深圳华秋电子有限公司
+
+ **本赛项聚焦：** 集成电路产业的数字设计、模拟设计、芯片制造、芯片封装、处理器设计自动化、生成式芯片设计等领域，对促进产业高质量发展具有重要意义。
+
+ **本赛项包含：** 五个方向共计10道赛题。
+
+**出题单位：** 鹏城实验室，openDACS工委会SIG3
+
+**赛题Chair：** 李兴权
+
+**宣讲嘉宾：** 黄志鹏
 
 ## 1. 赛题背景
 
@@ -42,15 +52,15 @@ order: 2
 
 <center>图3. 基于iEDA代码开发流程</center>
 
-（1）根据赛题共建方提供的解析后数据，构建合适的数据结构，兼顾高效存储与算法应用。
+> （1）根据赛题共建方提供的解析后数据，构建合适的数据结构，兼顾高效存储与算法应用。
 
-（2）对于单元布局，要求在不改变网表的情况下进行优化，其中门控大小调整会提供标准单元库，单元库中为每种功能的逻辑单元提供了n个size，即有n个不同的库单元实现了相同的组合逻辑功能。为了保证优化后的网表保持原有的逻辑功能，每个单元只能替换为具有相同组合逻辑功能的库单元。
+> （2）对于单元布局，要求在不改变网表的情况下进行优化，其中门控大小调整会提供标准单元库，单元库中为每种功能的逻辑单元提供了n个size，即有n个不同的库单元实现了相同的组合逻辑功能。为了保证优化后的网表保持原有的逻辑功能，每个单元只能替换为具有相同组合逻辑功能的库单元。
 
-（3）对于单元移动后需要更新走线情况，需要满足布线需求小于布线容量，布线需求的计算方式为通过GCell完整的track条数，布线容量的计算方式为当一根线完整地经过GCell时，将使用一根完整的track，对于未完全穿过，则简单计算为0.5根track。赛题共建方会提供样例进行比对。
+> （3）对于单元移动后需要更新走线情况，需要满足布线需求小于布线容量，布线需求的计算方式为通过GCell完整的track条数，布线容量的计算方式为当一根线完整地经过GCell时，将使用一根完整的track，对于未完全穿过，则简单计算为0.5根track。赛题共建方会提供样例进行比对。
 
-（4）在满足增加面积的约束基础上，进行时序优化，输出时序优化后的合法布局布线结果。
+> （4）在满足增加面积的约束基础上，进行时序优化，输出时序优化后的合法布局布线结果。
 
-（5）使用赛题共建方的时序评估工具获得评价结果，根据参赛队伍输出的走线情况，根据线长和单位RC，时序评估工具使用非线性延时模型（NLDM）和互连线Elmore计算最差/总负裕量。
+> （5）使用赛题共建方的时序评估工具获得评价结果，根据参赛队伍输出的走线情况，根据线长和单位RC，时序评估工具使用非线性延时模型（NLDM）和互连线Elmore计算最差/总负裕量。
 
 本赛题允许参赛队伍结合算法的具体需求，使用最多8线程进行并行加速。
 
@@ -66,14 +76,15 @@ order: 2
 
 * Cell
 
-对应工艺下的单元，包含形状（如宽、高）、类别标记（Gate Sizing所需）等信息。数据（信息）获取接口：
+对应工艺下的单元，包含形状（如宽、高）、类别标记（Gate Sizing所需）等信息。
+
+> 数据（信息）获取接口：
 
 ```
 int get_width() const; // 获取单元宽度
 int get_height() const; // 获取单元高度
 equivCellType get_equiv_cell_type() const; // 获取单元所属类别
 ```
-
 
 * Instance
 
@@ -83,7 +94,7 @@ equivCellType get_equiv_cell_type() const; // 获取单元所属类别
 
 <center>图4. Instance连接关系</center>
 
- 数据（信息）获取接口：
+> 数据（信息）获取接口
 
 ```
 Cell get_cell() const; // 获取工艺下对应的
@@ -92,38 +103,35 @@ int get_coordi_y() const; // 获取Instance左下角纵坐标
 void update_location(Point);
 ```
 
+> 全局接口
 
-• 全局接口
-
+```
 vector `<Instance>` get_inst_list() const; // 获取设计所有单元集合
-
-vector `<Net>` get_net_list() const; /
-
-/ 获取设计所有线网集合
-
+vector `<Net>` get_net_list() const; // 获取设计所有线网集合
 vector `<Cell>` obtain_equiv_cells(Cell* cur_cell); // 输入当前Cell，获取同类型的Cell集合（供Gate Sizing）
+```
 
 **（3）初始绕线**
 
-• GCell
+* GCell
 
 GCell是一个矩形方格，通过GCell将版图划分为多个方格，每一层的GCell规格一样，其定义如下：
 
+```
 GCELLGRID [axis] [start] DO [scale_num] STEP [interval]
+```
 
 其中"GCELLGRID"为GCell定义的起始字段；"[axis]"为所要描述的轴方向，X和Y；"[start]"为轴开始的坐标；"[scale_num]"为轴上的坐标数量；"[interval]"为坐标之间的间隔。
 
-在def中的示例如下：
+> 在def中的示例如下：
 
+```
 GCELLGRID X 1200 DO 2 STEP 500
-
 GCELLGRID X 0 DO 5 STEP 300
-
 GCELLGRID Y 1050 DO 2 STEP 50
-
 GCELLGRID Y 150 DO 4 STEP 300
-
 GCELLGRID Y 0 DO 2 STEP 150
+```
 
 以上GCellGrid定义在版图(Die)上如下所示：
 
@@ -131,23 +139,18 @@ GCELLGRID Y 0 DO 2 STEP 150
 
 <center>图5. GCellGrid</center>
 
-• Guide文件
+* Guide文件
 
 Guide作为布线的结果，其单位是一个完整的GCell，Guide只需要描述routing层即可。
 
-以net0举例，其布线结果在guide文件如下：
+> 以net0举例，其布线结果在guide文件如下：
 
-net0
-
-(
-
+```
+net0(
 300 150 1200 450 M1
-
 900 150 1200 1050 M2
-
-900 750 1200 1050 M1
-
-)
+900 750 1200 1050 M1)
+```
 
 GCell在每一层的大小分布都是一致的，通过分析guide，net0的布线结果如下：
 
@@ -155,113 +158,91 @@ GCell在每一层的大小分布都是一致的，通过分析guide，net0的布
 
 <center>图6. 布线结果示例</center>
 
-• 开源工艺库（.tlef文件、.lef文件、.lib文件）
+* 开源工艺库（.tlef文件、.lef文件、.lib文件）
+* sdc文件(.sdc文件)，定义需要进行时序优化的时钟。
 
-• sdc文件(.sdc文件)
-
-定义需要进行时序优化的时钟。
-
-### 2.3.3 输出文件
+### 2.3 输出文件
 
 本赛题要求参赛队伍的程序在完成时序优化之后输出优化后的单元布局和布线结果。输出文件的格式应与赛题共建方提供的赛题Case中输入的格式保持一致。
 
-### 2.3.4 环境
+### 2.4 环境
 
 建议参赛队伍的开发环境和运行环境，C++使用兼容C++20版本，并在Linux系统环境下进行开发。下述给出参考方式：
 
-（1）从Dockerhub上下载，使用镜像提供的编译工具和依赖库进行项目构建。
+> （1）从Dockerhub上下载，使用镜像提供的编译工具和依赖库进行项目构建。
 
-（2）手动安装依赖并编译。
+> （2）手动安装依赖并编译。
 
-## 2.4 评分标准
+## 3. 评分标准
 
 赛题的所有测试案例根据网表规模分为大、中、小三类测试案例。赛题从这三类测试案例中筛选并提供一部分案例给参赛队伍评估算法的质量；其余案例只作评分用途，不开放给参赛队伍。
 
 每个测试案例有独立的评分，遵循同样的评分标准：
 
-（1）在限制增加面积的基础上，比较最差/总负裕量的提升幅度，数值越大排名越靠前。取队伍的前10名，第一名10分，第二名9分，依此类推。
+> （1）在限制增加面积的基础上，比较最差/总负裕量的提升幅度，数值越大排名越靠前。取队伍的前10名，第一名10分，第二名9分，依此类推。
 
-（2）输出的布局结果需要满足合法性要求（GCell内的单元面积，GCell间走线无溢出），在给定的运行时间和内存限制下运行，否则不得分。
+> （2）输出的布局结果需要满足合法性要求（GCell内的单元面积，GCell间走线无溢出），在给定的运行时间和内存限制下运行，否则不得分。
 
-（3）对评分案例集中的每个案例进行评分后，总得分为单个案例得分的加权求和，其中单个案例的权重系数与该案例的规模成正相关。总计分越高的队伍，排名越高。
+> （3）对评分案例集中的每个案例进行评分后，总得分为单个案例得分的加权求和，其中单个案例的权重系数与该案例的规模成正相关。总计分越高的队伍，排名越高。
 
-## 2.5 参赛作品要求
+## 4. 参赛作品要求
 
-### 2.5.1 初赛作品
+### 4.1 初赛作品
 
 参赛队伍（成员1~3名）提交该赛题的设计文档及作品源代码。
 
 （1）设计文档要求是PDF文档，在文档中应写清楚技术实现细节并提供测试案例上的测试结果，包含以下几点：
 
-• 功能描述
-
-• 整体设计框架
-
-• 功能模块细节设计
-
-• 方案的优势和挑战
-
-• 测试结果与数据分析
+- 功能描述
+- 整体设计框架
+- 功能模块细节设计
+- 方案的优势和挑战
+- 测试结果与数据分析
 
 （2）作品源代码需要包含以下几项：
 
-• 源代码
+- 源代码
+- 编译好的code二进制文件
+- readme（对最终提交算法的基本说明，包括运行方式、输入格式说明等）
+- 依赖的第三方库（如果有的话需要一并提供，防止由于版本不同而带来的结果差异）
 
-• 编译好的code二进制文件
-
-•
-readme（对最终提交算法的基本说明，包括运行方式、输入格式说明等）
-
-• 依赖的第三方库（如果有的话需要一并提供，防止由于版本不同而带来的结果差异）
-
-### 2.5.2 决赛作品
+### 4.2 决赛作品
 
 参赛队伍在初赛作品的基础上，进一步完善作品，如提升关键算法的性能，优化代码的实现，增强代码可读性，符合开源代码规范性等，并提交最终源代码及设计文档参加决赛。
 
-### 2.5.3 作品提交通道
+### 4.3 作品提交通道
 
-参赛队伍提交作品前，需将队长在大赛官网上的注册邮箱、用户名、姓名、手机号码等信息邮件发送给本赛题工作人员（联系邮箱：Johnhw_2019@qq.com，邮件主题命名为：“队伍名称”建仓申请），工作人员将为该队伍在 AtomGit 上创建一个私有仓库，并将队长添加为该仓库管理员。参赛队伍完成作品后，将作品相关文档及源代码提交至该仓库即可。提交作品命名方式为：赛题名称+队伍名称+作品标题。AtomGit网址：https://atomgit.com/。
+参赛队伍提交作品前，需将队长在大赛官网上的注册邮箱、用户名、姓名、手机号码等信息邮件发送给本赛题工作人员（联系邮箱：Johnhw_2019@qq.com，邮件主题命名为：“队伍名称”建仓申请），工作人员将为该队伍在 AtomGit 上创建一个私有仓库，并将队长添加为该仓库管理员。参赛队伍完成作品后，将作品相关文档及源代码提交至该仓库即可。提交作品命名方式为：赛题名称+队伍名称+作品标题。
 
-## 2.6 奖励方案
+> 赛题2的AtomGit网址：https://atomgit.com/opendacs/competition-t2
 
-（1）初赛评选冠军1名，奖励5万奖金；开源EDA新秀奖2名，奖励0.5万元；各颁发证书。
+## 5. 奖励方案
 
-（2）初赛冠军将进入开源EDA与芯片赛项总决赛，在2024年4月进行总决赛路演，有机会获得“openDACS开源之星”及额外奖金2万元。
+> （1）初赛评选冠军1名，奖励5万奖金；开源EDA新秀奖2名，奖励0.5万元；各颁发证书。
 
-（3）为所有获奖队伍提供中国科学院计算所、开源芯片研究院、鹏城实验室、中科鉴芯（北京）科技有限责任公司等单位实习机会。
+> （2）初赛冠军将进入开源EDA与芯片赛项总决赛，在2024年4月进行总决赛路演，有机会获得“openDACS开源之星”及额外奖金2万元。
 
-## 2.7 参考文献
+> （3）为所有获奖队伍提供中国科学院计算所、开源芯片研究院、鹏城实验室、中科鉴芯（北京）科技有限责任公司等单位实习机会。
 
-[1] S. Held and J. Hu, “Gate sizing,” in Electronic Design
-Automation for IC Implementation, Circuit Design, and Process Technology, L.
-Lavagno, I. L. Markov, G. Martin, and L. K. Scheffer, Eds. Boca Raton, FL, USA:
-CRC Press, 2016, pp. 245–260.
+## 6. 参考文献
 
-[2] Papa, David A., et al. "RUMBLE: an incremental,
-timing-driven, physical-synthesis optimization algorithm." Proceedings of
-the 2008 international symposium on Physical design. 2008.
+> [1] S. Held and J. Hu, “Gate sizing,” in Electronic Design Automation for IC Implementation, Circuit Design, and Process Technology, L. Lavagno, I. L. Markov, G. Martin, and L. K. Scheffer, Eds. Boca Raton, FL, USA: CRC Press, 2016, pp. 245–260.
 
-[3] Held, Stephan. "Gate sizing for large cell-based
-designs." 2009 Design, Automation & Test in Europe Conference &
-Exhibition. IEEE, 2009.
+> [2] Papa, David A., et al. "RUMBLE: an incremental, timing-driven, physical-synthesis optimization algorithm." Proceedings of the 2008 international symposium on Physical design. 2008.
 
-[4] Li, Zhuo, and Weiping Shi. "An O (mn) time algorithm
-for optimal buffer insertion of nets with m sinks." Proceedings of the
-2006 Asia and South Pacific Design Automation Conference. 2006.
+> [3] Held, Stephan. "Gate sizing for large cell-based designs." 2009 Design, Automation & Test in Europe Conference & Exhibition. IEEE, 2009.
 
-[5] Papa, David A., and Igor L. Markov. Multi-Objective
-Optimization in Physical Synthesis of Integrated Circuits. Vol. 166. Springer
-Science & Business Media, 2012.
+> [4] Li, Zhuo, and Weiping Shi. "An O (mn) time algorithm for optimal buffer insertion of nets with m sinks." Proceedings of the 2006 Asia and South Pacific Design Automation Conference. 2006.
 
-[6] Zou P, Cai Z, Lin Z, et al. Incremental 3D Global Routing
-Considering Cell Movement and Complex Routing Constraints. IEEE Transactions on
-Computer-Aided Design of Integrated Circuits and Systems, 2022.
+> [5] Papa, David A., and Igor L. Markov. Multi-Objective Optimization in Physical Synthesis of Integrated Circuits. Vol. 166. Springer Science & Business Media, 2012.
 
-# 附1：10个赛题总体介绍
+> [6] Zou P, Cai Z, Lin Z, et al. Incremental 3D Global Routing Considering Cell Movement and Complex Routing Constraints. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2022.
+
+## 附1：10个赛题总体介绍
 
 本赛项包含五个方向共计10道赛题，分别如下：
 
-**数字芯片EDA方向：**
+### **数字芯片EDA方向：**
 
 赛题1：功能向量的时序电路故障模拟器
 
@@ -269,77 +250,71 @@ Computer-Aided Design of Integrated Circuits and Systems, 2022.
 
 赛题3：FPGA工艺映射算法及优化
 
-**模拟芯片EDA方向：**
+### **模拟芯片EDA方向：**
 
 赛题4：模拟电路优化算法
 
 赛题5：运算放大器自动化设计
 
-**芯片制造EDA方向：**
+### **芯片制造EDA方向：**
 
 赛题6：基于BSIM-CMG模型的器件模型提参
 
-**处理器设计自动化EDA方向：**
+### **处理器设计自动化EDA方向：**
 
 赛题7：ASIP基于OpenHarmony软总线特性的硬化IP设计
 
 赛题8：基于开源PDK的硅基板互连设计
 
-**生成式芯片设计方向：**
+### **生成式芯片设计方向：**
 
 赛题9：基于自动芯片生成框架AutoChip（ChipGPT 2.0）的流水线CPU设计
 
 赛题10：AutoChip（ChipGPT 2.0）芯片创意设计
 
-# 附2：赛制/赛程
+## 附2：赛制/赛程
 
-## 1 竞赛流程
+### 1. 竞赛流程
 
-2023.09 -2023.11 在大赛官网、openDACS公众号、CCF集成电路设计专委公众号发布各个赛题
+* 2023.09 -2023.11 在大赛官网、openDACS公众号、CCF集成电路设计专委公众号发布各个赛题
+* 2023.09.30 - 2024.2.28  参赛队伍报名参赛，提交作品，并由出题方辅导改进
+* 2023.10.15   在CCFDAC2023大会开源EDA专题论坛现场进行赛题答疑
+* 2023.10.15 - 2023.12.30   在指定单位安排讲座（中科院、北大、复旦、清华、武汉理工、深圳技术大学等）；在电子发烧友网站安排1-2次在线讲座
+* 2024.03.31   初赛评审，评选各个赛题冠军及新秀奖，出题方辅导冠军队伍改进
+* 2024.04.01 - 2024.04.15   决赛作品提交
+* 2024.04   决赛评审，十个赛题冠军汇总评选出3名openDACS开源之星奖
+* 2024.06（暂定） 开放原子开发者大会，公布获奖名单与线下颁奖
 
-2023.09.30 - 2024.2.28  参赛队伍报名参赛，提交作品，并由出题方辅导改进
-
-2023.10.15   在CCFDAC2023大会开源EDA专题论坛现场进行赛题答疑
-
-2023.10.15 - 2023.12.30   在指定单位安排讲座（中科院、北大、复旦、清华、武汉理工、深圳技术大学等）；在电子发烧友网站安排1-2次在线讲座
-
-2024.03.31   初赛评审，评选各个赛题冠军及新秀奖，出题方辅导冠军队伍改进
-
-2024.04.01 - 2024.04.15   决赛作品提交
-
-2024.04   决赛评审，十个赛题冠军汇总评选出3名openDACS开源之星奖
-
-2024.06（暂定）
-  开放原子开发者大会，公布获奖名单与线下颁奖
-
-## 2 竞赛咨询
+### 2. 竞赛咨询
 
 请参赛队伍加入本赛项微信交流群“openDACS开源EDA与芯片大赛”，微信群二维码：
 
-![](/res/images/activities/contest/openDACS-23-t2/fig7-1.png)
-
+<center>
+<img src="/res/images/activities/contest/openDACS-23-t2/fig7-1.png" alt="6" style="zoom:90%;" title ="openDACS开源EDA与芯片大赛" /></center>
 <center>openDACS开源EDA与芯片大赛</center>
+ 
+>
 
-![](/res/images/activities/contest/openDACS-23-t2/fig7-2.png)
-
+<center>
+<img src="/res/images/activities/contest/openDACS-23-t2/fig7-2.png" alt="6" style="zoom:110%;" title ="开源iEDA社区群" /></center>
 <center>数字芯片EDA方向赛题1,2,3交流群</center>
 
 如微信群二维码过期，可直接联系本赛项负责人微信：WinPolestar，申请加入交流群。
 
-参赛队伍在报名及提交作品后，可将报名信息、参赛作品发至
-Johnhw_2019@qq.com。
+> 参赛队伍在报名及提交作品后，可将报名信息、参赛作品发至
+> Johnhw_2019@qq.com。
 
-## 3 参赛队伍须知
+### 3. 参赛队伍须知
 
-**本赛项正式开始比赛的要求为：报名队伍数量至少达到10支，且提交作品数量至少达到5个。若未达到报名队伍或提交作品的数量要求，则本赛项可能被延期或暂停，届时将由本赛项各共建方（中科院计算技术研究所、中国科学院微电子研究所、北京大学、复旦大学、清华大学、北京开源芯片研究院、深圳微纳研究院、深圳华秋电子有限公司）向您发出书面通知。**
+本赛项正式开始比赛的要求为：报名队伍数量至少达到10支，且提交作品数量至少达到5个。若未达到报名队伍或提交作品的数量要求，则本赛项可能被延期或暂停，届时将由本赛项各共建方（中科院计算技术研究所、中国科学院微电子研究所、北京大学、复旦大学、清华大学、北京开源芯片研究院、深圳微纳研究院、深圳华秋电子有限公司）向您发出书面通知。
 
-# 附3：作品提交要求
+## 附3：作品提交要求
 
-## 1 参赛作品内容要求
+### 1. 参赛作品内容要求
 
 各赛题具体作品内容要求详见“赛题”栏目中各赛题描述。
 
-## 2 参赛作品规范要求
+### 2. 参赛作品规范要求
 
 （1）参赛作品须符合本届大赛赛项要求及主题，作品名称应能体现作品主要特征。
 
@@ -351,7 +326,7 @@ Johnhw_2019@qq.com。
 
 （5）作品应能正确运行并可达到预期结果。作品应与设计文档描述的功能一致，如未能实现设计文档中描述的所有功能，应注明未实现功能及其所占比例和重要程度。
 
-## 3 参赛作品提交要求
+### 3. 参赛作品提交要求
 
 （1）参赛队伍提交作品前，需将队长在大赛官网上的注册邮箱、用户名、姓名、手机号码等信息邮件发送给本赛题工作人员（联系邮箱：Johnhw_2019@qq.com，邮件主题命名为：“队伍名称”建仓申请），工作人员将为该队伍在 AtomGit 上创建一个私有仓库，并将队长添加为该仓库管理员。参赛队伍完成作品后，将作品相关文档及源代码提交至该仓库即可。提交作品命名方式为：赛题名称+队伍名称+作品标题。AtomGit网址：https://atomgit.com/。
 
@@ -361,9 +336,9 @@ Johnhw_2019@qq.com。
 
 （4）所有已提交的参赛作品和相关材料原则上不予退还。
 
-# 附4：评审规则与评审专家组
+## 附4：评审规则与评审专家组
 
-## 1 评审规则
+### 1. 评审规则
 
 （1）各赛题评审细则详见"赛题"栏目中，每道赛题的验收标准。
 
@@ -373,19 +348,19 @@ Johnhw_2019@qq.com。
 
 （4）根据每道赛题中验收标准说明获得对应奖项。
 
-## 2 评审专家组
+### 2. 评审专家组
 
 李华伟（组长，openDACS工委会主任兼SIG1负责人，中国科学院计算技术研究所研究员，处理器芯片全国重点实验室副主任，负责赛题1）
 
 何均宏（联合组长，openDACS工委会联合主任兼执行总监，负责本赛题赛事组织运作，参与赛题7-10评选）
 
-罗国杰（openDACS工委会SIG2负责人，北京大学信息科学技术学院长聘副教授、高能效计算与应用中心执行主任。负责赛题2）
+李兴权（鹏城实验室副研究员。负责赛题2）
 
-李兴权（鹏城实验室副研究员。负责赛题3）
+罗国杰（openDACS工委会SIG2负责人，北京大学信息科学技术学院长聘副教授、高能效计算与应用中心执行主任。负责赛题3）
 
-杨  帆（openDACS工委会SIG3负责人，复旦大学微电子学院教授，博士生导师。参与赛题3评选）
+杨  帆（openDACS工委会SIG3负责人，复旦大学微电子学院教授，博士生导师。参与赛题2评选）
 
-解壁伟（openDACS工委会SIG4负责人，中国科学院计算技术研究所和鹏城实验室助理研究员，参与和负责“一生一芯”和开源EDA等项目。参与赛题3评选）
+解壁伟（openDACS工委会SIG4负责人，中国科学院计算技术研究所和鹏城实验室助理研究员，参与和负责“一生一芯”和开源EDA等项目。参与赛题2\3评选）
 
 叶佐昌（openDACS工委会SIG7负责人，清华大学集成电路学院副研究员，负责赛题4、5）
 

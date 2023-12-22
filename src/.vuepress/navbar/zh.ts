@@ -18,6 +18,7 @@ export const zhNavbar = navbar([
             prefix: "eda/",
             children: [
                 "eda-base",
+                "iEDA-design-doc",
                 "subject-cross",
                 "research-problem"
             ]
@@ -69,6 +70,8 @@ export const zhNavbar = navbar([
             children: [
                 "intro",
                 "api",
+                "iEDA-design-doc",
+                "iEDA-design-framework",
                 "guide"
             ]
         }]
@@ -106,8 +109,12 @@ export const zhNavbar = navbar([
         prefix: "/research/",
         children: [{
             text: "研究课题",
-            prefix: "subject/",
-            children: []
+            prefix: "subjects/",
+            children: [
+                "topics",
+                "research_plan",
+                "ranks"
+            ]
         }, {
             text: "开发任务",
             prefix: "tasks/",
@@ -144,7 +151,8 @@ export const zhNavbar = navbar([
             children: [
                 "openDACS-23-contest-t1",
                 "openDACS-23-contest-t2",
-                "openDACS-23-contest-t3"
+                "openDACS-23-contest-t3",
+                "EDA_elite_challenge-23-t2"
             ]
         }, {
             text: "流片计划",
@@ -153,18 +161,39 @@ export const zhNavbar = navbar([
                 "iEDA-Chip-001",
                 "iEDA-Chip-002",
                 "iEDA-Chip-003",
-                "iEDA-Chip-004"
+                "iEDA-Chip-plan"
             ]
         }]
     }, {
-        text: "招聘和联系",
-        prefix: "/job/",
-        children: [
-            "collaborate",
-            "recruit",
-            "internship",
-            "business",
-            "publicity"
-        ]
+        text: "宣传和合作",
+        prefix: "/publicity/",
+        children: [{
+            text: "宣传",
+            prefix: "publicity/",
+            children: [
+                "ICCAD_contest",
+                "tapeout_success",
+                "iMAP_release"
+            ]
+        }, {
+            text: "合作",
+            prefix: "collaborate/",
+            children: [
+                "collaborate"
+            ]
+        }, {
+            text: "招聘",
+            prefix: "recruit/",
+            children: [
+                "recruit",
+                "internship"
+            ]
+        }, {
+            text: "业务",
+            prefix: "business/",
+            children: [
+                "business"
+            ]
+        }]
     }
 ]);
