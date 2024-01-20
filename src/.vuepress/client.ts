@@ -10,8 +10,6 @@ export default defineClientConfig({
             app.component(key, ElementPlusIconsVue[key]);
         });
         router.afterEach((to) => {
-            if (to.path === "/") {
-            }
         });
     },
     setup() {},
