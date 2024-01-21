@@ -1,6 +1,6 @@
 ---
 title: "2023年第二届OSEDA研讨会"
-order: 2
+order: 3
 ---
 ## **第二届OSEDA研讨会征稿通知（Call for Papers）**
 
