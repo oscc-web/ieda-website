@@ -1,25 +1,8 @@
 import fs from "fs";
 
-let data =
-    'import { defineClientConfig } from "@vuepress/client";\n' +
-    'import ElementPlus from "element-plus";\n' +
-    'import * as ElementPlusIconsVue from "@element-plus/icons-vue";\n' +
-    'import "element-plus/dist/index.css";\n\n' +
-
-    'export default defineClientConfig({\n' +
-        'enhance({ app, router, siteData }) {\n' +
-            'app.use(ElementPlus);\n' +
-            'Object.keys(ElementPlusIconsVue).forEach(key => {\n' +
-                'app.component(key, ElementPlusIconsVue[key]);\n' +
-            '});\n' +
-            'router.afterEach((to) => {\n' +
-            '});\n' +
-        '},\n' +
-        'setup() {},\n' +
-        'rootComponents: []\n' +
-    '});'
-
 function gen() {
+    let dataCond = "\n";
+
     let filesL1 = fs.readdirSync("../").filter(file => {
         return (file !== ".vuepress" && file != "README.md");
     });
@@ -34,11 +17,44 @@ function gen() {
             if (fileStat.isDirectory()) {
                 let filesL3 = fs.readdirSync(fileL3Path);
                 console.log("Level 3: ", filesL3);
+                for (let k = 0; k < filesL3.length; k++) {
+                    let filesL4Path = fileL3Path + "/" + filesL3[k];
+                    let fileContents = fs.readFileSync(filesL4Path).toString();
+                    let fileRegexp = /order: 1\b/;
+                    if (fileRegexp.test(fileContents)) {
+                        let filesL4Dir = fileL3Path.replace("..", "") + "/";
+                        filesL4Path = filesL4Path.replace("..", "");
+                        console.log(filesL4Path);
+                        dataCond = dataCond +
+                            "            if (to.path === '" + filesL4Dir + "') {\n" +
+                            "                router.push('" + filesL4Path + "')\n" +
+                            "            }\n"
+                    }
+                }
             }
         }
     }
 
-    fs.writeFileSync("./client-dynamic.ts", data);
+    let data =
+        'import { defineClientConfig } from "@vuepress/client";\n' +
+        'import ElementPlus from "element-plus";\n' +
+        'import * as ElementPlusIconsVue from "@element-plus/icons-vue";\n' +
+        'import "element-plus/dist/index.css";\n\n' +
+
+        'export default defineClientConfig({\n' +
+        '    enhance({ app, router, siteData }) {\n' +
+        '        app.use(ElementPlus);\n' +
+        '        Object.keys(ElementPlusIconsVue).forEach(key => {\n' +
+        '            app.component(key, ElementPlusIconsVue[key]);\n' +
+        '        });\n' +
+        '        router.afterEach((to) => {' +
+                    dataCond +
+        '        });\n' +
+        '    },\n' +
+        '    setup() {},\n' +
+        '    rootComponents: []\n' +
+        '});'
+    fs.writeFileSync("./client.ts", data);
 }
 
 gen();
