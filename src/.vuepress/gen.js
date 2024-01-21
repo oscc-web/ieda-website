@@ -1,22 +1,29 @@
 import fs from "fs";
 
-function gen() {
+function genClientConfig() {
     let dataCond = "\n";
+    let dataDebug = false;
 
     let filesL1 = fs.readdirSync("../").filter(file => {
         return (file !== ".vuepress" && file != "README.md");
     });
-    console.log("Level 1: ", filesL1);
+    if (dataDebug) {
+        console.log("Level 1: ", filesL1);
+    }
     for (let i = 0; i < filesL1.length; i++) {
         let filesL2Path = "../" + filesL1[i];
         let filesL2 = fs.readdirSync(filesL2Path);
-        console.log("Level 2: ", filesL2);
+        if (dataDebug) {
+            console.log("Level 2: ", filesL2);
+        }
         for (let j = 0; j < filesL2.length; j++) {
             let fileL3Path = filesL2Path + "/" + filesL2[j];
             let fileStat = fs.statSync(fileL3Path);
             if (fileStat.isDirectory()) {
                 let filesL3 = fs.readdirSync(fileL3Path);
-                console.log("Level 3: ", filesL3);
+                if (dataDebug) {
+                    console.log("Level 3: ", filesL3);
+                }
                 for (let k = 0; k < filesL3.length; k++) {
                     let filesL4Path = fileL3Path + "/" + filesL3[k];
                     let fileContents = fs.readFileSync(filesL4Path).toString();
@@ -24,7 +31,9 @@ function gen() {
                     if (fileRegexp.test(fileContents)) {
                         let filesL4Dir = fileL3Path.replace("..", "") + "/";
                         filesL4Path = filesL4Path.replace("..", "");
-                        console.log(filesL4Path);
+                        if (dataDebug) {
+                            console.log(filesL4Path);
+                        }
                         dataCond = dataCond +
                             "            if (to.path === '" + filesL4Dir + "') {\n" +
                             "                router.push('" + filesL4Path + "')\n" +
@@ -57,7 +66,4 @@ function gen() {
     fs.writeFileSync("./client.ts", data);
 }
 
-gen();
-
-
-
+genClientConfig();
