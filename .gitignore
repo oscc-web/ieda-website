@@ -5,3 +5,4 @@ src/.vuepress/dist/
 var/
 res/
 common/
+client.ts
