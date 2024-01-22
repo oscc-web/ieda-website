@@ -39,10 +39,10 @@ $> cd your-workspaces
 $> git clone git@github.com:oscc-web/ieda-website.git
 ```
 
-### 更新配置
+### 更新依赖
 
 ```sh
-$> npm run command -- setup
+$> ./setup.sh
 ```
 
 ### 运行网站
@@ -54,7 +54,7 @@ $> npm run command -- dev
 ### 更新仓库
 
 ```sh
-$> npm run command -- update-repo
+$> git pull
 ```
 
 ## 开发
