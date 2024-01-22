@@ -74,6 +74,13 @@ $> git pull
 
 - 本网站主体基于[VuePress Theme Hope](https://theme-hope.vuejs.press)进行开发，该框架对传统的Markdown进行了定制优化，支持更加丰富的功能。**所以，请务必在开始编写文章前，仔细阅读[《Markdown》](https://theme-hope.vuejs.press/zh/guide/get-started/markdown.html)和[《Markdown增强》](https://theme-hope.vuejs.press/zh/guide/markdown)这两篇指南**，了解框架提供了哪些强大的组件，并考虑如何将它们应用到自己的文章中，让整体的表现形式更加多样化，从而使得生成的网站文章更容易被大众接受。
 
+- **<div style="color:red;">由于目前网站侧边栏采用[自动化技术生成](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html#自动生成侧边栏)，所以每篇文章头部必须添加`order`属性，该属性表示文章在侧边栏中的顺序，必须从`1`开始编号且不能重复，否则每次编译后部分文章在侧边栏中的顺序可能会发生变化，而且也会导致用户点击二级导航栏后无法正确跳转到正确的文章上。</div>**
+
+  ```md
+  title: xxx
+  order: xxx
+  ```
+
 ### 网站维护
 
 - 为了实现展示复杂界面的需求，目前网站集成了[Element Plus](https://element-plus.gitee.io/en-US)前端框架，其所有组件和图标都已经注册到项目中，可以直接在Vue组件中使用（图标貌似还得在Vue组件中手动导入）。网站定制的Vue组件都放置在`src/.vuepress/components`目录下，用户可根据需要创建新组件，但是需要注意的是**被引用到文章中的组件必须放置在`components`目录下（不能放在子目录中），否则会出现引用失败的错误。**
