@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "type": "module",
     "scripts": {
-        "command": "cd src/.vuepress/ && node gen.js && cd - && ./common/nodejs.sh"
+        "command": "cd src/.vuepress/ && node gen-client.js && cd - && ./common/cmd.sh"
     },
     "devDependencies": {
         "@vuepress/client": "2.0.0-beta.66",
