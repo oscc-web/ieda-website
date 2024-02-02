@@ -47,12 +47,12 @@ export const zhSidebar = sidebar({
         collapsible: true
     }, {
         text: "AiEDA模型",
-        prefix: "aieda/-model/",
+        prefix: "aieda-model/",
         children: "structure",
         collapsible: true
     }, {
         text: "AiEDA框架",
-        prefix: "aieda/-framework/",
+        prefix: "aieda-framework/",
         children: "structure",
         collapsible: true
     }],
@@ -68,18 +68,18 @@ export const zhSidebar = sidebar({
         collapsible: true
     }, {
         text: "学术成果",
-        prefix: "achieve/",
+        prefix: "achieves/",
         children: "structure",
         collapsible: true
     }],
     "/activities/": [{
         text: "学术会议",
-        prefix: "conference/",
+        prefix: "conferences/",
         children: "structure",
         collapsible: true
     }, {
         text: "学术竞赛",
-        prefix: "contest/",
+        prefix: "contests/",
         children: "structure",
         collapsible: true
     }, {
@@ -108,5 +108,8 @@ export const zhSidebar = sidebar({
         prefix: "business/",
         children: "structure",
         collapsible: true
+    }, {
+        text: "联系方式",
+        link: "connection"
     }],
 });

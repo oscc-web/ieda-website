@@ -54,7 +54,6 @@ $> npm run command -- dev
 ### 更新仓库
 
 ```sh
-$> cd your-workspaces/ieda-website
 $> git pull
 ```
 
@@ -71,6 +70,15 @@ $> git pull
   **注意：在确认本地资源目录下的新增文件不再发生变化后，需要将终端切换到 `src/.vuepress/public/res`目录，然后使用Git提交并Push到远程，保证内容不丢失。**
 - 网站的导航栏和侧边栏配置分别位于 `src/.vuepress/navbar/zh.ts`和 `src/.vuepress/sidebar/zh.ts`文件中，可以根据需要进行添加或修改。其中需要注意的是，侧边栏排序目前采用的是 `structure`模式，即框架会读取文件结构自动生成侧边栏，可大大降低用户配置的工作量。但是在这种模式下，侧边栏会按照文件名的标题文字以当前语言进行排序，所以往往生成的顺序并不是我们想要的，为解决这个问题可以在文章的 `Frontmatter`区域添加 `order`属性，具体说明可参考这篇[教程](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html#自动生成侧边栏)。
 - 本网站主体基于[VuePress Theme Hope](https://theme-hope.vuejs.press)进行开发，该框架对传统的Markdown进行了定制优化，支持更加丰富的功能。**所以，请务必在开始编写文章前，仔细阅读[《Markdown》](https://theme-hope.vuejs.press/zh/guide/get-started/markdown.html)和[《Markdown增强》](https://theme-hope.vuejs.press/zh/guide/markdown)这两篇指南**，了解框架提供了哪些强大的组件，并考虑如何将它们应用到自己的文章中，让整体的表现形式更加多样化，从而使得生成的网站文章更容易被大众接受。
+
+- **由于目前网站侧边栏采用[自动化技术生成](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html#自动生成侧边栏)，所以每篇文章头部必须添加`order`属性，该属性表示文章在侧边栏中的顺序，必须从`1`开始编号且不能重复，否则每次编译后部分文章在侧边栏中的顺序可能会发生变化，而且也会导致用户点击二级导航栏后无法正确跳转到正确的文章上。**
+
+    ```md
+    ---
+    title: xxx
+    order: xxx
+    ---
+    ```
 
 ### 网站维护
 

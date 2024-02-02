@@ -2,7 +2,7 @@
 .vp-navbar .vp-nav-links,
 .dropdown-wrapper .dropdown-subtitle,
 .dropdown-wrapper .nav-link {
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 .dropdown-wrapper .dropdown-subtitle {
     text-transform: none;
@@ -12,6 +12,9 @@
     text-indent: 10px;
 }
 .vp-hero-info-wrapper {
+    display: none;
+}
+.vp-site-name {
     display: none;
 }
 

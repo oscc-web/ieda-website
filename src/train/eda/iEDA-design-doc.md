@@ -1,4 +1,7 @@
-## iEDA-总体软件设计说明书
+---
+title: "iEDA-总体软件设计说明书"
+order: 4
+---
 
 ## 1. 简介
 
@@ -13,7 +16,7 @@
 * 系统级：芯片系统架构的设计，具备独立完整功能的IP模块
 
   ```
-  Port* compute_optimal_route_for_packet (Packet_t *packet, Channel_t *channel){ 
+  Port* compute_optimal_route_for_packet (Packet_t *packet, Channel_t *channel){
       static Queue_t *packet_queue; packet_queue = add_packet(packet_queue, packet); ......
   }
   ```
