@@ -14,7 +14,7 @@
                 <el-image
                     :src="`/res/images/index/` + item.image"
                     :style="{
-                        'width': '150px',
+                        'width': '80px',
                         'max-width': partnerObj.width,
                         'transform': 'scale(' + item.scale + ')'
                     }">
@@ -27,7 +27,8 @@
 <script lang="ts" setup>
     import { onMounted, onUnmounted, ref, shallowRef } from "vue";
 
-    const partnersItemList = shallowRef([{
+    const partnersItemList = shallowRef([
+        {
         image: "pcl.png",
         scale: 1
     }, {
@@ -74,7 +75,7 @@
         scale: 0.8
     }]);
     const partnerObj = ref({
-        col: 4,
+        col: 8,
         width: "90%"
     });
 
@@ -86,10 +87,10 @@
         window.removeEventListener("resize", null);
     });
     const getWindowWidth = () => {
-        partnerObj.value.col = (window.innerWidth >= 1200) ? 4  :
-                               (window.innerWidth >= 800 ) ? 6  :
+        partnerObj.value.col = (window.innerWidth >= 1200) ? 2  :
+                               (window.innerWidth >= 800 ) ? 4  :
                                (window.innerWidth >= 600 ) ? 12 : 24;
-        partnerObj.value.width = (window.innerWidth >= 1200) ? "90%" :
+        partnerObj.value.width = (window.innerWidth >= 1200) ? "80%" :
                                  (window.innerWidth >=  800) ? "80%" : "70%";
     }
 </script>

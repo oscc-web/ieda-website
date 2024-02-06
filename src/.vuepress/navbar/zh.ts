@@ -5,16 +5,19 @@ export const zhNavbar = navbar([
         text: "项目和团队",
         prefix: "/project/",
         children: [
-            "intro",
-            "plan",
-            "team"
+            "intro/",
+            "plan/",
+            "team/"
         ]
     }, {
         text: "知识和训练",
         prefix: "/train/",
         children: [
             "eda/",
-            "practice/"
+            "water_drop/",
+            "practice/",
+            "others/"
+            
         ]
     }, {
         text: "平台和工具",
