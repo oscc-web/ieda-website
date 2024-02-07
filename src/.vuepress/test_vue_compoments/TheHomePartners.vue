@@ -98,3 +98,52 @@
 
 <style lang="scss" scoped>
 </style>
+
+
+
+/////////////////
+
+<template>
+    <section class="section section-sm section-sm-bottom-100 bg-primary" :style="{ backgroundColor: backgroundColor, padding: padding, borderTopStyle: borderTopStyle, borderColor: borderColor }">
+      <div class="container">
+        <h3 style="color: black; text-align: center;">合作伙伴</h3>
+        <div class="row row-30">
+          <div class="col-md-2" v-for="(partner, index) in partners" :key="index">
+            <img :src="partner.imageUrl" style="height: 9rem; width: 9rem;" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        backgroundColor: "white",
+        padding: "15px 0",
+        borderTopStyle: "dotted",
+        borderColor: "#4169E1",
+        partners: [
+          { imageUrl: "img/partners/pcl.jpg" },
+          { imageUrl: "img/partners/jisuansuo.jpg" },
+          { imageUrl: "img/partners/kaixinyuan.jpg" },
+          { imageUrl: "img/partners/zhongkeda.jpg" },
+          { imageUrl: "img/partners/guokeda.jpg" },
+          { imageUrl: "img/partners/guanggong.jpg" },
+          { imageUrl: "img/partners/shenda.jpg" },
+          { imageUrl: "img/partners/zhongda.jpg" },
+          { imageUrl: "img/partners/fuzhou.jpg" },
+          { imageUrl: "img/partners/minnanshifan.jpg" },
+          { imageUrl: "img/partners/beida.jpg" },
+          { imageUrl: "img/partners/gangkeda.jpg" }
+        ]
+      };
+    }
+  };
+  </script>
+  
+  <style scoped>
+  /* CSS styles here */
+  </style>
+  
