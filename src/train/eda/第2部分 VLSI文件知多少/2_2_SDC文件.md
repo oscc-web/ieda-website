@@ -61,9 +61,9 @@ SDC与设计约束相关的命令可分为9类，如下：
 
 ------------------------------
 
-#### - 工作环境
+#### **- 工作环境相关命令**
 
-工作环境命令 set operating_conditions 用于设置电路最快和最慢情况下所对应的库文件和工作环境。
+工作环境命令 **set operating_conditions** 用于设置电路最快和最慢情况下所对应的库文件和工作环境。
 
 示例：
 ```
@@ -83,76 +83,111 @@ set_operating_conditions -process "typical" -corner "fast" {
 
 -----------------------------
 
-#### - 设计规则约束
+#### **- 设计规则约束相关命令**
 
 设计规则约束的所有命令如表：
 
 ![alt text](41f515265e8d2ca329611628cbd34ec.png)
 
-&emsp; &emsp; 1. **create_clock**：定义时钟信号及其特性。
-&emsp; &emsp; 2.	**create_generated_clock**：创建由时钟衍生出的时钟。
-&emsp; &emsp; 3.	**set_clock_groups**：定义时钟组。
-&emsp; &emsp; 4.	**derived_clock**：创建一个派生时钟。
-&emsp; &emsp; 5.	**set_clock_latency**：设置时钟路径的延迟。
-&emsp; &emsp; 6.	**set_input_delay**：设置输入延迟。
-&emsp; &emsp; 7.	**set_output_delay**：设置输出延迟。
-&emsp; &emsp; 8.	**set_max_dela**y：设置路径的最大延迟。
-&emsp; &emsp; 9.	**set_min_delay**：设置路径的最小延迟。
-&emsp; &emsp; 10.	**set_false_path**：指定不需要进行时序验证的路径。
-&emsp; &emsp; 11.	**set_multicycle_path**：设置多周期路径。
-&emsp; &emsp; 12.	**set_disable_timing**：禁用特定路径的时序分析。
-&emsp; &emsp; 13.	**set_false_hold**：设置保持时间约束。
-&emsp; &emsp; 14.	**set_max_fanout**：设置路径上的最大负载数。
-&emsp; &emsp; 15.	**set_max_transition**：设置信号过渡时间。
-&emsp; &emsp; 16.	**set_case_analysis**：定义逻辑混合时的条件和优先级。
-&emsp; &emsp; 17.	**set_disable_port_transition**：禁用端口过渡时间约束。
-&emsp; &emsp; 18.	**set_dont_touch**：指定不进行任何操作的单元。
-&emsp; &emsp; 19.	**set_false_path_group**：指定不需要进行时序验证的路径组。
-&emsp; &emsp; 20.	**set_max_area**：设置最大面积约束。
+| 序号 |      命令名称                         |          描述                             | 示例                                        |
+| :---: | :---------------------------------: | :-------------------------------------: | :----------------------------------------: |
+|  1    |         **create_clock**             |    定义时钟信号及其特性。                 | `create_clock -period 10 [get_ports clk]`   |
+|  2    |     **create_generated_clock**       |    创建由时钟衍生出的时钟。               | `create_generated_clock -name Gated_Clock -source Main_Clock -divide_by 2` |
+|  3    |        **set_clock_groups**          |    定义时钟组。                           | `set_clock_groups -logically_exclusive {Group1 Group2}` |
+|  4    |           **derived_clock**          |    创建一个派生时钟。                     | `derived_clock -source Parent_Clock -divide_by 4` |
+|  5    |       **set_clock_latency**          |    设置时钟路径的延迟。                   | `set_clock_latency -source Main_Clock -max 5 [get_pins DFF*]` |
+|  6    |         **set_input_delay**          |    设置输入延迟。                         | `set_input_delay 2 -clock [get_clocks Main_Clock] [get_ports data_in]` |
+|  7    |        **set_output_delay**          |    设置输出延迟。                         | `set_output_delay 1 -clock [get_clocks Main_Clock] [get_ports data_out]` |
+|  8    |          **set_max_delay**           |    设置路径的最大延迟。                   | `set_max_delay 6 -from [get_pins U1/Q] -to [get_pins U2/D]` |
+|  9    |          **set_min_delay**           |    设置路径的最小延迟。                   | `set_min_delay 2 -from [get_pins U1/Q] -to [get_pins U2/D]` |
+| 10    |         **set_false_path**           |    指定不需要进行时序验证的路径。         | `set_false_path -from [get_pins U1/Q] -to [get_pins U2/D]` |
+| 11    |    **set_multicycle_path**           |    设置多周期路径。                       | `set_multicycle_path -setup 2 -hold 1 -from [get_pins U1/Q] -to [get_pins U2/D]` |
+| 12    |     **set_disable_timing**           |    禁用特定路径的时序分析。               | `set_disable_timing -from [get_pins U1/Q] -to [get_pins U2/D]` |
+| 13    |        **set_false_hold**            |    设置保持时间约束。                     | `set_false_hold -from [get_pins U1/Q] -to [get_pins U2/D]` |
+| 14    |        **set_max_fanout**            |    设置路径上的最大负载数。               | `set_max_fanout 10 [get_nets clk_net]` |
+| 15    |    **set_max_transition**            |    设置信号过渡时间。                     | `set_max_transition 0.2 [get_pins U1/Q]` |
+| 16    |     **set_case_analysis**            |    定义逻辑混合时的条件和优先级。         | `set_case_analysis -priority high -case 1 {A B} -case 2 {C D}` |
+| 17    | **set_disable_port_transition**      |    禁用端口过渡时间约束。                 | `set_disable_port_transition -port data_in` |
+| 18    |        **set_dont_touch**            |    指定不进行任何操作的单元。             | `set_dont_touch [get_cells -hierarchical -filter {is_ff == 1}]` |
+| 19    |  **set_false_path_group**            |    指定不需要进行时序验证的路径组。     | `set_false_path_group -group Group1 -from [get_cells -hierarchical -filter {is_latch == 1}]` |
+| 20    |        **set_max_area**              |    设置最大面积约束。                     | `set_max_area 1000 [get_cells -hierarchical -filter {is_comb == 1}]` |
 
-以下是一些常见的SDC中的设计规则约束命令的示例：
-```
-# 时钟约束：
-create_clock -period 10 [get_ports clk]
-# 这个命令表示创建一个时钟约束，指定时钟端口为“clk”，时钟周期为10。
-
-# 输入延迟约束：
-set_input_delay 2 -clock [get_clocks clk] [get_ports data_in]
-# 这个命令表示设置输入延迟约束，数据输入端口为“data_in”，相对于时钟“clk”有一个延迟为2。
-
-# 输出延迟约束：
-set_output_delay 1 -clock [get_clocks clk] [get_ports data_out]
-# 这个命令表示设置输出延迟约束，数据输出端口为“data_out”，相对于时钟“clk”有一个延迟为1。
-
-# 最大时序路径约束：
-set_max_delay 5 -from [get_ports input] -to [get_ports output]
-这个命令表示设置最大时序路径约束，从输入端口“input”到输出端口“output”的最大延迟为5。
-```
 
 -----------------------------------
 
-#### - 系统接口约束
+#### **- 线负载模型相关命令**
 
-**设置驱动单元**
+在SDC（Synopsys Design Constraints）中，**set_wire_load_min_block_size、set_wire_load_mode、set_wire_load_model和set_wire_load_selection_group**是用于描述线负载模型的关键命令。下面我们将解释它们的含义并提供一些示例：
+
+| 命令名称            | 含义                                                         | 示例                                           |
+|------------------|--------------------------------------------------------------|------------------------------------------------|
+| set_wire_load_min_block_size | 该命令用于设置最小的线负载块大小。在实际设计中，线负载会被分成不同的块，这个命令可以指定最小的块大小。 | `set_wire_load_min_block_size 10`<br> 这个示例命令将设置线负载的最小块大小为 10。   |
+| set_wire_load_mode | 该命令用于设置线负载的模式，例如设置线负载是全局的还是局部的。 | `set_wire_load_mode local`<br> 这个示例命令将设置线负载模式为局部（local）。        |
+| set_wire_load_model | 该命令用于设置线负载的模型，即描述线负载的特性和行为的模型。 | `set_wire_load_model rc_tree`<br> 这个示例命令将设置线负载的模型为 RC 树模型。     |
+| set_wire_load_selection_group | 该命令用于设置特定的线负载选择组，用于对不同的线负载进行分组和管理。 | `set_wire_load_selection_group Group1 -members {net1 net2}`<br> 这个示例命令将创建一个名为 Group1 的线负载选择组，并将 net1 和 net2 加入到这个组中。 |
+
+---------------------------------------
+
+
+#### **- 系统接口约束相关命令**
+
+系统接口相关命令主要有六条：
+
+| 命令               | 含义                                                         | 示例                                          |
+|--------------------|--------------------------------------------------------------|-----------------------------------------------|
+| `set_drive`        | 设置信号驱动器的驱动能力，即输出信号的电流能力。            | `set_drive(portA, strong)`                    |
+| `set_driving_cell` | 指定特定端口的驱动单元类型，确保信号在逻辑路径上传输时稳定和准确。  | `set_driving_cell(portB, inverter)`            |
+| `set_fanout_load`  | 设置端口的负载电容，表示端口输出信号连接的所有负载元件的总电容。| `set_fanout_load(portC, 10pF)`                 |
+| `set_input_transition` | 设置端口的输入过渡时间，即输入信号从低电平到高电平或从高电平到低电平的时间。| `set_input_transition(portD, 0.1ns)`     |
+| `set_load`         | 设置端口的负载值，表示端口连接的负载电容大小。               | `set_load(portE, 5pF)`                         |
+| `set_port_fanout_number` | 设置端口的扇出数量，表示一个端口连接的逻辑门数量。     | `set_port_fanout_number(portF, 4)`             |
+
+最重要的是设置输入端口的驱动能力和设置输出端电容值，下面进行详细说明：
+
+**a 设置驱动单元**
 
 指定由技术库中的单元驱动的输入或双向端口的驱动特性。这些命令将库引脚与输入端口关联，以便可以准确地建模延迟计算。
 
 语法：
 
 ```
-set_driving_load [-lib_cell lib_cell_name] [-library lib_name] [-rise] [-fall] [-min] [-max] [-pin pin_name] [-from_pin from_pin_name] [-dont_scale] [-no_design_rule] [-input_transition_rise rtrans] [-input_transition_fall ftrans] [-multiply_by_facrtor] [-clock clock_name] [-clock_fall] port_list
+set_driving_cell [-lib_cell lib_cell_name] [-library lib_name] [-rise] [-fall] [-min] [-max] [-pin pin_name] [-from_pin from_pin_name] [-dont_scale] [-no_design_rule] [-input_transition_rise rtrans] [-input_transition_fall ftrans] [-multiply_by_facrtor] [-clock clock_name] [-clock_fall] port_list
 ```
+
+| 参数                       | 描述                                       | 示例                      |
+| ------------------------- | ---------------------------------------- | ------------------------- |
+| **set_driving_cell**           | 设置驱动负载，即指定特定端口的驱动能力和负载电容。 |                           |
+| **-lib_cell lib_cell_name** | 指定库单元名称。                              | `-lib_cell INV_X2`         |
+| **-library lib_name**     | 指定库名称。                                | `-library my_lib`           |
+| **-rise**                 | 针对上升边沿设置驱动能力。                     | `-rise`                    |
+| **-fall**                 | 针对下降边沿设置驱动能力。                     | `-fall`                    |
+| **-min**                  | 指定最小值。                                 | `-min 0.1`                 |
+| **-max**                  | 指定最大值。                                 | `-max 0.5`                 |
+| **-pin pin_name**         | 指定端口名称。                               | `-pin data_in`             |
+| **-from_pin from_pin_name** | 指定起始端口名称。                            | `-from_pin source_out`     |
+| **-dont_scale**           | 不进行缩放。                                | `-dont_scale`              |
+| **-no_design_rule**       | 忽略设计规则。                              | `-no_design_rule`          |
+| **-input_transition_rise rtrans** | 输入上升过渡时间。                           | `-input_transition_rise 0.2` |
+| **-input_transition_fall ftrans** | 输入下降过渡时间。                           | `-input_transition_fall 0.3` |
+| **-multiply_by_facrtor**  | 乘以因子。                                 | `-multiply_by_facrtor 2`   |
+| **-clock clock_name**      | 指定时钟名称。                               | `-clock clk_2x`            |
+| **-clock_fall**           | 针对时钟下降边沿设置。                         | `-clock_fall`              |
+| **port_list**             | 端口列表。                                  | `data_in data_out`         |
+
 
 示例：
 
 ![alt text](sdc_driving_cell.png)
 
-```set_driving_cell -lib_cell IV {I1}
+```
+# 设置单元库为IV的驱动单元，并将其应用于输入端口I1
+set_driving_cell -lib_cell IV {I1}
 
+# 设置单元库为AND2的驱动单元，并将其应用于从端口B到端口Z的逻辑路径，并将其应用于输入端口I2
 set_driving_cell -lib_cell AND2 -pin Z -from_pin B {I2} 
 ```
 
-**设置负载**
+**b 设置负载**
 
 该命令设置当前设计中指定端口和网络上的负载属性。负载值的单位将是在文件中定义的电容单位。
 
@@ -164,12 +199,17 @@ set_load value objects [-subtract_pin_load] [-min] [-max] [[-pin_load] [-wire_lo
 
 示例：
 
-```set_load -pin_load 0.001 [get_ports {port[10]}]
 ```
+# 将引脚负载值设置为0.001，作用对象是名为port[10]的端口
+set_load -pin_load 0.001 [get_ports {port[10]}]
+```
+
+
+
 
 ----------------------------
 
-#### 时间约束
+#### **- 时序约束相关命令**
 
 在这部分中，基本上我们设置时钟定义、时钟组、时钟延迟、时钟不确定性、时钟过渡、输入延迟、输出延迟、时序折减等。
 
@@ -293,7 +333,7 @@ set_input_delay delay_value [-reference_pin pin_port_name] [-clock clock_name] [
 set_input_delay -max 1.35 -clock clk1 {ain bin}
 ```
 
-**输出延迟 **
+**输出延迟**
 
 语法：
 
@@ -319,11 +359,13 @@ set_output_delay -min 1.0 -clock {CLK} [get_ports {Y}]
 
 在上述命令中，-max值指的是最长路径，-min值指的是最短路径。如果没有指定-max或-min值，假定最大和最小输出延迟是相等的。
 
-#### - 时序异常
+-------------------------------------
+
+#### **- 时序异常**
 
 在这部分，定义了一些重要的约束，如虚假路径、多周期路径、最大延迟和最小延迟。
 
-**多周期路径**
+**a 多周期路径**
 
 语法：
 
@@ -343,7 +385,7 @@ set_multicycle_path 3 -from C
 
 我们可以在源点和终点之间添加一个-through点，也可以通过只提及源点或终点来设置所有路径的多周期路径。
 
-**伪路径**
+**b 伪路径**
 
 语法：
 
@@ -360,47 +402,6 @@ set_false_path -from U1/G -to U1/D
 
 set_false_path -from {ff12} -to {ff34}
 ```
-
-## 总结
-
-本文描述了SDC文件中15个最重要的约束。对于复杂设计，还有更多的约束。这里是所有讨论的约束的总结。
-
-- SDC版本
-- 单位
-
-**系统接口**
-
-- 设置驱动单元
-
-- 设置负载
-
-**设计规则约束**
-
-- 设置最大扇出
-
-- 设置最大转换
-
-**时序约束**
-
-- 创建时钟
-
-- 创建生成的时钟
-
-- 组路径
-
-- 时钟不确定性
-
-- 时钟延迟
-
-- 输入延迟
-
-- 输出延迟
-
-**时序异常**
-
-- 多周期路径
-
-- 伪路径
 
 ## 引用
 
