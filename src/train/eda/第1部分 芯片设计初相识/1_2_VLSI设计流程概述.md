@@ -128,8 +128,50 @@ iEDA课题组主要的研发重点关注在芯片逻辑综合，物理设计，�
 </div>
 <br>
 
-## 3 引用
+## 3 "wafer" "chip" "die" 的联系和区别
+
+### 名词解释：
+
+wafer：晶圆；是指硅半导体集成电路制作所用的硅晶片，由于其形状为圆形。
+
+chip：芯片；是半导体元件产品的统称。
+
+die：裸片 ；是硅片中一个很小的单位，包括了设计完整的单个芯片以及芯片邻近水平和垂直方向上的部分划片槽区域。
+
+二、联系和区别：
+
+<div style="text-align:center;">
+    <img src="./63d0f703918fa0ecfef07b1a299759ee3d6ddbf6.webp" alt="6" style="zoom: 80%;" />
+    <h2 style="font-size: 16px;">一块完整的wafer</h2>
+</div>
+
+wafer为晶圆，由纯硅（Si）构成。一般分为6英寸、8英寸、12英寸规格不等，晶片基于wafer上生产出来。Wafer上一个小块晶片晶圆体学名die，封装后成为一个颗粒。一片载有Nand Flash晶圆的wafer首先经过切割，测试后将完好的、稳定的、足容量的die取下，封装形成日常所见的Nand Flash芯片。
+
+<div style="text-align:center;">
+    <img src="./d833c895d143ad4b637258d78d025aafa40f064c.webp" alt="6" style="zoom: 80%;" />
+    <h2 style="font-size: 16px;">die和wafer的关系</h2>
+</div>
+
+                                                       
+
+品质合格的die切割下去后，原来的晶圆成了下图的样子，是挑剩下的Downgrade Flash Wafer。残余的die是品质不合格的晶圆。黑色的部分是合格的die，会被原厂封装制作为成品NAND颗粒，而不合格的部分，也就是图中留下的部分则当做废品处理掉。
+
+<div style="text-align:center;">
+    <img src="./bba1cd11728b47103777e2dbcccec3fdfc032348.webp" alt="6" style="zoom: 80%;" />
+    <h2 style="font-size: 16px;">筛选后的wafer</h2>
+</div>                                       
+
+**扩展资料：**
+
+集成电路芯片的生命历程：芯片公司设计芯片——芯片代工厂生产芯片——封测厂进行封装测试——整机商采购芯片用于整机生产。
+
+芯片供应商IDM：是集芯片设计、制造、封装和测试等多个产业链环节于一身的企业。
+
+芯片供应商Fabless：是没有芯片加工厂的芯片供应商，Fabless自己设计开发和推广销售芯片，与生产相关的业务外包给专业生产制造厂商。与Fabless相对应的是Foundry和封测厂，主要承接Fabless的生产和封装测试任务，封测厂有日月光，江苏长电等。
+
+## 4 引用
 
 [1] https://teamvlsi.com/2020/05/asic-design-flow-overview-v1.html
 [2] https://zhuanlan.zhihu.com/p/380962676
 [3] https://yearn.xyz/docs/vlsi-%E5%90%8E%E7%AB%AF%E8%AE%BE%E8%AE%A1/70-vlsi-%E5%90%8E%E7%AB%AF%E8%AE%BE%E8%AE%A1-%E7%AE%80%E4%BB%8B/
+[4] https://zhidao.baidu.com/question/2040027.html
