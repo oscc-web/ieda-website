@@ -25,7 +25,6 @@ May 18, 2020 by [Team VLSI](https://teamvlsi.com/author/team-vlsi)
 
 ## 1. 防护环：
 
-![alt text]()
 <div style="text-align:center;">
   <img src="image-1.png" alt="ASIC Flow" width="500" />
   <h5>图2 防护环</h5>
