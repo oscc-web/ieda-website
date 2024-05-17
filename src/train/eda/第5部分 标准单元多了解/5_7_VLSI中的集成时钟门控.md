@@ -1,6 +1,7 @@
-# VLSI中的集成时钟门控
-
-August 21, 2021 by [Team VLSI](https://teamvlsi.com/author/team-vlsi)
+---
+title: "5.7 VLSI中的集成时钟门控"
+order: 7
+---
 
 低功耗ASIC设计是当下的需求，尤其是对于手持电子设备。在所有手持产品中，用户要求更长的电池寿命。只有在我们嵌入到设备中的 SoC [ System on Chip : 片上系统] 消耗更少功率时，才能实现这一点。有各种低功耗设计技术正在被应用于降低 特定应用集成电路 [application-specific integrated circuits : ASIC] 的功耗。时钟门控技术是一种广泛应用于低功耗设计的技术之一。集成时钟门控 [Integrated Clock Gating : ICG] 电路是一种专门设计的电路，用于时钟门控技术。本文将介绍ICG电路的架构、功能和布局。
 

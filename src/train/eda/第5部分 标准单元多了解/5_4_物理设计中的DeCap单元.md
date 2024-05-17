@@ -1,8 +1,9 @@
-# 物理设计中的DeCap单元
+---
+title: "5.4 去耦电容单元 Decap Cell"
+order: 4
+---
 
-August 30, 2020 by [Team VLSI](https://teamvlsi.com/author/team-vlsi)
-
-Decap [Decoupling Capacitor : 解耦电容器] 单元基本上是由电容器制成的充电存储设备，用于支持电源传递网络中的瞬时电流需求。电路中存在瞬时大电流需求的原因有很多，如果没有采取足够的措施来处理这些需求，可能会出现电源下降或地面反弹。这些电源下降或地面反弹将影响恒定电源供应，并最终影响标准单元的延迟。为了支持电源传递网络应对这种突发电力需求，Decap单元被插入整个设计中。在本文中，我们将讨论Decap单元的结构和布局、使用Decap单元的必要性以及放置Decap单元的位置。
+Decap [Decoupling Capacitor : 去耦电容器] 单元是一种特殊的Filler cell。当电路中大量单元同时翻转时会导致冲放电瞬间电流增大，使得电路动态供电电压下降或地线电压升高，引起动态电压降，俗称IR-drop。为了避免IR-drop对电路性能的影响，通常在电源和地线之间放置由MOS管构成的电容，这种电容被称为去耦电容或者去耦单元，它的作用是**在瞬态电流增大，电压下降时向电路补充电流以保持电源和地线之间的电压稳定，防止电源线的电压降和地线电压的升高**。
 
 ## Decap单元的原理图和布局：
 
@@ -29,7 +30,7 @@ pMOS晶体管的源和漏被短接在一起并连接到VDD，门连接到VSS。�
 <div style="text-align:center;">
   <img src="decapNeed.png" alt="ASIC Flow" width="500" />
   <h4>图3 Decap单元的使用</h4>
-</div>
+</div> 
 
 电压下降或地面反弹可能会导致连接的标准单元的延迟发生变化。因为延迟与供应电压成正比。延迟的变化可能会进一步影响设计的时序，如果供应电压下降很大，则标准单元的功能可能会受到影响。因此，为了支持电源传递，我们添加了Decap单元。Decap单元作为电荷储备池，支持电源传递网络并使其更加健壮，如图3（d）所示。
 
@@ -42,3 +43,4 @@ Decap单元唯一的问题是会出现泄漏，并增加设计的泄漏功率，
 ## 谢谢
 
 原文链接：https://teamvlsi.com/2020/08/decap-cell-in-physical-design.html
+https://blog.csdn.net/Tao_ZT/article/details/102456733
