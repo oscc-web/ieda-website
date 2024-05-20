@@ -1,4 +1,60 @@
 <template>
+    <el-carousel :interval="5000" type="card" height="300px">
+      <el-carousel-item v-for="item in 6" :key="item">
+        <h3 text="2xl" justify="center">{{ item }}</h3>
+      </el-carousel-item>
+    </el-carousel>
+  </template>
+  
+  <style scoped>
+  .el-carousel__item h3 {
+    color: #475669;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n + 1) {
+    background-color: #d3dce6;
+  }
+  </style>
+
+<!--   
+  
+  <template>
+    <el-carousel indicator-position="outside">
+      <el-carousel-item v-for="item in 4" :key="item">
+        <h3 text="2xl" justify="center">{{ item }}</h3>
+      </el-carousel-item>
+    </el-carousel>
+  </template>
+  
+  <style scoped>
+  .el-carousel__item h3 {
+    display: flex;
+    color: #475669;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n + 1) {
+    background-color: #d3dce6;
+  }
+  </style>
+   -->
+
+<!-- 
+<template>
     <div class="fullscreen-container">
         <el-carousel
             height="100vh"
@@ -17,10 +73,6 @@
             <el-carousel-item>
                 <el-container>
                     <el-main>
-                        <!-- <div style="background-image: url('/res/images/logo/ieda_logo.png');"></div> -->
-                        <!-- <el-image :src="/res/images/logo/ieda_logo.png"></el-image> -->
-                        <!-- <el-text>图片1</el-text> -->
-                        <!-- <img src="/res/images/logo/ieda_logo.png"> -->
                         <img src="/res/images/index/logo_place.gif">
                     </el-main>
                     <el-footer>
@@ -44,8 +96,6 @@
             <el-carousel-item>
                 <el-container>
                     <el-main>
-                        <!-- <el-text>图片2</el-text> -->
-                        <!-- <img src="/res/images/index/delay_compare300.gif"> -->
                         <img src="/res/images/index/bs5.jpg">
                     </el-main>
                     <el-footer>
@@ -69,47 +119,4 @@
         </el-carousel>
     </div>
 </template>
-
-
-  
-<script setup>
-</script>
-
-
-<style scoped lang="scss">
-    .fullscreen-container {
-        height: 65vh;
-        width: 80vw;
-        left: -10vw; /* Adjust the bottom spacing as needed */
-        position: relative; /* Add position relative to allow z-index to work */
-    }
-    .el-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 65vh; 
-        width: 80vw;
-        img {
-            width: 1200px; /* Adjust the width as needed */
-            height: 500px; /* Adjust the height as needed */
-            object-fit: cover; 
-        }
-    }
-    .el-footer {
-        display: flex;
-        justify-content: center;
-        position: absolute; /* Position the buttons absolutely within the container */
-        left: 28vw; /* Adjust the bottom spacing as needed */
-        bottom: 32vh; /* Adjust the bottom spacing as needed */
-        z-index: 1; /* Ensure buttons appear on top of images */
-    }
-    .el-button {
-        width: 200px;
-        height: 50px;
-        font-size: 24px; /* Adjust the font size as needed */
-        /* or you can use a specific size like: font-size: 16px; */
-        + .el-button {
-            margin-left: 50px;
-        }
-    }
-</style>
+ -->

@@ -1,0 +1,149 @@
+<template>
+    <div class="home-components">
+        <el-divider />
+        <!-- <el-text>合作伙伴</el-text> -->
+        <h3 style="color: black; text-align: center;">合作伙伴</h3>
+        <el-row
+            :gutter="10"
+            justify="center"
+            align="middle">
+            <el-col
+                v-for="(item, i) in partnersItemList"
+                :key="i"
+                :span="partnerObj.col"
+                style="text-align:center;">
+                <el-image
+                    :src="`/res/images/index/` + item.image"
+                    :style="{
+                        'width': '80px',
+                        'max-width': partnerObj.width,
+                        'transform': 'scale(' + item.scale + ')'
+                    }">
+                </el-image>
+            </el-col>
+        </el-row>
+    </div>
+</template>
+
+<script lang="ts" setup>
+    import { onMounted, onUnmounted, ref, shallowRef } from "vue";
+
+    const partnersItemList = shallowRef([
+        {
+        image: "pcl.png",
+        scale: 1
+    }, {
+        image: "ict.jpg",
+        scale: 1
+    }, {
+        image: "bosc.jpg",
+        scale: 0.8
+    }, {
+        image: "ucas.jpg",
+        scale: 1
+    }, {
+        image: "fzu.jpg",
+        scale: 1
+    }, {
+        image: "mnnu.png",
+        scale: 1
+    }, {
+        image: "gdut.png",
+        scale: 1
+    }, {
+        image: "szu.jpg",
+        scale: 1
+    }, {
+        image: "ustc.png",
+        scale: 1
+    }, {
+        image: "cuhk.jpg",
+        scale: 1
+    }, {
+        image: "sysu.jpg",
+        scale: 1
+    }, {
+        image: "pku.png",
+        scale: 1
+    }, {
+        image: "imecas.jpg",
+        scale: 1
+    }, {
+        image: "bhu.jpg",
+        scale: 1
+    }, {
+        image: "hkust.jpg",
+        scale: 0.8
+    }]);
+    const partnerObj = ref({
+        col: 8,
+        width: "90%"
+    });
+
+    onMounted(() => {
+        getWindowWidth();
+        window.addEventListener("resize", getWindowWidth);
+    });
+    onUnmounted(() => {
+        window.removeEventListener("resize", null);
+    });
+    const getWindowWidth = () => {
+        partnerObj.value.col = (window.innerWidth >= 1200) ? 2  :
+                               (window.innerWidth >= 800 ) ? 4  :
+                               (window.innerWidth >= 600 ) ? 12 : 24;
+        partnerObj.value.width = (window.innerWidth >= 1200) ? "80%" :
+                                 (window.innerWidth >=  800) ? "80%" : "70%";
+    }
+</script>
+
+<style lang="scss" scoped>
+</style>
+
+
+
+/////////////////
+
+<template>
+    <section class="section section-sm section-sm-bottom-100 bg-primary" :style="{ backgroundColor: backgroundColor, padding: padding, borderTopStyle: borderTopStyle, borderColor: borderColor }">
+      <div class="container">
+        <h3 style="color: black; text-align: center;">合作伙伴</h3>
+        <div class="row row-30">
+          <div class="col-md-2" v-for="(partner, index) in partners" :key="index">
+            <img :src="partner.imageUrl" style="height: 9rem; width: 9rem;" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        backgroundColor: "white",
+        padding: "15px 0",
+        borderTopStyle: "dotted",
+        borderColor: "#4169E1",
+        partners: [
+          { imageUrl: "img/partners/pcl.jpg" },
+          { imageUrl: "img/partners/jisuansuo.jpg" },
+          { imageUrl: "img/partners/kaixinyuan.jpg" },
+          { imageUrl: "img/partners/zhongkeda.jpg" },
+          { imageUrl: "img/partners/guokeda.jpg" },
+          { imageUrl: "img/partners/guanggong.jpg" },
+          { imageUrl: "img/partners/shenda.jpg" },
+          { imageUrl: "img/partners/zhongda.jpg" },
+          { imageUrl: "img/partners/fuzhou.jpg" },
+          { imageUrl: "img/partners/minnanshifan.jpg" },
+          { imageUrl: "img/partners/beida.jpg" },
+          { imageUrl: "img/partners/gangkeda.jpg" }
+        ]
+      };
+    }
+  };
+  </script>
+  
+  <style scoped>
+  /* CSS styles here */
+  </style>
+  

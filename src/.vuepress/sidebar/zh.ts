@@ -1,19 +1,40 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-    "/project/": "structure",
+    "/project/": [{
+        text: "项目介绍",
+        prefix: "intro/",
+        children: "structure",
+        collapsible: true
+    },{
+        text: "项目规划",
+        prefix: "plan/",
+        children: "structure",
+        collapsible: true
+    },{
+        text: "团队成员",
+        prefix: "team/",
+        children: "structure",
+        collapsible: true
+    }], 
     "/train/": [{
         text: "EDA知识",
         prefix: "eda/",
         children: "structure",
         collapsible: true
     }, {
-        text: "实践训练",
+        text: "水滴计划",
+        prefix: "water_drop/",
+        children:"structure",
+        collapsible: true
+    }, {
+        text: "iEDA实践",
         prefix: "practice/",
+        children: "structure",
+        collapsible: true
+    }, {
+        text: "其他学习",
         children: [
-            "water-drop-eda",
-            "water-drop-cpp",
-            "ieda",
             {
                 text: "PA",
                 link: "https://ysyx.oscc.cc/docs/ics-pa"
