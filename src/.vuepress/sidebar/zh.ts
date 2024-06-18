@@ -64,7 +64,24 @@ export const zhSidebar = sidebar({
     "/aieda/": [{
         text: "iBM数据集",
         prefix: "ibm/",
-        children: "structure",
+        children: [
+            {
+                text: "问题数据",
+                prefix: "problem/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "芯片数据",
+                prefix: "chip/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "工具数据",
+                prefix: "tool/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }, {
         text: "AiEDA模型",
