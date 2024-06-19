@@ -1,8 +1,9 @@
-# Flip-flop和Latch：内部结构和功能
+---
+title: "5.9 Flip-flop和Latch：内部结构和功能"
+order: 9
+---
 
-August 23, 2021 by [Team VLSI](https://teamvlsi.com/author/team-vlsi)
-
-Flip-flop是任何ASIC设计中最常用的时序元件，尤其是D型触发器。在D触发器中，D代表延迟，意味着输出是输入D的延迟版本。而Latch是最简单和基本的时序元件。一般来说，需要使用两个Latch来制作一个Flip-flop。Flip-flop对时钟沿沿河敏感，而Latch对时钟电平敏感。接下来的部分将解释Flip-flop和Latch的内部结构和操作。在本文中，我们将仅讨论ASIC设计中最常见的D型Flip-flop和D型Latch。
+Flip-flop是任何ASIC设计中最常用的时序元件，尤其是D型触发器。在D触发器中，D代表延迟，意味着输出是输入D的延迟版本。而Latch是最简单和基本的时序元件。一般来说，需要使用两个Latch来制作一个Flip-flop。Flip-flop对时钟沿沿河敏感，而Latch对时钟电平敏感。接下来的部分将解释Flip-flop和Latch的内部结构和操作。在本文中，我们将仅讨论ASIC设计中最常见的D型Flip-flop和D型Latch。可优先查看链接[2]视频合集。
 
 ## Latch和Flip-flop的原理图
 
@@ -70,6 +71,7 @@ D-Latch中使用了两个传输门。在正电平敏感D-Latch的情况下，输
 
 正D Flip-flop的工作可以总结为，在上升时钟边沿时输出才会发生变化，此时输入D会传输到输出Q，而在其他时刻输出保持不变。因此，与Latch相比，它更容易避免毛刺，但在面积上更大，更容易受到工艺变化的影响。请观看此播放列表以获取详细操作和比较。
 
-## 谢谢
+## 链接：
 
-原文链接：https://teamvlsi.com/2021/08/flip-flop-and-latch-internal-structures-and-functions.html
+[1] https://teamvlsi.com/2021/08/flip-flop-and-latch-internal-structures-and-functions.html
+[2] https://www.bilibili.com/video/BV1oL411D77D/?spm_id_from=333.337.search-card.all.click&vd_source=2ac617c241afd7f9774b0add4e647179
