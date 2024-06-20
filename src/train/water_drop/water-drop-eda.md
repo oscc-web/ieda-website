@@ -1,6 +1,6 @@
 ---
-title: "水滴计划——EDA"
-order: 2
+title: "（删）水滴计划——EDA"
+order: 11
 ---
 ## **水滴计划EDA实习部分**
 
