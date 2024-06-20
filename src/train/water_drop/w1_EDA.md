@@ -1,6 +1,6 @@
 ---
 title: "Week1 水滴计划 C++"
-order: 1
+order: 2
 ---
 
 ## DAY1: 实习前期准备
@@ -51,7 +51,8 @@ https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)，在文档中记录每天学习情
    - 材料：[《编程环境.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
    
 2. **每日记录模板**:
-   - 材料：《xx大学-张三-学习记录》
+   - 材料：[xx大学-张三-学习记录](
+https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
    
 3. **水滴计划学习概述**:
    - 视频：[《iEDA-水滴计划：iEDA-水滴计划学习体系概述》](https://www.bilibili.com/video/BV1fz4y1W7si)
