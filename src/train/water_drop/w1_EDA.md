@@ -65,6 +65,7 @@ https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
    - 材料：[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
    - 材料：[《请不要这样提问》](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
 
+---------------------
 
 ## DAY2：插件学习
 
@@ -85,6 +86,7 @@ https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
    
 2. **视频教程**:
    - [《iEDA-水滴计划：CMake语法与工程实践》](https://www.bilibili.com/video/BV1xp4y1V7qu)
+
 
 
 ## DAY3-DAY4：工具学习
@@ -143,6 +145,7 @@ https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
 
 5. **软件设计思想参考资料**:
    - 视频: [《iEDA-水滴计划：怎样进行软件设计》](https://www.bilibili.com/video/BV1GN411h7Qg)
+
 
 
 ## DAY5-DAY7：C++基础学习
