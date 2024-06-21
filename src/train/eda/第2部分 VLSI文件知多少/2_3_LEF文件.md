@@ -15,7 +15,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 技术LEF部分包含了所有金属互连、通孔 [via] 信息以及相关设计规则的信息。下面提供了一个示例快照，显示了技术LEF部分下的信息。
 
 <div style="text-align:center;">
-  <img src="./tech_lef.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/tech_lef.png" alt="ASIC Flow" width="300" />
   <h4>图1 版本、单元</h4>
 </div>
 
@@ -46,12 +46,12 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 下面提供了一个LEF文件的快照，展示了层部分和金属互连的不同尺寸。
 
 <div style="text-align:center;">
-  <img src="./image-1.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/image-1.png" alt="ASIC Flow" width="500" />
   <h4>图2 技术LEF中的层部分和金属互连</h4>
 </div>
 
 <div style="text-align:center;">
-  <img src="./20201222163529631.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/20201222163529631.png" alt="ASIC Flow" width="300" />
   <h4>图3 金属层与cut层</h4>
 </div>
 
@@ -66,7 +66,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 - 间隙（SPACING）：表示不同元件或电路结构之间的间隔或空隙。它通常用于约束芯片设计中的线与线、线与物理对象之间的最小间隔。例如，如果规定某一层的间隙为10纳米，则意味着该层上的线与线之间，以及线与其他物理对象之间的最小距离都不能小于10纳米。
 
 <div style="text-align:center;">
-  <img src="./lef_metal.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/lef_metal.png" alt="ASIC Flow" width="300" />
   <h4>图4 层部分和金属互连信息</h4>
 </div>
 
@@ -77,7 +77,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 一个完整的通孔是由三层组成，两个互连层和一个cut层。互连线间有多种通孔类型可供布cut层可以理解为连接两层互连线的接口。通常每两层互连线间有多种瞳孔类型供布线器选择，布线器再不违反DRC的前提下选择最合适的通孔链接两层互连线。
 
 <div style="text-align:center;">
-  <img src="./image-3.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/image-3.png" alt="ASIC Flow" width="500" />
   <h4>图5 技术LEF中的互连线通孔</h4>
 </div>
 
@@ -90,7 +90,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 下例所示定义了一个名为via12的通孔阵列,通孔用来连接金属2层和金属3层，每隔0.4个单位(X和Y方向)产生一个cut层。ENCLOSURE定义了Cut层距金属边界的距离。
 
 <div style="text-align:center;">
-  <img src="./image-4.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/image-4.png" alt="ASIC Flow" width="300" />
   <h4>图6 通孔阵列</h4>
 </div>
 
@@ -101,7 +101,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 下例定义了同一金属层、同一cut层之间的最小距离，STACK表明不同金属层间允许采用堆叠的cut进行互连。
 
 <div style="text-align:center;">
-  <img src="./image-5.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/image-5.png" alt="ASIC Flow" width="300" />
   <h4>图7 相同连线距离</h4>
 </div>
 
@@ -131,7 +131,7 @@ LEF是自动布局布线所必须的库文件，随着工艺尺寸的逐步缩�
 SITE定义的是最小的布局单位。如下图，这个最小布局单位的名称tsm12site将在单元(MACRO)的SITE定义中被引用。
 
 <div style="text-align:center;">
-  <img src="./image-6.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/image-6.png" alt="ASIC Flow" width="300" />
   <h4>图8 SITE示例</h4>
 </div>
 
@@ -156,7 +156,7 @@ SITE定义的是最小的布局单位。如下图，这个最小布局单位的�
 **OBS**是单元的不可布线区域,对标准单元来说,不可布线区通常是指除单元端口外单元其他所有互连层表示的区域,对于卫模块,不可布线区通常用除单元端口外的整块区域表示。例如，下面提供了一个MACRO语句快照，以更好地理解格式。
 
 <div style="text-align:center;">
-  <img src="./image-7.png" alt="ASIC Flow" width="1000" />
+  <img src="/res/images/train_eda_2/image-7.png" alt="ASIC Flow" width="1000" />
   <h4>图9 MACRO示例</h4>
 </div>
 

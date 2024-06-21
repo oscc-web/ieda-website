@@ -3,8 +3,6 @@ title: "2.6 PnR和签核阶段所需的输入文件"
 order: 6
 ---
 
-November 5, 2021 by [Team VLSI](https://teamvlsi.com/author/team-vlsi)
-
 在 PnR [Place and Route] 和 签核 [Signoff] 的各个阶段，我们将讨论所需的输入文件。我们可以将输入文件分为两类，一类是必需的，另一类是可选的。
 
 ## 1. PnR 阶段:

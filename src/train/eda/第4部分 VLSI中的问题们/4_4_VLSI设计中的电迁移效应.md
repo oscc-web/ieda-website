@@ -1,5 +1,5 @@
 ---
-title: "4.4 天线效应：电子世界的无线风暴"
+title: "4.4 电迁移效应"
 order: 4
 ---
 
@@ -19,7 +19,7 @@ order: 4
 ### 电迁移现象：
 
 <div style="text-align:center;">
-  <img src="./image-21 copy.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-21 copy.png" alt="ASIC Flow" width="500" />
   <h5>图1 电迁移现象</h5>
 </div>
 
@@ -29,7 +29,7 @@ order: 4
 
 失效平均时间（MTTF）是评估集成电路寿命的一个关键指标，使用 Black 方程计算 MTTF，如下所示：
 <div style="text-align:center;">
-  <img src="./image-22 copy.png" alt="ASIC Flow" width="200" />
+  <img src="/res/images/train_eda_4/image-22 copy.png" alt="ASIC Flow" width="200" />
 </div>
 
 其中：
@@ -46,7 +46,7 @@ order: 4
 另外，当电子流过金属线时，将同金属线的原子发生碰撞，碰撞导致金属的电阻增大，并且会发热。在一定时间内如果有大量的电子同金属原子发生碰撞，金属原子就会沿着电子的方向进行流动。这将会导致两个问题：第一，移动后的原子将在金属上留下一个空位，如果大量的原子被移动，则连线断开；第二，被移动的原子必须停在某一个地方，在电流方向的末端形成大量堆积。以铜导线为例，电流的趋肤效应导致电子都是在铜导线表面移动。当发生碰撞后，表面的原子不断被撞击的向导线末端移动。原子离开的地方铜线不断变细甚至断开，原子堆积的地方铜线不断变粗甚至有可能和周围铜线接触导致短路。
 
 <div style="text-align:center;">
-  <img src="./image-23.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-23.png" alt="ASIC Flow" width="500" />
   <h5>图2 互连中的膨胀和虚空形成</h5>
 </div>
 

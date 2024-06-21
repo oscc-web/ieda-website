@@ -10,26 +10,26 @@ Flip-flop是任何ASIC设计中最常用的时序元件，尤其是D型触发器
 最简单的设计Latch和Flip-flop都有3个引脚，一个输入数据引脚（D），一个输入时钟/使能引脚（CP/E），一个输出引脚（Q）。还可能有设置和复位引脚，但为简单起见，我们在讨论中不包括这些内容。Latch和Flip-flop的符号表示如图1所示。
 
 <div style="text-align:center;">
-  <img src="latch_ff_symbol.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_ff_symbol.png" alt="ASIC Flow" width="500" />
   <h4>图1 Latch和Flip-flop的符号表示</h4>
 </div>
 
 在图1中，显示了正电平敏感的D-Latch的符号和正边缘触发的D Flip-flop的符号。在负Latch和Flip-flop中，E/CP引脚之前只出现一个点。从高层面上看，我们可以将Latch和Flip-flop视为2:1多路复用器。可以使用2:1多路复用器实现Latch，而要实现Flip-flop，则需要两个多路复用器。图2显示了正电平敏感的D-Latch和正边沿触发Flip-flop的架构，以多路复用器的形式表示。
 
 <div style="text-align:center;">
-  <img src="latch_ff_mux.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_ff_mux.png" alt="ASIC Flow" width="500" />
   <h4>图2 使用多路复用器的正D-Latch和Flip-flop</h4>
 </div>
 
 在正电平敏感Latch中，输出馈入到多路复用器的I0输入，如图2所示。同样，在负电平敏感的D-Latch中，输出Q馈送回输入I1。正边沿触发的D触发器由两个负电平敏感的D-Latch背靠背连接而成。在负D触发器的情况下，需要两个正电平敏感的D-Latch。如果我们深入多路复用器并进入晶体管级别，我们会发现正电平敏感的D-Latch和正边沿触发的D Flip-flops的晶体管级原理图，如图3所示。
 
 <div style="text-align:center;">
-  <img src="latch_d_latch_tr_gate.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_d_latch_tr_gate.png" alt="ASIC Flow" width="500" />
   <h4>图3.a 使用传输门的正电平敏感D-Latch</h4>
 </div>
 
 <div style="text-align:center;">
-  <img src="latch_d_ff_tr_gate.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_d_ff_tr_gate.png" alt="ASIC Flow" width="500" />
   <h4>图3.b 使用传输门的正边缘触发D Flip-flop</h4>
 </div>
 
@@ -39,14 +39,14 @@ Flip-flop是任何ASIC设计中最常用的时序元件，尤其是D型触发器
 这里只讨论正电平敏感D-Latch的工作原理，并借助输入和输出波形进行说明。Flip-flop的工作原理将在下一节中讨论。
 
 <div style="text-align:center;">
-  <img src="latch_waveform.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_waveform.png" alt="ASIC Flow" width="500" />
   <h4>图4 Latch的输入-输出波形</h4>
 </div>
 
 D-Latch中使用了两个传输门。在正电平敏感D-Latch的情况下，输出反馈到TGO传输门的输入。传输门由一个nMOS和一个pMOS组成，如上图所示，并由实际上是时钟信号的使能信号E控制。当使能信号高时，TG1的nMOS和pMOS处于导通状态，同时，TG0的两个晶体管都处于断态，反之亦然。当使能信号高时，从引脚D到引脚Q建立了直接路径，这被称为Latch处于透明状态。但是当使能信号变低时，TG1门处于断态，建立了从Q到TG0输入的反馈环路，确保在输入引脚D发生变化时输出Q不发生变化，这称为Latch状态。图5显示了Latch何时处于透明状态以及何时处于锁存状态的工作原理。
 
 <div style="text-align:center;">
-  <img src="latch_operations_1.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_operations_1.png" alt="ASIC Flow" width="500" />
   <h4>图5 正电平敏感D-Latch的工作原理</h4>
 </div>
 
@@ -57,7 +57,7 @@ D-Latch中使用了两个传输门。在正电平敏感D-Latch的情况下，输
 在正边沿触发的D Flip-flop中，有两个负电平敏感的D-Latch背靠背连接，第二个Latch的使能信号与第一个Latch相比是反转的。第二个Latch的反转使能信号确保两个Latch永远不会同时处于透明状态或锁存状态。为了更好地理解，图6展示了典型的输入输出波形。
 
 <div style="text-align:center;">
-  <img src="latch_ff_waveform_ff.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/latch_ff_waveform_ff.png" alt="ASIC Flow" width="500" />
   <h4>图6 正D Flip-flop的输入输出波形</h4>
 </div>
 

@@ -52,7 +52,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 ### （1）标题 [HEADER] 声明：
 
 <div style="text-align:center;">
-  <img src="./def_header.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_2/def_header.png" alt="ASIC Flow" width="400" />
   <h4>图1 DEF文件的标题声明</h4>
 </div>
 
@@ -77,7 +77,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 这里是一个DEF文件中行 [ROW] 部分的示例。
 
 <div style="text-align:center;">
-  <img src="./def_row.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/def_row.png" alt="ASIC Flow" width="500" />
   <h4>图2 DEF文件的行描述</h4>
 </div>
 
@@ -113,7 +113,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_track.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_2/def_track.png" alt="ASIC Flow" width="400" />
   <h4>图3 DEF 文件中的 Track 语句</h4>
 </div>
 
@@ -144,7 +144,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_gcell.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_2/def_gcell.png" alt="ASIC Flow" width="400" />
   <h4>图4 DEF 文件中的 GCell 语句</h4>
 </div>
 
@@ -169,7 +169,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_via.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_2/def_via.png" alt="ASIC Flow" width="400" />
   <h4>图5 DEF 文件中的 Via 语句</h4>
 </div>
 
@@ -220,7 +220,7 @@ END NONDEFAULTRULES
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_ndr.png" alt="ASIC Flow" width="200" />
+  <img src="/res/images/train_eda_2/def_ndr.png" alt="ASIC Flow" width="200" />
   <h4>图6 DEF 文件中的 NDR</h4>
 </div>
 
@@ -270,7 +270,7 @@ END COMPONENTS
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_component.png" alt="ASIC Flow" width="700" />
+  <img src="/res/images/train_eda_2/def_component.png" alt="ASIC Flow" width="700" />
   <h4>图7 DEF 文件中的组件部分</h4>
 </div>
 
@@ -288,7 +288,7 @@ icc_clock 为单元在设计中的是i梨花名称，后面紧接着为单元在
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_pin.png" alt="ASIC Flow" width="700" />
+  <img src="/res/images/train_eda_2/def_pin.png" alt="ASIC Flow" width="700" />
   <h4>图8 DEF 文件中的引脚部分</h4>
 </div>
 
@@ -300,7 +300,7 @@ icc_clock 为单元在设计中的是i梨花名称，后面紧接着为单元在
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_blockage.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/def_blockage.png" alt="ASIC Flow" width="300" />
   <h4>图9 DEF 文件中的障碍物部分</h4>
 </div>
 
@@ -344,7 +344,7 @@ END SPECIALNETS]
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_specialNet.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/def_specialNet.png" alt="ASIC Flow" width="500" />
   <h4>图10 DEF 文件中的特殊网络部分</h4>
 </div>
 
@@ -411,7 +411,7 @@ END NETS
 例子：
 
 <div style="text-align:center;">
-  <img src="./def_net.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/def_net.png" alt="ASIC Flow" width="500" />
   <h4>图11 DEF 文件中的网络部分</h4>
 </div>
 

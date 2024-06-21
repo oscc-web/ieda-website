@@ -6,7 +6,7 @@ order: 2
 在这篇文章中，将要展示 VLSI 设计流程。VLSI 流程的第一步是设计规范，这个规范通常来自于客户端，客户会写下他们想要在芯片中开发的功能和所需的规格。接下来，整个设计过程将经历不同的设计周期，通常需要6到24个月才能完成设计，具体取决于芯片内部的复杂性。从产生制作芯片的**想法**到获得**芯片实物**，主要分成三个部分：**前端设计、后端设计、制造**。
 
 <div style="text-align:center;">
-    <img src="https://images.gitee.com/uploads/images/2022/0525/175128_fb471b46_8273072.png" alt="6" style="zoom:30%;" />
+    <img src="/res/images/train_eda_1/image5.png" alt="6" style="zoom:30%;" />
     <h2 style="font-size: 16px;">图1 芯片设计与制作流程</h2>
 </div>
 <br>
@@ -114,7 +114,7 @@ PnR阶段是一个非常具有挑战性的阶段，设计周期时间长，具�
 * **掩膜准备：** 掩膜环节主要包括：版图分解，OPC，RET，掩膜生成
 
 <div style="text-align:center;">
-    <img src="https://images.gitee.com/uploads/images/2022/0526/104146_98f059c1_8273072.png" alt="6" style="zoom:30%;" />
+    <img src="/res/images/train_eda_1/image6.png" alt="6" style="zoom:30%;" />
     <h2 style="font-size: 16px;">图2 主要EDA工具步骤</h2>
 </div>
 <br>
@@ -123,7 +123,7 @@ PnR阶段是一个非常具有挑战性的阶段，设计周期时间长，具�
 iEDA课题组主要的研发重点关注在芯片逻辑综合，物理设计，签核分析和物理验证环节，如下图绿色部分所示：
 
 <div style="text-align:center;">
-    <img src="https://images.gitee.com/uploads/images/2022/0530/150057_1b7674b3_8273072.png" alt="6" style="zoom:30%;" />
+    <img src="/res/images/train_eda_1/image7.png" alt="6" style="zoom:30%;" />
     <h2 style="font-size: 16px;">图3 iEDA工具聚焦领域</h2>
 </div>
 <br>
@@ -141,14 +141,14 @@ die：裸片 ；是硅片中一个很小的单位，包括了设计完整的单�
 ### 二、联系和区别：
 
 <div style="text-align:center;">
-    <img src="./63d0f703918fa0ecfef07b1a299759ee3d6ddbf6.webp" alt="6" style="zoom: 80%;" />
+    <img src="/res/images/train_eda_1/63d0f703918fa0ecfef07b1a299759ee3d6ddbf6.webp" alt="6" style="zoom: 80%;" />
     <h2 style="font-size: 16px;">一块完整的wafer</h2>
 </div>
 
 wafer为晶圆，由纯硅（Si）构成。一般分为6英寸、8英寸、12英寸规格不等，晶片基于wafer上生产出来。Wafer上一个小块晶片晶圆体学名die，封装后成为一个颗粒。一片载有Nand Flash晶圆的wafer首先经过切割，测试后将完好的、稳定的、足容量的die取下，封装形成日常所见的Nand Flash芯片。
 
 <div style="text-align:center;">
-    <img src="./d833c895d143ad4b637258d78d025aafa40f064c.webp" alt="6" style="zoom: 80%;" />
+    <img src="/res/images/train_eda_1/d833c895d143ad4b637258d78d025aafa40f064c.webp" alt="6" style="zoom: 80%;" />
     <h2 style="font-size: 16px;">die和wafer的关系</h2>
 </div>
 
@@ -157,7 +157,7 @@ wafer为晶圆，由纯硅（Si）构成。一般分为6英寸、8英寸、12英
 品质合格的die切割下去后，原来的晶圆成了下图的样子，是挑剩下的Downgrade Flash Wafer。残余的die是品质不合格的晶圆。黑色的部分是合格的die，会被原厂封装制作为成品NAND颗粒，而不合格的部分，也就是图中留下的部分则当做废品处理掉。
 
 <div style="text-align:center;">
-    <img src="./bba1cd11728b47103777e2dbcccec3fdfc032348.webp" alt="6" style="zoom: 80%;" />
+    <img src="/res/images/train_eda_1/bba1cd11728b47103777e2dbcccec3fdfc032348.webp" alt="6" style="zoom: 80%;" />
     <h2 style="font-size: 16px;">筛选后的wafer</h2>
 </div>                                       
 
