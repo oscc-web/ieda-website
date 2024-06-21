@@ -10,7 +10,7 @@ order: 5
 首先，让我们先来理清一下什么是信号完整性。信号本质上是以波/脉冲形式传输的信息，用于实现不同点之间的通信。比如，数字形式中的信号可以是状态1（高电平）或状态0（低电平），就像二元世界里的语言。如下图所示。
 
 <div style="text-align:center;">
-  <img src="./image-24.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-24.png" alt="ASIC Flow" width="500" />
   <h5>图1 数字信号</h5>
 </div>
 
@@ -41,7 +41,7 @@ order: 5
 
 
 <div style="text-align:center;">
-  <img src="image-25.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-25.png" alt="ASIC Flow" width="500" />
   <h5>图2 侵略者和受害者网络</h5>
 </div>
 
@@ -65,7 +65,7 @@ order: 5
 串扰的主要原因是互连之间的电容。因此，在本节中，我们将调查与金属互连相关的各种电容。图3显示了ASIC内部形成的各种寄生电容（点击图像以查看更好视图）。
 
 <div style="text-align:center;">
-  <img src="image-26.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-26.png" alt="ASIC Flow" width="500" />
   <h5>图3 与互连相关的各种电容</h5>
 </div>
 

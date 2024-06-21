@@ -20,26 +20,26 @@ Lib文件的通用部分包含以下内容：
 
 
 <div style="text-align:center;">
-  <img src="./lib_file_comman.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/lib_file_comman.png" alt="ASIC Flow" width="500" />
   <h4>图1 LIB库名称版本等基本信息</h4>
 </div>
 
 - 定义延时模型和信号转换模型的参数
 
 <div style="text-align:center;">
-  <img src="./image-8.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/image-8.png" alt="ASIC Flow" width="500" />
   <h4>图2 延时模型和信号转换模型的参数</h4>
 </div>
 
 - 定义二维时序延时模板、依赖于负载约束的二维变量模板、二维功耗模板
 
 <div style="text-align:center;">
-  <img src="./image-9.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/image-9.png" alt="ASIC Flow" width="500" />
   <h4>图3 二维时序延时模板、依赖于负载约束的二维变量模板</h4>
 </div>
 
 <div style="text-align:center;">
-  <img src="./image-10.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_2/image-10.png" alt="ASIC Flow" width="500" />
   <h4>图4 二维功耗模板</h4>
 </div>
 
@@ -48,7 +48,7 @@ Lib文件的通用部分包含以下内容：
 基于工作条件，针对最大值、最小值和典型值情形，有三个不同的lib文件。在Lib文件的第二部分，它包含了每个单元特定的信息。包含单元特定信息的Lib文件部分如下所示。
 
 <div style="text-align:center;">
-  <img src="./Lib_cell_part.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/Lib_cell_part.png" alt="ASIC Flow" width="300" />
   <h4>图2 LIB文件特定单元信息</h4>
 </div>
 
@@ -72,7 +72,7 @@ Lib文件中的特定于单元的信息主要包括：
 下面给出了Lib文件中针对引脚部分的一个快照。
 
 <div style="text-align:center;">
-  <img src="./Lib_pin part.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/Lib_pin part.png" alt="ASIC Flow" width="300" />
   <h4>图3 LIB文件引脚部分信息</h4>
 </div>
 

@@ -24,7 +24,7 @@ SDC设计约束文件用来约束电路的**时序、功耗、面积**等，从�
 SDC文件可以由综合工具**Logic Synthesis tool** 生成，附加一些约束后生成，并使用于**PnR**（Place and Route），即布局和布线环节。
 
 <div style="text-align:center;">
-  <img src="./sdc1.png" alt="ASIC Flow" width="600" />
+  <img src="/res/images/train_eda_2/sdc1.png" alt="ASIC Flow" width="600" />
   <h4>图1 SDC文件产生流程</h4>
 </div>
 

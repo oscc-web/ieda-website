@@ -15,14 +15,14 @@ order: 7
 所有芯片中的所有IC都具有相同的gds数据，但芯片在晶圆上的位置不同。如果所有芯片的gds都相同，那么理想情况下所有IC的电特性应该相同。但实际上并非如此。在不同芯片中制造的IC的电特性会有所不同。图1显示了硅晶圆和晶圆上的芯片。
 
 <div style="text-align:center;">
-  <img src="wafer.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/wafer.png" alt="ASIC Flow" width="500" />
   <h5>图1 硅晶片和晶片载体上的芯片</h5>
 </div>
 
 例如，让我们考虑图2中显示的位于晶圆不同位置的三个芯片。芯片1位于晶圆中心，芯片3位于晶圆边缘，芯片2位于中心和外缘之间。
 
 <div style="text-align:center;">
-  <img src="wafer2.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_4/wafer2.png" alt="ASIC Flow" width="300" />
   <h5>图2 晶片、芯片和芯片内的晶体管</h5>
 </div>
 
@@ -33,7 +33,7 @@ order: 7
 变异有三个主要来源，即工艺、电压和温度。这些变异统称为PVT变异。我们已经在设计ASIC时进行了PVT分析并处理了这些变异，那么为什么我们需要单独处理OCV呢？答案是，并非所有变异都可以在PVT分析中处理。其中一些是可预测的，并且随着技术的成熟可以轻松建模，但其中一些是非常不可预测的，无法轻松建模。图3显示了PVT和OCV变异的各个组成部分。
 
 <div style="text-align:center;">
-  <img src="variations.png" alt="ASIC Flow" width="600" />
+  <img src="/res/images/train_eda_4/variations.png" alt="ASIC Flow" width="600" />
   <h5>图3 PVT和OCV下的变化元件</h5>
 </div>
 
@@ -49,13 +49,13 @@ order: 7
 线性区域中nMOS晶体管的漏极电流可以定义为
 
 <div style="text-align:center;">
-  <img src="id.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_4/id.png" alt="ASIC Flow" width="400" />
 </div>
 
 其中Id为漏极电流，μn为电子迁移率，∈ox为硅氧化物介电常数，tox为氧化物厚度，W为晶体管的宽度，L为晶体管的栅长，如图4所示。
 
 <div style="text-align:center;">
-  <img src="terminalMOS.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_4/terminalMOS.png" alt="ASIC Flow" width="400" />
   <h5>图4 MOS器件的引脚和原理图</h5>
 </div>
 
@@ -68,14 +68,14 @@ order: 7
 因此，如果上述因素中的任何一个在制造过程中发生变化，它都会影响漏极电流。电池的延迟取决于漏极电流，因此由于工艺变异，标准电池的延迟将会变化。现在看一些示例，这些参数在制造过程中如何受到影响。图5和图6显示了与光刻工艺相关的长度和宽度变异。
 
 <div style="text-align:center;">
-  <img src="opc.png" alt="ASIC Flow" width="400" />
+  <img src="/res/images/train_eda_4/opc.png" alt="ASIC Flow" width="400" />
   <h5>图5 光刻近邻修正</h5>
 </div>
 
 光刻工艺是应用于掩膜生成之前的布局的一种过程，以便在晶圆上更好地复制布局。在此过程中，通常将布局的角落边缘延伸以获得更好的产量。图6显示了一般的光刻工艺流程。
 
 <div style="text-align:center;">
-  <img src="photolithographyFlow.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/photolithographyFlow.png" alt="ASIC Flow" width="500" />
   <h5>图6 光刻工艺流程</h5>
 </div>
 
@@ -106,7 +106,7 @@ order: 7
 电源来自电源垫/凸点，并通过金属条和轨道分配给芯片内部所有标准单元，这被称为电源传递网络（PDN）或电源格。电源垫和标准单元之间的距离可能对所有标准单元都不相同。因此，标准单元的可用VDD会根据设计而有所不同。单元的延迟取决于可用的VDD，如果VDD较低，则延迟会更大。
 
 <div style="text-align:center;">
-  <img src="dealyandVDD.png" alt="ASIC Flow" width="200" />
+  <img src="/res/images/train_eda_4/dealyandVDD.png" alt="ASIC Flow" width="200" />
 </div>
 
 ### III. 温度变异：
