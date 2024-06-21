@@ -59,7 +59,7 @@ set_units -time ns -resistance Kohm -capacitance pF -voltage V -current mA
 ### (4) 设计约束
 
 SDC与设计约束相关的命令可分为9类，如下：
-![alt text](e150d899dea7f4f187b982e625705b3.png)
+![alt text](/res/images/train_eda_2/e150d899dea7f4f187b982e625705b3.png)
 
 ------------------------------
 
@@ -89,7 +89,7 @@ set_operating_conditions -process "typical" -corner "fast" {
 
 设计规则约束的所有命令如表：
 
-![alt text](41f515265e8d2ca329611628cbd34ec.png)
+![alt text](/res/images/train_eda_2/41f515265e8d2ca329611628cbd34ec.png)
 
 | 序号 |      命令名称                         |          描述                             | 示例                                        |
 | :---: | :---------------------------------: | :-------------------------------------: | :----------------------------------------: |
@@ -179,7 +179,7 @@ set_driving_cell [-lib_cell lib_cell_name] [-library lib_name] [-rise] [-fall] [
 
 示例：
 
-![alt text](sdc_driving_cell.png)
+![alt text](/res/images/train_eda_2/sdc_driving_cell.png)
 
 ```
 # 设置单元库为IV的驱动单元，并将其应用于输入端口I1
@@ -226,7 +226,7 @@ create_clock [-name clock_name] [clock_sources] [-period value] [-waveform edge_
 create_clock命令在当前设计中创建一个时钟对象。此命令将指定的source_objects定义为时钟源。
 
 示例：
-![alt text](sdc_clock.png)
+![alt text](/res/images/train_eda_2/sdc_clock.png)
 
 ```
 create_clock "u13/z" -name "CLK" -period 30 -waveform {12.0 27.0}`\
@@ -245,7 +245,7 @@ create_generated_clock [-name clock_name] [-add] source_objects -source master_p
 create_generated_clock命令创建一个生成的时钟对象。可以指定引脚或端口作为生成的时钟对象。生成的时钟跟随主时钟，因此每当主时钟变化时，生成的时钟会自动变化。可以将生成的时钟创建为频率分频时钟、频率倍增时钟、边缘分频时钟或反相时钟。
 
 示例：
-![alt text](SDC_gen_clk.png)
+![alt text](/res/images/train_eda_2/SDC_gen_clk.png)
 
 ```
 create_generated_clock -multiplied_by 3 -source CLK [get_pins div3/Q]
@@ -283,7 +283,7 @@ group_path -name GROUP1 -from [get_ports ABC/in3] -to [get-ports FF1/D]
 
 示例：
 
-![alt text](sdc_uncertainty.png)
+![alt text](/res/images/train_eda_2/sdc_uncertainty.png)
 
 ```
 set_clock_uncertainty -setup 0.5 [get_clocks clk1]set_clock_uncertainty -hold 0.2 [get_clocks clk1]
