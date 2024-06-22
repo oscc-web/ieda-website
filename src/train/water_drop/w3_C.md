@@ -73,7 +73,7 @@ order: 4
 - 实验报告中应该至少包含数据结构设计、输入描述、输出描述、主要算法思想的文字描述，测试用例及用例运行结果（如设计两点间通路、死路情况的样例、不同情况通路中对应的最优路径cost消耗）； 代码和实验报告(作为readme.mdopen in new window)一起提交Pull Request；
 - 准备并提交实习总结的PPT。
 
-### 参考资料：
+### （3）参考资料：
 
 - [题目.docx](https://gitee.com/oscc-project/iTraining/tree/master/C++/CPP-Program-Assignment/Assignment_3)
 - [水滴计划-答辩ppt模板.pptx](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
