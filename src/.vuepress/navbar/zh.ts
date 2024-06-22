@@ -48,6 +48,7 @@ export const zhNavbar = navbar([
         prefix: "/activities/",
         children: [
             "conferences/",
+            "communication/",
             "contests/",
             "tape-out/"
         ]
@@ -55,10 +56,9 @@ export const zhNavbar = navbar([
         text: "宣传和合作",
         prefix: "/publicity/",
         children: [
-            "publicity/",
+            "news/",
             "collaborate/",
             "recruit/",
-            "business/",
             "connection"
         ]
     }

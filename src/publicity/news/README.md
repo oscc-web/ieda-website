@@ -1,5 +1,5 @@
 ---
-title: "学术会议"
+title: "新闻动态"
 index: false
 ---
 

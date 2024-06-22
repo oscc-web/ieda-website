@@ -1,5 +1,5 @@
 ---
-title: "学术会议"
+title: "技术交流"
 index: false
 ---
 
