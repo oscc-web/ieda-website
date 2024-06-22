@@ -3,6 +3,13 @@ title: "Week6-Week7 水滴计划 EDA"
 order: 7
 ---
 
+=======
+title: "EDA学习-Week3/4"
+order: 7
+--------
+
+> > > > > > > 827654afa0d4618085bacf8e4ace26b2d98a815b
+
 ### DAY39-DAY44：iEDA工程代码实践
 
 #### (1) 具体要求
@@ -22,20 +29,40 @@ order: 7
   - 任务1：代码阅读与理解：沉下心来进行代码阅读，对第十六天的“画出iEDA项目的架构图，并对架构图加以描述成文字”中的架构图及描述加以完善；
   - 任务2：代码设计：
     - 在本次实践作业中，对布局合法化模块进行实现，实现Tetris算法来进行合法化。
-    
-        - **算法优化目标：** 所有单元的竖直移动距离以及未来的水平移动距离之和最小。
-    
+      <<<<<<< HEAD
+      
+      - **算法优化目标：** 所有单元的竖直移动距离以及未来的水平移动距离之和最小。
     - **Abacus算法主要步骤如下**（动态规划算法，会移动已经合法化的单元）：
-        - 单元分散到行：根据单元的横坐标对各个单元进行排序。每次处理一个单元，该单元首先移动到最近的行；
-        - 行内合法化：计算该单元在本行的代价，以及移动到该行的上方和下方的代价，保证单元的总移动最小且不重叠；
-        - 单元放置：将该单元放置到代价最小的行，同时更新簇和坐标。
-    
+      
+      - 单元分散到行：根据单元的横坐标对各个单元进行排序。每次处理一个单元，该单元首先移动到最近的行；
+      - 行内合法化：计算该单元在本行的代价，以及移动到该行的上方和下方的代价，保证单元的总移动最小且不重叠；
+      - 单元放置：将该单元放置到代价最小的行，同时更新簇和坐标。
     - **Tetris算法主要步骤如下**（贪心算法，不会移动已经合法化的单元）：
-        - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
-        - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
+      
+      - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
+      - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
 
 3. **参考文献**：
-- [Abacus算法：P. Spindler, U. Schlichtmann, and F. M. Johannes. Abacus: fast legalization of standard cell Circuits with minimal movement. In Proceedings of ACM International Symposium on Physical Design, pp. 47–53, 2008.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0) 
+
+- [Abacus算法：P. Spindler, U. Schlichtmann, and F. M. Johannes. Abacus: fast legalization of standard cell Circuits with minimal movement. In Proceedings of ACM International Symposium on Physical Design, pp. 47–53, 2008.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
+============================================================================================================================================================================================================================
+  
+  - **算法优化目标：** 所有单元的竖直移动距离以及未来的水平移动距离之和最小。
+  - **Abacus算法主要步骤如下**（动态规划算法，会移动已经合法化的单元）：
+    
+    - 单元分散到行：根据单元的横坐标对各个单元进行排序。每次处理一个单元，该单元首先移动到最近的行；
+    - 行内合法化：计算该单元在本行的代价，以及移动到该行的上方和下方的代价，保证单元的总移动最小且不重叠；
+    - 单元放置：将该单元放置到代价最小的行，同时更新簇和坐标。
+  - **Tetris算法主要步骤如下**（贪心算法，不会移动已经合法化的单元）：
+    
+    - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
+    - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
+  
+  3. **参考文献**：
+- [Abacus算法：P. Spindler, U. Schlichtmann, and F. M. Johannes. Abacus: fast legalization of standard cell Circuits with minimal movement. In Proceedings of ACM International Symposium on Physical Design, pp. 47–53, 2008.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
+
+> > > > > > > 827654afa0d4618085bacf8e4ace26b2d98a815b
+
 - [Tetris算法：Method and system for high speed detailed placement of cells within an integrated circuit design; Dwight Hill; US09273809; 2002.04.09.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
 
 #### (2) 学习成果展示
@@ -43,36 +70,82 @@ order: 7
 - 代码设计按照编码规范进行实现，并按照要求实现相应功能，提交PR到代码仓库中；
 - 输出完善后的iEDA架构图及其文字描述；
 
+<<<<<<< HEAD
 
 ### (3) 参考资料
 
-1. **材料：** 
+1. **材料：**
+
 - [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
--  [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
+- [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 - 《Paper of Abacus.pdf》、《Patent of Tetris.pdf》 [链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)
-2. **视频：** 
+
+2. **视频：**
+
 - [《iEDA-项目介绍：EDA平台、人工智能与人才培养》](https://www.bilibili.com/video/BV1Bu4y1B7KJ)
+
+3. **更详细的课程介绍文档：** iEDA支持课程实践
+学习小注：此部分的学习很接近项目了，如果遇到较大问题，可以请教陈仕健师兄。
+==========================================================================
+
+### (3) 参考资料
+
+1. **材料：**
+
+- [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
+- [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
+- 《Paper of Abacus.pdf》、《Patent of Tetris.pdf》 [链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)
+
+2. **视频：**
+
+- [《iEDA-项目介绍：EDA平台、人工智能与人才培养》](https://www.bilibili.com/video/BV1Bu4y1B7KJ)
+
 3. **更详细的课程介绍文档：** iEDA支持课程实践
 
-
+> > > > > > > 827654afa0d4618085bacf8e4ace26b2d98a815b
 
 ### DAY45-DAY46：学习与总结
 
 #### (1) **具体要求**
+
+<<<<<<< HEAD
+
 1. 完善学习内容：
-  - 设置了两天缓冲时间，在此期间同学们可以对因故未完成的内容加以完成，未完成的任务进行补充。需要对上述所有任务中的PR，由助教检查通过后，可以申请答辩；
-  - 如已全部完成的同学，可以认真整理和复习所学习的内容。
+
+- 设置了两天缓冲时间，在此期间同学们可以对因故未完成的内容加以完成，未完成的任务进行补充。需要对上述所有任务中的PR，由助教检查通过后，可以申请答辩；
+- 如已全部完成的同学，可以认真整理和复习所学习的内容。
+
 2. 按照要求输出答辩PPT，要求：
    - **个人简介**：一两句话概括，前期答疑/周会已对各位同学有所了解。
    - **C++实习总结** 5min:
-      - 描述已掌握的C++和C++ Modern的相关内容，用列表大纲的形式展示，类似于求职简历里的技术栈罗列。(1min)
-      - 描述A*算法大作业，类似于做学术报告，可以参考iEDA第二期Tutorial中各位同学做的算法部分的报告，应该在PPT中至少包含：数据结构设计、输入输出描述、主要算法思想、实验结果汇总，运用的C++ Modern新特性。(4min)
+     - 描述已掌握的C++和C++ Modern的相关内容，用列表大纲的形式展示，类似于求职简历里的技术栈罗列。(1min)
+     - 描述A*算法大作业，类似于做学术报告，可以参考iEDA第二期Tutorial中各位同学做的算法部分的报告，应该在PPT中至少包含：数据结构设计、输入输出描述、主要算法思想、实验结果汇总，运用的C++ Modern新特性。(4min)
    - **EDA实习总结** 8min:
-      - PPT展示，展示一些已学习的内容 / 笔记整理展示 / iEDA相关assignment学习情况。(3min)
-      - 现场通过VSCode打开iEDA工程代码，结合assignment的代码讲解对EDA后端流程的理解情况。(5min)
+     - PPT展示，展示一些已学习的内容 / 笔记整理展示 / iEDA相关assignment学习情况。(3min)
+     - 现场通过VSCode打开iEDA工程代码，结合assignment的代码讲解对EDA后端流程的理解情况。(5min)
    - **感兴趣的内容** 2min:
-      - 自身感兴趣的EDA模块内容，自由发挥，可从算法流程 / 论文 / 自身选择原因 / 感兴趣的点等入手。(2min)
-   - **各位老师及助教进行提问和总结不足**。
+     - 自身感兴趣的EDA模块内容，自由发挥，可从算法流程 / 论文 / 自身选择原因 / 感兴趣的点等入手。(2min)
+================================================================================================
+3. 完善学习内容：
+
+- 设置了两天缓冲时间，在此期间同学们可以对因故未完成的内容加以完成，未完成的任务进行补充。需要对上述所有任务中的PR，由助教检查通过后，可以申请答辩；
+- 如已全部完成的同学，可以认真整理和复习所学习的内容。
+
+2. 按照要求输出答辩PPT，要求：
+   - **个人简介**：一两句话概括，前期答疑/周会已对各位同学有所了解。
+   - **C++实习总结** 5min:
+     - 描述已掌握的C++和C++ Modern的相关内容，用列表大纲的形式展示，类似于求职简历里的技术栈罗列。(1min)
+     - 描述A*算法大作业，类似于做学术报告，可以参考iEDA第二期Tutorial中各位同学做的算法部分的报告，应该在PPT中至少包含：数据结构设计、输入输出描述、主要算法思想、实验结果汇总，运用的C++ Modern新特性。(4min)
+   - **EDA实习总结** 8min:
+     - PPT展示，展示一些已学习的内容 / 笔记整理展示 / iEDA相关assignment学习情况。(3min)
+     - 现场通过VSCode打开iEDA工程代码，结合assignment的代码讲解对EDA后端流程的理解情况。(5min)
+   - **感兴趣的内容** 2min:
+     - 自身感兴趣的EDA模块内容，自由发挥，可从算法流程 / 论文 / 自身选择原因 / 感兴趣的点等入手。(2min)
+
+> > > > > > > 827654afa0d4618085bacf8e4ace26b2d98a815b
+
+- **各位老师及助教进行提问和总结不足**。
+
 3. 注意：
    - 听完C++实习总结后，团队中主要负责老师及助教老师对每个人C++学习情况进行打断点评，或等全部展示完再进行点评；
    - 每人有15min左右展示时间及10min-12min的提问时间；
@@ -82,11 +155,21 @@ order: 7
 输出水滴答辩PPT；
 
 3. **参考资料**
+   <<<<<<< HEAD
+
 - **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
-   - **视频：**
-       - [《iEDA-水滴计划：学习成果答辩总结与展示交流(王瑞)》](https://www.bilibili.com/video/BV1y34y1T7GV)
-       - [《iEDA-水滴计划：学习成果答辩总结与展示交流(郭帆)》](https://www.bilibili.com/video/BV18w411D7mj)
-       - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
+  - **视频：**
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(王瑞)》](https://www.bilibili.com/video/BV1y34y1T7GV)
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(郭帆)》](https://www.bilibili.com/video/BV18w411D7mj)
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
+=====================================================
+- **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
+  - **视频：**
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(王瑞)》](https://www.bilibili.com/video/BV1y34y1T7GV)
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(郭帆)》](https://www.bilibili.com/video/BV18w411D7mj)
+    - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
+
+> > > > > > > 827654afa0d4618085bacf8e4ace26b2d98a815b
 
 ### DAY47：水滴答辩
 
@@ -94,3 +177,4 @@ order: 7
   1. 10:00-11:30
   2. 14:30-16:30
   3. 19:30-21:30
+

@@ -20,7 +20,7 @@ ICG电路是一种用于控制时钟信号传输的电路，可以有效降低�
 这种ICG电路设计的好处是，在不需要时钟信号传输时，可以利用使能信号将时钟信号关闭，从而减少了时钟网络的功耗消耗。特别是在大型逻辑单元不需要操作时，通过控制使能信号，可以将时钟信号阻止传播到这些单元，进一步降低了芯片的动态功耗。
 
 <div style="text-align:center;">
-  <img src="ICG_cell1-300x145.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/ICG_cell1-300x145.png" alt="ASIC Flow" width="500" />
   <h4>图1 基于锁存器和AND门的ICG电路</h4>
 </div>
 
@@ -35,7 +35,7 @@ ICG电路是一种用于控制时钟信号传输的电路，可以有效降低�
 减少噪音和功耗浪费：ICG电路还可以减少芯片中的时钟噪音和功耗浪费。在某些情况下，时钟信号在不需要的逻辑单元之间传播，可能导致电磁干扰和功耗浪费。通过使用ICG电路，可以有效地控制时钟信号传输，避免噪音干扰和不必要的能量消耗。
 
 <div style="text-align:center;">
-  <img src="ICG_wave-300x127.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/ICG_wave-300x127.png" alt="ASIC Flow" width="500" />
   <h4>图2 ICG单元的波形</h4>
 </div>
 
@@ -50,7 +50,7 @@ ICG电路是一种用于控制时钟信号传输的电路，可以有效降低�
 AND门作为时钟门控存在问题，它无法提供无毛刺的输出，而无毛刺的时钟波是非常理想的。
 
 <div style="text-align:center;">
-  <img src="and_gating-300x154.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/and_gating-300x154.png" alt="ASIC Flow" width="500" />
   <h4>图3 AND门作为时钟门控</h4>
 </div>
 

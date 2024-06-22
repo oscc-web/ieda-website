@@ -10,14 +10,14 @@ Decap [Decoupling Capacitor : 去耦电容器] 单元是一种特殊的Filler ce
 可以使用各种方法将MOS晶体管制成电容器，但最常用的结构如图1所示。
 
 <div style="text-align:center;">
-  <img src="decap.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/decap.png" alt="ASIC Flow" width="500" />
   <h4>图1 MOS电容和Decap单元原理图</h4>
 </div>
 
 图1（a）显示了MOS晶体管内部的各种电容，如果将源、漏和体端子连接在一起，则所有这些电容将配置为并联电容，如图1（b）所示，并形成单个等效电容，如图1（c）所示。图1（d）显示了使用pMOS和nMOS晶体管的Decap电容器原理图。从这个原理图中，我们可以说由nMOS和pMOS引起的电容将并联并相加形成一个大电容器。图2显示了最简单的Decap单元的布局。
 
 <div style="text-align:center;">
-  <img src="decapLayout.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/decapLayout.png" alt="ASIC Flow" width="500" />
   <h4>图2 Decap电容器布局</h4>
 </div>
 
@@ -28,7 +28,7 @@ pMOS晶体管的源和漏被短接在一起并连接到VDD，门连接到VSS。�
 在CMOS逻辑操作中有一个输入转换区域，在这个区域内，nMOS和pMOS同时导通，如图3（a）所示。瞬间会流过大的短路电流Isc。如果大量这样的单元放置在一起并一起切换，则需要大量电流，如图3（b）所示。这种大电流需求可能会降低VDD或增加地面电压，这称为电压下降或地面反弹，如图3（c）所示。
 
 <div style="text-align:center;">
-  <img src="decapNeed.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_5/decapNeed.png" alt="ASIC Flow" width="500" />
   <h4>图3 Decap单元的使用</h4>
 </div> 
 
