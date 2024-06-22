@@ -61,7 +61,12 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     }],
-    "/aieda/": [{
+    "/aieda/": [{       
+        text: "iBM数据集",
+        prefix: "ibm/",
+        children: "structure",
+        collapsible: true
+    },{
         text: "iBM数据集",
         prefix: "ibm/",
         children: [
