@@ -3,7 +3,7 @@ title: "iEDA-Chip-003"
 order: 3
 ---
 
-### **芯片参数**
+**芯片参数**
 
 第2次：20220812，在110nm工艺在“一生一芯”三期设计，百万门级的处理器芯片，实现25MHz的流片结果；
 
@@ -24,6 +24,6 @@ SoC规格：
 •特性：11级流水线带cache，IP： UART、VGA、PS/2、SPI、SDRAM、 片上两个PLL模块输出时钟，支持Linux
 ```
 
-### **版图结果**
+**版图结果**
 <img src="/res/images/activities/tapeout/fig3.png" alt="6" style="zoom:70%;" title ="iEDA第三次支持芯片设计并流片版图和板卡测试结果" />
 <center>iEDA第三次支持芯片设计并流片版图和板卡测试结果</center>

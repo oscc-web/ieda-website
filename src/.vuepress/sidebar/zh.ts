@@ -56,8 +56,7 @@ export const zhSidebar = sidebar({
     }, {
         text: "水滴计划",
         prefix: "water_drop/",
-        link: "
-        ",
+        link: "/train/water_drop/README.md",
         children: [
             "water_drop_plan_overview",
             {
@@ -198,7 +197,19 @@ export const zhSidebar = sidebar({
         text: "学术会议",
         prefix: "conferences/",
         link: "/activities/conferences/README.md",
-        children: "structure",
+        children: [
+            {
+                text: "会议通知",
+                prefix: "notice/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "会议议程",
+                prefix: "agenda/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }, {
         text: "学术竞赛",

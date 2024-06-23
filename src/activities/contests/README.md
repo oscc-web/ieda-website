@@ -4,9 +4,16 @@ index: false
 ---
 
 
+（主要介绍iEDA团队组织或基于iEDA工具组织的学术竞赛）
 
-（主要开源芯片数据，工具过程数据，问题数据）
+**竞赛列表**
 
-## **项目背景**
+- 2024年集成电路EDA精英挑战赛-[赛题*：](/activities/contests/EDA_elite_challenge-23-t2.md)
+  
+- 2023年openDACS开源EDA与芯片大赛
+  - 赛题一：[功能向量的时序电路故障模拟器](/activities/contests/openDACS-23-contest-t1.md)
+  - 赛题二：[增量式时序优化算法](/activities/contests/openDACS-23-contest-t1.md)
+  - 赛题三：[FPGA工艺映射算法及优化介绍](/activities/contests/openDACS-23-contest-t1.md)
+  
+- 2023年集成电路EDA精英挑战赛-[赛题二：组合逻辑优化与工艺映射的智能流程](/activities/contests/EDA_elite_challenge-23-t2.md)
 
-目前，EDA型人才依然求大于供，EDA及芯片设计门槛依然较高，亟需一项能够快速入门的EDA学习课程。本项目拟打造通用的EDA综合人才培养训练计划，适用于iEDA团队实习生技术栈培养及高校EDA课程实践。

@@ -4,16 +4,20 @@ order: 1
 ---
 
 ## **2024**
-- iEDA团队参加61st Design Automation Conference (DAC)，并做多场学术报告
-  - 《》
-  - 《》，
-  - 另外参加（BoF）活动并做题为《iEDA：An Open-source EDA Infrasctructure and Toolchain》的介绍报告；
-- [2024年6月3日-6月7日，一生一芯和iEDA团队参加瑞士EFCL Summer School；](https://mp.weixin.qq.com/s/TKq_5ES2aVAn8Lmid4y4dw)
-- iEDA团队参加Large Circuit Model研讨会
-- iEDA团队参ISEDA 2024并做
-  - Tutotial
-  - AiEDA
-  - Panel
+- 2024年6月23日-27日，iEDA团队参加[61st Design Automation Conference (DAC)](https://61dac.conference-program.com/)，并做多场学术报告
+  - **Research Manuscript:** "[Net Resource Allocation: A Desirable Initial Routing Step](https://61dac.conference-program.com/presentation/?id=RESEARCH1344&sess=sess144)", Zhisheng, Jikang Liu, Zhipeng Huang, Ye Cai, Biwei Xie, Yungang Bao, Xingquan Li;
+  - **Research Manuscript:** "[Toward Controllable Hierarchical Clock Tree Synthesis with Skew-Latency-Load Tree](https://61dac.conference-program.com/presentation/?id=RESEARCH1369&sess=sess144)"，Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Xingquan Li;
+  - **Birds-of-a-Feather:** "[iEDA：An Open-source EDA Infrasctructure and Toolchain](https://open-source-eda-birds-of-a-feather.github.io/)";
+  
+- 2024年6月3日-6月7日，[一生一芯和iEDA团队参加瑞士EFCL Summer School；](https://mp.weixin.qq.com/s/TKq_5ES2aVAn8Lmid4y4dw)
+  
+- 2024年5月19日-20日，iEDA团队参加国家EDA创新中心组织的Large Circuit Model研讨会
+- 2024年5月10日-12日，iEDA团队参[2024 International Symposium of EDA (ISEDA)](https://www.eda2.com/iseda/index.html)，并做Tutorial和多场报告
+  - **Tutotial 7:** [iEDA: An Open-source Physical Design EDA Infrastructure and Toolchain](https://www.eda2.com/iseda/tutorials.html), Xingquan Li, Zengrong Huang
+  - **Invited Speakers:** [AiEDA: An Open-source AI-native EDA Library](https://www.eda2.com/iseda/invited.html), Xingquan Li
+  - **Panel 2:** LLM for Chip Design: Challenge and Opportunitie, Xingquan Li
+  - **Technical Program:** [Enhancing ASIC Technology Mapping via Parallel Supergate Computing](https://www.eda2.com/iseda/session14.html), Liwei Ni
+  - **Technical Program:** [PCT-Cap: Point Cloud Transformer for Accurate 3D Capacitance Extraction](https://www.eda2.com/iseda/session10.html), Yuyao Liang
 - 2024年1月20日，开源智能EDA平台和工具，中关村论坛，北京，2024.
   
 ## **2023**

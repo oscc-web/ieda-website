@@ -5,8 +5,16 @@ index: false
 
 
 
-（主要开源芯片数据，工具过程数据，问题数据）
+（主要介绍iEDA团队组织或参与组织的技术交流活动）
 
-## **项目背景**
+**交流列表**
 
-目前，EDA型人才依然求大于供，EDA及芯片设计门槛依然较高，亟需一项能够快速入门的EDA学习课程。本项目拟打造通用的EDA综合人才培养训练计划，适用于iEDA团队实习生技术栈培养及高校EDA课程实践。
+- 2023年12月29日，[iEDA Tutorial第五期：时钟iCTS与布线iRT工具介绍](https://space.bilibili.com/1189298533/channel/series)
+  
+- 2023年9月27日，[iEDA Tutorial第四期：工艺映射iMap与测试向量生成iATPG工具介绍](https://space.bilibili.com/1189298533/channel/series)
+
+- 2023年8月24日，[iEDA Tutorial第三期：iEDA基础底座介绍](https://space.bilibili.com/1189298533/channel/series)
+  
+- 2023年7月31日，[iEDA Tutorial第二期：布图iFP与布局iPL工具介绍](https://space.bilibili.com/1189298533/channel/series)
+  
+- 2023年6月30日，[iEDA Tutorial第一期：时序分析iSTA与功耗分析iPA工具介绍](https://space.bilibili.com/1189298533/channel/series)
