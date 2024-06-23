@@ -4,8 +4,7 @@ index: false
 ---
 
 
-
-（主要开源芯片数据，工具过程数据，问题数据）
+（介绍iEDA基础底座（Infrastructure））
 
 ## **项目背景**
 

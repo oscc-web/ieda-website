@@ -75,7 +75,7 @@ export const zhSidebar = sidebar({
                 children: "structure",
                 collapsible: true
             }, {
-                text: "RUST学习",
+                text: "RUST学习(选)",
                 prefix: "rust/",
                 children: "structure",
                 collapsible: true
@@ -94,7 +94,7 @@ export const zhSidebar = sidebar({
                 collapsible: true
             }, {
                 text: "算法设计类",
-                prefix: "agorithms/",
+                prefix: "algorithms/",
                 children: "structure",
                 collapsible: true
             }, {
@@ -120,9 +120,9 @@ export const zhSidebar = sidebar({
         collapsible: true
     }],
     "/tools/": [{
-        text: "自动化设计脚本",
-        prefix: "auto-scripts/",
-        link: "/tools/auto-scripts/README.md",
+        text: "iEDA底座平台",
+        prefix: "ieda-platform/",
+        link: "/tools/ieda-platform/README.md",
         children: "structure",
         collapsible: true
     }, {
@@ -131,10 +131,10 @@ export const zhSidebar = sidebar({
         link: "/tools/ieda-tools/README.md",
         children: "structure",
         collapsible: true
-    }, {
-        text: "iEDA基础平台",
-        prefix: "ieda-platform/",
-        link: "/tools/ieda-platform/README.md",
+    }, {        
+        text: "自动化设计脚本",
+        prefix: "auto-scripts/",
+        link: "/tools/auto-scripts/README.md",
         children: "structure",
         collapsible: true
     }],

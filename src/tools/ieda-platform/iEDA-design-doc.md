@@ -1,5 +1,5 @@
 ---
-title: "iEDA-总体软件设计说明书"
+title: "iEDA设计说明"
 order: 4
 ---
 
@@ -103,35 +103,3 @@ iEDA课题组主要的研发重点关注在芯片逻辑综合，物理设计，�
 - 智能化
 - 社区生态：
 
-### 1.3 专有名词
-
-| **名词** | **解释**                                                                       |
-| -------------- | ------------------------------------------------------------------------------------ |
-| HPWL           | Half Perimeter Wire Length，用组成net的pins所围成的外接矩形的半周长来近似net长度     |
-| WLM            | Wire Load Model，在.lib文件中记录的net的fanout与线长之间的映射关系                   |
-| Clique         | 团模型 ，组成net的pins之间两两相连                                                   |
-| Star           | 星模型， 在组成net的pins之间计算重心，将该重心作为虚拟pin，所有pins连接于该虚拟pin   |
-| B2B            | 边界模型，只计算每个pin到边界pin的距离，用此距离的和来近似net线长                    |
-| HTree          | Horizontal Tree，计算pins水平方向重心，以此构建树干，其余pin连接到树干上形成斯坦那点 |
-| VTree          | Vertical Tree，计算pins竖直方向重心，以此构建树干，其余pin连接到树干上形成斯坦那点   |
-| FLUTE          | 一种基于查找表的构建斯坦纳树方法                                                     |
-| BBox           | Bounding Box，组成net的pins所围成的外接矩形                                          |
-| RUDY           | Rectangular Uniform Wire Density，评估BBox拥塞的一类方法                             |
-|                |                                                                                      |
-
-### 1.4 参考文档
-
-> 格式为    方法关键词：对应方法的论文标题
-
-- 线长评估器
-  - B2B：Kraftwerk2—A Fast Force-Directed Quadratic Placement Approach Using an Accurate Net Model
-- 时序评估器
-  - FLUTE：FLUTE: Fast lookup table based wirelength estimation technique
-- 拥塞评估器
-  - RUDY：Fast and Accurate Routing Demand Estimation for Efficient Routability-driven Placement
-  - PinRUDY：Global Placement with Deep Learning-Enabled Explicit Routability Optimization
-  - RUDY-dev：Routability-Driven Analytical Placement by Net Overlapping Removal for Large-Scale Mixed-Size Designs
-
-    ```cpp
-
-    ```
