@@ -4,11 +4,11 @@ order: 7
 ---
 
 
-### DAY39-DAY44：iEDA工程代码实践
+### DAY15-DAY20：iEDA工程代码实践
 
-#### (1) 具体要求
+#### 一、具体要求
 
-1. **对于系统方向**：
+（一）**对于系统方向**：
 
 - **整体目标：** 关注数据流变化、平台提供的服务、iEDA的各点工具的API接口以及逻辑交互等等。
 - **任务与要求：**
@@ -18,7 +18,7 @@ order: 7
 - **学习课程：**
   - 参考iEDA实践：[实践一（工程类）](/train/practice/course_1.md)
 
-1. **对于算法方向**：
+（一）**对于算法方向**：
 
 - **整体目标：** 对iEDA项目的某个点工具进行深入学习，包括实现布图规划和布局的iFP及iPL点工具，实现布线的iRT点工具，实现静态时序分析的iSTA点工具等，熟悉点工具的数据流变化，掌握点工具的架构实现和算法实现，了解点工具中的具体方法和接口等。
 - **任务与要求：**
@@ -37,7 +37,7 @@ order: 7
       - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
       - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
 
-1. **参考文献**：
+（一）**参考文献**：
 
 - [Abacus算法：P. Spindler, U. Schlichtmann, and F. M. Johannes. Abacus: fast legalization of standard cell Circuits with minimal movement. In Proceedings of ACM International Symposium on Physical Design, pp. 47–53, 2008.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
 
@@ -54,40 +54,40 @@ order: 7
 
 - [Tetris算法：Method and system for high speed detailed placement of cells within an integrated circuit design; Dwight Hill; US09273809; 2002.04.09.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
 
-#### (2) 学习成果展示
+#### 二、学习成果展示
 
 - 代码设计按照编码规范进行实现，并按照要求实现相应功能，提交PR到代码仓库中；
 - 输出完善后的iEDA架构图及其文字描述；
 
 
-#### (3) 参考资料
+#### 三、参考资料
 
-1. **材料：**
+（一）**材料：**
 
 - [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
 - [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 - 《Paper of Abacus.pdf》、《Patent of Tetris.pdf》 [链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)
 
-2. **视频：**
+（二）**视频：**
 
 - [《iEDA-项目介绍：EDA平台、人工智能与人才培养》](https://www.bilibili.com/video/BV1Bu4y1B7KJ)
 
-3. **更详细的课程介绍文档：** iEDA支持课程实践
+（三）**更详细的课程介绍文档：** iEDA支持课程实践
 学习小注：此部分的学习很接近项目了，如果遇到较大问题，可以请教陈仕健师兄。
 
 
 
-### DAY45-DAY46：学习与总结
+### DAY21-DAY22：学习与总结
 
-#### (1) **具体要求**
+#### 一、**具体要求**
 
 
-1. 完善学习内容：
+（一）完善学习内容：
 
 - 设置了两天缓冲时间，在此期间同学们可以对因故未完成的内容加以完成，未完成的任务进行补充。需要对上述所有任务中的PR，由助教检查通过后，可以申请答辩；
 - 如已全部完成的同学，可以认真整理和复习所学习的内容。
 
-2. 按照要求输出答辩PPT，要求：
+（二）按照要求输出答辩PPT，要求：
    - **个人简介**：一两句话概括，前期答疑/周会已对各位同学有所了解。
    - **C++实习总结** 5min:
      - 描述已掌握的C++和C++ Modern的相关内容，用列表大纲的形式展示，类似于求职简历里的技术栈罗列。(1min)
@@ -101,15 +101,15 @@ order: 7
 
 - **各位老师及助教进行提问和总结不足**。
 
-1. 注意：
+（三）注意：
    - 听完C++实习总结后，团队中主要负责老师及助教老师对每个人C++学习情况进行打断点评，或等全部展示完再进行点评；
    - 每人有15min左右展示时间及10min-12min的提问时间；
 
-#### (2) **学习成果展示**
+#### 二、**学习成果展示**
 
 输出水滴答辩PPT；
 
-3. **参考资料**
+三、**参考资料**
 
 
 - **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
@@ -119,7 +119,7 @@ order: 7
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
 
 
-### DAY47：水滴答辩
+### DAY23：水滴答辩
 
 - 请提前预约一个时间段进行答辩，选择时间段：
   1. 10:00-11:30
