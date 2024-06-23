@@ -24,19 +24,87 @@ export const zhSidebar = sidebar({
         text: "EDA知识",
         prefix: "eda/",
         link: "/train/eda/README.md",
-        children: "structure",
+        children: [
+            {
+                text: "芯片设计基础",
+                prefix: "Part_1-chip_basic/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "标准格式文件",
+                prefix: "Part_2-chip_files/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "芯片设计流程",
+                prefix: "Part_3-chip_flow/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "芯片设计概念",
+                prefix: "Part_4-chip_concepts/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "标准单元",
+                prefix: "Part_5-std_cell/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }, {
         text: "水滴计划",
         prefix: "water_drop/",
-        link: "/train/water_drop/README.md",
-        children:"structure",
+        link: "
+        ",
+        children: [
+            "water_drop_plan_overview",
+            {
+                text: "C++学习",
+                prefix: "C/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "EDA学习",
+                prefix: "eda/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "AI学习",
+                prefix: "ai/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "RUST学习",
+                prefix: "rust/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }, {
         text: "iEDA实践",
         prefix: "practice/",
         link: "/train/practice/README.md",
-        children: "structure",
+        children: [
+            {
+                text: "系统工程类",
+                prefix: "systems/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "算法设计类",
+                prefix: "agorithms/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "AI模型类",
+                prefix: "models/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }, {
         text: "其他学习",

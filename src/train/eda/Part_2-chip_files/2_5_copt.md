@@ -77,6 +77,6 @@ order: 5
 
 这些是在构建时钟树之前提供的主要约束。还有一些其他约束，但上述章节已经解释了主要约束。下图总结了时钟树约束。
 
-## 谢谢
+** 谢谢**
 
 原文链接：https://teamvlsi.com/2020/05/sdc-synopsys-design-constraint-file-in.html
