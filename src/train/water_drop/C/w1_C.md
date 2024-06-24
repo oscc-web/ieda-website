@@ -105,7 +105,7 @@ order: 2
 
 - 输出插件使用的学习笔记，记录遇到的问题及解决方法
 
-### 三、参考资料：
+### 三、参考资料
 
 （一）**[Vscode下Cmake工程配置文件](https://gitee.com/oscc-project/iTraining/tree/master/C++/tools)**:
 
@@ -268,7 +268,7 @@ order: 2
 - 整理 C++ 学习笔记；
 - 完成 C++ Primer Plus 的习题，提交 PR；
 
-### 三、参考资料：
+### 三、参考资料
 
 （一）**C++ 参考资料**:
 

@@ -17,8 +17,7 @@ export default defineUserConfig({
     locales: {
         "/": {
             lang: "zh-CN",
-            title: "iEDA",
-            description: "iEDA的官方网站",
+            // title: "iEDA",
         }
     },
     shouldPrefetch: false,
@@ -67,7 +66,12 @@ export default defineUserConfig({
             resultHistoryCount: 5,
             searchDelay: 150,
             sortStrategy: "max"
+        }),
+        
+        autoCatalog: ({
+            index: true
         })
+
     ],
     head: [
         [

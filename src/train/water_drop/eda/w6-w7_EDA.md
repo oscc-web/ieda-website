@@ -4,9 +4,9 @@ order: 7
 ---
 
 
-### DAY15-DAY20：iEDA工程代码实践
+## DAY15-DAY20：iEDA工程代码实践
 
-#### 一、具体要求
+### 一、具体要求
 
 （一）**对于系统方向**：
 
@@ -16,9 +16,9 @@ order: 7
   - 任务2：遵循iEDA平台的模块划分，完成以下功能：
     - 用iEDA读取gcd设计文件，根据EDA后端设计流程，依次运行iEDA点工具流程，参考现有点工具的报告输出结果，需要实现对各流程的相关参数的变化进行汇总，设计相应的Json数据结构，展示各流程的参数变化。
 - **学习课程：**
-  - 参考iEDA实践：[实践一（工程类）](/train/practice/course_1.md)
+  - 参考iEDA实践：[系统工程实践：S1-数据流处理与分析](/train/practice/systems/s1.md)
 
-（一）**对于算法方向**：
+（二）**对于算法方向**：
 
 - **整体目标：** 对iEDA项目的某个点工具进行深入学习，包括实现布图规划和布局的iFP及iPL点工具，实现布线的iRT点工具，实现静态时序分析的iSTA点工具等，熟悉点工具的数据流变化，掌握点工具的架构实现和算法实现，了解点工具中的具体方法和接口等。
 - **任务与要求：**
@@ -36,8 +36,11 @@ order: 7
       
       - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
       - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
+- **学习课程：**
+  - 参考iEDA实践：[算法设计实践：A1-布局合法化算法实现](/train/practice/algorithms/a1.md)
+  - 参考iEDA实践：[算法设计实践：A3-增量式时序优化算法](/train/practice/algorithms/a2.md)
 
-（一）**参考文献**：
+（三）**参考文献**：
 
 - [Abacus算法：P. Spindler, U. Schlichtmann, and F. M. Johannes. Abacus: fast legalization of standard cell Circuits with minimal movement. In Proceedings of ACM International Symposium on Physical Design, pp. 47–53, 2008.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
 
@@ -54,13 +57,13 @@ order: 7
 
 - [Tetris算法：Method and system for high speed detailed placement of cells within an integrated circuit design; Dwight Hill; US09273809; 2002.04.09.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
 
-#### 二、学习成果展示
+### 二、学习成果展示
 
 - 代码设计按照编码规范进行实现，并按照要求实现相应功能，提交PR到代码仓库中；
 - 输出完善后的iEDA架构图及其文字描述；
 
 
-#### 三、参考资料
+### 三、参考资料
 
 （一）**材料：**
 
@@ -77,9 +80,9 @@ order: 7
 
 
 
-### DAY21-DAY22：学习与总结
+## DAY21-DAY22：学习与总结
 
-#### 一、**具体要求**
+### 一、具体要求
 
 
 （一）完善学习内容：
@@ -105,12 +108,11 @@ order: 7
    - 听完C++实习总结后，团队中主要负责老师及助教老师对每个人C++学习情况进行打断点评，或等全部展示完再进行点评；
    - 每人有15min左右展示时间及10min-12min的提问时间；
 
-#### 二、**学习成果展示**
+### 二、学习成果展示
 
 输出水滴答辩PPT；
 
-三、**参考资料**
-
+### 三、参考资料
 
 - **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
   - **视频：**
@@ -119,7 +121,7 @@ order: 7
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
 
 
-### DAY23：水滴答辩
+## DAY23：水滴答辩
 
 - 请提前预约一个时间段进行答辩，选择时间段：
   1. 10:00-11:30
