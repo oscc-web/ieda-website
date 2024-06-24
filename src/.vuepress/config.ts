@@ -17,8 +17,7 @@ export default defineUserConfig({
     locales: {
         "/": {
             lang: "zh-CN",
-            title: "iEDA",
-            description: "iEDA的官方网站",
+            // title: "iEDA",
         }
     },
     shouldPrefetch: false,
