@@ -66,7 +66,12 @@ export default defineUserConfig({
             resultHistoryCount: 5,
             searchDelay: 150,
             sortStrategy: "max"
+        }),
+        
+        autoCatalog: ({
+            index: true
         })
+
     ],
     head: [
         [

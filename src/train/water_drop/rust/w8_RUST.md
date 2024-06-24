@@ -40,11 +40,20 @@ RUST为选学模块，计划从DAY1开始。
 
 1. 基本数据类型整型、浮点型、字符串、tuple、array等，变量可变性mut；
 2. 复合数据类型enum、struct、trait； 
-3. 容器类型vector、hashmap、hashset、BTreeMap、BTreeSet； 
+3. 容器类型vector、HashMap、HashSet、BTreeMap、BTreeSet； 
 4. Rust流程控制if while for，以及pattern match语句if let、while let； 
 5. Rust函数Function、闭包、迭代器学习； 
 6. Rust宏Macro编写；
 
+具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
+   - 第3章Common Programming Concepts
+   - 第5章Using Structs to Structure Related
+   - 第6章Enums and Pattern Matching
+   - 第8章Common Collections
+   - 第10.2节Traits:Defining Shared Behavior
+   - 第13章Function Language Features:Iterators and Closures 关于closure和itertor的内容
+   - 第17章Object Oriented Programming Features of Rust
+   - 第19.5节Macros
 
 #### 二、**学习成果展示**
 
@@ -68,6 +77,14 @@ RUST为选学模块，计划从DAY1开始。
 5. 错误处理Result、Panic、Option、？操作符 、；
 6. 面向函数编程；
 
+具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
+   - 第4章Understanding Ownership
+   - 第9章Error Handling
+   - 第10章Generic Types,Traits and Lifetimes
+   - 第13章Functional Language Features: Iterators and Closures未学完的内容
+   - 第15章Smart Pointers
+   - 第16章Fearless Concurrency
+   
 
 #### 二、**学习成果展示**
 
