@@ -57,11 +57,11 @@ RUST为选学模块，计划从DAY1开始。
 
 #### 二、**学习成果展示**
 
-[完成对应小练习](https://exercism.org/tracks/rust)；
+- [完成对应小练习](https://exercism.org/tracks/rust)
+- [官方 rustlings 小练习](https://rustlings.cool/)
 
 #### 三、**参考资料**
    - [Rust官方例子](https://rustwiki.org/zh-CN/rust-by-example/index.html)
-   - [官方 rustlings 小练习](https://rustlings.cool/)
    - [Google 出的 Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
 
 ### DAY4-DAY7：Rust进阶知识学习
@@ -88,7 +88,8 @@ RUST为选学模块，计划从DAY1开始。
 
 #### 二、**学习成果展示**
 
-[完成对应小练习](https://exercism.org/tracks/rust)；
+- [完成对应小练习](https://exercism.org/tracks/rust)
+- [官方 rustlings 小练习](https://rustlings.cool/)
 
 #### 三、**参考资料**
 1. 书籍、博客、视频:
