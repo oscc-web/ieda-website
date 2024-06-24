@@ -11,7 +11,7 @@ order: 9
 3. 发布crate到crate.io；
 
 <<<<<<< HEAD
-#### 二、学习成果展示
+### 二、学习成果展示
 =======
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
     - 第11章Writing Automated Tests
@@ -37,7 +37,7 @@ order: 9
 3. 学习Rust标准库中常见数据结构和算法接口；
 
 <<<<<<< HEAD
-#### 二、学习成果展示
+### 二、学习成果展示
 =======
 具体可以学习《数据结构和算法Rust语言描述》相关章节。
 
