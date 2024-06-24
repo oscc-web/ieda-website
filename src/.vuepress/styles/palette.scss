@@ -1,0 +1,100 @@
+// $theme-color: #3eaf7c !default;
+$theme-colors: #2196f3, #f26d6d, #c5c4c2, #fb9b5f, #58bfe8, #154674;
+
+
+$text-color: (
+  light: #2c3e50,
+  dark: #9e9e9e,
+) !default;
+$bg-color: (
+  light: #fff,
+  dark: #0d1117,
+) !default;
+$bg-color-secondary: (
+  light: #f8f8f8,
+  dark: #161b22,
+) !default;
+$bg-color-tertiary: (
+  light: #efeef4,
+  dark: #21262c,
+) !default;
+$border-color: (
+  light: #eaecef,
+  dark: #30363d,
+) !default;
+
+// shadow
+$box-shadow: (
+  light: #f0f1f2,
+  dark: #282a32,
+) !default;
+$card-shadow: (
+  light: rgb(0 0 0 / 15%),
+  dark: rgb(0 0 0 / 30%),
+) !default;
+
+// code
+$code-highlight-error-bg-color: rgba(244 63 94 / 16%) !default;
+$code-highlight-warning-bg-color: rgba(255 193 7 / 16%) !default;
+$code-line-diff-add-color: rgba(16 185 129 / 16%) !default;
+$code-line-diff-add-symbol-color: #298459 !default;
+$code-line-diff-remove-color: rgba(244 63 94 / 16%) !default;
+$code-line-diff-remove-symbol-color: #e0575b !default;
+$code-word-highlight-bg-color: rgb(0 0 0 / 20%) !default;
+$code-word-highlight-border: #636363 !default;
+
+// constants
+$black: (
+  light: #000,
+  dark: #fff,
+);
+$grey-dark: (
+  light: #666,
+  dark: #999,
+);
+$grey-light: (
+  light: #999,
+  dark: #666,
+);
+$white: (
+  light: #fff,
+  dark: #888,
+);
+
+
+
+/* layout */
+// navbar
+$navbar-height: 3.75rem;
+
+$navbar-font-size: 2rem;
+$navbar-font-weight: 600;
+
+$navbar-horizontal-padding: 1.5rem !default;
+$navbar-vertical-padding: 0.7rem !default;
+$navbar-mobile-height: 3.25rem !default;
+$navbar-mobile-horizontal-padding: 1rem !default;
+$navbar-mobile-vertical-padding: 0.5rem !default;
+
+// sidebar
+$sidebar-width: 18rem !default;
+$sidebar-mobile-width: 16rem !default;
+$sidebar-font-size: 2rem;
+
+// content
+$content-width: 780px !default;
+$home-page-width: 1160px !default;
+
+// font
+$font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", STHeiti, "Microsoft YaHei", SimSun, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' !default;
+$font-family-heading: $font-family !default;
+$font-family-mono: 'Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace' !default;
+
+// code
+$code-line-number-width: 2rem !default;
+
+// transition
+$color-transition: "0.3s ease" !default;
+$transform-transition: "0.3s ease" !default;
+
+

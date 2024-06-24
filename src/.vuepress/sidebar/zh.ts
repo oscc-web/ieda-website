@@ -17,7 +17,7 @@ export const zhSidebar = sidebar({
         text: "团队成员",
         prefix: "team/",
         link: "/project/team/README.md",
-        children: "structure",
+        // children: "",
         collapsible: true
     }], 
     "/train/": [{
