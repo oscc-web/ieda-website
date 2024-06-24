@@ -38,12 +38,12 @@ RUST为选学模块，计划从DAY1开始。
 
 学习如下知识点：
 
-1. 基本数据类型整型、浮点型、字符串、tuple、array等，变量可变性mut；
-2. 复合数据类型enum、struct、trait； 
-3. 容器类型vector、HashMap、HashSet、BTreeMap、BTreeSet； 
-4. Rust流程控制if while for，以及pattern match语句if let、while let； 
-5. Rust函数Function、闭包、迭代器学习； 
-6. Rust宏Macro编写；
+1. 基本数据类型整型、浮点型、字符串、tuple、array等，变量可变性mut
+2. 复合数据类型enum、struct、trait
+3. 容器类型vector、HashMap、HashSet、BTreeMap、BTreeSet 
+4. Rust流程控制if while for，以及pattern match语句if let、while let
+5. Rust函数Function、闭包、迭代器学习
+6. Rust宏Macro编写
 
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
    - 第3章Common Programming Concepts
@@ -70,12 +70,12 @@ RUST为选学模块，计划从DAY1开始。
 
 学习如下知识点：
 
-1. 类型系统泛型编程、trait系统、类型转换；
-2. 所有权系统包括所有权机制、Copy和Clone、引用和借用、生命周期、Slice切片；
-3. 智能指针Box、Rc、RefCell；
-4. 并发编程，Atomic，多线程和异步Async/Await并发，Mutex、Arc；
-5. 错误处理Result、Panic、Option、？操作符 、；
-6. 面向函数编程；
+1. 类型系统泛型编程、trait系统、类型转换
+2. 所有权系统包括所有权机制、Copy和Clone、引用和借用、生命周期、Slice切片
+3. 智能指针Box、Rc、RefCell
+4. 并发编程，Atomic，多线程和异步Async/Await并发，Mutex、Arc
+5. 错误处理Result、Panic、Option、？操作符
+6. 面向函数编程
 
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
    - 第4章Understanding Ownership
