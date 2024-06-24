@@ -17,7 +17,7 @@ order: 9
     - 第11章Writing Automated Tests
     - 第14章More about Cargo and Crates.io
 
-完成一个小项目，包含Cargo.toml等的文件组织，测试，模块crate划分
+完成一个小项目，包含Cargo.toml等的文件组织，测试，模块crate划分。可以选择[Rust语言官方文档](https://doc.rust-lang.org/book/)第12章的题目，构建一个命令行Grep搜索程序，根据配置参数读取文件，并做错误处理，保存匹配的内容，构建单元测试用例覆盖功能测试、性能测试、异常测试等。
 
 ### 三、参考资料
 
