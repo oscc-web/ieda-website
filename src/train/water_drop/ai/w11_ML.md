@@ -1,5 +1,5 @@
 ---
-title: "ML学习-Week1(选)"
+title: "AI学习-Week1(选)"
 order: 11
 ---
 
