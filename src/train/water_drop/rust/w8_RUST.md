@@ -5,9 +5,9 @@ order: 8
 
 RUST为选学模块，计划从DAY1开始。
 
-### DAY1：准备阶段
+## DAY1：准备阶段
 
-#### 一、具体要求
+### 一、具体要求
 
 1. **编程环境搭建**： 
   - VSCode安装及Rust-analyzer插件安装 
@@ -19,22 +19,22 @@ RUST为选学模块，计划从DAY1开始。
     [安装教程链接](https://www.rust-lang.org/tools/install)
 
 
-#### 二、学习成果展示
+### 二、学习成果展示
 
 1. 整理关于编程环境搭建中遇到的问题和解决方案的笔记；
 2. 使用Cargo创建工程，编写Hello word程序，完成程序编译、执行；
 
 
-#### 三、**参考资料**
+### 三、参考资料
 
 - [iEDA团队B站视频号](https://space.bilibili.com/1189298533)
 - [iEDA语雀 Rust学习](https://ieda.yuque.com/kzqyb5/lfqbw8)
 - [清华Rust课程](https://lab.cs.tsinghua.edu.cn/rust/)
 - [Rust官方学习文档](https://doc.rust-lang.org/book/), [Rust官方学习文档 - Get Started](https://www.rust-lang.org/learn/get-started)
 
-### DAY2-DAY3：Rust基础知识学习
+## DAY2-DAY3：Rust基础知识学习
 
-#### 一、**具体要求**
+### 一、具体要求
 
 学习如下知识点：
 
@@ -46,18 +46,18 @@ RUST为选学模块，计划从DAY1开始。
 6. Rust宏Macro编写；
 
 
-#### 二、**学习成果展示**
+### 二、学习成果展示
 
 [完成对应小练习](https://exercism.org/tracks/rust)；
 
-#### 三、**参考资料**
+### 三、参考资料
    - [Rust官方例子](https://rustwiki.org/zh-CN/rust-by-example/index.html)
    - [官方 rustlings 小练习](https://rustlings.cool/)
    - [Google 出的 Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
 
-### DAY4-DAY7：Rust进阶知识学习
+## DAY4-DAY7：Rust进阶知识学习
 
-#### 一、**具体要求**
+### 一、具体要求
 
 学习如下知识点：
 
@@ -69,11 +69,11 @@ RUST为选学模块，计划从DAY1开始。
 6. 面向函数编程；
 
 
-#### 二、**学习成果展示**
+### 二、学习成果展示
 
 [完成对应小练习](https://exercism.org/tracks/rust)；
 
-#### 三、**参考资料**
+### 三、参考资料
 1. 书籍、博客、视频:
    - [官方 rust 死灵书](https://doc.rust-lang.org/nomicon/intro.html)
    - [Rust 语言圣经](https://course.rs/basic/intro.html)
