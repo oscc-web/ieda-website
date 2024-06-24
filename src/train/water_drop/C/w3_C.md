@@ -46,12 +46,21 @@ order: 4
 - 对上两项内容提交PR到指定仓库iTraining/EDA中；
 - 提交每日的学习记录；
 
-### 三、资料
+### 三、参考资料
 
 - [iEDA 用户手册](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
 - [iEDA 开源芯片设计平台介绍](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 
 ## DAY17-DAY21：C++大作业
+
+已知如下图地图，黑色表示障碍物无法通行，要求实现避障算法寻找从红色起点出发到达绿色终点的最优路径。
+ 
+![题目图片](/res/images/water_drop/image.png)
+
+要求：
+（1）	对图中的地图进行建模，抽象成类，对数据进行封装；
+（2）	思考寻路算法的实现，对问题进行拆解，对算法实现也要求抽象接口类；
+（3）	使用给定的C++工程模板，按照模板编写CMakeLists.txt，以及Google Test单元测试，DoxyGen注释的使用。
 
 ### 一、具体要求
 
@@ -75,7 +84,7 @@ order: 4
 - 实验报告中应该至少包含数据结构设计、输入描述、输出描述、主要算法思想的文字描述，测试用例及用例运行结果（如设计两点间通路、死路情况的样例、不同情况通路中对应的最优路径cost消耗）； 代码和实验报告(作为readme.md)一起提交Pull Request；
 - 准备并提交实习总结的PPT。
 
-### 三、参考资料：
+### 三、参考资料
 
 - [题目.docx](https://gitee.com/oscc-project/iTraining/tree/master/C++/CPP-Program-Assignment/Assignment_3)
 - [水滴计划-答辩ppt模板.pptx](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
