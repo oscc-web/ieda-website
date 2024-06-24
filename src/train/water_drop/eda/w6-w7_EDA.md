@@ -50,12 +50,14 @@ order: 7
     - 单元分散到行：根据单元的横坐标对各个单元进行排序。每次处理一个单元，该单元首先移动到最近的行；
     - 行内合法化：计算该单元在本行的代价，以及移动到该行的上方和下方的代价，保证单元的总移动最小且不重叠；
     - 单元放置：将该单元放置到代价最小的行，同时更新簇和坐标。
+- [Tetris算法：Method and system for high speed detailed placement of cells within an integrated circuit design; Dwight Hill; US09273809; 2002.04.09.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
+
   - **Tetris算法主要步骤如下**（贪心算法，不会移动已经合法化的单元）：
     
     - 候选空间选取：按横坐标顺序排列所有单元，在每行选取最左端的一个空白区域；
     - 单元放置：对每个单元，在候选空间中挑选最近的一个并放置。更新已占用格子信息，逐个放置直到所有单元被安置。
 
-- [Tetris算法：Method and system for high speed detailed placement of cells within an integrated circuit design; Dwight Hill; US09273809; 2002.04.09.](http://localhost:8091/train/water_drop/water-drop-eda.html#_1-%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9%E6%A6%82%E8%BF%B0)
+
 
 ### 二、学习成果展示
 
@@ -76,7 +78,7 @@ order: 7
 - [《iEDA-项目介绍：EDA平台、人工智能与人才培养》](https://www.bilibili.com/video/BV1Bu4y1B7KJ)
 
 （三）**更详细的课程介绍文档：** iEDA支持课程实践
-学习小注：此部分的学习很接近项目了，如果遇到较大问题，可以请教陈仕健师兄。
+学习小注：此部分的学习很接近项目了，如果遇到较大问题，可以请教布局组陈仕健师兄。
 
 
 
