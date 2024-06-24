@@ -70,7 +70,7 @@ export const zhSidebar = sidebar({
                 children: "structure",
                 collapsible: true
             }, {
-                text: "AI学习",
+                text: "AI学习(选)",
                 prefix: "ai/",
                 children: "structure",
                 collapsible: true
