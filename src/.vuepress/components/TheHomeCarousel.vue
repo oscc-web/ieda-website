@@ -18,6 +18,7 @@ export default {
         { url: '/res/images/index/logo_place.gif', text: '用iEDA工具做的芯片版图logo' },
         { url: '/res/images/index/home/IMG_4033.png', text: 'Andrew B. Kahng在介绍国际知名的开源EDA工具' },
         { url: '/res/images/index/home/wh-ab.jpg', text: 'iEDA团队成员王昊和Andrew B. Kahng在ETH的合影' },
+        { url: '/res/images/index/home/risc-v24-eu.jpg', text: 'iEDA在2024年RISC-V欧洲峰会参展' },
         // { url: '/res/images/index/iEDA-tapeout.png', text: '三次流片成功' }
       ]
     };
