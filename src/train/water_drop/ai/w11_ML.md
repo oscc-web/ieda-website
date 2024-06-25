@@ -21,11 +21,11 @@ AI为选学模块。
 
 ### 三、参考资料
   1. 深度学习《Deep Learning》 Yoshua Bengio & Ian GoodFellow 第一部分
-  2. Mathematics for Machine Learning: Linear Algebra》
+  2. 《Mathematics for Machine Learning: Linear Algebra》
   3. 概率论与数理统计《概率论与数理统计》浙江大学 高等教育出版社
 
 
-### DAY5-7：Python和常用库
+## DAY5-7：Python和常用库
 
 ### 一、具体要求
 

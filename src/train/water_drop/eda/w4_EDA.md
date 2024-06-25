@@ -4,7 +4,6 @@ order: 5
 ---
 ## DAY1：EDA基础入门
 
-==**TODO{修改DAY编号}**==
 
 **学习小注：** 接下来就要正式开始学习EDA了，了解EDA流程，各个环节的目的与参考指标有哪些，课题介绍可以先浏览[iEDA B站视频号](https://space.bilibili.com/1189298533)，若学习中有什么问题想法，也可以联系询问iEDA的相关课题的老师同学。
 
@@ -166,6 +165,13 @@ order: 5
 
 ### 一、具体要求
 
+  1.数字电路基础知识，包括MOSFET、组合逻辑电路、时序逻辑电路，可学习书籍《数字电路与逻辑设计》第1-5章。
+  2.Verilog语言学习,包括Module、Port、Netlist，可学习书籍《Verilog HDL数字设计与综合》第1-6章。
+  3.时序基础概念，包括Delay、Transition Time（Slew）、Skew，Clock Domain，Cell Library，Slack，Timing Arc、Timing Path，可学习书籍《Static Timing Analysis for  Nanometer Designs》第1-2章。
+  4. 延时计算（Delay Calculation），包括Cell Delay、SPEF、Interconnect Delay计算方法，可学习书籍《Static Timing Analysis for  Nanometer Designs》第3-5章，另外可阅读补充书籍和论文。
+  5. 时序约束（SDC），包括create_clock，set_input_delay，set_output_delay，set_max_fanout，set_max_transition等，可学习书籍《Static Timing Analysis for  Nanometer Designs》第7章。
+  6.时序传播和分析（STA），包括Setup/Hold，Multicycle Path，Recovery/Removal，可学习书籍《Static Timing Analysis for  Nanometer Designs》第8章。
+
 **书籍阅读**：
 
    - **《数字集成电路物理设计》**：
@@ -184,6 +190,17 @@ order: 5
 
    - **书籍推荐**：《数字集成电路物理设计》、《MK_Static Timing Analysis For Nanometer Designs》、《集成电路静态时序分析与建模》.
    - **视频链接**：
+     - [iEDA-Tutorial-第一期：iSTA和iPW整体介绍](https://www.bilibili.com/video/BV1sp4y137bc/?spm_id_from=333.788.recommend_more_video.1)
      - [iEDA-Tutorial-第一期：iSTA工具架构、特性、API与使用](https://www.bilibili.com/video/BV1a14y1B7uz)
      - [iEDA-Tutorial-第一期：iSTA关键技术研究](https://www.bilibili.com/video/BV16X4y177xr)
      - [2023 开源芯片技术生态论坛：基于Yosys和iSTA的数字前端时序评估](https://www.bilibili.com/video/BV1TF411k7kF)
+  - **补充阅读材料**：
+    1. Neil H. E. Weste, David Money Harris 《CMOS VLSI Design A Circuits and Systems Perspective (4th Edition) 》
+    2. 喻文健《超大规模集成电路分析与综合》
+    3. 刘峰《集成电路静态时序分析与建模 》
+    4. Eli Chiprout, Michel S. Nakhla  《Asymptotic Waveform Evaluation And Moment Matching for Interconnect Analysis 》
+    5. Sheldon Tan, Lei He《Advanced Model Order Reduction Techniques In VLSI Design》
+    6. 论文《PRIMA: Passive Reduced-Order
+    Interconnect Macromodeling Algorithm》
+    7. 论文《TICER Realizable Reduction of Extracted RC Circuits》
+    8. 手册《prime time user guide》
