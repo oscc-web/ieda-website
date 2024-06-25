@@ -89,7 +89,6 @@ order: 2
    - 材料：[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
    - 材料：[《请不要这样提问》](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
 
----------------------
 
 ## DAY2：插件学习
 
@@ -130,16 +129,21 @@ order: 2
 
 （一）**[VScode下Cmake工程配置文件相关资料](https://gitee.com/oscc-project/iTraining/tree/master/C++/tools)**:
 
-   - 《VScode下Cmake工程配置文件》
-   - 《开发环境tools.pdf》
-   - 《Glog使用.pptx》
-   - 《Modern+CMake文档.pdf》
+   - 《Vscode下Cmake 工程配置文件.md》：
+   以示例形式展示vscode如何编写launch.json、task.json。
+   - 《开发环境tools.pdf》：
+   主要讲述vscode的介绍、配置。
+   - 《Glog使用.pptx》：
+   讲述Glog使用文档、Glog下载和启动、Glog分级打印、Glog条件打印、Glog调试模式、Glog Check宏、Glog高级功能。
+   - 《Modern+CMake文档.pdf》：
+   从安装、使用CMake生成项目、CMake命令行选项的设置出发，讲述CMake基础知识、基本概念和基本控制语法等内容，并阐述如何构建项目、运行其他程序等操作。
 
 （二）**视频教程**:
 
-   - [《iEDA-水滴计划：CMake语法与工程实践》](https://www.bilibili.com/video/BV1xp4y1V7qu)：陶思敏老师介绍cmake的安装，相关命令选项，CMakeLists.txt文件的编程规范、语法以及工程实践等等。
+   - [《iEDA-水滴计划：CMake语法与工程实践》](https://www.bilibili.com/video/BV1xp4y1V7qu)：
+   陶思敏老师介绍cmake的安装，相关命令选项，CMakeLists.txt文件的编程规范、语法以及工程实践等等。
 
-**学习小注：** 这部分对于没有接触过编程的同学，学习可能比较茫然，不知所云。不要着急，先简单了解，留个映像，之后编程有一定基础后，遇到困难，再回来看看，会有实际的收获~
+**学习小注：** 这部分对于没有接触过编程的同学，学习可能比较茫然，不知所云。不要着急，先简单了解，留个印象，之后编程有一定基础后，遇到困难，再回来看看，会有实际的收获~
 
 
 ## DAY3-DAY4：工具学习
@@ -221,25 +225,36 @@ order: 2
 
    - [《MobaXterm快速入门、高级使用技巧》](https://blog.csdn.net/qq_34435096/article/details/130729092)
 
+讲述使用Mobaxterm的背景、介绍如何快速入门，以及六种高级使用方法：多标签会话、SSH隧道、会话管理器、宏和脚本、远程桌面和自定义设置。
+
 （二）**Linux 基础命令学习**:
 
    - [《Linux常用指令》](https://blog.csdn.net/weixin_57023347/article/details/121194810)
+   主要分为Linux使用的基本操作、文件权限相关指令、系统相关指令以及网络相关命令。
 
 （三）**Git 学习参考资料**:
+   文档版讲述git使用的详细教程，可搭配陶思敏老师关于git命令的实操视频（后面两个视频）搭配学习：
 
    - [《Git使用详细教程》](https://blog.csdn.net/nanxun201314/article/details/127719569)
    - 视频: [《iEDA-水滴计划：git简介与命令实践》](https://www.bilibili.com/video/BV1Ch4y1C7wi)
    - 视频: [《iEDA-水滴计划：git简介与命令实践（2）》](https://www.bilibili.com/video/BV1v94y167kd)
 
+
+
 （四）**编程规范参考资料**:
+
+   编程规范是为了使软件代码具有可读性，保证软件质量，因此制定本文档。确保编程规范，让你的代码更有参考使用价值。文档学习可搭配陶思敏老师的视频教学配套使用：
 
    - [《编程规范.docx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/code-style)
    - 视频: [《iEDA-水滴计划：编程规范概述》](https://www.bilibili.com/video/BV1TN411h72Q)
+
+
 
 （五）**软件设计思想参考资料**:
 
    - 视频: [《iEDA-水滴计划：怎样进行软件设计》](https://www.bilibili.com/video/BV1GN411h7Qg)
 
+   陶思敏老师介绍怎样进行软件设计。包括：软件的本质，软件设计过程，软件设计需要考虑的内容等。
 
 ## DAY5-DAY7：C++基础学习
 
@@ -299,5 +314,6 @@ order: 2
 （二）**编程辅助工具视频教程**:
 
    - [《iEDA-水滴计划：Copilot插件及ChatGPT工具在编程中的应用》](https://www.bilibili.com/video/BV1eh4y1C7Ys)
+   李伟国同学介绍：Copilot插件及ChatGPT工具在编程中的应用。包括：基本语句实现，算法补全，新特性，调试和注意事项等。
 
 **学习小注：** 合理使用编程工具可以极大的提高我们的编程效率，但也不要过分依赖，遇到问题自我探索，自我突破也不失为一件趣事。

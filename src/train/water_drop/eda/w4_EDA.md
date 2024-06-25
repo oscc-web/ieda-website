@@ -32,11 +32,7 @@ order: 5
 ### 二、学习内容
 - 数字电路设计流程
    -  [VLSI流程](/train/eda/Part_1-chip_basic/1_2_VLSI_flow.md)
-   -  《超大规模集成电路物理设计：从图分割到时序收敛》：
-      - 第1章 绪论；第2章 **
-   - 《》
-      - 第*章
-  - [PPT]（）
+   -  《超大规模集成电路物理设计：从图分割到时序收敛》
 - [芯片设计标准格式文件](/train/eda/Part_2-chip_files/README.md)
   - Verilog
   - LEF/DEF
@@ -74,7 +70,7 @@ order: 5
      - 其他资料
   
    - 逻辑表示
-     - 
+   
    - 逻辑优化
      - 综述
    - 工艺映射

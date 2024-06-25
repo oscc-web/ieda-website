@@ -72,6 +72,8 @@ order: 7
 - [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
 - [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 - 《Paper of Abacus.pdf》、《Patent of Tetris.pdf》 [链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)
+《Paper of Abacus.pdf》介绍了一种名为“Abacus”的新方法，用于在最小移动的情况下合法化标准单元电路的布局。通过按位置对单元进行排序，并逐个合法化单元，这种方法在移动单元时采用了动态规划，以减少总体移动量。
+《Patent of Tetris.pdf》介绍了一种用于在集成电路设计中高速进行单元详细放置的方法和系统，通过对单元进行排序和摆放，提高了放置效率，从而实现更高性能的集成电路设计。
 
 （二）**视频：**
 
@@ -118,6 +120,7 @@ order: 7
 
 - **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
   - **视频：**
+  以下为上期学员的答辩视频，以供学习：
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(王瑞)》](https://www.bilibili.com/video/BV1y34y1T7GV)
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(郭帆)》](https://www.bilibili.com/video/BV18w411D7mj)
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
