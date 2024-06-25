@@ -4,7 +4,7 @@
 
 iEDA-Script：一个iEDA专用执行脚本，用于测试、评估和解析数据。其主要工具流程如下：
 
-<img src="../img/iEDA_script/iEDA_script2.png">
+<!-- <img src="../img/iEDA_script/iEDA_script2.png"> -->
 
 图1 iEDA工具流程
 
@@ -35,7 +35,7 @@ scripts
 
 script目录包含物理后端设计需要的所有流程脚本和结果分析评估脚本，并且按流程、功能划分好模块；流程脚本可支持顶层自动化运行脚本run_iEDA.py的调用，也可以支持独立运行。
 
-<img src="../img/iEDA_script/iEDA_script1.png">
+<!-- <img src="../img/iEDA_script/iEDA_script1.png"> -->
 
 图2 iEDA-Script工程目录划分，其中run_iEDA.py为脚本主入口
 
