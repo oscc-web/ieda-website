@@ -183,6 +183,7 @@ order: 5
 
    - **书籍推荐**：《数字集成电路物理设计》、《MK_Static Timing Analysis For Nanometer Designs》、《集成电路静态时序分析与建模》.
    - **视频链接**：
+     - [iEDA-Tutorial-第一期：iSTA和iPW整体介绍](https://www.bilibili.com/video/BV1sp4y137bc/?spm_id_from=333.788.recommend_more_video.1)
      - [iEDA-Tutorial-第一期：iSTA工具架构、特性、API与使用](https://www.bilibili.com/video/BV1a14y1B7uz)
      - [iEDA-Tutorial-第一期：iSTA关键技术研究](https://www.bilibili.com/video/BV16X4y177xr)
      - [2023 开源芯片技术生态论坛：基于Yosys和iSTA的数字前端时序评估](https://www.bilibili.com/video/BV1TF411k7kF)
