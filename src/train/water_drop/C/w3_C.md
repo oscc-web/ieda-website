@@ -62,8 +62,8 @@ order: 4
 ## DAY17-DAY21：C++大作业
 
 已知如下图地图，黑色表示障碍物无法通行，要求实现避障算法寻找从红色起点出发到达绿色终点的最优路径。
- 
-![题目图片](/res/images/water_drop/image.png)
+
+![题目图片](/res/images/train/water_drop/image.png)
 
 要求：
 （1）	对图中的地图进行建模，抽象成类，对数据进行封装；

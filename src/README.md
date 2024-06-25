@@ -7,10 +7,10 @@ home: true
 ---
 
 <TheHomeCarousel />
-<TheHomeFeatures />
-<TheHomeAdvantages />
-<TheHomeApplications />
-<TheHomeEvaluations />
+<!-- <TheHomeFeatures /> -->
+<!-- <TheHomeApplications /> -->
+<!-- <TheHomeEvaluations /> -->
 <TheHomeNews />
+<TheHomeAdvantages />
 <TheHomePartners />
 <TheFooter />

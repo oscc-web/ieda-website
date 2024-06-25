@@ -9,11 +9,19 @@ export default hopeTheme({
   // Theme Basic
   hostname: "https://ieda.oscc.cc",
   author: {
+<<<<<<< HEAD
     name: "Miao Yuyang",
     url: "https://myyerrol.github.io",
     email: "myyerrol@126.com"
   },
   favicon: "/res/images/logo/ieda_logo2.png",
+=======
+    name: "iEDA",
+    url: "https://github.com/OSCC-Project",
+    email: "ieda.oscc@gmail.com"
+  },
+  favicon: "/res/images/logo/ieda_icon.png",
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
 
   // Theme Layout
   // Navbar
@@ -30,7 +38,11 @@ export default hopeTheme({
   },
 
 
+<<<<<<< HEAD
   logo: "/res/images/logo/ieda_logo2.png",
+=======
+  logo: "/res/images/logo/ieda_logo3.png",
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
   logoDark: "/res/images/logo/ieda_logo2.png",
 
   repo: "OSCC-Project/iEDA",
@@ -43,9 +55,15 @@ export default hopeTheme({
   sidebarIcon: true,
   sidebarSorter: ["readme", "order", "title", "filename"],
   headerDepth: 2,
+<<<<<<< HEAD
   
   // Route Navigation
   breadcrumb: false,
+=======
+
+  // Route Navigation
+  breadcrumb: true,
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
   breadcrumbIcon: true,
   prevLink: true,
   nextLink: true,
@@ -53,7 +71,12 @@ export default hopeTheme({
 
   // Title
   titleIcon: true,
+<<<<<<< HEAD
   pageInfo: false,
+=======
+  // pageInfo: false,
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
 
 
   // Meta
@@ -66,7 +89,11 @@ export default hopeTheme({
 
 
   // Footer
+<<<<<<< HEAD
   footer: "GPL协议 | 版权所有 © 2023-现在 iEDA社区",
+=======
+  footer: "GPL License | Copyright © iEDA | 2023 - Now",
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
   copyright: false,
   displayFooter: true,
   // Others
@@ -77,7 +104,11 @@ export default hopeTheme({
   darkmode: "toggle",
 //   darkmode: "switch",
   themeColor: false,
+<<<<<<< HEAD
   fullscreen: true,
+=======
+  fullscreen: false,
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
   backToTop: true,
   pure: false,
   print: false,
@@ -98,7 +129,11 @@ export default hopeTheme({
     blog: false,
     comment: false,
     copyright: {
+<<<<<<< HEAD
       author: "myyerrol",
+=======
+      author: "iEDA",
+>>>>>>> d4489583bdedd39faa3001a08ec5f1cedd5ef3ff
       license: "GPL-3.0",
       triggerWords: 1,
       global: true,

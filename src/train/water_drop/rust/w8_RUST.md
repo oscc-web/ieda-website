@@ -12,7 +12,7 @@ RUST为选学模块，计划从DAY1开始。
 1. **编程环境搭建**： 
   - VSCode安装及Rust-analyzer插件安装 
     
-    VSCode安装环境参考C++ Week1.
+    VSCode安装环境参考C++ Week1。
 
 2. **安装Rust和Cargo工具链**
     
@@ -21,8 +21,8 @@ RUST为选学模块，计划从DAY1开始。
 
 ### 二、学习成果展示
 
-1. 整理关于编程环境搭建中遇到的问题和解决方案的笔记；
-2. 使用Cargo创建工程，编写Hello word程序，完成程序编译、执行；
+1. 整理关于编程环境搭建中遇到的问题和解决方案的笔记
+2. 使用Cargo创建工程，编写Hello word程序，完成程序编译、执行
 
 
 ### 三、参考资料
@@ -38,12 +38,12 @@ RUST为选学模块，计划从DAY1开始。
 
 学习如下知识点：
 
-1. 基本数据类型整型、浮点型、字符串、tuple、array等，变量可变性mut；
-2. 复合数据类型enum、struct、trait； 
-3. 容器类型vector、HashMap、HashSet、BTreeMap、BTreeSet； 
-4. Rust流程控制if while for，以及pattern match语句if let、while let； 
-5. Rust函数Function、闭包、迭代器学习； 
-6. Rust宏Macro编写；
+1. 基本数据类型整型、浮点型、字符串、tuple、array等，变量可变性mut
+2. 复合数据类型enum、struct、trait
+3. 容器类型vector、HashMap、HashSet、BTreeMap、BTreeSet 
+4. Rust流程控制if while for，以及pattern match语句if let、while let
+5. Rust函数Function、闭包、迭代器学习
+6. Rust宏Macro编写
 
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
    - 第3章Common Programming Concepts
@@ -57,11 +57,11 @@ RUST为选学模块，计划从DAY1开始。
 
 ### 二、学习成果展示
 
-[完成对应小练习](https://exercism.org/tracks/rust)；
+- [完成对应小练习](https://exercism.org/tracks/rust)
+- [官方 rustlings 小练习](https://rustlings.cool/)
 
 ### 三、参考资料
    - [Rust官方例子](https://rustwiki.org/zh-CN/rust-by-example/index.html)
-   - [官方 rustlings 小练习](https://rustlings.cool/)
    - [Google 出的 Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
 
 ## DAY4-DAY7：Rust进阶知识学习
@@ -70,12 +70,12 @@ RUST为选学模块，计划从DAY1开始。
 
 学习如下知识点：
 
-1. 类型系统泛型编程、trait系统、类型转换；
-2. 所有权系统包括所有权机制、Copy和Clone、引用和借用、生命周期、Slice切片；
-3. 智能指针Box、Rc、RefCell；
-4. 并发编程，Atomic，多线程和异步Async/Await并发，Mutex、Arc；
-5. 错误处理Result、Panic、Option、？操作符 、；
-6. 面向函数编程；
+1. 类型系统泛型编程、trait系统、类型转换
+2. 所有权系统包括所有权机制、Copy和Clone、引用和借用、生命周期、Slice切片
+3. 智能指针Box、Rc、RefCell
+4. 并发编程，Atomic，多线程和异步Async/Await并发，Mutex、Arc
+5. 错误处理Result、Panic、Option、？操作符
+6. 面向函数编程
 
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
    - 第4章Understanding Ownership
@@ -88,7 +88,8 @@ RUST为选学模块，计划从DAY1开始。
 
 ### 二、学习成果展示
 
-[完成对应小练习](https://exercism.org/tracks/rust)；
+- [完成对应小练习](https://exercism.org/tracks/rust)
+- [官方 rustlings 小练习](https://rustlings.cool/)
 
 ### 三、参考资料
 1. 书籍、博客、视频:

@@ -37,15 +37,20 @@ order: 13
 ## DAY18-21：AI EDA实训
 ### 一、具体要求
 
-1. 利用电容提取训练数据集搭建一个预测电容的神经网络
-2. 利用时延计算训练数据集搭建一个预测时序路径延时的神经网络
-
-### 二、学习成果展示
+### 二、实训题目
+1. 基于在布局阶段产生的数据，搭建一个基于线长预测时延的网络。
+   - 题目参考iEDA实践：[M1-布局线长预测时延](/train/practice/models/m1.md)
+2. 利用时延计算训练数据集，搭建一个预测时序路径延时的网络。
+   - 题目参考iEDA实践：[M1-时序矫正](/train/practice/models/m2.md)
+3. 利用电容提取训练数据集，搭建一个计算3D电容的神经网络。
+   - 题目参考iEDA实践：[M3-布局线长预测时延](/train/practice/models/m3.md)
+   
+### 三、学习成果展示
 
 1. 输出训练模型，并撰写PPT介绍设计思路
 2. 两个AI EDA任务可以二选一
 
-### 三、参考资料
+### 四、参考资料
 1. [OSCC数据集仓库iBM](https://gitee.com/oscc-project/i-bm)
 2. 相关论文 
  - 《PCT-Cap: Point Cloud Transformer for Accurate 3D Capacitance Extraction》 

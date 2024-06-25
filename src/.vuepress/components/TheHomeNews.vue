@@ -36,20 +36,20 @@
     import { ref } from "vue";
 
     const newsItemList = ref([{
-        image: "https://www.chipsalliance.org/news/verilator-model-generation-performance-improvements-and-initial-multithreaded-verilation-support/Accelerating-model-generation-in-Verilator--blog-CHIPS.svg",
-        tags: ["Verilator"],
-        date: "2023-09-29",
-        text: "Verilator模型生成性能改进和对多线程验证的初步支持"
+        image: "/res/images/index/home/dac24.jpg",
+        tags: ["EDA", "DAC"],
+        date: "2024-06-24",
+        text: "iEDA团队参加61届Design Automation Conference (DAC)，并做3场学术报告"
     }, {
-        image: "https://www.chipsalliance.org/news/progress-in-open-source-systemverilog-uvm-support-in-verilator/scaling-verilator--chips-alliance.png",
-        tags: ["Verilator", "SV", "UVM"],
-        date: "2023-07-21",
-        text: "Verilator对开源SystemVerilog和UVM支持的进展"
+        image: "https://www.anlogic.com/Public/ueditor/upload/image/20231229/1703853669609094.jpeg",
+        tags: ["EDA", "精英挑战赛", "麒麟杯"],
+        date: "2023-12-26",
+        text: "由iEDA团队参与出题并组织的EDA精英挑战赛赛题二获得竞赛最高奖—麒麟杯奖"
     }, {
-        image: "https://www.chipsalliance.org/news/open-source-rtl-ci-testing-and-verification-for-caliptra-veer/CI-driven-testing-for-VeeR_blog_chips.png",
-        tags: ["RISC-V"],
-        date: "2023-07-04",
-        text: "面向Caliptra RISC-V VeeR内核的RTL测试和验证（基于开源和CI驱动方法）"
+        image: "https://ieda.oscc.cc/res/images/publicity/publicity/iccad_first.png",
+        tags: ["EDA", "ICCAD", "Contest"],
+        date: "2022-10-03",
+        text: "CAD Contest ICCAD获奖名单公布，华人包揽所有奖项，获两项冠军，创历史佳绩"
     }]);
     const newsBodyStyle = ref({
         "display": "flex",

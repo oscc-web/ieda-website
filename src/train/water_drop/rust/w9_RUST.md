@@ -6,21 +6,18 @@ order: 9
 
 ### 一、具体要求
 
-1. Rust crate管理和module系统；
-2. Rust单元测试框架和测试用例编写；
-3. 发布crate到crate.io；
+1. Rust crate管理和module系统
+2. Rust单元测试框架和测试用例编写
+3. 发布crate到crate.io
 
-<<<<<<< HEAD
+
 ### 二、学习成果展示
-=======
+
 具体可以学习[Rust语言官方文档](https://doc.rust-lang.org/book/) 如下章节:
     - 第11章Writing Automated Tests
     - 第14章More about Cargo and Crates.io
 
-#### 二、学习成果展示
->>>>>>> 895e3e0fee5e70d633f041e446be10ca269caa58
-
-完成一个小项目，包含Cargo.toml等的文件组织，测试，模块crate划分；
+完成一个小项目，包含Cargo.toml等的文件组织，测试，模块crate划分。可以选择[Rust语言官方文档](https://doc.rust-lang.org/book/)第12章的题目，构建一个命令行Grep搜索程序，根据配置参数读取文件，并做错误处理，保存匹配的内容，构建单元测试用例覆盖功能测试、性能测试、异常测试等。
 
 ### 三、参考资料
 
@@ -32,17 +29,14 @@ order: 9
 
 学习如下知识点：
 
-1. Rust语言编写的链表、树、图数据结构；
-2. Rust算法递归、分治、回溯、DFS、BFS、动态规划等；
-3. 学习Rust标准库中常见数据结构和算法接口；
+1. Rust语言编写的链表、树、图数据结构
+2. Rust算法递归、分治、回溯、DFS、BFS、动态规划等
+3. 学习Rust标准库中常见数据结构和算法接口
 
-<<<<<<< HEAD
+
 ### 二、学习成果展示
-=======
-具体可以学习《数据结构和算法Rust语言描述》相关章节。
 
-#### 二、**学习成果展示**
->>>>>>> 895e3e0fee5e70d633f041e446be10ca269caa58
+具体可以学习《数据结构和算法Rust语言描述》相关章节。
 
 完成[数据结构练习](https://gitee.com/ieda-itraining/i-training-rust/tree/master/materials/Rust-Program-Assignment)；
 
