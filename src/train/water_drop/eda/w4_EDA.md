@@ -74,12 +74,12 @@ order: 5
      - 其他资料
   
    - 逻辑表示
-     - 
+
    - 逻辑优化
      - 综述
+
    - 工艺映射
-     - 论文
-   - **《Electronic Design Automation for IC Implementation, Circuit Design》**：
+     《Electronic Design Automation for IC Implementation, Circuit Design》：
      - 第2章 Logic Synthesis；
      - 第3章 Power Analysis and  Optimization from Circuit  to Register-Transfer Levels.
   
@@ -89,29 +89,44 @@ order: 5
 
 ### 三、参考资料
 
-   - **书籍推荐**：《集成电路设计自动化》、《Electronic Design Automation for IC Implementation, Circuit Design》。
+   - **书籍推荐**：
+    1. 《集成电路设计自动化》
+    2. 《Electronic Design Automation for IC Implementation, Circuit Design》
+    3. Logic Synthesis in a Nutshell, J. H. Jiang, S. Devadas
+    4. Synthesis and Optimization of Digital Circuits, DeMicheli
+
    - **视频链接**：
      - [iEDA-Tutorial-第四期：iEDA-iMAP工具介绍](https://www.bilibili.com/video/BV1TC4y1d7Jh)
      - [iEDA-Tutorial-第四期：iEDA-AiMAP工艺映射算法](https://www.bilibili.com/video/BV1kj411479e)
      - [iEDA-Tutorial-第四期：iEDA-并行化逻辑重写算法](https://www.bilibili.com/video/BV1F94y187se)
      - [iEDA-Tutorial-第四期：iEDA-iATPG工具介绍](https://www.bilibili.com/video/BV1cu4y147L7)
 
+   - **论文**：
+      1. DAG-Aware AIG Rewriting A Fresh Look at Combinational Logic Synthesis (逻辑优化)
+      2. Delay optimization using SOP balancing (逻辑优化)
+      3. Cut ranking and pruning: enabling a general and efficient FPGA mapping solution （工艺映射）
+      4. Combinational and sequential mapping with priority cuts （工艺映射）
+
+   - **工具**：
+      1. iMap: https://gitee.com/oscc-project/iMAP
+      2. berkeley-abc: https://github.com/berkeley-abc/abc
+      3. yosys: https://github.com/YosysHQ/yosys
+
+
 ## DAY3 布局入门
 
 ### 一、具体要求
 **学习内容**：
-   - 全局布局方法、合法化技术、详细布局技术、时序驱动布局、 拥塞驱动布局
+  1. 布局基础知识，包括超图概念，线长模型，密度模型，优化方法等，可学习书籍
+    - 《Handbook of Algorithms For Physical Design Automation》 Part Ⅳ
+    - 《Electronic Design Automation》Chaper 11
+    - 《超大规模集成电路物理设计：从图分割到时序收敛》第4章 全局和详细布局。
+  2. 最优化/组合优化基础，可学习书籍《Combinatorial optimization. Theory and algorithms》
 
-### 二、学习资料
-   - **《数字集成电路物理设计》**：
-     - 第3章 布图规划和布局；
-   - **《超大规模集成电路物理设计：从图分割到时序收敛》**：
-     - 第4章 全局和详细布局；
-
-### 三、学习成果展示
+### 二、学习成果展示
    - 整理书籍阅读笔记，并分享笔记链接到每日记录中.
 
-### 四、参考资料
+### 三、参考资料
    - **书籍推荐**：《超大规模集成电路物理设计》、《数字集成电路物理设计》。
    - **视频链接：**
      - [iEDA-Tutorial-第二期：iEDA-iFP及iPDN工具架构、特性与使用](https://www.bilibili.com/video/BV1W14y1B7n)
@@ -124,20 +139,27 @@ order: 5
 ### 一、具体要求
 
 **学习内容**：
-   - 全局布局方法、合法化技术、详细布局技术、时序驱动布局、 拥塞驱动布局
+  1. 时钟树综合基础
+   《Electronic Design Automation: Synthesis, Verification, and Test 》 CHAPTER 13 Synthesis of clock and power/ground networks
+    [BIU Lecture](https://www.eng.biu.ac.il/temanad/files/2017/02/Lecture-8-CTS.pdf)
+    Modern CTS Summary Paper: Performance Analysis on Skew Optimized Clock Tree Synthesis
+  2. DME，《A computer aided design software module for clock tree synthesis in very large scale integration design》
+  3. 时序计算
+    Linear Delay: Timing characterization of clock buffers for clock tree synthesis
+    PERI: Closed-form expressions for extending step delay and slew metrics to ramp inputs for RC trees
+    Bakoglu Metric: Circuits, interconnections, and packaging for VLSI
+  4. CTS设计原则，Ultimate Guide: [Clock Tree Synthesis](https://anysilicon.com/clock-tree-synthesis/)
+  5. 商业工具（Innovus）[Design Flow](https://vlsitalks.com/physical-design/cts/)
+  6. CCOpt，【Cadence、Azuro】
 
-### 二、学习资料
-   - **《数字集成电路物理设计》**：
-     - 第4章 时钟树综合。
-
-### 三、学习成果展示
+### 二、学习成果展示
 
    - 整理书籍阅读笔记，并分享笔记链接到每日记录中.
-   
-### 四、参考资料
 
-   - **书籍推荐**：《数字集成电路物理设计》。
-   - **视频链接**：[iEDA-Tutorial-第一期：iEDA-iSTA和iPW整体介绍](https://www.bilibili.com/video/BV1sp4y137bc)
+### 三、参考资料
+
+   - **书籍推荐**：《数字集成电路物理设计》第4章 时钟树综合。
+   - **视频链接**：[iEDA-Tutorial-第五期：iEDA-iCTS问题、研究内容和计划](https://www.bilibili.com/video/BV1rT4y1W7JF/?spm_id_from=333.999.0.0)
 
 
 ## DAY5 布线入门
@@ -164,6 +186,7 @@ order: 5
 ## DAY6-DAY7 静态时序分析入门
 
 ### 一、具体要求
+**学习内容**：
 
   1.数字电路基础知识，包括MOSFET、组合逻辑电路、时序逻辑电路，可学习书籍《数字电路与逻辑设计》第1-5章。
   2.Verilog语言学习,包括Module、Port、Netlist，可学习书籍《Verilog HDL数字设计与综合》第1-6章。
@@ -172,15 +195,6 @@ order: 5
   5. 时序约束（SDC），包括create_clock，set_input_delay，set_output_delay，set_max_fanout，set_max_transition等，可学习书籍《Static Timing Analysis for  Nanometer Designs》第7章。
   6.时序传播和分析（STA），包括Setup/Hold，Multicycle Path，Recovery/Removal，可学习书籍《Static Timing Analysis for  Nanometer Designs》第8章。
 
-**书籍阅读**：
-
-   - **《数字集成电路物理设计》**：
-     - 第6章 静态时序分析
-     - 附录5 SDC文档简介
-     - 附录10C SPEF文档简介
-     - 附录11 SDF文档简介
-   - **MK_Static Timing Analysis For Nanometer Designs（或集成电路静态时序分析与建模）**
-     - 前五章（前六章）
 
 ### 二、学习成果展示
 
