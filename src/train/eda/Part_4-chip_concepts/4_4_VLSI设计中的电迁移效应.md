@@ -19,7 +19,7 @@ order: 4
 ### 电迁移现象：
 
 <div style="text-align:center;">
-  <img src="/res/images/train_eda_4/image-21 copy.png" alt="ASIC Flow" width="500" />
+  <img src="/res/images/train_eda_4/image-21_copy.png" alt="ASIC Flow" width="500" />
   <h5>图1 电迁移现象</h5>
 </div>
 
@@ -29,7 +29,7 @@ order: 4
 
 失效平均时间（MTTF）是评估集成电路寿命的一个关键指标，使用 Black 方程计算 MTTF，如下所示：
 <div style="text-align:center;">
-  <img src="/res/images/train_eda_4/image-22 copy.png" alt="ASIC Flow" width="200" />
+  <img src="/res/images/train_eda_4/image-22_copy.png" alt="ASIC Flow" width="200" />
 </div>
 
 其中：

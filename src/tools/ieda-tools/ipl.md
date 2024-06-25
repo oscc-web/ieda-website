@@ -22,7 +22,7 @@ order: 5
 
 ### 2.1 功能实现
 
-<img src="../img/iPL/iPL_5.png">
+<!-- <img src="../img/iPL/iPL_5.png"> -->
 
 图5 iPL中实现的主要布局流程，一步到位求解大规模布局问题是NP难的，因此一般划分为三个阶段：全局布局、合法化和详细布局。
 
@@ -34,7 +34,7 @@ order: 5
 - Timing-driven placement (coming soon)
 - Congestion-driven placement (coming soon)
 
-<img src="../img/iPL/iPL_4.png">
+<!-- <img src="../img/iPL/iPL_4.png"> -->
 
 图6 布局示意图
 
@@ -75,7 +75,7 @@ order: 5
 
 ### 3.1 模块设计
 
-<img src="../img/iPL/iPL_9.png">
+<!-- <img src="../img/iPL/iPL_9.png"> -->
 
 图7 iPL模块划分
 
@@ -102,7 +102,7 @@ order: 5
 
 当全局布局所有单元足够散开(density overflow < 0.2)，开始进行可布线性评估和优化
 
-<img src="../img/iPL/iPL_10.png">
+<!-- <img src="../img/iPL/iPL_10.png"> -->
 
 图8 iPL可布线性方案流程
 
@@ -123,11 +123,11 @@ order: 5
 
 iPL工具的中间报告默认存放在目录：`./scripts/design/sky130_gcd/result/pl/`
 
-<img src="../img/iPL/iPL_2.png">
+<!-- <img src="../img/iPL/iPL_2.png"> -->
 
 图9 当前的布局结果是否存在违例的检查，详细违例情况在同级目录下文件violation_record.txt
 
-<img src="../img/iPL/iPL_3.png">
+<!-- <img src="../img/iPL/iPL_3.png"> -->
 
 图10 布局优化的线长指标报告，长线网的详细报告在同级目录下文件wirelength_record.txt；单元分布的密度信息，详细报告在同级目录下文件density_record.txt；布局结果的时序信息，详细报告在同级目录下文件timing_record.txt；布局结果的可布线性信息，详细报告在同级目录下文件congestion_record.txt
 

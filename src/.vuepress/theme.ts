@@ -31,7 +31,7 @@ export default hopeTheme({
 
 
   logo: "/res/images/logo/ieda_logo3.png",
-  logoDark: "/res/images/logo/ieda_logo2.png",
+  logoDark: "/res/images/logo/ieda_logo3.png",
 
   repo: "OSCC-Project/iEDA",
   repoDisplay: true,
@@ -67,6 +67,7 @@ export default hopeTheme({
 
 
   // Footer
+
   footer: "GPL License | Copyright © iEDA | 2023 - Now",
   copyright: false,
   displayFooter: true,
@@ -77,7 +78,7 @@ export default hopeTheme({
   iconAssets: "fontawesome",
   darkmode: "toggle",
 //   darkmode: "switch",
-  themeColor: false,
+  themeColor: true,
   fullscreen: false,
   backToTop: true,
   pure: false,

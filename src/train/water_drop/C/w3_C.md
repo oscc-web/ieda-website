@@ -26,11 +26,16 @@ order: 4
   [荣获ISEDA 2023的Best Paper](https://gitee.com/oscc-project/iEDA/raw/master/docs/paper/ISEDA'23-iEDA-final.pdf)
 - 仓库：
   [iEDA项目仓库](https://gitee.com/oscc-project/iEDA)
-- 视频链接：
 
+- 视频链接：
   - [iEDA-水滴计划简介](https://www.bilibili.com/video/BV1TM4y1H7WT)
+  黄增荣老师介绍 iEDA：从网表到版图的开源芯片设计EDA平台简介。包括：概述iEDA项目的架构设计，工程包目录解读，核心代码/配置脚本文件的编译与解读，从软件工程思想举例介绍iEDA项目的模块设计和业务逻辑交互等等。
+
   - [iEDA项目介绍](https://www.bilibili.com/video/BV1yF411Q7D8)
+  李兴权老师介绍iEDA项目介绍开源EDA项目简介。包括：开源EDA项目的目标、任务、时间规划和预期成果，开源EDA的工具链组成，已有开源EDA工具简介和存在问题，iEDA的架构、系统平台、开源社区设想等等。
+
   - [2023 开源芯片技术生态论坛](https://www.bilibili.com/video/BV1Th4y1S7Xj)
+  黄增荣老师介绍iEDA支撑一次28nm流片的经历。包括：介绍布图规划iFP/iPDN，网表优化iNO，布局iPL，时钟树综合iCTS，布线iRT，设计规则检测iDRC，介绍各个点工具的目标、流程脚本、报告分析等等。
 
 ## DAY16: iEDA初体验
 
@@ -49,7 +54,10 @@ order: 4
 ### 三、参考资料
 
 - [iEDA 用户手册](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
+描述iEDA系统部署图、使用前环境的准备、工具流程以及GUI操作手册。
+
 - [iEDA 开源芯片设计平台介绍](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
+主要划分为iEDA和iEDA用户指导两个部分，讲述iEDA名字来源、主要结构、工具等内容。
 
 ## DAY17-DAY21：C++大作业
 

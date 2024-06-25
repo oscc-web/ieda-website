@@ -234,7 +234,7 @@ place_pdn_Port \
     -height 200 \
     -layer ALPA                这两个命令可以为VDD pin添加两个port
 
-![image-20211028162925571](pic/image-20211028162925571.png)
+<!-- ![image-20211028162925571](pic/image-20211028162925571.png) -->
 
 **#9.create_grid**
 
