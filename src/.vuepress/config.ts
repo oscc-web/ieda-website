@@ -10,6 +10,7 @@ import IconsResolver from "unplugin-icons/resolver"
 
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
+
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -67,10 +68,10 @@ export default defineUserConfig({
             searchDelay: 150,
             sortStrategy: "max"
         }),
-        
-        autoCatalog: ({
-            index: true
-        })
+
+        // autoCatalog: ({
+        //     index: true
+        // })
 
     ],
     head: [

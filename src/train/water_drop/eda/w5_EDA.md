@@ -7,7 +7,7 @@ order: 6
 
 ### 一、具体要求
 
-（一）**材料阅读**：
+  **材料阅读**：
    - 《EDA设计流程-v1.0.pptx》
    - 《数字IC 后端设计.pdf》
    - 《数字集成电路设计自动化方法教学经验分享-v2.0(1).pptx》
@@ -19,7 +19,7 @@ order: 6
 
 ### 三、参考资料
 
-（一）[材料链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)：
+ [材料链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)：
    - 《EDA设计流程-v1.0.pptx》
    - 《数字IC 后端设计.pdf》
    - 《数字集成电路设计自动化方法教学经验分享-v2.0(1).pptx》
@@ -29,7 +29,7 @@ order: 6
 
 ### 一、具体要求
 
-（一）**材料阅读**：
+   **材料阅读**：
    - 《EDA设计流程-v1.0.pptx》
    - 《数字IC 后端设计.pdf》
    - 《数字集成电路设计自动化方法教学经验分享-v2.0.pptx》
@@ -41,7 +41,7 @@ order: 6
 
 ### 三、参考资料
 
-（一）[材料链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)：
+  [材料链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)：
    - 《EDA设计流程-v1.0.pptx》
    - 《数字IC 后端设计.pdf》
    - 《数字集成电路设计自动化方法教学经验分享-v2.0(1).pptx》
@@ -52,7 +52,7 @@ order: 6
 
 ### 一、具体要求
 
-（一）**以问答的形式描述以下必知必会**：
+   **以问答的形式描述以下必知必会**：
    - 布局：
      - 请简述一个你学习的布局算法，包括：输入、输出、数据结构设计、算法主要思想，时间复杂度等；
    - 布线：
