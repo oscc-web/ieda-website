@@ -12,7 +12,7 @@ Design Compiler，简称DC，是 Synopsys 公司用于做综合的核心工具�
 
 ## 1 DC设计对象
 
-DC在综合的过程中给，会把电路划分为不同的处理对象，称之为**设计对象(Design Objects)**，具体如下:
+DC在综合的过程中，会把电路划分为不同的处理对象，称之为**设计对象(Design Objects)**，具体如下:
 
 - **Design**：待综合的对象。
 
@@ -71,7 +71,7 @@ DC针对最坏情况下的关键时序路径进行优化。采用所谓**最大�
 
 - **转译:** 将 HDL代码转换成 DC 内部的数据库(GTECH 库)，该数据库和工艺无关;
 
-- **优化:** 根据设计目标(频率、面积、功耗)对电路进行优化(与工艺无关，运用布尔变换或代数变换技术)，包括结构优化(Architectural level synthsis)、逻辑优化 (Logic level or GTECH optimization)和门级优化(Gate-level or Mappingoptimization)
+- **优化:** 根据设计目标(频率、面积、功耗)对电路进行优化(与工艺无关，运用布尔变换或代数变换技术)，包括结构优化(Architectural level synthsis)、逻辑优化 (Logic level or GTECH optimization)和门级优化(Gate-level or Mapping optimization)
 
 - **映射:** 在目标库中选择合适的逻辑单元(包括组合逻辑和时序逻辑)，产生设计的门级电路
 
