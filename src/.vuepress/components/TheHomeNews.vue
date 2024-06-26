@@ -36,7 +36,7 @@
     import { ref } from "vue";
 
     const newsItemList = ref([{
-        image: "/res/images/index/home/dac24.jpg",
+        image: "/res/images/index/home/dac24-zs.jpg",
         tags: ["EDA", "DAC"],
         date: "2024-06-24",
         text: "iEDA团队参加61届Design Automation Conference (DAC)，并做3场学术报告"

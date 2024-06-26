@@ -63,7 +63,10 @@ order: 4
 
 已知如下图地图，黑色表示障碍物无法通行，要求实现避障算法寻找从红色起点出发到达绿色终点的最优路径。
 
-![题目图片](/res/images/train/water_drop/image.png)
+<!-- ![](/res/images/train/water_drop/image.png) -->
+
+<center> <img src="/res/images/train/water_drop/image.png" alt="6" style="zoom:55%;" /></center> 
+<center> 二维网格路径搜索</center>
 
 要求：
 （1）	对图中的地图进行建模，抽象成类，对数据进行封装；
