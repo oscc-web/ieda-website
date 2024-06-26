@@ -13,7 +13,6 @@ order: 5
 **学习内容**
 
   学习《数字集成电路物理设计》 第一章和第二章，以及《超大规模集成电路物理设计：从图分割到时序收敛》第一章。
-
 1. 了解芯片设计基本流程，前端（需求制定，架构设计，功能设计），后端（逻辑综合，物理设计，签核分析，物理验证）
 2. 了解物理设计[VLSI流程](/train/eda/Part_1-chip_basic/1_2_VLSI_flow.md)、工具、子步骤。
 3. [芯片设计标准格式文件](/train/eda/Part_2-chip_files/README.md)，包括Verilog、LEF/DEF、Liberty、SPEF、SDC等
@@ -21,7 +20,7 @@ order: 5
     
 ### 二、学习成果展示
 
-- 整理书籍阅读笔记，并将笔记链接贴到每日记录中。
+ 整理书籍阅读笔记，并将笔记链接贴到每日记录中。
 
 ### 三、参考资料
 
@@ -36,16 +35,17 @@ order: 5
 
 **学习内容**：
    1. 逻辑编译，了解硬件编程语言Verilog编译到内部逻辑图GTech的过程
-       - 《集成电路设计自动化》（第三章 逻辑综合）  
+      - 《集成电路设计自动化》（第三章 逻辑综合）  
    2. 逻辑表示，了解逻辑图GTech表示包括AIG、MIG等最新表示方法
-       - [逻辑完备集](https://en.wikipedia.org/wiki/Functional_completeness)
+      - [逻辑完备集](https://en.wikipedia.org/wiki/Functional_completeness)
    3. 逻辑优化，了解布尔优化、逻辑等价、复杂逻辑分解，状态机优化等基本概念和方法
-      - 论文 DAG-Aware AIG Rewriting A Fresh Look at Combinational Logic Synthesis
-      - 论文 Delay optimization using SOP balancing
+      - 《集成电路设计自动化》（第三章 逻辑综合）  
+      - 论文 DAG-Aware AIG Rewriting A Fresh Look at Combinational Logic Synthesis(**选学**)
+      - 论文 Delay optimization using SOP balancing(**选学**)
    4. 工艺映射，将逻辑图映射到工艺门电路的过程，以及工艺映射中Cut、SuperGate等概念、面积、时序和功耗优化方法
       - 《Electronic Design Automation for IC Implementation, Circuit Design》，第2章 Logic Synthesis，第3章 Power Analysis and  Optimization from Circuit  to Register-Transfer Levels
-      - 论文 Cut ranking and pruning: enabling a general and efficient FPGA mapping solution
-      - 论文 Combinational and sequential mapping with priority cuts
+      - 论文 Cut ranking and pruning: enabling a general and efficient FPGA mapping solution(**选学**)
+      - 论文 Combinational and sequential mapping with priority cuts(**选学**)
   
 ### 二、学习成果展示
 
@@ -78,13 +78,13 @@ order: 5
 **学习内容**：
   1. 布图（FloorPlan）基础知识，包括分割（Partition）、IO规划、电源网络规划、宏单元放置等，具体可以学习
     - 《超大规模集成电路物理设计：从图分割到时序收敛/VSLI Physical Design: From Graph Partitioning to Timing Closure》 第三章
-    - 《Handbook of Algorithms For Physical Design Automation》: Part III
+    - 《Handbook of Algorithms For Physical Design Automation》: Part III(**选学**)
     - 《Electronic Design Automation》：Chaper 10
   2. 布局基础知识，包括超图概念，线长模型，密度模型，优化方法等，可学习书籍
     - 《Handbook of Algorithms For Physical Design Automation》 Part Ⅳ
     - 《Electronic Design Automation》Chaper 11
     - 《超大规模集成电路物理设计：从图分割到时序收敛》第4章 全局和详细布局。
-  3. 最优化/组合优化基础，可学习书籍《Combinatorial optimization. Theory and algorithms》
+  3. 最优化/组合优化基础，可学习书籍《Combinatorial optimization. Theory and algorithms》(**选学**)
 
 ### 二、学习成果展示
    - 整理书籍阅读笔记，并分享笔记链接到每日记录中.
@@ -103,18 +103,18 @@ order: 5
 ### 一、具体要求
 
 **学习内容**：
-  1. 时钟树综合基础
+  1. 时钟树综合基础，包括时钟树构成（时钟源、时钟缓冲器、时钟反相器），时钟树形状（Tree、Mesh等），时钟树综合常用算法（Zero Skew、Useful Skew等）
    《Electronic Design Automation: Synthesis, Verification, and Test 》 CHAPTER 13 Synthesis of clock and power/ground networks
     [BIU Lecture](https://www.eng.biu.ac.il/temanad/files/2017/02/Lecture-8-CTS.pdf)
     Modern CTS Summary Paper: Performance Analysis on Skew Optimized Clock Tree Synthesis
-  2. DME，《A computer aided design software module for clock tree synthesis in very large scale integration design》
-  3. 时序计算
+  2. CTS设计原则，Ultimate Guide: [Clock Tree Synthesis](https://anysilicon.com/clock-tree-synthesis/)
+  3. 商业工具（Innovus）[Design Flow](https://vlsitalks.com/physical-design/cts/)(**选学**)
+  4. DME，《A computer aided design software module for clock tree synthesis in very large scale integration design》(**选学**)
+  5. 时序计算(**选学**)
     Linear Delay: Timing characterization of clock buffers for clock tree synthesis
     PERI: Closed-form expressions for extending step delay and slew metrics to ramp inputs for RC trees
     Bakoglu Metric: Circuits, interconnections, and packaging for VLSI
-  4. CTS设计原则，Ultimate Guide: [Clock Tree Synthesis](https://anysilicon.com/clock-tree-synthesis/)
-  5. 商业工具（Innovus）[Design Flow](https://vlsitalks.com/physical-design/cts/)
-  6. CCOpt，【Cadence、Azuro】
+
 
 ### 二、学习成果展示
 
@@ -159,7 +159,7 @@ order: 5
   1.数字电路基础知识，包括MOSFET、组合逻辑电路、时序逻辑电路，可学习书籍《数字电路与逻辑设计》第1-5章。
   2.Verilog语言学习,包括Module、Port、Netlist，可学习书籍《Verilog HDL数字设计与综合》第1-6章。
   3.时序基础概念，包括Delay、Transition Time（Slew）、Skew，Clock Domain，Cell Library，Slack，Timing Arc、Timing Path，可学习书籍《Static Timing Analysis for  Nanometer Designs》第1-2章。
-  4. 延时计算（Delay Calculation），包括Cell Delay、SPEF、Interconnect Delay计算方法，可学习书籍《Static Timing Analysis for  Nanometer Designs》第3-5章，另外可阅读补充书籍和论文。
+  4. 延时计算（Delay Calculation），包括Cell Delay、SPEF、Interconnect Delay计算方法，可学习书籍《Static Timing Analysis for  Nanometer Designs》第3-5章，另外可阅读补充书籍和论文关于AWE、Arnodi等模型降阶的计算方法(**选学**)。
   5. 时序约束（SDC），包括create_clock，set_input_delay，set_output_delay，set_max_fanout，set_max_transition等，可学习书籍《Static Timing Analysis for  Nanometer Designs》第7章。
   6.时序传播和分析（STA），包括Setup/Hold，Multicycle Path，Recovery/Removal，可学习书籍《Static Timing Analysis for  Nanometer Designs》第8章。
   7. 时序分析优化方法（Gate Sizing，Buffering等），可以学习书籍《超大规模集成电路物理设计：从图分割到时序收敛/VSLI Physical Design: From Graph Partitioning to Timing Closure》第八章：对时序收敛、时序优化技术有个初步认识
