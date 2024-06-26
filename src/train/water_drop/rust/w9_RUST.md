@@ -38,7 +38,7 @@ order: 9
 
 具体可以学习《数据结构和算法Rust语言描述》相关章节。
 
-完成[数据结构练习](https://gitee.com/ieda-itraining/i-training-rust/tree/master/materials/Rust-Program-Assignment)；
+完成[数据结构练习](https://gitee.com/oscc-project/iTraining/tree/master/Rust/Rust-Program-Assignment)；
 
 ### 三、参考资料
 
