@@ -36,18 +36,14 @@ order: 5
 
 **学习内容**：
    1. 逻辑编译，了解硬件编程语言Verilog编译到内部逻辑图GTech的过程
-       - 《集成电路设计自动化》（第三章 逻辑综合）；
-  
+       - 《集成电路设计自动化》（第三章 逻辑综合）  
    2. 逻辑表示，了解逻辑图GTech表示包括AIG、MIG等最新表示方法
        - [逻辑完备集](https://en.wikipedia.org/wiki/Functional_completeness)
-
    3. 逻辑优化，了解布尔优化、逻辑等价、复杂逻辑分解，状态机优化等基本概念和方法
       - 论文 DAG-Aware AIG Rewriting A Fresh Look at Combinational Logic Synthesis
       - 论文 Delay optimization using SOP balancing
-
    4. 工艺映射，将逻辑图映射到工艺门电路的过程，以及工艺映射中Cut、SuperGate等概念、面积、时序和功耗优化方法
-      - 《Electronic Design Automation for IC Implementation, Circuit Design》，第2章 Logic Synthesis，第3章 Power Analysis and  Optimization from Circuit  to Register-Transfer Levels.
-
+      - 《Electronic Design Automation for IC Implementation, Circuit Design》，第2章 Logic Synthesis，第3章 Power Analysis and  Optimization from Circuit  to Register-Transfer Levels
       - 论文 Cut ranking and pruning: enabling a general and efficient FPGA mapping solution
       - 论文 Combinational and sequential mapping with priority cuts
   
