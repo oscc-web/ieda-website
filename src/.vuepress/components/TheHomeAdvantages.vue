@@ -8,8 +8,9 @@
           <h2 class="title-icon">
             <span class="icon icon-default mercury-icon-target-2"></span>
             <span class="text-light">
-              关于iEDA              
-              <a class="button button-primary" href="/project/intro/"> 查阅更多</a>
+              <div class="title-text">关于iEDA 
+                <a class="button button-primary" href="/project/intro/"> 查阅更多</a>
+              </div>
             </span>
           </h2>
         </div>
@@ -50,7 +51,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-
+.title-text {
+  font-weight: bold;
+  font-size: 25px;
+}
 
 .counter-container {
   display: grid;

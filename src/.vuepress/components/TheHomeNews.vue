@@ -1,7 +1,7 @@
 <template>
     <div class="home-components">
         <el-divider />
-        <el-text>最新动态</el-text>
+        <div class="title-text">最新动态</div>
         <el-row
             :gutter="20"
             justify="center"
@@ -36,7 +36,7 @@
     import { ref } from "vue";
 
     const newsItemList = ref([{
-        image: "/res/images/index/home/dac24.jpg",
+        image: "/res/images/index/home/dac24-zs.jpg",
         tags: ["EDA", "DAC"],
         date: "2024-06-24",
         text: "iEDA团队参加61届Design Automation Conference (DAC)，并做3场学术报告"
@@ -62,7 +62,7 @@
         padding-bottom: 20px;
     }
     .el-card {
-        height: 450px;
+        height: 440px;
         cursor: pointer;
     }
     .el-image {
@@ -81,6 +81,10 @@
         font-size: var(--el-font-size-large)
     }
     .news-text {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .title-text {
         font-weight: bold;
         font-size: 25px;
     }

@@ -12,7 +12,7 @@ The dataset generation is briefly shown in <a href="#fig_d3_dataset">Fig. 1</a>.
 <div>
   <center>
   <a id="fig_d3_dataset">
-    <img src="/home/lixingquan/OSCC/ieda-website/src/.vuepress/public/res/images/aieda/d3_dataset.png" width="800">
+    <img src="/res/images/aieda/d3_dataset.png" width="800">
   </a>
   <br>
   Fig. 1: Brief Introduction to Data Generation
@@ -49,7 +49,7 @@ The complete directory structure is as follows:
 The directory **./dataset/pc** contains all information of the point cloud.
 
 ### File descriptions ###
-- **pc_annotation.csv** - records some information from the original **3D Capacitance Sample** of the point cloud  
+- **pc_annotation.csv** - records some information from the original **3D Capacitance Sample** of the point cloud
   |column name | description |
   | --- | --- |
   | point_cloud_path | point cloud file path |
@@ -68,8 +68,8 @@ The directory **./dataset/pc** contains all information of the point cloud.
   | timestamp | timestamp of the point cloud file generation |
   | solver_time | the calculation time that the solver takes to get the capacitance result |
 
-- **pc_annotation_xxx.csv** - part of records from pc_annotation.csv     
-The details of dataset partition and data cleaning are available at [PC-Cap repository](https://gitee.com/oscc-project/pct-cap)  
+- **pc_annotation_xxx.csv** - part of records from pc_annotation.csv
+The details of dataset partition and data cleaning are available at [PC-Cap repository](https://gitee.com/oscc-project/pct-cap)
   |sub-dataset used in our research | descriptions |
   | --- | --- |
   | pc_annotation_coupling_train_clean.csv | the training set for coupling capacitance task |
@@ -79,15 +79,15 @@ The details of dataset partition and data cleaning are available at [PC-Cap repo
 
 - **w500l2_1_C_0_0.txt** - example of a point cloud file
   - file name format
-    - w500l2:  
-      The 3D sampling window is height-adaptive and can accommodate 2 layers above and 2 layers below.  
-      5 metal layers in maximum: Routing-Via-Routing-Via-Routing or Via-Routing-Via-Routing-Via.  
-      The 3D sampling window project to XOY-plane with an area sized $500 nm \times 500nm$. 
-    - 1:  
+    - w500l2:
+      The 3D sampling window is height-adaptive and can accommodate 2 layers above and 2 layers below.
+      5 metal layers in maximum: Routing-Via-Routing-Via-Routing or Via-Routing-Via-Routing-Via.
+      The 3D sampling window project to XOY-plane with an area sized $500 nm \times 500nm$.
+    - 1:
       the sample id when generation
-    - C_0_0:  
+    - C_0_0:
       the position in the sample capacitance matrix
-  
+
   - content format: point cloud file format that [CloudCompare](https://www.cloudcompare.org/) can read directly.
     | symbol | descriptions |
     | --- | --- |
@@ -100,11 +100,11 @@ The details of dataset partition and data cleaning are available at [PC-Cap repo
     | $\varepsilon_r$ | the dielectric channel, relative permittivity |
     | class | a point belongs to a class that relates to its generation |
     | $\Phi$ | the selecting channel |
-  - line 1 : 432.715, 171.114, 0.5879, 1, 0, 0, 4.06, 1, 0  
-    A point with coordinates **(432.715, 171.114, 0.5879)** in layout.  
-    This point is generated on the surface of a region whose local normal vector is **(1, 0, 0)**.  
-    This local region is full of dielectric with a relative permittivity of **4.06**, except the region inner the conductor.  
-    The id of this region equals **1**.  
+  - line 1 : 432.715, 171.114, 0.5879, 1, 0, 0, 4.06, 1, 0
+    A point with coordinates **(432.715, 171.114, 0.5879)** in layout.
+    This point is generated on the surface of a region whose local normal vector is **(1, 0, 0)**.
+    This local region is full of dielectric with a relative permittivity of **4.06**, except the region inner the conductor.
+    The id of this region equals **1**.
     The selecting channel value of this point is **0**, such as non-target environment conductors. The details of the setting are related to the **Gauss Law-based Point Cloud feature**.
 
 ## Updates ##

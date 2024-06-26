@@ -72,7 +72,7 @@ Lib文件中的特定于单元的信息主要包括：
 下面给出了Lib文件中针对引脚部分的一个快照。
 
 <div style="text-align:center;">
-  <img src="/res/images/train_eda_2/Lib_pin part.png" alt="ASIC Flow" width="300" />
+  <img src="/res/images/train_eda_2/Lib_pin_part.png" alt="ASIC Flow" width="300" />
   <h4>图3 LIB文件引脚部分信息</h4>
 </div>
 

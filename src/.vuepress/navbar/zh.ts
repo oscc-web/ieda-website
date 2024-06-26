@@ -23,9 +23,9 @@ export const zhNavbar = navbar([
         text: "平台和工具",
         prefix: "/tools/",
         children: [
-            "auto-scripts/",
+            "ieda-platform/",
             "ieda-tools/",
-            "ieda-platform/"
+            "auto-scripts/"
         ]
     }, {
         text: "智能和数据",
