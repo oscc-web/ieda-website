@@ -6,13 +6,13 @@ order: 5
 
 **学习小注：** 接下来就要正式开始学习EDA了，了解EDA流程，各个环节的目的与参考指标有哪些，课题介绍可以先浏览[iEDA B站视频号](https://space.bilibili.com/1189298533)，若学习中有什么问题想法，也可以联系询问iEDA的相关课题的老师同学。
 
-### 一、具体要求
+**以防看完就忘**，在阅读书籍时，建议在阅读前整理EDA主要流程，构建思维导图；然后在阅读过程中补充细节。
 
-   **以防看完就忘**，在阅读书籍时，建议在阅读前整理EDA主要流程，构建思维导图；然后在阅读过程中补充细节。
+### 一、具体要求
 
 **学习内容**
 
-  学习《数字集成电路物理设计》 第一章和第二章，以及《超大规模集成电路物理设计：从图分割到时序收敛》第一章。
+学习《数字集成电路物理设计》 第一章和第二章，以及《超大规模集成电路物理设计：从图分割到时序收敛》第一章。
 1. 了解芯片设计基本流程，前端（需求制定，架构设计，功能设计），后端（逻辑综合，物理设计，签核分析，物理验证）
 2. 了解物理设计[VLSI流程](/train/eda/Part_1-chip_basic/1_2_VLSI_flow.md)、工具、子步骤。
 3. [芯片设计标准格式文件](/train/eda/Part_2-chip_files/README.md)，包括Verilog、LEF/DEF、Liberty、SPEF、SDC等
@@ -33,7 +33,8 @@ order: 5
 
 ### 一、具体要求
 
-**学习内容**：
+**学习内容**
+
    1. 逻辑编译，了解硬件编程语言Verilog编译到内部逻辑图GTech的过程
       - 《集成电路设计自动化》（第三章 逻辑综合）  
    2. 逻辑表示，了解逻辑表示包括BDD、AIG、MIG等表示方法
@@ -75,7 +76,9 @@ order: 5
 ## DAY3 布图和布局入门
 
 ### 一、具体要求
-**学习内容**：
+
+**学习内容**
+
   1. 布图（FloorPlan）基础知识，包括分割（Partition）、IO规划、电源网络规划、宏单元放置等，具体可以学习
     - 《超大规模集成电路物理设计：从图分割到时序收敛/VSLI Physical Design: From Graph Partitioning to Timing Closure》 第三章
     - 《Handbook of Algorithms For Physical Design Automation》: Part III(**选学**)
@@ -101,8 +104,8 @@ order: 5
 ## DAY4 时钟树综合入门
 
 ### 一、具体要求
+**学习内容**
 
-**学习内容**：
   1. 时钟树综合基础，包括时钟树构成（时钟源、时钟缓冲器、时钟反相器），时钟树拓扑（Tree、Mesh等），时钟树综合常用算法（Zero Skew、Useful Skew等）
    《Electronic Design Automation: Synthesis, Verification, and Test 》 CHAPTER 13 Synthesis of clock and power/ground networks
     [BIU Lecture](https://www.eng.biu.ac.il/temanad/files/2017/02/Lecture-8-CTS.pdf)
@@ -130,9 +133,11 @@ order: 5
 ## DAY5 布线入门
 
 ### 一、具体要求
-  - 学习绕线基本概念，包括Routing Track（Column），Gcell， 斯坦纳树（Steiner Tree），常见DRC规则（Short、Space、Min Area）等基础概念
-  - 学习绕线基本流程，包括Global Routing、Detail Routing（包含Track Assignment，Pin Access、Rip-Up and Reroute等）
-  - 学习绕线基本算法，迷宫算法，模式布线、AStar算法。
+**学习内容**
+
+  1. 学习绕线基本概念，包括Routing Track（Column），Gcell， 斯坦纳树（Steiner Tree），常见DRC规则（Short、Space、Min Area）等基础概念
+  2. 学习绕线基本流程，包括Global Routing、Detail Routing（包含Track Assignment，Pin Access、Rip-Up and Reroute等）
+  3. 学习绕线基本算法，迷宫算法，模式布线、AStar算法。
   
   可学习以下章节：
   - 《超大规模集成电路物理设计：从图分割到时序收敛/VSLI Physical Design: From Graph Partitioning to Timing Closure》第五章和第六章
@@ -154,7 +159,7 @@ order: 5
 ## DAY6-DAY7 静态时序分析和优化
 
 ### 一、具体要求
-**学习内容**：
+**学习内容**
 
   1.数字电路基础知识，包括MOSFET、组合逻辑电路、时序逻辑电路，可学习书籍《数字电路与逻辑设计》第1-5章。
   2.Verilog语言学习,包括Module、Port、Netlist，可学习书籍《Verilog HDL数字设计与综合》第1-6章。
