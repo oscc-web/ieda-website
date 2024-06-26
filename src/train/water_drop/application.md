@@ -20,7 +20,7 @@ order: 10
 为了确保追踪数据的准确性，请大家务必认真填写[《报名问卷》](https://wj.qq.com/s2/14858813/b6c2/)，问卷填写完成即可扫码加入“**水滴计划学习交流群**”开始正式学习。
 
 ::: info 学习交流群二维码
-> <img src="Images/%E6%B0%B4%E6%BB%B4%E8%AE%A1%E5%88%92%E4%BA%A4%E6%B5%81%E7%BE%A4.png" style="zoom:25%;" />
+<!-- > <img src="Images/%E6%B0%B4%E6%BB%B4%E8%AE%A1%E5%88%92%E4%BA%A4%E6%B5%81%E7%BE%A4.png" style="zoom:25%;" /> -->
 
 ### 3、创建记录
 
