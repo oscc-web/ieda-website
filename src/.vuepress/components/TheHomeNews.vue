@@ -1,7 +1,7 @@
 <template>
     <div class="home-components">
         <el-divider />
-        <el-text>最新动态</el-text>
+        <div class="title-text">最新动态</div>
         <el-row
             :gutter="20"
             justify="center"
@@ -62,7 +62,7 @@
         padding-bottom: 20px;
     }
     .el-card {
-        height: 450px;
+        height: 440px;
         cursor: pointer;
     }
     .el-image {
@@ -81,6 +81,10 @@
         font-size: var(--el-font-size-large)
     }
     .news-text {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .title-text {
         font-weight: bold;
         font-size: 25px;
     }
