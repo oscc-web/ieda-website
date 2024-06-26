@@ -36,7 +36,7 @@ order: 5
 **学习内容**：
    1. 逻辑编译，了解硬件编程语言Verilog编译到内部逻辑图GTech的过程
       - 《集成电路设计自动化》（第三章 逻辑综合）  
-   2. 逻辑表示，了解逻辑图GTech表示包括AIG、MIG等最新表示方法
+   2. 逻辑表示，了解逻辑表示包括BDD、AIG、MIG等表示方法
       - [逻辑完备集](https://en.wikipedia.org/wiki/Functional_completeness)
    3. 逻辑优化，了解布尔优化、逻辑等价、复杂逻辑分解，状态机优化等基本概念和方法
       - 《集成电路设计自动化》（第三章 逻辑综合）  
@@ -103,7 +103,7 @@ order: 5
 ### 一、具体要求
 
 **学习内容**：
-  1. 时钟树综合基础，包括时钟树构成（时钟源、时钟缓冲器、时钟反相器），时钟树形状（Tree、Mesh等），时钟树综合常用算法（Zero Skew、Useful Skew等）
+  1. 时钟树综合基础，包括时钟树构成（时钟源、时钟缓冲器、时钟反相器），时钟树拓扑（Tree、Mesh等），时钟树综合常用算法（Zero Skew、Useful Skew等）
    《Electronic Design Automation: Synthesis, Verification, and Test 》 CHAPTER 13 Synthesis of clock and power/ground networks
     [BIU Lecture](https://www.eng.biu.ac.il/temanad/files/2017/02/Lecture-8-CTS.pdf)
     Modern CTS Summary Paper: Performance Analysis on Skew Optimized Clock Tree Synthesis
