@@ -130,9 +130,9 @@ order: 5
 ## DAY5 布线入门
 
 ### 一、具体要求
-  - 学习绕线基本概念，包括Routing Track（Column），Gcell， 斯坦纳树（Steiner Tree），常见DRC规则（Short、Space、Min Area）等基础概念
-  - 学习绕线基本流程，包括Global Routing、Detail Routing（包含Track Assignment，Pin Access、Rip-Up and Reroute等）
-  - 学习绕线基本算法，迷宫算法，模式布线、AStar算法。
+  1. 学习绕线基本概念，包括Routing Track（Column），Gcell， 斯坦纳树（Steiner Tree），常见DRC规则（Short、Space、Min Area）等基础概念
+  2. 学习绕线基本流程，包括Global Routing、Detail Routing（包含Track Assignment，Pin Access、Rip-Up and Reroute等）
+  3. 学习绕线基本算法，迷宫算法，模式布线、AStar算法。
   
   可学习以下章节：
   - 《超大规模集成电路物理设计：从图分割到时序收敛/VSLI Physical Design: From Graph Partitioning to Timing Closure》第五章和第六章
