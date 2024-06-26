@@ -45,11 +45,6 @@ order: 2
    - 材料：[《C++工具介绍.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
    - 材料：[《编程环境.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
 
-（二）**每日记录模板**:
-
-   - 材料：[xx大学-张三-学习记录](https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
-
-
 ## DAY2：插件学习
 
 ### 一、具体要求
