@@ -7,7 +7,6 @@ order: 10
 
 ![报名流程](Images/%E6%8A%A5%E5%90%8D%E6%B5%81%E7%A8%8B.png)
 
-<div align="center">
 
 ### 1、了解计划
 

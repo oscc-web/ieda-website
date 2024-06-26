@@ -58,6 +58,7 @@ export const zhSidebar = sidebar({
         prefix: "water_drop/",
         link: "/train/water_drop/README.md",
         children: [
+            "application",
             "water_drop_plan_overview",
             {
                 text: "C++学习",
