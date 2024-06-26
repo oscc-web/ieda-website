@@ -60,6 +60,18 @@ order: 1
 
 ## **项目四大学习模块**
 
+欢迎您来参加水滴计划学习！在这里，您可以先了解水滴计划学习概述，深入探索学术诚信参考资料，同时探寻iEDA团队的魅力所在。
+
+首先，您可以观看《iEDA-水滴计划：iEDA-水滴计划学习体系概述》视频，进入水滴计划学习体系的世界。点击链接观看：[《iEDA-水滴计划：iEDA-水滴计划学习体系概述》](https://www.bilibili.com/video/BV1fz4y1W7si)。
+
+除了水滴计划学习，iEDA团队也为您带来精彩内容。探索iEDA团队的视频创作，关注我们在B站的视频号：[iEDA团队视频](https://space.bilibili.com/1189298533)，或者访问我们的官方网站：[iEDA团队网站](https://ieda.oscc.cc)。
+
+学术诚信至关重要，我们提供以下参考资料以引导您正确的学术道路：《提问的智慧》和《请不要这样提问》。这些资料将帮助您学习如何提出问题以及维护学术诚信。您可以点击以下链接查看详细内容：
+- [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
+- [《请不要这样提问》](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
+
+在水滴计划学习，探索学术诚信，和iEDA团队一起探索无限可能！
+
 ### **C++学习模块**（必选）
 
 EDA工具通常是基于C++语言开发的，由于C++具有高性能、灵活性强等特点，非常适合开发复杂的电子设计自动化软件；并且EDA过程中涉及大量的算法和复杂的数据结构，如图论算法、几何运算等，C++语言提供了丰富的标准模板库(STL)，可以帮助EDA工程师高效地实现这些算法和数据结构。

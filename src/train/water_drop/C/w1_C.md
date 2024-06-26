@@ -4,7 +4,7 @@ order: 2
 ---
 ## DAY1: 实习前期准备
 
-**学习小注：** 在开始学习之前不妨花半小时，先浏览一下Week3 day15的参考资料，对EDA有简要了解，学习方向与总体目标会更加清晰.
+**学习小注：** 在开始学习之前不妨花半小时，先浏览一下Week3 day15的参考资料，对EDA有简要了解，学习方向与总体目标会更加清晰。
 以下是学习的一些心得交流，供参考：
    ```
       a. 记录关键概念：在学习过程中，记录下每个主题的关键概念和原理。这有助于你构建知识框架。
@@ -74,20 +74,6 @@ order: 2
 （二）**每日记录模板**:
 
    - 材料：[xx大学-张三-学习记录](https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)
-
-（三）**水滴计划学习概述**:
-
-   - 视频：[《iEDA-水滴计划：iEDA-水滴计划学习体系概述》](https://www.bilibili.com/video/BV1fz4y1W7si)
-
-（四）**iEDA团队信息**:
-
-   - B站视频号：[iEDA团队视频](https://space.bilibili.com/1189298533)
-   - 网站：[iEDA团队网站](https://ieda.oscc.cc)
-
-（五）**学术诚信参考资料**:
-
-   - 材料：[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
-   - 材料：[《请不要这样提问》](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
 
 
 ## DAY2：插件学习
