@@ -67,7 +67,6 @@ export default hopeTheme({
 
 
   // Footer
-
   footer: "GPL License | Copyright © iEDA | 2023 - Now",
   copyright: false,
   displayFooter: true,
