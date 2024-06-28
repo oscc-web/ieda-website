@@ -1,5 +1,5 @@
 ---
-title: "5.4 去耦电容单元 Decap Cell"
+title: "5.4 Decap Cell"
 order: 4
 ---
 
