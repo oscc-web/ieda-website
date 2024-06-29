@@ -9,7 +9,7 @@
             <span class="icon icon-default mercury-icon-target-2"></span>
             <span class="text-light">
               <div class="title-text">关于iEDA 
-                <a class="button button-primary" href="/project/intro/"> 查阅更多</a>
+                <a  href="/project/intro/"> 查阅更多</a>
               </div>
             </span>
           </h2>
@@ -39,7 +39,7 @@ export default {
         { value: 1, title: '设计1个EDA公共基础底座<br>包含：解析器，数据库，管理平台，交互引擎' },
         { value: 11, title: '完成11款EDA工具<br>包含：iMap、iNO、iFP、iPDN、iPL、iCTS、iTO、iRT、iSTA、iPA(iIR)、iDRC等' },
         { value: 3, title: '通过iEDA工具成功进行3次流片<br>2次110nm工艺，1次28nm工艺' },
-        { value: 400, title: '在开源社区github和gitee<br>累计超400个标星' },
+        { value: 410, title: '在开源社区github和gitee<br>累计超400个标星' },
         { value: 300000, title: 'iEDA代码量超过30万行<br>(不包括第三方库和历史)' },
         { value: 26000, title: 'B站iEDA-视频号<br>已累计播放超26000次' }
       ]
