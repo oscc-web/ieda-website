@@ -43,7 +43,7 @@ order: 13
 2. 利用时延计算训练数据集，搭建一个预测时序路径延时的网络。
    - 题目参考iEDA实践：[M2-时序矫正](/train/practice/models/m2.md)
 3. 利用电容提取训练数据集，搭建一个计算3D电容的神经网络。
-   - 题目参考iEDA实践：[M3-布局线长预测时延](/train/practice/models/m3.md)
+   - 题目参考iEDA实践：[M3-3D电容提取](/train/practice/models/m3.md)
    
 ### 三、学习成果展示
 
