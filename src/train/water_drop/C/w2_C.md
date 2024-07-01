@@ -62,7 +62,7 @@ order: 3
 - 简单学习数据结构书籍中图论、搜索两章的内容；
 - 学习STL和Boost相关库。
 
-  - STL重点学习以下内容，详细可以在《C++ Primer》第二部分第9-10章
+  - STL重点学习以下内容，详细可以在《C++ Primer》第二部分第9-10章,《C++ Primer Plus》第16章，附录F、附录G
     - a. 容器库包括vector、queue、stack、list、set、map、unordered_set、unordered_map
     - b. 算法库包括排序、搜索、复制、修改、删除、替换
     - c. 迭代器包括输入迭代器、输出迭代器、前向迭代器、双向迭代器、随机访问迭代器
@@ -78,6 +78,7 @@ order: 3
 
 - 提交每日的学习记录；
 - 整理图论、数据结构学习的相关学习笔记；
+- 完成C++ Primer或者C++ Primer Plus相关练习题目。
 
 ### 三、参考文献
 
