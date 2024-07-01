@@ -62,19 +62,17 @@ order: 3
 - 简单学习数据结构书籍中图论、搜索两章的内容；
 - 学习STL和Boost相关库。
 
-STL重点学习以下内容，详细可以在《C++ Primer》第二部分第9-10章
-   a. 容器库包括vector、queue、stack、list、set、map、unordered_set、unordered_map
-   b. 算法库包括排序、搜索、复制、修改、删除、替换
-   c. 迭代器包括输入迭代器、输出迭代器、前向迭代器、双向迭代器、随机访问迭代器
-   d. 常见函数Functor，如std::less、std::greater
+  - STL重点学习以下内容，详细可以在《C++ Primer》第二部分第9-10章
+    - a. 容器库包括vector、queue、stack、list、set、map、unordered_set、unordered_map
+    - b. 算法库包括排序、搜索、复制、修改、删除、替换
+    - c. 迭代器包括输入迭代器、输出迭代器、前向迭代器、双向迭代器、随机访问迭代器
+    - d. 常见函数Functor，如std::less、std::greater
+  - [STL官方文档](https://www.cppreference.com/Cpp_STL_ReferenceManual.pdf)
+  - [C++ STL Tutorial](https://www.runoob.com/cplusplus/cpp-stl-tutorial.html)
 
-[STL官方文档](https://www.cppreference.com/Cpp_STL_ReferenceManual.pdf)
-[C++ STL Tutorial](https://www.runoob.com/cplusplus/cpp-stl-tutorial.html)
-
-Boost重点学习图Graph库，提供了各种各样的图算法和数据结构，例如图遍历、最短路径、最大流等。几何库Geometry，提供了各种各样的几何算法和数据结构，例如线段相交、多边形面积、点到直线距离等。
-
-[Boost图Graph](https://www.boost.org/doc/libs/1_75_0/libs/graph/doc/index.html)
-[Boost几何Geometry](https://www.boost.org/doc/libs/1_85_0/libs/geometry/)
+ - Boost重点学习图Graph库，提供了各种各样的图算法和数据结构，例如图遍历、最短路径、最大流等。几何库Geometry，提供了各种各样的几何算法和数据结构，例如线段相交、多边形面积、点到直线距离等。
+   - [Boost图Graph](https://www.boost.org/doc/libs/1_75_0/libs/graph/doc/index.html)
+   - [Boost几何Geometry](https://www.boost.org/doc/libs/1_85_0/libs/geometry/)
 
 ### 二、学习成果展示
 

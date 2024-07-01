@@ -1,5 +1,5 @@
 ---
-title: "5.9 Flip-flop和Latch：内部结构和功能"
+title: "5.9 Flip-flop和Latch"
 order: 9
 ---
 

@@ -56,7 +56,7 @@ order: 6
 
 ### 三、参考资料
 
-- 视频：[《iEDA-Tutorial-第二期：iEDA-iMP关键技术》](https://www.bilibili.com/video/BV1GV41157js)
+- 视频：[《iEDA-Tutorials》](https://space.bilibili.com/1189298533/channel/series)
 - 书籍推荐：数字集成电路物理设计、超大规模集成电路物理设计 从图分割到时序收敛
 
 

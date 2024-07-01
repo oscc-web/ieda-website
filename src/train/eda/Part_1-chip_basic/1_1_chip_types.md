@@ -1,5 +1,5 @@
 ---
-title: "1.1 芯片之“乱花渐欲迷人眼”"
+title: "1.1 芯片类型"
 order: 1
 ---
 
@@ -142,7 +142,7 @@ IC 全称为 integrated circuit，意为**集成电路**。它就是 **芯片(ch
 
 **# 若想拓展学习“这些术语”，请[点击这里](https://www.cnblogs.com/grooovvve/p/11604016.html)。**
 
-## 5 ASIC 芯片设计 vs VLSI 芯片设计
+## 5 ASIC vs VLSI 
 
 VLSI和ASIC是不同的两个概念。
 

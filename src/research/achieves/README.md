@@ -4,8 +4,12 @@ index: false
 ---
 
 
-（主要开源芯片数据，工具过程数据，问题数据）
+（主要介绍iEDA团队或相关的学术成果）
 
-## **项目背景**
+## **成果清单**
 
-目前，EDA型人才依然求大于供，EDA及芯片设计门槛依然较高，亟需一项能够快速入门的EDA学习课程。本项目拟打造通用的EDA综合人才培养训练计划，适用于iEDA团队实习生技术栈培养及高校EDA课程实践。
+- [论文](/research/achieves/papers.md)
+- [专利](/research/achieves/patents.md)
+- [软件](/research/achieves/softwards.md)
+- [著作](/research/achieves/books.md)
+- [获奖](/research/achieves/awards.md)

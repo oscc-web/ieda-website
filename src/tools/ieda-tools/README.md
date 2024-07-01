@@ -6,8 +6,46 @@ order: 2
 
 
 
-（主要开源芯片数据，工具过程数据，问题数据）
+（主要介绍iEDA内置的工具）
 
-## **项目背景**
+## **工具列表**
 
-目前，EDA型人才依然求大于供，EDA及芯片设计门槛依然较高，亟需一项能够快速入门的EDA学习课程。本项目拟打造通用的EDA综合人才培养训练计划，适用于iEDA团队实习生技术栈培养及高校EDA课程实践。
+- **逻辑综合** 
+  - **工艺映射工具：**
+    - [iMap](/tools/ieda-tools/imap.md)
+
+<center><img src="/res/images/tools/tool/imap.png" alt="6" style="zoom:100%;"/></center>
+
+
+
+- **物理设计** 
+  - **网表优化工具：** [iNO](/tools/ieda-tools/ino.md)
+  - **版图规划工具：** [iFP](/tools/ieda-tools/ifp.md)
+  - **电源规划工具：** [iPDN](/tools/ieda-tools/ipnd.md)
+  <center><img src="/res/images/tools/tool/ifp.png" alt="6" style="zoom:100%;"/></center>
+
+  - **布局工具：** [iPL](/tools/ieda-tools/ipl.md)
+  <center><img src="/res/images/tools/tool/ipl.png" alt="6" style="zoom:100%;"/></center>
+  <center><img src="/res/images/tools/tool/ipl2.png" alt="6" style="zoom:100%;"/></center>
+
+  - **时钟树综合工具：** [iCTS](/tools/ieda-tools/icts.md)
+  <center><img src="/res/images/tools/tool/icts.png" alt="6" style="zoom:100%;"/></center>
+  <center><img src="/res/images/tools/tool/icts2.png" alt="6" style="zoom:100%;"/></center>
+
+  - **时序优化工具：** [iTO](/tools/ieda-tools/ito.md)
+  <center><img src="/res/images/tools/tool/ito.png" alt="6" style="zoom:100%;"/></center>
+
+  - **布线工具：** [iRT](/tools/ieda-tools/irt.md)
+  <center><img src="/res/images/tools/tool/irt1.png" alt="6" style="zoom:100%;"/></center>
+  <center><img src="/res/images/tools/tool/irt2.png" alt="6" style="zoom:100%;"/></center>
+
+- **签核分析**
+  - **时序分析工具：** [iSTA](/tools/ieda-tools/ista.md)
+  <center><img src="/res/images/tools/tool/ista.png" alt="6" style="zoom:100%;"/></center>
+  <center><img src="/res/images/tools/tool/ista2.png" alt="6" style="zoom:100%;"/></center>
+
+  - **功耗分析工具：** [iPA](/tools/ieda-tools/ipa.md)
+  <center><img src="/res/images/tools/tool/ipa.png" alt="6" style="zoom:100%;"/></center>
+
+  - **设计规则检查工具：** [iDRC](/tools/ieda-tools/idrc.md)
+  <center><img src="/res/images/tools/tool/idrc.png" alt="6" style="zoom:100%;"/></center>
