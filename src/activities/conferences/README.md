@@ -9,9 +9,9 @@ index: false
 **会议列表**
 
 - 2024年8月22日-8月25日，[2024年第三届OSEDA研讨会议程](/activities/conferences/notice/third-OSEDA-workshop-24_notice.md)
-- 2024年8月29日-9月1日，[2024年中国运筹学会数学与智能分会-EDA中的数学与智能论坛](/activities/conferences/notice/third-OSEDA-workshop-24_notice.md)
+- 2024年8月29日-9月1日，[2024年中国运筹学会数学与智能分会-EDA中的数学与智能论坛](/activities/conferences/agenda/ORSC-MA-24-EDA-session.md)
   
-- 2024年7月19日-22日，[2024年CCF芯片大会(CCF chip)-开源智能EDA工具与算法论坛](/activities/conferences/agenda/second-OSEDA-workshop-23.md)
+- 2024年7月19日-22日，[2024年CCF芯片大会(CCF chip)-开源智能EDA工具与算法论坛](/activities/conferences/agenda/CCF-chip-24-EDA-session.md)
 
 - 2023年12月9日-12月11日，[2023年中国运筹学会软件与算法分会-EDA中软件与算法论坛](/activities/conferences/notice/third-OSEDA-workshop-24_notice.md)
   

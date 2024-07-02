@@ -69,7 +69,7 @@ order: 7
 
 （一）**材料：**
 
-- [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
+- [《iEDA 用户手册》](/tools/ieda-platform/guide.md)
 - [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 - 《Paper of Abacus.pdf》、《Patent of Tetris.pdf》 [链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)
 《Paper of Abacus.pdf》介绍了一种名为“Abacus”的新方法，用于在最小移动的情况下合法化标准单元电路的布局。通过按位置对单元进行排序，并逐个合法化单元，这种方法在移动单元时采用了动态规划，以减少总体移动量。

@@ -30,8 +30,8 @@ export default hopeTheme({
   },
 
 
-  logo: "/res/images/logo/ieda_logo3.png",
-  logoDark: "/res/images/logo/ieda_logo3.png",
+  logo: "/res/images/logo/ieda_logo_b.png",
+  logoDark: "/res/images/logo/ieda_logo_d.png",
 
   repo: "OSCC-Project/iEDA",
   repoDisplay: true,

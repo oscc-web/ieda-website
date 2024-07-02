@@ -1,5 +1,5 @@
 ---
-title: "4.8 电子设计领域的三剑客：OCV、AOCV和POCV对比解析"
+title: "4.8 OCV、AOCV和POCV对比"
 order: 8
 --- 
 

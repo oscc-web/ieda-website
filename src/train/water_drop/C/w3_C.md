@@ -23,9 +23,13 @@ order: 4
 ### 三、参考资料
 
 - 论文：
-  [荣获ISEDA 2023的Best Paper](https://gitee.com/oscc-project/iEDA/raw/master/docs/paper/ISEDA'23-iEDA-final.pdf)
+  - [荣获ISEDA 2023的Best Paper](https://arxiv.org/pdf/2308.01857)
+  - [iEDA：ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473983)
+  - [iPD：ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473932)
+  
 - 仓库：
-  [iEDA项目仓库](https://gitee.com/oscc-project/iEDA)
+  - [iEDA项目仓库Gitee](https://gitee.com/oscc-project/iEDA)
+  - [iEDA项目仓库GitHub](https://github.com/OSCC-Project/iEDA)
 
 - 视频链接：
   - [iEDA-水滴计划简介](https://www.bilibili.com/video/BV1TM4y1H7WT)

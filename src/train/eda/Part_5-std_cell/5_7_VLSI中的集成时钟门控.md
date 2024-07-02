@@ -1,5 +1,5 @@
 ---
-title: "5.7 集成时钟门控（Integrated Clock Gating）：低功耗设计的利器"
+title: "5.7 集成时钟门控"
 order: 7
 ---
 
