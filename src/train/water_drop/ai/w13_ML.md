@@ -7,20 +7,44 @@ order: 13
 
 ### 一、具体要求
 
-1. 学习搭建卷积神经网络CNN的构成、卷积层、池化层、全连接层、softmax层
-2. 学习搭建循环神经网络RNN、长短时神经网络
-3. 学习搭建生成对抗网络GAN
-4. 学习搭建图神经网络GNN、图上卷积的定义
-5. 学习搭建Transformer，了解注意力机制、掩码张量、编码器解码器
-6. 学习搭建强化学习
+1. **学习搭建卷积神经网络CNN的构成、卷积层、池化层、全连接层、softmax层**
+   - **任务分解**：
+     - 阅读《Deep Learning》相关章节，理解CNN的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的CNN模型。
+
+2. **学习搭建循环神经网络RNN、长短时神经网络**
+   - **任务分解**：
+     - 阅读《Deep Learning》相关章节，理解RNN和LSTM的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的RNN和LSTM模型。
+
+3. **学习搭建生成对抗网络GAN**
+   - **任务分解**：
+     - 阅读《Deep Learning》相关章节，理解GAN的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的GAN模型。
+
+4. **学习搭建图神经网络GNN、图上卷积的定义**
+   - **任务分解**：
+     - 阅读[图神经网络](http://arxiv.org/pdf/1609.02907)论文，理解GNN的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的GNN模型。
+
+5. **学习搭建Transformer，了解注意力机制、掩码张量、编码器解码器**
+   - **任务分解**：
+     - 观看[Transformer《Attention is all your need》](https://www.bilibili.com/video/BV16U4y1g7mk/?spm_id_from=333.999.0.0&vd_source=31642488dcc2db7a9779c05c640148c2)视频，理解Transformer的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的Transformer模型。
+
+6. **学习搭建强化学习**
+   - **任务分解**：
+     - 阅读《Deep Reinforcement Learning Fundamentals、Research and Applications》相关章节，理解强化学习的基本原理。
+     - 使用TensorFlow或PyTorch实现一个简单的强化学习模型。
 
 ### 二、学习成果展示
 
-1. 选择2-3个神经网络模型在公开数据集进行练习
-[openml](https://www.openml.org)
-[kaggle](https://www.kaggle.com/datasets)
-[UC Irvine Machine Learning](https://archive.ics.uci.edu/)
-[Google Dataset](https://datasetsearch.research.google.com/)
+   **选择2-3个神经网络模型在公开数据集进行练习**
+
+   - **任务分解**：
+     - 选择合适的模型模型进行实践。
+     - 在[Kaggle](https://www.kaggle.com/datasets)、[UC Irvine Machine Learning](https://archive.ics.uci.edu/)和[Google Dataset](https://datasetsearch.research.google.com/)上选择数据集。
+     - 撰写实验报告，包括模型架构、训练过程、结果分析等。
 
 ### 三、参考资料
 
@@ -36,6 +60,14 @@ order: 13
 
 ## DAY18-21：AI EDA实训
 ### 一、具体要求
+
+1. **目标**：能够跑通训练流程，输出训练模型。
+2.  **参考步骤**：
+  - 收集和预处理数据。
+  - 设计神经网络模型架构。
+  - 配置训练参数和优化器。
+  - 训练模型并进行评估。
+  - 调整模型参数以优化性能。
 
 ### 二、实训题目
 1. 基于在布局阶段产生的数据，搭建一个基于线长预测时延的网络。
