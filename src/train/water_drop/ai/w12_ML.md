@@ -3,7 +3,6 @@ title: "AI学习-Week2(选)"
 order: 12
 ---
 
-
 ## DAY8-10：神经网络和深度学习思想
 
 ### 一、具体要求
@@ -13,10 +12,10 @@ order: 12
 
 2. 线性回归、Logistic回归、Softmax回归
    - 视频链接：[线性回归+基础优化算法](https://www.bilibili.com/video/BV1PX4y1g7KC/?spm_id_from=333.999.0.0&vd_source=2ac617c241afd7f9774b0add4e647179)
-   - 学习Softmax回归、损失函数和图片分类数据集。
+3. 学习Softmax回归、损失函数和图片分类数据集。
    - 视频链接：[softmax回归+损失函数+图片分类数据集](https://www.bilibili.com/video/BV1K64y1Q7wu/?spm_id_from=333.999.0.0)
 
-3. 深度神经网络、正向传播、反向传播、激活函数、损失函数、过拟合、欠拟合、正则化约束、参数、超参数、数据集划分（可结合笔记）
+4. 深度神经网络、正向传播、反向传播、激活函数、损失函数、过拟合、欠拟合、正则化约束、参数、超参数、数据集划分（可结合笔记）
 
    - 视频链接：[吴恩达深度学习课程视频](https://www.bilibili.com/video/BV1FT4y1E74V/?spm_id_from=333.337.search-card.all.click)
    - 多层神经网络表示 P25-P35
