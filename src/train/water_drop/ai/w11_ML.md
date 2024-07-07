@@ -44,17 +44,19 @@ AI为选学模块。
 
 ### 一、具体要求
 
-阅读官方学习文档，搭配[Data-Science-Notes](https://github.com/fengdu78/Data-Science-Notes/tree/master)仓库【1.python-basic （python基础）】【2.numpy（numpy基础）】【3.pandas（pandas基础）】【4.scipy（scipy基础）】【5.data-visualization（数据可视化基础，包含matplotlib和seaborn）】【6.scikit-learn（scikit-learn基础）】部分学习，需要掌握：
-
 1. **Python常用语法**：
+   [python-basic](https://github.com/fengdu78/Data-Science-Notes/tree/master/1.python-basic)
    - 控制语句
    - 函数
    - 类
 2. **Python常用库**：
-   - Numpy
-   - Pandas
-   - Scikit-Learn
-   - Matplotlib
+   - [Numpy](https://github.com/fengdu78/Data-Science-Notes/tree/master/2.numpy)
+   - [Pandas](https://github.com/fengdu78/Data-Science-Notes/tree/master/3.pandas)
+   - [Scipy](https://github.com/fengdu78/Data-Science-Notes/tree/master/4.scipy)
+   - [data-visualization（数据可视化基础，包含matplotlib和seaborn）](https://github.com/fengdu78/Data-Science-Notes/tree/master/5.data-visualization)
+   - [scikit-learn](https://github.com/fengdu78/Data-Science-Notes/tree/master/6.scikit-learn)
+
+阅读官方学习文档，搭配[Data-Science-Notes](https://github.com/fengdu78/Data-Science-Notes/tree/master)仓库部分学习
 
 ### 二、学习成果展示
 
