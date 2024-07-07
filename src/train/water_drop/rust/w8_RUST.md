@@ -28,9 +28,7 @@ RUST为选学模块，计划从DAY1开始。
 ### 三、参考资料
 
 - [iEDA团队B站视频号](https://space.bilibili.com/1189298533)
-- [iEDA语雀 Rust学习](https://ieda.yuque.com/kzqyb5/lfqbw8)
-- [清华Rust课程](https://lab.cs.tsinghua.edu.cn/rust/)
-- [Rust官方学习文档](https://doc.rust-lang.org/book/), [Rust官方学习文档 - Get Started](https://www.rust-lang.org/learn/get-started)
+- [Rust官方学习文档 - Get Started](https://www.rust-lang.org/learn/get-started)
 
 ## DAY2-DAY3：Rust基础知识学习
 
@@ -62,7 +60,9 @@ RUST为选学模块，计划从DAY1开始。
 
 ### 三、参考资料
    - [Rust官方例子](https://rustwiki.org/zh-CN/rust-by-example/index.html)
-   - [Google 出的 Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
+   - [Rust官方学习文档](https://doc.rust-lang.org/book/)
+   - [清华Rust课程](https://lab.cs.tsinghua.edu.cn/rust/)
+   - [Google Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
 
 ## DAY4-DAY7：Rust进阶知识学习
 
@@ -118,4 +118,4 @@ RUST为选学模块，计划从DAY1开始。
    - [Rust 语言中文社区](https://rustcc.cn/)
 
 3. 视频：
-   - [iEDA Rust语言入门](https://space.bilibili.com/1189298533/channel/seriesdetail?sid=3638328)
+   - [iEDA Rust语言](https://space.bilibili.com/1189298533/channel/seriesdetail?sid=3638328)
