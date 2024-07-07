@@ -1,5 +1,5 @@
 ---
-title: "RUST学习-Week1(选)"
+title: "Rust学习-Week1(选)"
 order: 8
 ---
 

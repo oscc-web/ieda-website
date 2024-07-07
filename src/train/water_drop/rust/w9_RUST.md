@@ -1,5 +1,5 @@
 ---
-title: "RUST学习-Week2(选)"
+title: "Rust学习-Week2(选)"
 order: 9
 ---
 ## DAY8-DAY9：Rust工程管理和测试
