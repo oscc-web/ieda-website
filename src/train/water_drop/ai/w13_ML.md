@@ -48,15 +48,18 @@ order: 13
 
 ### 三、参考资料
 
-1. 深度学习《Deep Learning》 Yoshua Bengio & Ian GoodFellow
-2. 上海交大《动手学机器学习》
-3. [图神经网络](http://arxiv.org/pdf/1609.02907)
-4. [Transformer《Attention is all your need》](https://www.bilibili.com/video/BV16U4y1g7mk/?spm_id_from=333.999.0.0&vd_source=31642488dcc2db7a9779c05c640148c2)
-5. 强化学习《Deep Reinforcement Learning Fundamentals、Research and Applications》
-6. [Kaggle](https://www.kaggle.com)
-7. [Hugging face](https://huggingface.co/)
-8. [各种神经网络介绍](https://www.asimovinstitute.org/neural-network-zoo/)
-9. [学习TensorFlow搭建的神经网络](https://playground.tensorflow.org/)
+- **书籍推荐**：
+
+   1. 深度学习《Deep Learning》 Yoshua Bengio & Ian GoodFellow
+   2. 上海交大《动手学机器学习》
+   3. [图神经网络](http://arxiv.org/pdf/1609.02907)
+   4. [Transformer《Attention is all your need》](https://www.bilibili.com/video/BV16U4y1g7mk/?spm_id_from=333.999.0.0&vd_source=31642488dcc2db7a9779c05c640148c2)
+   5. 强化学习《Deep Reinforcement Learning Fundamentals、Research and Applications》
+   6. [Kaggle](https://www.kaggle.com)
+   7. [Hugging face](https://huggingface.co/)
+   8. [各种神经网络介绍](https://www.asimovinstitute.org/neural-network-zoo/)
+   9. [学习TensorFlow搭建的神经网络](https://playground.tensorflow.org/)
+
 
 ## DAY18-21：AI EDA实训
 ### 一、具体要求

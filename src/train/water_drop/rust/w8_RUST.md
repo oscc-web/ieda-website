@@ -116,3 +116,6 @@ RUST为选学模块，计划从DAY1开始。
 2. 社区:
    - [The Week in Rust](https://this-week-in-rust.org/)
    - [Rust 语言中文社区](https://rustcc.cn/)
+
+3. 视频：
+   - [iEDA Rust语言入门](https://space.bilibili.com/1189298533/channel/seriesdetail?sid=3638328)

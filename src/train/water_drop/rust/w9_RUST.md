@@ -44,3 +44,4 @@ order: 9
 
 1. [Hello算法](https://github.com/krahets/hello-algo)
 2. [The Algorithms](https://github.com/TheAlgorithms/Rust)
+3. [iEDA Rust语言数据结构和算法](https://space.bilibili.com/1189298533/channel/seriesdetail?sid=3638328)
