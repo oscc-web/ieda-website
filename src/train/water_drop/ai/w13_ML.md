@@ -59,6 +59,8 @@ order: 13
    7. [Hugging face](https://huggingface.co/)
    8. [各种神经网络介绍](https://www.asimovinstitute.org/neural-network-zoo/)
    9. [学习TensorFlow搭建的神经网络](https://playground.tensorflow.org/)
+   10. [微软机器学习入门](https://github.com/microsoft/AI-For-Beginners.git)
+   11. Aurélien Géron 《Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, 3rd Edition》
 
 
 ## DAY18-21：AI EDA实训
