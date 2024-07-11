@@ -1,6 +1,5 @@
 
-<template>
-  <!-- 关于iEDA -->
+<!-- <template>
   <section class="section bg-default section-md">
     <div class="container">
       <div class="row row-30">
@@ -13,22 +12,28 @@
               </div>
             </span>
           </h2>
-        </div>
-        <div class="col-md-6">
-          <div class="counter-container">
-            <div class="counter-item" v-for="(item, index) in counters" :key="index">
-              <div class="box-counter">
-                <div class="box-counter-main">
-                  <div class="counter">{{ item.value }}</div>
-                </div>
-                <p class="box-counter-title" v-html="item.title"></p>
+        </div> -->
+        
+<template>
+    <div class="home-components">
+      <el-divider />
+      <!-- <div class="title-text">最新动态</div> -->
+      <div class="title-text">关于iEDA 
+        <a  href="/project/intro/"> 查阅更多</a>
+      </div>
+      <div class="col-md-6">
+        <div class="counter-container">
+          <div class="counter-item" v-for="(item, index) in counters" :key="index">
+            <div class="box-counter">
+              <div class="box-counter-main">
+                <div class="counter">{{ item.value }}</div>
               </div>
+              <p class="box-counter-title" v-html="item.title"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 </template>
 
 <script>
@@ -48,7 +53,40 @@ export default {
 };
 </script>
 
-<style scoped>
+
+
+<style scoped lang="scss">
+    .el-col {
+        padding-bottom: 20px;
+    }
+    .el-card {
+        height: 440px;
+        cursor: pointer;
+    }
+    .el-image {
+        margin-bottom: 10px;
+        pointer-events: none;
+        border: 1px solid var(--el-color-info);
+    }
+    .el-tag + .el-tag {
+        margin-left: 5px;
+    }
+    .news-tags {
+        margin-bottom: 5px;
+    }
+    .news-date {
+        margin-bottom: 10px;
+        font-size: var(--el-font-size-large)
+    }
+    .news-text {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .title-text {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 .title-text {
@@ -64,11 +102,11 @@ export default {
 
 .counter-item {
   background-color: #fff;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .box-counter-main .counter {

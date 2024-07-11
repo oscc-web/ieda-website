@@ -10,7 +10,7 @@ order: 2
 
 为促进国内外开源EDA开发者和使用者的交流与互动，OSEDA社区计划在2024年8月22日（周四）下午举办第三届开源EDA研讨会(The Third OSEDA Workshop)。本次研讨会将会作为第三届RISC-V中国峰会的同期活动。
 
-> - 社区网站： [https://eda.oscc.cc/](https://oscc.cc/)
+> - 社区网站： [https://ieda.oscc.cc/](https://ieda.oscc.cc/)
 
 > - 代码地址：
 >   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)，
@@ -45,7 +45,7 @@ order: 2
 
 投稿要求：
 
-* 本次研讨会通过邮件投稿。投稿邮件请发送至“fzulxq@gmail.com”，并满足以下要求：
+* 本次研讨会通过邮件投稿。投稿邮件请发送至“ieda.oscc@gmail.com”，并满足以下要求：
 * 标题：请按照 **"[OSEDA]-演讲标题-演讲者姓名"** 格式
 
 正文：请包含以下内容：
