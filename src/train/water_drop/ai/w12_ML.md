@@ -37,6 +37,8 @@ order: 12
    - [吴恩达视频](https://www.bilibili.com/video/BV19B4y1W76i/)
 3. [上海交大课程](https://space.bilibili.com/95975441/channel/seriesdetail?sid=1586092)
 
+4. [iEDA人工智能基础入门](https://space.bilibili.com/1189298533/channel/seriesdetail?sid=3565340)
+
 
 ## DAY11-14：编程框架学习
 

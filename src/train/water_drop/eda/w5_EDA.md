@@ -82,7 +82,7 @@ order: 6
    - 任务3：更换工艺库，设计为gcd，工艺为nangate45；
    - 任务4：参考log日志以及report报告，对任务1、2、3中的特征的值进行记录（根据【参考资料】中的《水滴计划-iEDA demo学习》）；
 
-（三）相关任务的design和foundary可以复制到自己的目录（130服务器）： /home/dengqinyi/shuidi/design /home/dengqinyi/shuidi/foundary 
+（三）相关任务的design和foundary可以在水滴计划内部网盘资料（水滴计划/EDA/Practice）中查看 
 - PR提交要求：上传到代码仓库： iTraining/EDA/codes/2023-07/your_name 不用上传log和report具体内容，只需： 
   - 一个readme.md文件，列出： ①foundary + design + [服务器编号] + 绝对路径 ②"水滴计划-iEDA demo学习"腾讯文档的链接；
   - "水滴计划-iEDA demo学习"腾讯文档内容的截图，可按照不同Flow流程提交多个截图；

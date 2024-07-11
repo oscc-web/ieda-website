@@ -37,7 +37,7 @@ order: 3
    - Gitee 仓库地址：[C++ Codes](https://gitee.com/oscc-project/iTraining/tree/master/C++/codes)
    - 操作步骤：
      - Fork 本仓库；
-     - 新建分支：{学习者的名字} 分支（将学习者的名字替换到分支名称）；
+     - clone到本地；
      - 上传内容至 iTraining/C++/codes/{年份-月份}/{学习者的名字}；
      - 新建 Pull Request 到 master 分支；
 
