@@ -50,6 +50,12 @@ export const zhSidebar = sidebar({
                 prefix: "Part_5-std_cell/",
                 children: "structure",
                 collapsible: true
+            },
+            {
+                text: "EDA数据结构",
+                prefix: "Part_6-data_structure",
+                children: "structure",
+                collapsible: true
             }
         ],
         collapsible: true
