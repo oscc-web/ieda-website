@@ -56,6 +56,14 @@ export const zhSidebar = sidebar({
                 prefix: "Part_6-data_structure",
                 children: "structure",
                 collapsible: true
+            },
+            {
+                text: "EDA算法",
+                prefix: "Part_7_algorithm",
+                children: [
+                    "7.1 geometry",
+                ],
+                collapsible: true
             }
         ],
         collapsible: true
