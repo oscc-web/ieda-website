@@ -99,7 +99,10 @@ order: 1
 
 2. 如果 ![i,j,k](https://math.jianshu.com/math?formula=i%2Cj%2Ck) 不是耳，那么找到多边形其他点中距离 ![j](https://math.jianshu.com/math?formula=j) 最近的一个点 ![m](https://math.jianshu.com/math?formula=m) ，连接 ![jm](https://math.jianshu.com/math?formula=jm) 进行切开，又有两种情况：
 
-   ![img](https://tva3.sinaimg.cn/large/007xAwfLly8h395ioynekj30hc06xq36.jpg)
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/geometry/geometry_6.jpg" alt="ASIC Flow" width="200" />
+  <h4>图4 三角剖分</h4>
+</div>
 
    构造性证明
 
@@ -132,7 +135,10 @@ order: 1
 
 如果一条链上每条线段对于一条直线 ![l](https://math.jianshu.com/math?formula=l) 的投影只在折点处相交，那么折线对直线 ![l](https://math.jianshu.com/math?formula=l) 具有单调性。
 
-![img](https://tva4.sinaimg.cn/large/007xAwfLly8h395kg7ighj30hs04x0su.jpg)
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/geometry/geometry_5.jpg" alt="ASIC Flow" width="200" />
+  <h4>图5 多边形单调性</h4>
+</div>
 
 单调折线
 
@@ -140,7 +146,7 @@ order: 1
 
 <div style="text-align:center;">
   <img src="/res/images/eda_algorithm/geometry/geometry_4.jpg" alt="ASIC Flow" width="200" />
-  <h4>图4 多边形单调性</h4>
+  <h4>图6 单调折线</h4>
 </div>
 
 单调多边形
