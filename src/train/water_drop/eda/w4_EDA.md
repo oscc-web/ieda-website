@@ -14,8 +14,8 @@ order: 5
 
 学习《数字集成电路物理设计》 第一章和第二章，以及《超大规模集成电路物理设计：从图分割到时序收敛》第一章。
 1. 了解芯片设计基本流程，前端（需求制定，架构设计，功能设计），后端（逻辑综合，物理设计，签核分析，物理验证）
-2. 了解物理设计[VLSI流程](/train/eda/Part_1-chip_basic/1_2_VLSI_flow.md)、工具、子步骤。
-3. [芯片设计标准格式文件](/train/eda/Part_2-chip_files/README.md)，包括Verilog、LEF/DEF、Liberty、SPEF、SDC等
+2. 了解物理设计[VLSI流程](/train/eda/chip-circuit/Part_1-chip_basic/1_2_VLSI_flow.md)、工具、子步骤。
+3. [芯片设计标准格式文件](/train/eda/chip-circuit/Part_2-chip_files/README.md)，包括Verilog、LEF/DEF、Liberty、SPEF、SDC等
 
     
 ### 二、学习成果展示

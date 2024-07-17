@@ -26,42 +26,53 @@ export const zhSidebar = sidebar({
         link: "/train/eda/README.md",
         children: [
             {
-                text: "芯片设计基础",
-                prefix: "Part_1-chip_basic/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "标准格式文件",
-                prefix: "Part_2-chip_files/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "芯片设计流程",
-                prefix: "Part_3-chip_flow/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "芯片设计概念",
-                prefix: "Part_4-chip_concepts/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "标准单元",
-                prefix: "Part_5-std_cell/",
-                children: "structure",
-                collapsible: true
-            },
-            {
-                text: "EDA数据结构",
-                prefix: "Part_6-data_structure",
-                children: "structure",
-                collapsible: true
-            },
-            {
-                text: "EDA算法",
-                prefix: "Part_7_algorithm",
+                text: "芯片与电路",
+                prefix: "chip-circuit/",
                 children: [
-                    "7.1 geometry",
+                    {
+                        text: "芯片设计基础",
+                        prefix: "Part_1-chip_basic/",
+                        children: "structure",
+                        collapsible: true
+                    }, {
+                        text: "标准格式文件",
+                        prefix: "Part_2-chip_files/",
+                        children: "structure",
+                        collapsible: true
+                    }, {
+                        text: "芯片设计流程",
+                        prefix: "Part_3-chip_flow/",
+                        children: "structure",
+                        collapsible: true
+                    }, {
+                        text: "芯片设计概念",
+                        prefix: "Part_4-chip_concepts/",
+                        children: "structure",
+                        collapsible: true
+                    }, {
+                        text: "标准单元",
+                        prefix: "Part_5-std_cell/",
+                        children: "structure",
+                        collapsible: true
+                    }
+                ],
+                collapsible: true
+            }, {
+                text: "算法与数据结构",
+                prefix: "algorithm-data/",
+                children: [            
+                    {
+                        text: "EDA数据结构",
+                        prefix: "Part_6-data_structure",
+                        children: "structure",
+                        collapsible: true
+                    },
+                    {
+                        text: "EDA算法",
+                        prefix: "Part_7_algorithm",
+                        children: "structure",
+                        collapsible: true
+                    }
                 ],
                 collapsible: true
             }

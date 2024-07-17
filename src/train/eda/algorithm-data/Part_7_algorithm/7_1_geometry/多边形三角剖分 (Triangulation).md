@@ -1,5 +1,5 @@
 ---
-title: "多边三角形剖分"
+title: "7.1.1 多边三角形剖分"
 order: 1
 ---
 # 多边形三角剖分 (Triangulation)
