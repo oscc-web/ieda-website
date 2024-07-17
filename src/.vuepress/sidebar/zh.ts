@@ -62,6 +62,7 @@ export const zhSidebar = sidebar({
                 prefix: "Part_7_algorithm",
                 children: [
                     "7.1 geometry",
+                    "7.2 dynamic programing"
                 ],
                 collapsible: true
             }

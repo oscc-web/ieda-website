@@ -104,8 +104,10 @@ x = x & ( x− 1 )
  向上走之后不能向下/右走(不同状态的堆叠)
  这样子是不是很有些熟悉的感觉?和一道入门的DP很相似
 
-![img](https://tva2.sinaimg.cn/large/007xAwfLly8h2t648i8hlj30x60t5q51.jpg)
-
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/dynamic_programming/dp_21.jpg" alt="ASIC Flow" width="200" />
+  <h4>图1 机器人寻路</h4>
+</div>
 
 
 

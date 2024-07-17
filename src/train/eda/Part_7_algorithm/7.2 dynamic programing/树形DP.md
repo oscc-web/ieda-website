@@ -7,7 +7,10 @@
 
 ### 1.没有上司的舞会
 
-![img](https://tva3.sinaimg.cn/large/007xAwfLly8h2t5z5icz0j312g0i3q4w.jpg)
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/dynamic_programming/dp_19.jpg" alt="ASIC Flow" width="200" />
+  <h4>图1 没有上司的舞会</h4>
+</div>
 
 树中不相邻两点最大值
 
@@ -58,7 +61,10 @@ int main()
 
 ### 树上子链
 
-![img](https://tva1.sinaimg.cn/large/007xAwfLly8h2t61kduaxj31960f076d.jpg)
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/dynamic_programming/dp_20.jpg" alt="ASIC Flow" width="200" />
+  <h4>图2 带负权的树</h4>
+</div>
 
 带负权的树的最长直径
 
