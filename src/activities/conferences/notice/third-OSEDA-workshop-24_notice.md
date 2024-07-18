@@ -8,24 +8,24 @@ order: 2
 
 我们相信在未来，每一位芯片的设计者都可以通过开源设计工具（EDA）设计、验证、生产使用开源指令集（RISC-V）的芯片，就像使用开源GNU工具链编译 C 语言的代码一样方便快捷。为了实现这个共同的愿景，来自RISC-V开源社区和EDA研究领域的活跃贡献者发起成立了OSEDA社区，致力于研发开源EDA技术和推广开源EDA等开源芯片开发工具在RISC-V社区的使用、推动国内外开源EDA开发者和RISC-V芯片设计者之间的交流、促进开源EDA技术社区（尤其是国内技术社区）的发展壮大。OSEDA社区的短期目标是在2025年之前吸引超过一千名、在2035年之前吸引超过一万名开发人员加入开源EDA社区，为开源项目贡献代码。
 
-为促进国内外开源EDA开发者和使用者的交流与互动，OSEDA社区计划在2024年8月22日（周四）下午举办第三届开源EDA研讨会(The Third OSEDA Workshop)。本次研讨会将会作为第三届RISC-V中国峰会的同期活动。
+为促进国内外开源EDA开发者和使用者的交流与互动，OSEDA社区计划在2024年8月20日（周二）下午举办第三届开源EDA研讨会(The Third OSEDA Workshop)。本次研讨会将会作为第四届RISC-V中国峰会的同期活动。
 
 > - 社区网站： [https://ieda.oscc.cc/](https://ieda.oscc.cc/)
 
 > - 代码地址：
->   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)，
 >   - https://gitee.com/oscc-project
 >   - https://github.com/OSCC-Project/
+>   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)，
 
 **时间及地点：**
 
-> 会议时间： 2024年8月23日 14:00 -- 17:00
+> 会议时间： 2024年8月20日 14:00 -- 17:00
 
 > 会议地点：杭州
 
 **主办单位：**
 
-> 北京开源芯片研究院，中国科学院计算技术研究所，鹏城实验室，EDA社区
+> 北京开源芯片研究院，中国科学院计算技术研究所，鹏城实验室，iEDA社区
 
 **程序委员会：**
 
