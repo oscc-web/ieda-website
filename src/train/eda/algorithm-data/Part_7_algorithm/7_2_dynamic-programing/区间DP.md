@@ -1,6 +1,6 @@
 ---
-title: "7.2.2 区间DP"
-order: 2
+title: "7.2.4 区间DP"
+order: 4
 ---
 
 
