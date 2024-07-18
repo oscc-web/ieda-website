@@ -36,11 +36,11 @@ order: 5
 **学习内容**
 
    1. 逻辑编译，了解硬件编程语言Verilog编译到内部逻辑图GTech的过程
-      - 《Logic Synthesis in a Nutshell》（第一章 第二章）
+      - 《Logic Synthesis in a Nutshell》（第一章）
       - 《Synthesis and Optimization of Digital Circuits》 DT1、DT2
    2. 逻辑表示，了解逻辑表示包括BDD、AIG、MIG等表示方法
       - [逻辑完备集](https://en.wikipedia.org/wiki/Functional_completeness)
-      - 《Logic Synthesis in a Nutshell》（第一章 第二章）
+      - 《Logic Synthesis in a Nutshell》（第二章）
       - 《Synthesis and Optimization of Digital Circuits》 DT3、DT4
    3. 逻辑优化，了解布尔优化、逻辑等价、复杂逻辑分解，状态机优化等基本概念和方法
       - 《Logic Synthesis in a Nutshell》（第三章）  
@@ -49,7 +49,7 @@ order: 5
       - 论文 Delay optimization using SOP balancing(**选学**)
    4. 工艺映射，将逻辑图映射到工艺门电路的过程，以及工艺映射中Cut、SuperGate等概念、面积、时序和功耗优化方法
       - 《Electronic Design Automation for IC Implementation, Circuit Design》，第2章 Logic Synthesis，第3章 Power Analysis and  Optimization from Circuit  to Register-Transfer Levels
-      - 《Logic Synthesis in a Nutshell》（第三章）  
+      - 《Logic Synthesis in a Nutshell》（第四章）  
       - 论文 Cut ranking and pruning: enabling a general and efficient FPGA mapping solution(**选学**)
       - 论文 Combinational and sequential mapping with priority cuts(**选学**)
   
