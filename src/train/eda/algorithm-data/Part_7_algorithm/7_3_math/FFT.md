@@ -1,6 +1,6 @@
 ---
-title: "7.3.1 傅立叶变换"
-order: 1
+title: "7.3.12 傅立叶变换"
+order: 12
 ---
 
 # FFT快速傅里叶
@@ -58,7 +58,12 @@ order: 1
 
 FFT在计算多项式的系数表示法变换为点值表示法时，选定**复平面**上单位圆上的**单位复根**![\omega_n^k](https://math.jianshu.com/math?formula=%5Comega_n%5Ek)作为变量计算多项式的点值，在这里单位根![\omega_n^k](https://math.jianshu.com/math?formula=%5Comega_n%5Ek)满足以下的一些性质（如果有不理解的可以自行查阅复数的一些相关知识)：
 
-![img](https://i.bmp.ovh/imgs/2022/03/7b2426394ca6e376.png) 以上的这些性质都可以由**Euler公式**得到，推导过程并非FFT重点这里就省略了。
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/math/math_14.png" alt="ASIC Flow" width="200" />
+  <h4>图1 FFT</h4>
+</div>
+
+ 以上的这些性质都可以由**Euler公式**得到，推导过程并非FFT重点这里就省略了。
 
 对于一个多项式![A(x)=a_0+a_1x+a_2x^2+\cdots +a_{n-1}x_{n-1}](https://math.jianshu.com/math?formula=A(x)%3Da_0%2Ba_1x%2Ba_2x%5E2%2B%5Ccdots%20%2Ba_%7Bn-1%7Dx_%7Bn-1%7D)，我们可以对其进行划分，将偶数次项与奇数次项分开，在这里假设![n-1](https://math.jianshu.com/math?formula=n-1)为奇数，得到：
  ![A(x)=(a_0+a_2x^2+\cdots +a_{n-2}x^{n-2})+x(a_1+a_3x^2+\cdots +a_{n-1}x^{n-2})](https://math.jianshu.com/math?formula=A(x)%3D(a_0%2Ba_2x%5E2%2B%5Ccdots%20%2Ba_%7Bn-2%7Dx%5E%7Bn-2%7D)%2Bx(a_1%2Ba_3x%5E2%2B%5Ccdots%20%2Ba_%7Bn-1%7Dx%5E%7Bn-2%7D))
@@ -81,7 +86,12 @@ FFT在计算多项式的系数表示法变换为点值表示法时，选定**复
  取![\omega_n^k](https://math.jianshu.com/math?formula=%5Comega_n%5Ek)的**共轭复数**![\omega_n^{-k}](https://math.jianshu.com/math?formula=%5Comega_n%5E%7B-k%7D)，如下定义向量![(c_0,c_1,c_2,\cdots ,c_{n-1})](https://math.jianshu.com/math?formula=(c_0%2Cc_1%2Cc_2%2C%5Ccdots%20%2Cc_%7Bn-1%7D))：
  ![c_k=\sum_{i=0}^{n-1}y_i(\omega_n^{-k})^i](https://math.jianshu.com/math?formula=c_k%3D%5Csum_%7Bi%3D0%7D%5E%7Bn-1%7Dy_i(%5Comega_n%5E%7B-k%7D)%5Ei)
  那么由定义可以推导出如下的公式：
-![img](https://i.bmp.ovh/imgs/2022/03/7ca4f3f32a39ab07.png)
+
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/math/math_15.png" alt="ASIC Flow" width="200" />
+  <h4>图2 FFT</h4>
+</div>
+
  对于复平面上的单位根![\omega_n^k](https://math.jianshu.com/math?formula=%5Comega_n%5Ek)，有如下的性质：
  ![\begin{aligned} \sum_{i=0}^{n-1}(\omega_n^{j-k})^i&=0\quad(j\neq k)\\ \sum_{i=0}^{n-1}(\omega_n^{j-k})^i& =\omega_n^ 0=1 \quad (j= k ) \end{aligned}](https://math.jianshu.com/math?formula=%5Cbegin%7Baligned%7D%20%5Csum_%7Bi%3D0%7D%5E%7Bn-1%7D(%5Comega_n%5E%7Bj-k%7D)%5Ei%26%3D0%5Cquad(j%5Cneq%20k)%5C%5C%20%5Csum_%7Bi%3D0%7D%5E%7Bn-1%7D(%5Comega_n%5E%7Bj-k%7D)%5Ei%26%20%3D%5Comega_n%5E%200%3D1%20%5Cquad%20(j%3D%20k%20)%20%5Cend%7Baligned%7D)
  因此可以得到：
@@ -100,7 +110,10 @@ FFT在计算多项式的系数表示法变换为点值表示法时，选定**复
 
 对于这样一个序列![(a_0,a_1,a_2,a_3,a_4,a_5,a_6,a_7)](https://math.jianshu.com/math?formula=(a_0%2Ca_1%2Ca_2%2Ca_3%2Ca_4%2Ca_5%2Ca_6%2Ca_7))，我们观察对其进行二分的过程：
 
-![img](https:////upload-images.jianshu.io/upload_images/6362855-997fa72bf2761a12.png?imageMogr2/auto-orient/strip|imageView2/2/w/520/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_algorithm/math/math_16.webp" alt="ASIC Flow" width="200" />
+  <h4>图3 FFT迭代</h4>
+</div>
 
 
  我们发现了一个神奇的性质，在对这个序列进行二分以后的序列的二进制可以由原序列的二进制进行翻转得到，那么我们可以利用这个性质，用一个![O(n)](https://math.jianshu.com/math?formula=O(n))的方法可以直接得到最终的序列，从而省去了递归的过程，用最终的序列反向递推实现即可。
