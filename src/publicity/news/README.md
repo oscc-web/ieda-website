@@ -3,6 +3,11 @@ title: "新闻动态"
 ---
 
 ## **2024**
+- 2024年7月19日-21日，iEDA团队参加[第二届CCF芯片大会](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action)，并做多场学术报告
+  - 组织[开源智能EDA工具和模型论坛](https://mp.weixin.qq.com/s/UWoiu0Gafmu6da6hIVURiA)，邀请6位专家做开源和智能EDA相关报告，并针对开源EDA能否实现商业展开讨论
+  - 做题为《数字芯片时钟树和布线算法》的报告；
+  - 做题为《使用开源EDA工具设计开源芯片》的报告；
+  
 - 2024年6月23日-27日，iEDA团队参加[61st Design Automation Conference (DAC)](https://61dac.conference-program.com/)，并做多场学术报告
   - **Research Manuscript:** "[Net Resource Allocation: A Desirable Initial Routing Step](https://61dac.conference-program.com/presentation/?id=RESEARCH1344&sess=sess144)", Zhisheng, Jikang Liu, Zhipeng Huang, Ye Cai, Biwei Xie, Yungang Bao, Xingquan Li;
   - **Research Manuscript:** "[Toward Controllable Hierarchical Clock Tree Synthesis with Skew-Latency-Load Tree](https://61dac.conference-program.com/presentation/?id=RESEARCH1369&sess=sess144)"，Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Xingquan Li;
