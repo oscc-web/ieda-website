@@ -97,12 +97,13 @@ order: 4
 
 - 提交每日的学习记录；
 - 实验报告中应该至少包含数据结构设计、输入描述、输出描述、主要算法思想的文字描述，测试用例及用例运行结果（如设计两点间通路、死路情况的样例、不同情况通路中对应的最优路径cost消耗）； 代码和实验报告(作为readme.md)一起提交Pull Request；
-- 准备并提交实习总结的PPT。
+- 准备并提交实训总结的PPT。
 
 ### 三、参考资料
 
 - [题目.docx](https://gitee.com/oscc-project/iTraining/tree/master/C++/CPP-Program-Assignment/Assignment_3)
 - [水滴计划-答辩ppt模板.pptx](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
 - 实现带权重的障碍节点的A*寻路算法参考视频：[A*算法实验-带权重版本](https://www.bilibili.com/video/BV1544y1w7PR)
+- [A*思路分享](https://gitee.com/oscc-project/iTraining/blob/master/C++/ppt/AStar%E9%A1%B9%E7%9B%AE%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB_%E6%9B%BE%E6%99%BA%E5%9C%A3.pptx)
 
 **学习小注：** 至此，C++的系统学习就告一段落，若学有余力提前完成的同学，不妨简单思考三点如何实现最短路径。

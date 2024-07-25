@@ -75,7 +75,10 @@ order: 1
 
 最后，点击下载学习记录模板副本 [xx大学-张三-学习记录](https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp)，将学习文档链接放置于每日学习记录中，在文档中记录每天学习情况和问题。
 
+水滴计划安排、学习记录登记表和Q&A如下：
 [2024水滴计划安排](https://docs.qq.com/sheet/DYnlkTnp4cFJVV0RZ?tab=BB08J2)
+[2024水滴计划学习记录汇总](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
+[2024水滴计划Q&A](https://docs.qq.com/doc/DUVdvZ3V6THVHWHRr)
 
 ### **C++学习模块**（必选）
 
