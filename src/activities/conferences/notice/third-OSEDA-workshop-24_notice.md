@@ -2,8 +2,6 @@
 title: "2024年第三届OSEDA研讨会征稿通知"
 order: 2
 ---
-
-
 **OSEDA研讨会及社区介绍**
 
 我们相信在未来，每一位芯片的设计者都可以通过开源设计工具（EDA）设计、验证、生产使用开源指令集（RISC-V）的芯片，就像使用开源GNU工具链编译 C 语言的代码一样方便快捷。为了实现这个共同的愿景，来自RISC-V开源社区和EDA研究领域的活跃贡献者发起成立了OSEDA社区，致力于研发开源EDA技术和推广开源EDA等开源芯片开发工具在RISC-V社区的使用、推动国内外开源EDA开发者和RISC-V芯片设计者之间的交流、促进开源EDA技术社区（尤其是国内技术社区）的发展壮大。OSEDA社区的短期目标是在2025年之前吸引超过一千名、在2035年之前吸引超过一万名开发人员加入开源EDA社区，为开源项目贡献代码。
@@ -14,8 +12,9 @@ order: 2
 
 > - 代码地址：
 >   - https://gitee.com/oscc-project
->   - https://github.com/OSCC-Project/
->   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)，
+>   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)
+> - 报名问卷
+>   - https://www.wenjuan.com/s/UZBZJvFH93/
 
 **时间及地点：**
 
@@ -28,7 +27,6 @@ order: 2
 > 北京开源芯片研究院，中国科学院计算技术研究所，鹏城实验室，iEDA社区
 
 **程序委员会：**
-
 
 > 荣誉主席：周平强 上海科技大学，解壁伟 中科科学院计算所、鹏城实验室，吴伟 OSDT社区、PLCT实验室
 > 主席：李兴权 鹏城实验室, 王昊 中国科学院计算所
@@ -64,4 +62,3 @@ order: 2
 > 录取通知时间： 2024年8月12日
 
 > 关于投稿等问题可以联系李兴权：fzulxq@gmail.com，王昊：wanghao@ict.ac.cn。
-

@@ -60,8 +60,8 @@ export default hopeTheme({
   // Meta
   lastUpdated: true,
   contributors: true,
-  editLink: false,
-  docsRepo: "repo",
+  editLink: true,
+  docsRepo: "oscc-web/ieda-website",
   docsBranch: "main",
   docsDir: "src",
 
