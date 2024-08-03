@@ -25,7 +25,7 @@ DEF文件包含电路的特定设计信息，它是在物理设计过程中任�
 - [ DESIGN 声明 ]
 - [ TECHNOLOGY 声明 ]
 - [ UNITS 声明 ]
-- [ DIAAREA 声明 ]  
+- [ DIEAREA 声明 ]  
 <br>
 - [ ROW 声明 ]
 - [ TRACKS 声明 ]
