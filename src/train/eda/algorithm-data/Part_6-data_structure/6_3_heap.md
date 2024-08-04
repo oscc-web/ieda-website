@@ -316,7 +316,10 @@ shiftUp 或者 shiftDown 是一个递归的过程，所以它的时间复杂度�
 
 然而，shift down 不是我们要处理的唯一情况。也有可能我们需要 shift up。考虑一下从下面的堆中删除 `(5)` 会发生什么：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-ef711e0072fc773a.png?imageMogr2/auto-orient/strip|imageView2/2/w/219/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_18.png" alt="ASIC Flow" width="200" />
+  <h4>图18 堆节点删除</h4>
+</div>
 
 现在 `(5)` 和 `(8)` 交换了。因为 `(8)` 比它的父节点大，我们需要 `shiftUp()`。
 
