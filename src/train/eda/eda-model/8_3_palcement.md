@@ -90,7 +90,7 @@ $$
 $$
 	\min \quad {W}(\mathbf{x}, \mathbf{y})+\lambda \sum_{b}\left({D}_{b}(\mathbf{x}, \mathbf{y})-M_{b}\right)^{2}
 $$
-其中，${W}(\mathbf{x}, \mathbf{y}) $是光滑后的总线长，$D_{b}(\mathbf{x}, \mathbf{y})$是光滑后的网格密度， $M_{b} = \rho_t A_b $指每个网格内允许电路单元摆放的最大面积。随后，通过对该函数应用梯度优化算法即可求解出布局结果。
+其中，${W}(\mathbf{x}, \mathbf{y})$是光滑后的总线长，$D_{b}(\mathbf{x}, \mathbf{y})$是光滑后的网格密度， $M_{b} = \rho_t A_b$指每个网格内允许电路单元摆放的最大面积。随后，通过对该函数应用梯度优化算法即可求解出布局结果。
 
 常用的梯度优化算法是Conjugate Gradient（CG）和Nesterov算法。CG算法在执行线搜索时较为耗时，其步长也不够精确，搜索方向在迭代过程中很容易失去共轭性，这些因素导致CG算法的性能较差。ePlace[8]首次利用 Nesterov 算法结合 Lipschitz 常数预测的方法，获得了比 CG 算法更好的布局质量和更短的求解时间。目前全局布局的主流梯度优化方法即是采用ePlace这套方法。
 
