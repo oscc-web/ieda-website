@@ -113,6 +113,7 @@ iPL基于iEDA统一设计的数字后端全流程框架开发，代码实现规�
 - [iEDA-Tutorial-第二期：iEDA-iPL 问题介绍、架构、使用与规划](https://www.bilibili.com/video/BV1GN411h7b3/?share_source=copy_web&vd_source=6815ab875317a5897f502233fc7d69c1)
 
 参考阅读：
+- [VLSI全局布局基础介绍](https://zhuanlan.zhihu.com/p/712633359)
 - [设计VLSI EDA(7): 布局算法怎么实现芯片“核舟记”](https://zhuanlan.zhihu.com/p/578525808)
 
 
