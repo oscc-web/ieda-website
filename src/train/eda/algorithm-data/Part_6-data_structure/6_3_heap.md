@@ -20,7 +20,10 @@ order: 3
 
 例子：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-14a6cde25bdff968.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_1.png" alt="ASIC Flow" width="200" />
+  <h4>图1 堆</h4>
+</div>
 
 这是一个最大堆，，因为每一个父节点的值都比其子节点要大。`10` 比 `7` 和 `2` 都大。`7` 比 `5` 和 `1`都大。
 
@@ -94,27 +97,41 @@ array[parent(i)] >= array[i]
 
 理解数组索引和节点位置之间的关系非常重要。这里有一个更大的堆，它有15个节点被分成了4层：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-4b11a151bf6c2148.png?imageMogr2/auto-orient/strip|imageView2/2/w/471/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_2.png" alt="ASIC Flow" width="200" />
+  <h4>图2 堆分层四层</h4>
+</div>
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-7515fe1d9f3104ad.png?imageMogr2/auto-orient/strip|imageView2/2/w/551/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_3.png" alt="ASIC Flow" width="200" />
+  <h4>图3 堆分层四层</h4>
+</div>
 
-Array.png
 
 图片中的数字不是节点的值，而是存储这个节点的数组索引！这里是数组索引和树的层级之间的关系：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-d6fd28a1ba7dbb1a.png?imageMogr2/auto-orient/strip|imageView2/2/w/551/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_4.png" alt="ASIC Flow" width="200" />
+  <h4>图4 索引和层级之间的关系</h4>
+</div>
 
 由上图可以看到，数组中父节点总是在子节点的前面。
 
 注意这个方案与一些限制。你可以在普通二叉树中按照下面的方式组织数据，但是在堆中不可以：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-26be199ebd40f8bf.png?imageMogr2/auto-orient/strip|imageView2/2/w/320/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_5.png" alt="ASIC Flow" width="200" />
+  <h4>图5 索引和层级之间的关系</h4>
+</div>
 
 在堆中，在当前层级所有的节点都已经填满之前不允许开是下一层的填充，所以堆总是有这样的形状：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-9590755bc6109a38.png?imageMogr2/auto-orient/strip|imageView2/2/w/413/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_6.png" alt="ASIC Flow" width="200" />
+  <h4>图6 堆的形状</h4>
+</div>
 
 > **注意：**你可以使用普通树来模拟堆，但是那对空间是极大的浪费。
 
@@ -128,7 +145,10 @@ Array.png
 
 这是一个有效的堆吗？答案是 yes ！一个从低到高有序排列的数组是以有效的最小堆，我们可以将这个堆画出来：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-525f0584ffbdbbed.png?imageMogr2/auto-orient/strip|imageView2/2/w/219/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_7.png" alt="ASIC Flow" width="200" />
+  <h4>图7 堆</h4>
+</div>
 
 堆属性适用于每一个节点，因为父节点总是比它的字节点小。（你也可以验证一下：一个从高到低有序排列的数组是一个有效的最大堆）
 
@@ -140,9 +160,12 @@ Array.png
 
 树的*高度*是指从树的根节点到最低的叶节点所需要的步数，或者更正式的定义：高度是指节点之间的边的最大值。一个高度为 h 的堆有 h+1 层。
 
-下面这个对的高度是3，所以它有4层：
+下面这个堆的高度是3，所以它有4层：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-9a3b75e40d3f9f04.png?imageMogr2/auto-orient/strip|imageView2/2/w/471/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_8.png" alt="ASIC Flow" width="200" />
+  <h4>图8 堆</h4>
+</div>
 
 如果一个堆有 n 个节点，那么它的高度是 *h = floor(log2(n))*。这是因为我们总是要将这一层完全填满以后才会填充新的一层。上面的例子有 15 个节点，所以它的高度是 `floor(log2(15)) = floor(3.91) = 3`。
 
@@ -182,7 +205,10 @@ shiftUp 或者 shiftDown 是一个递归的过程，所以它的时间复杂度�
 
 我们通过一个插入例子来看看插入操作的细节。我们将数字 `16` 插入到这个堆中：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-51fd43a2d2191488.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_9.png" alt="ASIC Flow" width="200" />
+  <h4>图9 堆</h4>
+</div>
 
 堆的数组是： `[ 10, 7, 2, 5, 1 ]`。
 
@@ -196,7 +222,10 @@ shiftUp 或者 shiftDown 是一个递归的过程，所以它的时间复杂度�
 
 相应的树变成了：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-7dd89da71927acb8.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_10.png" alt="ASIC Flow" width="200" />
+  <h4>图10 堆</h4>
+</div>
 
 `16` 被添加最后一行的第一个空位。
 
@@ -204,37 +233,58 @@ shiftUp 或者 shiftDown 是一个递归的过程，所以它的时间复杂度�
 
 为了恢复堆属性，我们需要交换 `16` 和 `2`。
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-785a7a6cd104f775.png?imageMogr2/auto-orient/strip|imageView2/2/w/204/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_11.png" alt="ASIC Flow" width="200" />
+  <h4>图11 堆</h4>
+</div>
 
 现在还没有完成，因为 `10` 也比 `16` 小。我们继续交换我们的插入元素和它的父节点，直到它的父节点比它大或者我们到达树的顶部。这就是所谓的 **shift-up**，每一次插入操作后都需要进行。它将一个太大或者太小的数字“浮起”到树的顶部。
 
 最后我们得到的堆：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-d7dae273e1f5a0ba.png?imageMogr2/auto-orient/strip|imageView2/2/w/192/format/webp)
-
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_12.png" alt="ASIC Flow" width="200" />
+  <h4>图12 堆</h4>
+</div>
 现在每一个父节点都比它的子节点大。
 
 ### 删除根节点
 
 我们将这个树中的 `(10)` 删除：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-7eb32c6486a44f73.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_13.png" alt="ASIC Flow" width="200" />
+  <h4>图13 堆节点删除</h4>
+</div>
 
 现在顶部有一个空的节点，怎么处理？
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-71783aa7bd24a51f.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_14.png" alt="ASIC Flow" width="200" />
+  <h4>图14 堆节点删除</h4>
+</div>
 
 当插入节点的时候，我们将新的值返给数组的尾部。现在我们来做相反的事情：我们取出数组中的最后一个元素，将它放到树的顶部，然后再修复堆属性。
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-c28b15dc371b8e97.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_15.png" alt="ASIC Flow" width="200" />
+  <h4>图15 堆节点删除</h4>
+</div>
 
 现在来看怎么 **shift-down** `(1)`。为了保持最大堆的堆属性，我们需要树的顶部是最大的数据。现在有两个数字可用于交换 `7` 和 `2`。我们选择这两者中的较大者称为最大值放在树的顶部，所以交换 `7` 和 `1`，现在树变成了：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-bfc42e89b5411f9b.png?imageMogr2/auto-orient/strip|imageView2/2/w/190/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_16.png" alt="ASIC Flow" width="200" />
+  <h4>图16 堆节点删除</h4>
+</div>
 
 继续堆化直到该节点没有任何子节点或者它比两个子节点都要大为止。对于我们的堆，我们只需要再有一次交换就恢复了堆属性：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-8b04275965f88961.png?imageMogr2/auto-orient/strip|imageView2/2/w/208/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_17.png" alt="ASIC Flow" width="200" />
+  <h4>图17 堆节点删除</h4>
+</div>
+
 
 ### 删除任意节点
 
@@ -266,7 +316,10 @@ shiftUp 或者 shiftDown 是一个递归的过程，所以它的时间复杂度�
 
 然而，shift down 不是我们要处理的唯一情况。也有可能我们需要 shift up。考虑一下从下面的堆中删除 `(5)` 会发生什么：
 
-![img](https:////upload-images.jianshu.io/upload_images/4064751-ef711e0072fc773a.png?imageMogr2/auto-orient/strip|imageView2/2/w/219/format/webp)
+<div style="text-align:center;">
+  <img src="/res/images/eda_datastructure/heap_18.png" alt="ASIC Flow" width="200" />
+  <h4>图18 堆节点删除</h4>
+</div>
 
 现在 `(5)` 和 `(8)` 交换了。因为 `(8)` 比它的父节点大，我们需要 `shiftUp()`。
 
