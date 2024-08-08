@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
     {
         text: "项目和团队",
-        prefix: "/project/",
+        prefix: "/zh/project/",
         children: [
             "intro/",
             "plan/",
@@ -11,7 +11,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "知识和训练",
-        prefix: "/train/",
+        prefix: "/zh/train/",
         children: [
             "eda/",
             "water_drop/",
@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "平台和工具",
-        prefix: "/tools/",
+        prefix: "/zh/tools/",
         children: [
             "ieda-platform/",
             "ieda-tools/",
@@ -29,7 +29,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "智能和数据",
-        prefix: "/aieda/",
+        prefix: "/zh/aieda/",
         children: [
             "ibm/",
             "aieda-model/",
@@ -37,7 +37,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "学术和研发",
-        prefix: "/research/",
+        prefix: "/zh/research/",
         children: [
             "subjects/",
             "tasks/",
@@ -45,7 +45,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "活动和交流",
-        prefix: "/activities/",
+        prefix: "/zh/activities/",
         children: [
             "conferences/",
             "communication/",
@@ -54,7 +54,7 @@ export const zhNavbar = navbar([
         ]
     }, {
         text: "宣传和合作",
-        prefix: "/publicity/",
+        prefix: "/zh/publicity/",
         children: [
             "news/",
             "collaborate/",
