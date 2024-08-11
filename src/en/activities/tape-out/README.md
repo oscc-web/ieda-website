@@ -2,13 +2,13 @@
 title: "Tape-out"
 index: false
 ---
-(介绍基于iEDA设计的芯片)
+(Introducing the chips designed based on iEDA)
 
-**2024年流片计划**
+**Tape-out Plan in 2024**
 
-<img src="/res/images/activities/tapeout/tapeout_4.png" alt="6" style="zoom:70%;" title ="iEDA第三次支持芯片设计并流片版图和板卡测试结果" />
-<center>从GDS版图-芯片-封装-板块-调试的过程示意图</center>
+<img src="/res/images/activities/tapeout/tapeout_4.png" alt="6" style="zoom:70%;" title ="The layout and board test results of the third chip design and tape-out supported by iEDA" />
+<center>Schematic diagram of the process from GDS layout - chip - packaging - board - debugging</center>
 
-在2024年4月，用“一生一芯”六期或“南湖-G”设计，28nm工艺，500万门级的处理器芯片，预计取得400MHz的时钟频率。
+In April 2024, using the "YSYX" sixth phase or "Nanhu-G" design, a 28nm process, 5 million gate-level processor chip is expected to achieve a clock frequency of 400 MHz.
 
-亮点：相比前几次流片该流片计划的工具有以下提升：用iSTA辅助前端RTL代码开发时序预估、支持宏单元智能化布局工具、支持时序驱动布局工具、借助AiEDA进行流片设计。
+Highlights: Compared to previous tape-outs, the tools of this tape-out plan have the following improvements: Using iSTA to assist in the timing estimation of front-end RTL code development, supporting intelligent placement tools for macro cells, supporting timing-driven placement tools, and conducting tape-out design with the help of AiEDA. 

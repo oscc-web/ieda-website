@@ -1,5 +1,5 @@
 ---
-title: "2023年openDACS开源EDA与芯片大赛-赛题二"
+title: "2023 openDACS Open EDA and Chip Design Competition-Topic 2"
 order: 2
 ---
 ## 赛题2：增量式时序优化算法
@@ -292,8 +292,6 @@ GCell在每一层的大小分布都是一致的，通过分析guide，net0的布
 <center>
 <img src="/res/images/activities/contest/openDACS-23-t2/fig7-1.png" alt="6" style="zoom:90%;" title ="openDACS开源EDA与芯片大赛" /></center>
 <center>openDACS开源EDA与芯片大赛</center>
- 
->
 
 <center>
 <img src="/res/images/activities/contest/openDACS-23-t2/fig7-2.png" alt="6" style="zoom:110%;" title ="开源iEDA社区群" /></center>

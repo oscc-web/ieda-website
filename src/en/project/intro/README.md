@@ -2,19 +2,19 @@
 title: "Introduction"
 index: false
 ---
-## **iEDA项目目标**
+## **iEDA Project Objective**
 
 <center><img src="/res/images/project/ieda_obj.png" alt="6" style="zoom:100%;"/></center>
 
-## **iEDA设计思路**
+## **iEDA Design Idea**
 
 <center><img src="/res/images/project/ieda_idea.png" alt="6" style="zoom:100%;"/></center>
 
-## **iEDA当前进展**
+## **iEDA Current Process**
 
 <center><img src="/res/images/aieda/ieda.png" alt="6" style="zoom:100%;"/></center>
 
-## **iEDA开源**
+## **iEDA Open-source**
 
 <center><img src="/res/images/tools/tool/ieda_intro.png" alt="6" style="zoom:100%;"/></center>
 

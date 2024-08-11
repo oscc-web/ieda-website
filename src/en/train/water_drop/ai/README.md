@@ -1,4 +1,4 @@
 ---
-title: "AI学习"
+title: "AI "
 index: false
 ---

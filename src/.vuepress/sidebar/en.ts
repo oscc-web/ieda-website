@@ -8,13 +8,13 @@ export const enSidebar = sidebar({
         children: "structure",
         collapsible: true
     },{
-        text: "Planning",
+        text: "Our Plan",
         prefix: "plan/",
         link: "/en/project/plan/README.md",
         children: "structure",
         collapsible: true
     },{
-        text: "Team",
+        text: "Team Member",
         prefix: "team/",
         link: "/en/project/team/README.md",
         // children: "",
@@ -58,7 +58,7 @@ export const enSidebar = sidebar({
                 ],
                 collapsible: true
             }, {
-                text: "EDA Problems and Modeling",
+                text: "EDA Problems and Model",
                 prefix: "eda-model/",
                 children: "structure",
                 collapsible: true
@@ -89,24 +89,23 @@ export const enSidebar = sidebar({
         link: "/en/train/water_drop/README.md",
         children: [
             "application",
-            "water_drop_plan_overview",
             {
-                text: "C++ Learning",
+                text: "C++",
                 prefix: "C/",
                 children: "structure",
                 collapsible: true
             }, {
-                text: "EDA Learning",
+                text: "EDA",
                 prefix: "eda/",
                 children: "structure",
                 collapsible: true
             }, {
-                text: "AI Learning (Optional)",
+                text: "AI (Optional)",
                 prefix: "ai/",
                 children: "structure",
                 collapsible: true
             }, {
-                text: "RUST Learning (Optional)",
+                text: "RUST (Optional)",
                 prefix: "rust/",
                 children: "structure",
                 collapsible: true
@@ -137,7 +136,7 @@ export const enSidebar = sidebar({
         ],
         collapsible: true
     }, {
-        text: "Others",
+        text: "Other Training",
         link: "/en/train/others/README.md",
         children: [
             {
@@ -230,7 +229,7 @@ export const enSidebar = sidebar({
         link: "/en/activities/conferences/README.md",
         children: [
             {
-                text: "Conference Announcements",
+                text: "Call for Contribution",
                 prefix: "notice/",
                 children: "structure",
                 collapsible: true
@@ -243,18 +242,18 @@ export const enSidebar = sidebar({
         ],
         collapsible: true
     }, {
-        text: "Contest",
-        prefix: "contests/",
-        link: "/en/activities/contests/README.md",
-        children: "structure",
-        collapsible: true
-    }, {
         text: "Tutorial",
         prefix: "communication/",
         link: "/en/activities/communication/README.md",
         children: "structure",
         collapsible: true
     },{
+        text: "Contest",
+        prefix: "contests/",
+        link: "/en/activities/contests/README.md",
+        children: "structure",
+        collapsible: true
+    }, {
         text: "Tape-out Schedule",
         prefix: "tape-out/",
         link: "/en/activities/tape-out/README.md",

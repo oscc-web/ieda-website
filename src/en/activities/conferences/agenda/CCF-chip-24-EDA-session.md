@@ -1,5 +1,5 @@
 ---
-title: "2024 Second CCF Chip Conference"
+title: "2024 the Second CCF Chip Conference"
 order: 2
 ---
 | [**Forum 16:** Open-source Intelligent EDA Tools and Algorithms]                                                                                                                                                                                                                                                                                                |
@@ -7,8 +7,8 @@ order: 2
 | **Time:** July 19, 2024, 13:00-17:00, **Location:** Shanghai Fuyue Hotel                                                                                                                                                                                                                                                                                                      |
 | **Sponsored by:** Beijing Institute of Open Source Chip Research                                                                                                                                                                                                                                                                                                       |
 | **Conference Abstract:** To bridge the gap between industry and academia in terms of EDA technology, an open-source, full-stack EDA development platform is urgently needed. This platform will support the exploration of new EDA research methodologies and technologies, train EDA professionals, and facilitate the synchronization of knowledge transfer between industry and academia. This will create a good product-research-development loop, improve the efficiency and quality of EDA research, and invite EDA experts to discuss open-source and intelligent EDA tools and algorithm technologies. |
-| **Chairperson:** **Li Hua Wei** **Institute of Computational Science, Chinese Academy of Sciences**                                                                                                                                                                                                                                                                                  |
-| **Co-Chairperson:**  **Li Xing Quan**                                                                                                                                                                                                                                                              |
+| **Chairperson:** **Li Huawei** **Institute of Computational Science, Chinese Academy of Sciences**                                                                                                                                                                                                                                                                                  |
+| **Co-Chairperson:**  **Li Xingquan**                                                                                                                                                                                                                                                              |
 
 **Conference Agenda**
 
@@ -20,12 +20,12 @@ order: 2
         <th>Affiliation</th>
     </tr>
     <tr>
-        <td colspan="4">Chairpersons: Li Hua Wei, Li Xing Quan</td>
+        <td colspan="4">Chairpersons: Li Huawei, Li Xingquan</td>
     </tr>
     <tr>
         <td>13:00-13:30</td>
         <td>Agile and Post-agile Chip Development: Integration and Verification Tools</td>
-        <td>Luoguojie</td>
+        <td>Luo Guojie</td>
         <td>Peking University</td>
     </tr>
     <tr>

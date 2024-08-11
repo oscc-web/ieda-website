@@ -2,31 +2,31 @@
 title: "iEDA-Chip-001"
 order: 1
 ---
- **芯片参数**
 
-第1次：20220202，在110nm工艺“一生一芯”两个学生的CPU核设计，28万门级的处理器芯片，实现25MHz的流片结果；
 
-SoC规格：
+ **Chip Parameters**
 
-* 5级顺序单发射RV64I处理器核
-* 实现AXI4总线互联网络，设计有两个时钟
-* 集成了UART、QSPI Flash、ChipLink外设
+First Tapeout: 20220202, 780 tousand gates processor chip designed by two students in the "One Chip for a Lifetime" 110nm technology, achieved a 25MHz tapeout result;
 
-芯片参数：
+SoC Specifications:
 
+* 5-stage, single-issue RV64I processor core
+* AXI4 bus interconnect network, with two clocks designed
+* Integrated UART, QSPI Flash, and ChipLink peripheral
+
+Chip Parameters:
 ```
-•工艺：110nm
-•面积：约3 ×3.5 cm
-•功耗：dynamic = 48mW，leakage = 7 mW
-•频率：25MHz
-•规模：78W Gates
-•特性：支持Linux，5级流水线，Chiplink、UART、和SPI，外接板卡时钟
+•Technology: 110nm
+•Area: Approximately 3 ×3.5 cm
+•Power Consumption: Dynamic = 48mW, Leakage = 7 mW
+•Frequency: 25MHz
+•Scale: 78W Gates
+•Features: Supports Linux, 5-stage pipeline, ChipLink, UART, and SPI, with external board card clock
 ```
+**Layout Results**
 
-**版图结果**
 
+<!-- ![EDA Elite Challenge Official Website](/res/images/activities/tapeout/fig1.png "EDA Elite Challenge Official Website") -->
 
-<!-- ![EDA精英挑战赛官方网站](/res/images/activities/tapeout/fig1.png "EDA精英挑战赛官方网站") -->
-
-<img src="/res/images/activities/tapeout/fig1.png" alt="6" style="zoom:70%;" title ="iEDA第一次支持芯片设计并流片版图和板卡测试结果" />
-<center>iEDA第一次支持芯片设计并流片版图和板卡测试结果</center>
+<img src="/res/images/activities/tapeout/fig1.png" alt="6" style="zoom:70%;" title ="iEDA's first tapeout of a chip design, layout, and board card test results" />
+<center>iEDA's first tapeout of a chip design, layout, and board card test results</center>

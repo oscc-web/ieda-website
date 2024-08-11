@@ -3,27 +3,29 @@ title: "iEDA-Chip-003"
 order: 3
 ---
 
-**芯片参数**
 
-第2次：20220812，在110nm工艺在“一生一芯”三期设计，百万门级的处理器芯片，实现25MHz的流片结果；
+**Chip Parameters**
 
-SoC规格：
+Second Tapeout: 20220812, 1.5M-gate-level processor chip designed in the "One Chip for a Lifetime" 28nm technology, third phase, achieved a 200MHz tapeout result;
 
-* 一个11级顺序单发射RV64I MAC处理器核
-* 实现AXI4总线互联网络，集成一个PLL，设计有三个时钟域
-* 集成了UART、QSPI Flash、ChipLink、SDRAM、VGA、PS/2外设
+SoC Specifications:
 
-芯片参数：
+* A 11-stage, single-issue RV64I MAC processor core
+* AXI4 bus interconnect network, with an integrated PLL, designed with three clock domains
+* Integrated UART, QSPI Flash, ChipLink, SDRAM, VGA, PS/2 peripherals
 
+Chip Parameters:
 ```
-•工艺：28nm
-•面积：约1.5 × 1.5 cm
-•功耗：dynamic = 317mW，leakage = 29 mW
-•频率：200MHz
-•规模：1.5M Gates
-•特性：11级流水线带cache，IP： UART、VGA、PS/2、SPI、SDRAM、 片上两个PLL模块输出时钟，支持Linux
+•Technology: 28nm
+•Area: Approximately 1.5 × 1.5 cm
+•Power Consumption: Dynamic = 317mW, Leakage = 29 mW
+•Frequency: 200MHz
+•Scale: 1.5M Gates
+•Features: 11-stage pipeline with cache, IPs: UART, VGA, PS/2, SPI, SDRAM, two PLL modules output clocks, supports Linux
 ```
 
-**版图结果**
-<img src="/res/images/activities/tapeout/fig3.png" alt="6" style="zoom:70%;" title ="iEDA第三次支持芯片设计并流片版图和板卡测试结果" />
-<center>iEDA第三次支持芯片设计并流片版图和板卡测试结果</center>
+
+**Layout Results**
+
+<img src="/res/images/activities/tapeout/fig3.png" alt="6" style="zoom:70%;" title ="iEDA's third tapeout of a chip design, layout, and board card test results" />
+<center>iEDA's third tapeout of a chip design, layout, and board card test results</center>

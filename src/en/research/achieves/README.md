@@ -2,12 +2,12 @@
 title: "Achievement"
 index: false
 ---
-（主要介绍iEDA团队或相关的学术成果）
+(Mainly introduce the iEDA team or related academic achievements)
 
-## **成果清单**
+## **Achievement List**
 
-- [论文](/research/achieves/papers.md)
-- [专利](/research/achieves/patents.md)
-- [软件](/research/achieves/softwares.md)
-- [著作](/research/achieves/books.md)
-- [获奖](/research/achieves/awards.md)
+- [Paper](/en/research/achieves/papers.md)
+- [Patent](/en/research/achieves/patents.md)
+- [Software](/en/research/achieves/softwares.md)
+- [Work](/en/research/achieves/books.md)
+- [Award](/en/research/achieves/awards.md) 

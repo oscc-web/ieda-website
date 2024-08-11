@@ -1,64 +1,78 @@
 ---
-title: "2024年第三届OSEDA研讨会征稿通知"
-order: 2
+title: "2024 OSEDA Workshop CFP"
+order: 3
 ---
-**OSEDA研讨会及社区介绍**
 
-我们相信在未来，每一位芯片的设计者都可以通过开源设计工具（EDA）设计、验证、生产使用开源指令集（RISC-V）的芯片，就像使用开源GNU工具链编译 C 语言的代码一样方便快捷。为了实现这个共同的愿景，来自RISC-V开源社区和EDA研究领域的活跃贡献者发起成立了OSEDA社区，致力于研发开源EDA技术和推广开源EDA等开源芯片开发工具在RISC-V社区的使用、推动国内外开源EDA开发者和RISC-V芯片设计者之间的交流、促进开源EDA技术社区（尤其是国内技术社区）的发展壮大。OSEDA社区的短期目标是在2025年之前吸引超过一千名、在2035年之前吸引超过一万名开发人员加入开源EDA社区，为开源项目贡献代码。
+**Introduction to OSEDA Workshop and Community**
 
-为促进国内外开源EDA开发者和使用者的交流与互动，OSEDA社区计划在2024年8月20日（周二）下午举办第三届开源EDA研讨会(The Third OSEDA Workshop)。本次研讨会将会作为第四届RISC-V中国峰会的同期活动。
+We believe that in the future, every chip designer can use open-source design tools (EDA) to design, validate, and manufacture open-source RISC-V chips just as easily as using open-source GNU toolchains to compile C code. To achieve this common goal, active contributors from the RISC-V open-source community and the EDA research field established the OSEDA community, dedicated to developing and promoting open-source EDA technologies and tools in the RISC-V community. The short-term goal of the OSEDA community is to attract over 1,000 developers and over 10,000 developers by 2025 to join the open-source EDA community and contribute to open-source projects.
 
-> - 社区网站： [https://ieda.oscc.cc/](https://ieda.oscc.cc/)
+To foster the exchange of ideas and collaboration between open-source EDA developers and users from around the world, the OSEDA community plans to hold the Third OSEDA Workshop on August 20, 2024, as part of the fourth RISC-V China Summit. This workshop will be held concurrently with the RISC-V China Summit.
 
-> - 代码地址：
+::: info
+> - Community website: [https://ieda.oscc.cc/](https://ieda.oscc.cc/)
+
+> - Code repository:
 >   - https://gitee.com/oscc-project
 >   - [https://github.com/cnrv/OSEDA](https://github.com/cnrv/OSEDA)
-> - 报名问卷
+> - Registration form
 >   - https://www.wenjuan.com/s/UZBZJvFH93/
+:::
 
-**时间及地点：**
+**Date and Location**
 
-> 会议时间： 2024年8月20日 14:00 -- 17:00
+> Workshop date: August 20, 2024, 14:00 -- 17:00
+> Workshop location: Hangzhou
 
-> 会议地点：杭州
+**Organizers**
 
-**主办单位：**
+> Beijing Institute of Open Source Chips, 
+> Institute of Computational Technology, CAS, 
+> Pengcheng Laboratory, 
+> iEDA Community
 
-> 北京开源芯片研究院，中国科学院计算技术研究所，鹏城实验室，iEDA社区
+**Program Committee**
 
-**程序委员会：**
+> **Honorary Chair:** 
+> Pingqiang Zhou, ShanghaiTech University,
+> Biwei Xie, Institute of Computational Technology, CAS, Pengcheng Laboratory,
+> Wei Wu, OSDT Community, PLCT Laboratory
 
-> 荣誉主席：周平强 上海科技大学，解壁伟 中科科学院计算所、鹏城实验室，吴伟 OSDT社区、PLCT实验室
-> 主席：李兴权 鹏城实验室, 王昊 中国科学院计算所
+> **Chair:** 
+> Xingquan Li, Pengcheng Laboratory,  
+> Hao Wang, Institute of Computational Technology, CAS
 
-**征稿说明及要求：**
 
-研讨会接收的演讲议题（包括但不限于）
 
-* 在EDA相关技术领域的最新成果及进展；
-* 围绕EDA领域所涉及的学科理论和算法技术的发展与应用；
-* 在开源EDA项目中的贡献，包含新特性实现、工具质量优化、社区运营等；
-* 使用开源EDA工具进行芯片设计和流片的技术分享；
-* 开源EDA在教学领域的实践。
+**Call for Papers**
 
-投稿要求：
+Topics accepted for the workshop (including but not limited to)
 
-* 本次研讨会通过邮件投稿。投稿邮件请发送至“ieda.oscc@gmail.com”，并满足以下要求：
-* 标题：请按照 **"[OSEDA]-演讲标题-演讲者姓名"** 格式
+* Latest achievements and advancements in EDA technology
+* Development and application of EDA-related academic theories and algorithm techniques
+* Contributions to open-source EDA projects, including new feature implementations, tool quality optimization, and community management
+* Techniques for sharing open-source EDA tools for chip design and manufacturing
+* Practical applications of open-source EDA in education
 
-正文：请包含以下内容：
+Paper submission requirements:
 
-1. 演讲标题
-2. 演讲人姓名及所属单位或组织（学生请填写学校）
-3. 演讲内容介绍（200～500字）
-4. 演讲者介绍（100～300字）
+::: tip
+* Submissions must be sent via email to "ieda.oscc@gmail.com". The email must follow the following format:
+* Title: "[OSEDA]-Paper Title-Speaker Last Name"
 
-请注意本次研讨会并非学术出版物，尚未发表的学术研究成果请谨慎投稿。
+**Email  content:**
+1. Paper title
+2. Speaker name and affiliation (for students, please provide the school)
+3. Paper abstract (200-500 words)
+4. Speaker bio (100-300 words)
+:::
 
-**重要日期：**
+Please note that this workshop is not an academic publication, and unpublished research findings should be submitted with caution.
 
-> 投稿截止日期： 2024年8月8日
+**Important Dates**
 
-> 录取通知时间： 2024年8月12日
-
-> 关于投稿等问题可以联系李兴权：fzulxq@gmail.com，王昊：wanghao@ict.ac.cn。
+::: warning
+> Submission deadline: August 8, 2024
+> Notification of acceptance: August 12, 2024
+> For any questions about paper submissions, please contact Xingquan Li: fzulxq@gmail.com, Hao Wang: wanghao@ict.ac.cn.
+:::

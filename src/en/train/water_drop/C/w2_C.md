@@ -1,125 +1,125 @@
 ---
-title: "C++学习-Week2"
+title: "C++ Course - Week2"
 order: 3
+icon: file-lines
 ---
-## DAY8-DAY9：C++进阶学习
+## DAY8 - DAY9: Advanced C++ Learning
 
-### 一、具体要求
+### 1. Specific Requirements
 
-- 学习 C++ 基本语法和面向对象编程基础，选择自己喜欢的学习资料（书籍/视频/教程），以下仅供参考，目标是掌握C++基本语法和面向对象编程基础：
+- Learn the basic syntax of C++ and the foundation of object-oriented programming. Choose your favorite learning materials (books/videos/tutorials). The following are for reference only. The goal is to master the basic syntax of C++ and the foundation of object-oriented programming:
 
-（一）**基础较好的同学学习规划**:
+(1) **Learning Plan for Students with a Good Foundation**:
 
-   - 学习 C++ Primer Plus 的指定章节内容：
-     - 第7章至第13章（必看）
-     - 第14章至第17章（推荐看）
-     - 第18章（可选看）
-   - 每章挑选2-3个章节习题并完成，注意代码规范，将代码提交到 git 仓库中，或者直接跳过本部分的学习。
+   - Study the specified chapters of C++ Primer Plus:
+     - Chapters 7 to 13 (must-read)
+     - Chapters 14 to 17 (recommended)
+     - Chapter 18 (optional)
+   - Select 2-3 chapter exercises for each chapter and complete them. Pay attention to the code specification and submit the code to the git repository, or skip this part of the learning directly.
 
-（二）**基础较为一般的同学学习规划**:
+(2) **Learning Plan for Students with a General Foundation**:
 
-   - 结合《C++那些事》教程进行学习，教程链接：[C++那些事](https://light-city.github.io/)。
-   - 学习进阶部分，实战系列的重点实战练习，惯用法，设计模式中的单例模式，并记录笔记。
-   
-（三）**学习目标**:
+   - Study based on the "C++ Those Things" tutorial. Tutorial link: [C++ Those Things](https://light-city.github.io/).
+   - Study the advanced part, key practical exercises of the practical series, idioms, and the singleton pattern in the design pattern, and take notes.
 
-   - **C++进阶**:
-     - C++对C的扩展：命名空间，const，volatile，引用和指针；
-     - 类：类和对象，类的默认参数，类的封装和访问控制权限，类的简单编程，类的构造函数，类的析构函数，Explicit，类的拷贝构造和赋值函数，移动构造和文本赋值函数，深拷贝和浅拷贝问题，多个对象的构造和析构，C++函数重载；
-     - 对象的分配和释放：类和对象的动态分配和释放内存，静态成员变量和函数的使用，C++编译器对成员方法的处理机制，this，友元函数，友元类；
-     - 运算符重载：运算符重载概念，常用运算符重载，自定义的智能指针类，实现一个自定义的 String 类；
-     - 类的继承，派生和多态：继承中的访问控制，继承中的构造和析构，多继承，虚继承，多态的使用，区分成员函数的重载和重写，虚函数表指针，列表初始化，虚函数，抽象类的使用，虚析构和纯虚析构函数；
-     - 函数模板，类模板：函数模板的基本语法，函数模板的重载的调用规则，编译器对模板的编译过程，类模板的概念和基本语法，继承中的类模板，类模板中友元函数，友元函数模板；
-     - 异常，IO流：C++类型转换，异常抛出和捕获，cin, cout，C++文件IO类的使用.
+(3) **Learning Goals**:
 
-（四）**Pull Request提交步骤**:
+   - **Advanced C++**:
+     - C++ extensions to C: Namespaces, const, volatile, references and pointers;
+     - Classes: Classes and objects, default parameters of classes, encapsulation and access control permissions of classes, simple programming of classes, constructors of classes, destructors of classes, Explicit, copy constructors and assignment functions of classes, move constructors and text assignment functions, deep copy and shallow copy issues, construction and destruction of multiple objects, function overloading in C++;
+     - Allocation and deallocation of objects: Dynamic allocation and deallocation of memory for classes and objects, use of static member variables and functions, processing mechanism of member methods by the C++ compiler, this, friend functions, friend classes;
+     - Operator overloading: Concept of operator overloading, common operator overloading, custom smart pointer class, implementing a custom String class;
+     - Class inheritance, derivation and polymorphism: Access control in inheritance, construction and destruction in inheritance, multiple inheritance, virtual inheritance, use of polymorphism, distinguishing between function overloading and overriding, virtual function table pointer, list initialization, virtual functions, use of abstract classes, virtual destructors and pure virtual destructors;
+     - Function templates, class templates: Basic syntax of function templates, calling rules of function template overloading, compilation process of templates by the compiler, concept and basic syntax of class templates, class templates in inheritance, friend functions in class templates, friend function templates;
+     - Exceptions, IO streams: C++ type conversion, exception throwing and catching, cin, cout, use of C++ file IO classes.
 
-   - Gitee 仓库地址：[C++ Codes](https://gitee.com/oscc-project/iTraining/tree/master/C++/codes)
-   - 操作步骤：
-     - Fork 本仓库；
-     - clone到本地；
-     - 上传内容至 iTraining/C++/codes/{年份-月份}/{学习者的名字}；
-     - 新建 Pull Request 到 master 分支；
+(4) **Pull Request Submission Steps**:
 
-### 二、学习成果展示
+   - Gitee Repository Address: [C++ Codes](https://gitee.com/oscc-project/iTraining/tree/master/C++/codes)
+   - Operating Steps:
+     - Fork this repository;
+     - Clone to the local;
+     - Upload the content to iTraining/C++/codes/{year-month}/{learner's name};
+     - Create a new Pull Request to the master branch;
 
-- 提交每日的学习记录；
-- 整理 C++ 学习笔记；
-- 完成 C++ Primer Plus 的习题，提交 PR；
+### 2. Learning Outcomes Presentation
 
-### 三、参考资料
+- Submit the daily learning records;
+- Organize the C++ learning notes;
+- Complete the exercises of C++ Primer Plus and submit PR;
 
-（一）**C++ 参考资料**:
+### 3. Reference Materials
 
-   - 书籍推荐: C++ Primer Plus、C++编程思想
-   - [《C++那些事》教程](https://light-city.github.io/)
+(1) **C++ Reference Materials**:
+
+   - Book recommendations: C++ Primer Plus, Thinking in C++
+   - ["C++ Those Things" Tutorial](https://light-city.github.io/)
 
 
-## DAY10-DAY11: 数据结构学习
+## DAY10 - DAY11: Data Structure Learning
 
-### 一、具体要求
+### 1. Specific Requirements
 
-- 简单学习数据结构书籍中图论、搜索两章的内容；
-- 学习STL和Boost相关库。
+- Briefly study the contents of graph theory and search in the data structure book;
+- Study the related libraries of STL and Boost.
 
-  - STL重点学习以下内容，详细可以在《C++ Primer》第二部分第9-10章,《C++ Primer Plus》第16章，附录F、附录G
-    - a. 容器库包括vector、queue、stack、list、set、map、unordered_set、unordered_map
-    - b. 算法库包括排序、搜索、复制、修改、删除、替换
-    - c. 迭代器包括输入迭代器、输出迭代器、前向迭代器、双向迭代器、随机访问迭代器
-    - d. 常见函数Functor，如std::less、std::greater
-  - [STL官方文档](https://www.cppreference.com/Cpp_STL_ReferenceManual.pdf)
+  - For STL, focus on the following contents. For details, you can refer to Chapters 9-10 of the second part of "C++ Primer", Chapter 16 of "C++ Primer Plus", Appendix F and Appendix G
+    - a. Container libraries including vector, queue, stack, list, set, map, unordered_set, unordered_map
+    - b. Algorithm libraries including sorting, searching, copying, modifying, deleting, and replacing
+    - c. Iterators including input iterators, output iterators, forward iterators, bidirectional iterators, random access iterators
+    - d. Common function Functors, such as std::less, std::greater
+  - [STL Official Documentation](https://www.cppreference.com/Cpp_STL_ReferenceManual.pdf)
   - [C++ STL Tutorial](https://www.runoob.com/cplusplus/cpp-stl-tutorial.html)
 
- - Boost重点学习图Graph库，提供了各种各样的图算法和数据结构，例如图遍历、最短路径、最大流等。几何库Geometry，提供了各种各样的几何算法和数据结构，例如线段相交、多边形面积、点到直线距离等。
-   - [Boost图Graph](https://www.boost.org/doc/libs/1_75_0/libs/graph/doc/index.html)
-   - [Boost几何Geometry](https://www.boost.org/doc/libs/1_85_0/libs/geometry/)
+ - For Boost, focus on the Graph library, which provides various graph algorithms and data structures, such as graph traversal, shortest paths, and maximum flows. The Geometry library provides various geometric algorithms and data structures, such as line segment intersection, polygon area, and point-to-line distance.
+   - [Boost Graph](https://www.boost.org/doc/libs/1_75_0/libs/graph/doc/index.html)
+   - [Boost Geometry](https://www.boost.org/doc/libs/1_85_0/libs/geometry/)
 
-### 二、学习成果展示
+### 2. Learning Outcomes Presentation
 
-- 提交每日的学习记录；
-- 整理图论、数据结构学习的相关学习笔记；
-- 完成C++ Primer或者C++ Primer Plus相关练习题目。
+- Submit the daily learning records;
+- Organize the relevant learning notes of graph theory and data structure learning;
+- Complete the relevant exercise questions in C++ Primer or C++ Primer Plus.
 
-### 三、参考文献
+### 3. References
 
-**数据结构参考资料**：
+**Data Structure Reference Materials**:
 
-   - 书籍推荐：数据结构-dsacpp、王道数据结构考研复习用书
+   - Book recommendations: Data Structures - dsacpp, Wangdao Data Structures Review Book for Postgraduate Entrance Examination
 
-**学习小注：** 数据结构是基础性学习，枯燥乏味，但基础不牢，地动山摇，要引起重视。
+**Learning Notes**: Data structure is a fundamental learning, which may be boring. However, a weak foundation will lead to instability. So, it should be taken seriously.
 
-   
 
-## DAY12-DAY14：C++ Modern特性学习
+## DAY12 - DAY14: C++ Modern Feature Learning
 
-### 一、具体要求
+### 1. Specific Requirements
 
-（一）**Modern C++ 学习及笔记整理**:
+(1) **Modern C++ Learning and Note Organization**:
 
-   - 重点掌握 auto、智能指针、移动构造、lambda 等 C++ Modern 新特性；
-   - 参考资料的两本书分别对应中文版和英文版，选一本进行阅读。
+   - Focus on mastering the new features of C++ Modern such as auto, smart pointers, move construction, lambda, etc.;
+   - The two reference books have Chinese and English versions respectively. Choose one to read.
 
-（二）**组织一次答疑活动**:
+(2) **Organize a Q&A Session**:
 
-   - 由陶思敏老师及助教组织答疑，会议时间选定为其中一天的晚上。
+   - Organize a Q&A session by Teacher Tao Simin and the teaching assistant. The meeting time is selected to be one evening of these days.
 
-### 二、学习成果展示
+### 2. Learning Outcomes Presentation
 
-- 提交每日的学习记录；
-- 整理实操新特性的demo代码和运行结果和Readme到Markdown文档中（不用上传代码，代码也整理到文档中即可）
+- Submit the daily learning records;
+- Organize the demo code and running results of the new features and the Readme into a Markdown document (no need to upload the code, just organize the code into the document).
 
-### 三、参考资料
+### 3. Reference Materials
 
-（一）**书籍推荐**：
+(1) **Book Recommendations**:
 
-   - 《Effective Modern C++》
-   《Effective Modern C++》是由 Scott Meyers 所著的一本关于现代 C++ 编程技术和最佳实践的书籍。该书主要探讨如何有效地利用C++11、C++14和C++17的新特性，以及如何避免常见的陷阱和错误。通过具体的示例和详细的解释，读者可以深入了解现代 C++ 的最佳实践，提高代码质量和效率。
-（二）**视频教程**：
+   - "Effective Modern C++"
+   "Effective Modern C++" is a book written by Scott Meyers about modern C++ programming techniques and best practices. This book mainly explores how to effectively utilize the new features of C++11, C++14, and C++17, and how to avoid common traps and errors. Through specific examples and detailed explanations, readers can deeply understand the best practices of modern C++ and improve code quality and efficiency.
+(2) **Video Tutorials**:
 
-   - [《iEDA-水滴计划：C++20入门》](https://www.bilibili.com/video/BV1Em4y1x7oe)
-   陶思敏老师介绍C++20入门。包括：C++20的主要变化以及新特性，结合语法和实例进行介绍。
+   - ["iEDA - Waterdrop Plan: Introduction to C++20"](https://www.bilibili.com/video/BV1Em4y1x7oe)
+   Teacher Tao Simin introduces the introduction to C++20. Including: the main changes and new features of C++20, introduced in combination with grammar and examples.
 
-（三）**更多视频学习**：
+(3) **More Video Learning**:
 
-   - [《iEDA-水滴计划：C++常用知识点》](https://www.bilibili.com/video/BV19F411y7sq)
-    陶思敏老师介绍C++常用知识点。包括：C++版本变化、构造函数、继承、类型自动推导、constexpr、运算符重载、智能指针、lambda函数、可变参数模板、Fold表达式、线程管理、同步异步任务、信号量机制等等。
+   - ["iEDA - Waterdrop Plan: Common Knowledge Points of C++"](https://www.bilibili.com/video/BV19F411y7sq)
+   Teacher Tao Simin introduces the common knowledge points of C++. Including: changes in C++ versions, constructors, inheritance, type auto deduction, constexpr, operator overloading, smart pointers, lambda functions, variable parameter templates, Fold expressions, thread management, synchronous and asynchronous tasks, semaphore mechanisms, etc.

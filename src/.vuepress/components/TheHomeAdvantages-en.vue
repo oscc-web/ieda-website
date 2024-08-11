@@ -52,9 +52,9 @@ export default {
         { value: 1, title: 'Designed 1 EDA public infrastructure base <br>including: parser, database, management platform, interaction engine' },
         { value: 11, title: 'Completed 11 EDA tools <br>including: iMap, iNO, iFP, iPDN, iPL, iCTS, iTO, iRT, iSTA, iPA(iIR), iDRC, etc.' },
         { value: 3, title: 'Successfully taped out 3 times through iEDA tools, 2 times with 110nm process and 1 time with 28nm process' },
-        { value: 450, title: 'In the open-source communities github and gitee accumulated over 400 stars' },
+        { value: 450, title: 'In the open-source communities github and gitee accumulated over 450 stars' },
         { value: 300000, title: 'The code volume of iEDA exceeds 300,000 lines <br>(excluding third-party libraries and history)' },
-        { value: 33000, title: 'Bilibili iEDA - Video Account <br>has accumulated over 26,000 plays' }
+        { value: 34000, title: 'Bilibili iEDA - Video Account <br>has accumulated over 34,000 plays' }
       ]
       
     };

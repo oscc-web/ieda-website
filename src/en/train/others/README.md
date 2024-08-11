@@ -1,25 +1,25 @@
 ---
-title: "Others"
+title: "Other Training"
 index: false
 ---
-（推荐EDA，芯片，算法，人工智能相关的其他训练计划）
+(Recommend other training programs related to EDA, chips, algorithms, and artificial intelligence)
 
-## **主要介绍**
+## **Main Introduction**
 
-目前，EDA型人才依然求大于供，EDA及芯片设计门槛依然较高，亟需一项能够快速入门的EDA学习课程。本项目拟打造通用的EDA综合人才培养训练计划，适用于iEDA团队实习生技术栈培养及高校EDA课程实践。
+Currently, the demand for EDA talents still exceeds the supply, and the threshold for EDA and chip design remains high. There is an urgent need for an EDA learning course that enables quick entry. This project aims to create a general training program for comprehensive EDA talents, suitable for the technical stack training of iEDA team interns and the practical courses of EDA in colleges and universities.
 
-## **训练内容**
+## **Training Contents**
 
-### **计算机体系结构**
+### **Computer Architecture**
 
-- [**PA**](https://ysyx.oscc.cc/docs/ics-pa/)：南京大学计算机科学学院，计算机系统基础课程实验
+- [**PA**](https://ysyx.oscc.cc/docs/ics-pa/): Experiment course of Fundamentals of Computer System, School of Computer Science, Nanjing University
 
-### **处理器芯片设计**
+### **Processor Chip Design**
 
-- [**一生一芯**](https://ysyx.oscc.cc/)：大规模在线处理器人才培养计划
+- [**YSYX**](https://ysyx.oscc.cc/): Large-scale Online Processor Talent Training Program
 
-### **机器学习**
+### **Machine Learning**
 
-### **软件开发**
+### **Software Development**
 
-### **算法课程**
+### **Algorithm Courses** 

@@ -1,4 +1,4 @@
 ---
-title: "RUST学习"
+title: "RUST "
 index: false
 ---

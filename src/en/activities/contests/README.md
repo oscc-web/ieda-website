@@ -2,14 +2,15 @@
 title: "Contest"
 index: false
 ---
-（主要介绍iEDA团队组织或基于iEDA工具组织的学术竞赛）
 
-**竞赛列表**
+(This primarily introduces academic contests organized or based on the iEDA team's initiatives.)
 
-- 2024年集成电路EDA精英挑战赛-[赛题*：](/activities/contests/EDA_elite_challenge-23-t2.md)
-- 2023年openDACS开源EDA与芯片大赛
+**Contest List**
 
-  - 赛题一：[功能向量的时序电路故障模拟器](/activities/contests/openDACS-23-contest-t1.md)
-  - 赛题二：[增量式时序优化算法](/activities/contests/openDACS-23-contest-t1.md)
-  - 赛题三：[FPGA工艺映射算法及优化介绍](/activities/contests/openDACS-23-contest-t1.md)
-- 2023年集成电路EDA精英挑战赛-[赛题二：组合逻辑优化与工艺映射的智能流程](/activities/contests/EDA_elite_challenge-23-t2.md)
+- 2024 Integrated Circuit EDA Elite Challenge - [Topic:](/activities/contests/EDA_elite_challenge-23-t2.md)
+- 2023 openDACS Open EDA and Chip Design Competition
+
+  - Topic 1: [Functional Vector Timing Circuit Fault Simulator](/activities/contests/openDACS-23-contest-t1.md)
+  - Topic 2: [Incremental Timing Optimization Algorithm](/activities/contests/openDACS-23-contest-t1.md)
+  - Topic 3: [FPGA Process Mapping Algorithm and Optimization Introduction](/activities/contests/openDACS-23-contest-t1.md)
+- 2023 Integrated Circuit EDA Elite Challenge - [Topic 2: Combinational Logic Optimization and Smart Process for Art and Process Mapping](/activities/contests/EDA_elite_challenge-23-t2.md)

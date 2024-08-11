@@ -1,4 +1,4 @@
 ---
-title: "iPDN-电源网络规划"
+title: "iPDN - Power Deliver Network"
 order: 4
 ---

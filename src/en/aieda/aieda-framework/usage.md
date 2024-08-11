@@ -1,4 +1,4 @@
 ---
-title: "快速使用"
+title: "Quick Start"
 order: 2
 ---

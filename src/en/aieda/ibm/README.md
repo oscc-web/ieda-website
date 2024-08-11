@@ -2,21 +2,22 @@
 title: "iBM Dataset"
 index: false
 ---
-（主要开源芯片数据，工具过程数据，问题数据）
+
+(Mainly open-source chip data, tool process data, and problem data)
+
 
 <center><img src="/res/images/aieda/ibm.png" alt="6" style="zoom:100%;"/></center>
 <center>iBM</center>
 
 <center><img src="/res/images/aieda/data_format.png" alt="6" style="zoom:100%;"/></center>
-<center>iBM数据存储</center>
+<center>iBM data format</center>
 
-## **主要数据内容**
+**Main Data Content**
 
-### **芯片数据**
+**Chip Data**
 
-### **工具数据**
+**Tool Data**
 
-### **问题数据**
-
-- **电容提取**
-  - 3D电容提取
+**Problem Data**
+- Capacitance Extraction
+  - 3D Capacitance Extraction

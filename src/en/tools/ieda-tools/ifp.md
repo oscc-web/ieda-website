@@ -1,15 +1,14 @@
 ---
-title: "iFP-版图规划"
+title: "iFP - Floorplanning"
 order: 2
 ---
 
-
-## **FP_TCL命令使用手册**
+## **FP_TCL Command User Manual**
 
 **Dependencies**
 
 - sudo apt-get install libunwind-dev
-- sudo apt-get install libspdlog-dev(env : ubuntu20.04)
+- sudo apt-get install libspdlog-dev (env : ubuntu20.04)
 - sudo apt-get install boost 1.71
 - sudo apt-get install eigen
 
@@ -19,7 +18,7 @@ git clone --recursive
 cd iEDA
 mkdir build
 cd build
-cmake ..
+cmake..
 make
 
 **Run**
@@ -28,7 +27,7 @@ cd iEDA/bin
 
 ./FP gtest.tcl
 
-**工具更新**
+**Tool Update**
 
 cd iEDA
 
@@ -40,18 +39,18 @@ mkdir build
 
 cd build
 
-cmake ..
+cmake..
 
 make
 
-**#1.init_floorplan**
+**#1. init_floorplan**
 
-- -die_area   die的面积，一个字符串，以空格区分每个值，此处的值为没有乘DBU的
-- -core_area   core的面积，一个字符串，以空格区分每个值，此处的值为没有乘DBU的
-- -core_site  core的site选取
-- -io_site  针对110工艺，此处为**可选参数**，会默认选择“IOSite”
+- -die_area   The area of the die, a string, with each value separated by spaces. The values here are not multiplied by DBU.
+- -core_area   The area of the core, a string, with each value separated by spaces. The values here are not multiplied by DBU.
+- -core_site  The selection of the core site.
+- -io_site  For the 110 process, this is an **optional parameter**, and "IOSite" will be selected by default.
 
-**##示例：**
+**## Example: **
 
 set DIE_AREA "0.0    0.0   2843    2843"
 
@@ -71,26 +70,26 @@ init_floorplan \
 
 ​	-io_site $IO_SITE
 
-**#2.placeInst**
+**#2. placeInst**
 
-已测试的功能包括：
+The tested functions include:
 
-1. 摆放IOCELL
-2. 摆放电源CELL
-3. 摆放IOFILLER
-4. 摆放CORNER
+1. Placing IOCells
+2. Placing power CELLs
+3. Placing IOFILLERs
+4. Placing CORNERs
 
-在摆放以上四种时，会进行摆放检查，规则是是否按照IOSite摆放以及是否在DIE BOUNDARY上
+When placing the above four types, placement checks will be performed. The rules are whether they are placed according to IOSite and whether they are on the DIE BOUNDARY.
 
-   5.摆放标准单元
+   5. Placing standard cells
 
-- -inst_name  instance的名字
-- -llx  左下角横坐标，此时的数值是绝对坐标，即需设置乘过DBU的值
-- -lly  左下角纵坐标
-- -orient  朝向，可使用（N，S，W，E）或（R0，R180，R90，R270）
-- -cellmaster  cell的种类
+- -inst_name  The name of the instance.
+- -llx  The abscissa of the lower left corner. The value at this time is the absolute coordinate, that is, the value after multiplying by DBU should be set.
+- -lly  The ordinate of the lower left corner.
+- -orient  Orientation, can use (N, S, W, E) or (R0, R180, R90, R270)
+- -cellmaster  The type of the cell.
 
-**##示例：**
+**## Example: **
 
 placeInst \
    -inst_name u0_clk \
@@ -99,18 +98,18 @@ placeInst \
    -orient E \
    -cellmaster PX1W
 
-**#3.placePort**
+**#3. placePort**
 
-该命令只针对与IOCELL连接的IOPIN的port生成，电源CELL的port不使用该接口
+This command is only for generating ports of IOPINS connected to IOCells. Ports of power CELLs do not use this interface.
 
--  -pin_name   iopin名字
-​-  -offset_x 相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -offset_y 相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -width 矩形宽度，相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -height 矩形高度，相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -layer 所在的层的名字
+-  -pin_name   The name of the iopin.
+​-  -offset_x The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -offset_y The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -width  The width of the rectangle. The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -height  The height of the rectangle. The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -layer  The name of the layer it is on.
 
-**##示例：**
+**## Example: **
 
 placePort \
     -pin_name osc_in_pad \
@@ -120,20 +119,20 @@ placePort \
     -height 58000 \
     -layer ALPA
 
-**#4.placeIoFiller**
+**#4. placeIoFiller**
 
-摆放IOFiller，支持四个边自动填充
+Place IOFILLERs, supporting automatic filling on four sides.
 
-必选参数：-filler_types  IOFiller的种类
+Required parameter: -filler_types  The type of IOFILLER.
 
-可选参数：
+Optional parameters:
 
-- -prefix 生成的filler的名字的前缀，默认为IOFill
-- -edge  设定在哪一个边填充，不设置则为全局填充
-- -begin_pos  设定在某边某一个线段内进行填充，如果不设置，则默认该边全部填充
-- -end_pos  此处begin与pos的值为double，为没有乘DBU之前的值，与init类似
+- -prefix  The prefix of the generated filler name. The default is IOFill.
+- -edge  Set which edge to fill. If not set, it is global filling.
+- -begin_pos  Set to fill within a certain line segment on a certain edge. If not set, the entire edge is filled by default.
+- -end_pos  The values of begin and pos here are doubles and are values before multiplying by DBU, similar to init.
 
-**##示例：**
+**## Example: **
 
 placeIoFiller \
     -filler_types "PFILL50W PFILL20W PFILL10W PFILL5W PFILL2W PFILL01W PFILL001W"
@@ -146,30 +145,30 @@ placeIoFiller \
 
 ​	#-end_pos
 
-**#5.tapcell**
+**#5. tapcell**
 
-放置tapcell以及endcap
+Place tapcells and endcaps.
 
-- -tapcell 设置tapcell的种类
-- -distance 32.5 设置tapcell的间距，此处为没有乘DBU的值
-- -endcap endcap的种类
+- -tapcell Set the type of tapcell.
+- -distance 32.5 Set the distance of tapcells. The value here is not multiplied by DBU.
+- -endcap The type of endcap.
 
-**##示例：**
+**## Example: **
 
 tapcell \
     -tapcell LVT_FILLTIEHD \
     -distance 32.5 \
     -endcap LVT_F_FILLHD1
 
-**#6.global_net_connect**
+**#6. global_net_connect**
 
-创建电源net
+Create power nets.
 
-- -net_name 电源网络名称
-- -instance_pin_name  instance连接该网络的pin的名称。当前还不支持指定某些instance的该pin连接到该电源网络，默认为全局含有该pin的instance都连接到该网络
-- -is_power  需设置为1或0： 1代表use power，0代表use ground
+- -net_name  The name of the power network.
+- -instance_pin_name  The name of the pin of the instance connected to this network. Currently, it does not support specifying that the pins of certain instances are connected to this power network. By default, all instances with this pin globally are connected to this network.
+- -is_power  Should be set to 1 or 0: 1 represents use power, 0 represents use ground.
 
-**##示例：**
+**## Example: **
 
 global_net_connect \
     -net_name VDD \
@@ -186,15 +185,15 @@ global_net_connect \
     -instance_pin_name VSS \
     -is_power 0
 
-**#7.add_pdn_io**
+**#7. add_pdn_io**
 
-为电源NET添加IOPIN
+Add IOPINS for the power NET.
 
-- -net_name	电源网络名称
-- -direction   参数（INPUT、OUTPUT、INOUT、FEEDTHRU、OUTTRI），pin的数据direction
-- -pin_name 可选参数，默认为电源网络名称
+- -net_name  The name of the power network.
+- -direction  Parameter (INPUT, OUTPUT, INOUT, FEEDTHRU, OUTTRI), the data direction of the pin.
+- -pin_name  Optional parameter. The default is the name of the power network.
 
-**##示例：**
+**## Example: **
 
 add_pdn_io \
     -net_name VDD \
@@ -202,19 +201,19 @@ add_pdn_io \
 
 ​	#-pin_name VDD 
 
-**#8.place_pdn_Port**
+**#8. place_pdn_Port**
 
-为电源网络的IOPIN添加PORT
+Add PORTs for the IOPINS of the power network.
 
-- -pin_name  iopin名字
-- -io_cell_name io io cell的名字
-- -offset_x  相对io cell的port矩形的左下角坐标
-- -offset_y  相对io cell的port矩形的左下角坐标
-- -width  矩形宽度
-- -height 矩形高度
-- -layer  port所属绕线层
+- -pin_name  The name of the iopin.
+- -io_cell_name The name of the io io cell.
+- -offset_x  Offset relative to the lower left corner of the port rectangle of the io cell.
+- -offset_y  Offset relative to the lower left corner of the port rectangle of the io cell.
+- -width  The width of the rectangle.
+- -height  The height of the rectangle.
+- -layer  The routing layer to which the port belongs.
 
-**##示例：**
+**## Example: **
 
 place_pdn_Port \
     -pin_name VDD \
@@ -232,21 +231,21 @@ place_pdn_Port \
     -offset_y 20 \
     -width 200 \
     -height 200 \
-    -layer ALPA                这两个命令可以为VDD pin添加两个port
+    -layer ALPA  These two commands can add two ports for the VDD pin.
 
-<!-- ![image-20211028162925571](pic/image-20211028162925571.png) -->
+<!--![image-20211028162925571](pic/image-20211028162925571.png) -->
 
-**#9.create_grid**
+**#9. create_grid**
 
-生成标准单元供电线，会生成绕线信息
+Generate power supply lines for standard cells and generate routing information.
 
-- -layer_name 生成电源网格的层
-- -net_name_power power net name
-- -net_name_ground ground net name
-- -width 线宽。是没有乘DBU的数值 
-- -offset 相对于core边界的偏移量，建议设置为0，仅测试过偏移为0的情况。是没有乘DBU的数值 
+- -layer_name  The layer on which the power grid is generated.
+- -net_name_power The name of the power net.
+- -net_name_ground The name of the ground net.
+- -width  The line width. The value is not multiplied by DBU.
+- -offset  The offset relative to the core boundary. It is recommended to set it to 0. Only the case where the offset is 0 has been tested. The value is not multiplied by DBU.
 
-**##示例：**
+**## Example: **
 
 create_grid \
     -layer_name "METAL1" \
@@ -255,18 +254,18 @@ create_grid \
     -width 0.24 \
     -offset 0
 
-**#10.create_stripe**
+**#10. create_stripe**
 
-生成标准单元条形电源线
+Generate bar-shaped power supply lines for standard cells.
 
-- -layer_name  生成电源线的层
-- -net_name_power  power net name
-- -net_name_ground  ground net name
-- -width 线宽。是没有乘DBU的数值 
-- -pitch  同类型电源线的间距。对于标准单元来说，同层的power线与ground线间距为0.5*pitch
-- -offset 相对于core边界的偏移量。是没有乘DBU的数值 
+- -layer_name  The layer on which the power supply line is generated.
+- -net_name_power  The name of the power net.
+- -net_name_ground  The name of the ground net.
+- -width  The line width. The value is not multiplied by DBU.
+- -pitch  The pitch of the same type of power supply lines. For standard cells, the pitch between the power line and the ground line of the same layer is 0.5*pitch.
+- -offset  The offset relative to the core boundary. The value is not multiplied by DBU.
 
-**##示例：**
+**## Example: **
 
 create_stripe \
    -layer_name "METAL5" \
@@ -276,13 +275,13 @@ create_stripe \
    -pitch 13.12 \
    -offset 3.895
 
-**#11.connect_two_layer**
+**#11. connect_two_layer**
 
-连接指定的两层的电源线
+Connect the specified two layers of power supply lines.
 
-- -layers ：可以一对一对的输入，也可以将全部需要连接的层信息一起输入
+- -layers  : Can be input one pair at a time or all the layer information that needs to be connected can be input together.
 
-**##示例：**
+**## Example: **
 
 set connect1 "METAL1 METAL4" \
 set connect2 "METAL4 METAL5" \
@@ -298,26 +297,26 @@ connect_two_layer \
 2. connect_two_layer \
        -layers "METAL1 METAL4"
    connect_two_layer \
-       -layers "METAL4 METAL5"    **序号1，2的效果是一样的**
+       -layers "METAL4 METAL5"    **The effects of sequence 1 and 2 are the same**
 
-**PS：被连接的两层需要含有电源线**
+**PS: The two layers to be connected need to contain power supply lines**
 
-**#12.connect_io_pin_to_pdn**
+**#12. connect_io_pin_to_pdn**
 
-将电源NET的IOPIN的Port连接至Core内电源线。(会对Port的坐标进行检查)
-- -point_list 连接关系所经过的拐角处的坐标点（起点和终点的坐标也需要有），也可以只输入起点和终点坐标
-- -layer 想要进行连线的层
+Connect the Port of the IOPIN of the power NET to the power supply line in the Core. (The coordinates of the Port will be checked)
+- -point_list  The coordinate points of the corners passed by the connection relationship (the coordinates of the starting point and the ending point also need to be included), or only the starting and ending coordinates can be input.
+- -layer  The layer on which you want to perform the connection.
 
-**##示例：**
+**## Example: **
 connect_io_pin_to_pdn \
     -point_list "998 2802 915 2598" \
     -layer METAL1
 
-**#13.connect_pdn_stripe**
-- -point_list 连接关系所经过的拐角处的坐标点（起点和终点的坐标也需要有）
-- -net_name 想要连接到的电源网络的名称
-- -layer 想要进行连线的层
-**##示例：**
+**#13. connect_pdn_stripe**
+- -point_list  The coordinate points of the corners passed by the connection relationship (the starting point and the ending point coordinates also need to be included)
+- -net_name  The name of the power network you want to connect to
+- -layer  The layer on which you want to perform the connection
+**## Example: **
 connect_pdn_stripe \
     -point_list "2675.606 1998.707 2680.606 1998.707 2680.606 1892.165 2803.686 1892.165" \
     -net_name VDD \
@@ -335,18 +334,18 @@ connect_pdn_stripe \
     -width 100
 
 **#14. add_segment_via**
-给电源线增加通孔
+Add vias to the power supply line.
 
--  -net_name   电源线的名称
--  -layer   通孔所在层
--  -top_layer metal层 top层
--  -bottom_layer metal层 bottom层
-​-  -offset_x 相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -offset_y 相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -width 矩形宽度，相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
-​-  -height 矩形高度，相对于所连接的IOCELL的左下角坐标的偏移量，此处需设置绝对长度，即乘过DBU之后的值
+-  -net_name   The name of the power supply line.
+-  -layer   The layer where the via is located.
+-  -top_layer The top layer of the metal layer.
+-  -bottom_layer The bottom layer of the metal layer.
+​-  -offset_x The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -offset_y The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -width  The width of the rectangle. The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
+​-  -height  The height of the rectangle. The offset relative to the lower left corner coordinate of the connected IOCell. The absolute length should be set here, that is, the value after multiplying by DBU.
 
-**##示例：**
+**## Example: **
 
 add_segment_via \
     -net_name VDD \
@@ -382,11 +381,11 @@ add_segment_via \
     -width 58000 \
     -height 58000 
 
-**#15.add_segment_stripe**
-- -point_list 生成stripe的连接点，当连接点个数大于2时，前后两个连接点两两生成stripe，
-- -net_name 想要连接到的电源网络的名称
-- -layer 想要进行连线的层
-- -width 指定线宽
+**#15. add_segment_stripe**
+- -point_list  The connection points for generating the stripe. When the number of connection points is greater than 2, the front and back connection points generate stripes pairwise.
+- -net_name  The name of the power network you want to connect to.
+- -layer  The layer on which you want to perform the connection.
+- -width  Specify the line width.
 add_segment_stripe \
     -point_list "2680.606 1892.165 2803.686 1892.165" \
     -net_name VDDIO \
@@ -413,47 +412,8 @@ add_segment_stripe \
 
 **#16. read_lef**
 
-读入lef文件，以字符串列表的形式读入
+Read the lef file in the form of a string list.
 
-**##示例：**
+**## Example: **
 
-read_lef "../../Designs/scc011u_8lm_1tm_thin_ALPA/scc011u_8lm_1tm_thin_ALPA.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/scc011ums_hd_lvt.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S013PLLFN_8m_V1_2_1.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/SP013D3WP_V1p7_8MT.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P256X32M2B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P512X58M2B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P1024X64M4B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P256X8M4B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P512X73M2B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P128X21M2B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HD1P512X19M4B0.lef \
-          ../../Designs/scc011u_8lm_1tm_thin_ALPA/S011HDSP4096X64M8B0.lef "
-
-**#17.read_def**
-
-读入def文件，以字符串的形式读入
-
-**##示例：**
-
-read_def "./asic_top.def";
-
-**#18.write_def**
-
-写出def文件。参数为写出的文件路径。
-
-**##示例：**
-
-​	write_def "iEDA_FP.def"
-
-
-​	
-
-​	
-
-使用要点
-
-#1.建议在所有pdn操作之前插入tapcell
-
-#2.建议按照手册的顺序执行命令
-
+read_lef "../../Designs/scc011u_8lm_1tm_thin_ALPA/scc011u_8lm_1tm_th

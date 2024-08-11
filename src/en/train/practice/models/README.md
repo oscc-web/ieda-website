@@ -1,4 +1,4 @@
 ---
-title: "智能模型类"
+title: "AI Model"
 index: false
 ---

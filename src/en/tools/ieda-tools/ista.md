@@ -1,98 +1,97 @@
 ---
-title: "iSTA-静态时序分析"
+title: "iSTA - Static Timing Analysis"
 order: 9
 ---
 
+# iSTA User Guide
 
-# iSTA用户指南
+> ## Introduction to iSTA
 
-> ## iSTA简介
-
-### 软件结构图
+### Software Structure Diagram
 
 <div align="center">
 
 <img src="/res/images/tools/tool/resources/iSTA.png" width="80%" height="35%" alt="iSTA-logo" />
 
-  **iSTA--一款用于集成电路设计的开源智能静态时序分析工具**
+  **iSTA - An Open Source Intelligent Static Timing Analysis Tool for Integrated Circuit Design**
 
 </div>
 
-### 支持功能
+### Supported Functions
 
-- 完善地支持标准输入文件（Def/Verilog，sdc，spef/sdf, liberty）读取；
-- 延时计算除了支持NLDM/Elmore计算模型，还支持CCS电流模型，Arnoldi降阶模型；
-- 时序分析支持Clock Gate分析，Removal/Recovery分析和Muliticycle分析；
-- 时序路径分析模式支持OCV模式和AOCV模式；
-- 噪声分析初步支持了Crosstalk的影响，未来将进一步完善；
-- 提供时序分析引擎timing engine供物理设计调用。
+- Fully supports reading of standard input files (Def/Verilog, sdc, spef/sdf, liberty);
+- For delay calculation, in addition to supporting NLDM/Elmore calculation models, it also supports CCS current models and Arnoldi reduced-order models;
+- Timing analysis supports Clock Gate analysis, Removal/Recovery analysis and Muliticycle analysis;
+- Timing path analysis modes support OCV mode and AOCV mode;
+- Noise analysis initially supports the influence of Crosstalk and will be further improved in the future;
+- Provides the timing analysis engine timing engine for physical design calls.
 
 ---
 
-> ## iSTA使用示例
+> ## iSTA Usage Example
 
-### 编写tcl文件(run_ista.tcl)
+### Writing a tcl File (run_ista.tcl)
 
-示例tcl文件位于: /src/operation/iSTA/source/data/example1/run_ista.tcl
+The example tcl file is located at: /src/operation/iSTA/source/data/example1/run_ista.tcl
 
-#### 设置时序报告输出路径
+#### Set the output path for the timing report
 
 ```bash
 set work_dir "../src/operation/iSTA/source/data/example1"
 set_design_workspace $work_dir/rpt
 ```
 
-#### 读取verilog文件
+#### Read the verilog file
 
 ```bash
 read_netlist $work_dir/example1.v
 ```
 
-#### 读取.lib文件
+#### Read the.lib file
 
 ```bash
 set LIB_FILES $work_dir/example1_slow.lib
 read_liberty $LIB_FILES
 ```
 
-#### 链接设计到网表
+#### Link the design to the netlist
 
 ```bash
 link_design top
 ```
 
-#### 读取sdc文件
+#### Read the sdc file
 
 ```bash
 read_sdc  $work_dir/example1.sdc
 ```
 
-#### 读取spef文件
+#### Read the spef file
 
 ```bash
 read_spef $work_dir/example1.spef
 ```
 
-#### 获取时序报告
+#### Obtain the timing report
 
 ```bash
 report_timing
 ```
 
-时序报告位于第一步设置的时序报告输出路径下，包括
+The timing report is located in the output path of the timing report set in the first step, including
 
-- top.rpt（报告 WNS,TNS 和时序路径）
-- top.cap（报告违例电容）
-- top.fanout（报告违例扇出）
-- top.trans（报告违例转换时间）
-- top_hold.skew（报告hold模式下的时钟偏斜)
-- top_setup.skew（报告setup模式下的时钟偏斜）
+- top.rpt (Reports WNS, TNS and timing paths)
+- top.cap (Reports violation capacitance)
+- top.fanout (Reports violation fanout)
+- top.trans (Reports violation transition time)
+- top_hold.skew (Reports clock skew in hold mode)
+- top_setup.skew (Reports clock skew in setup mode)
 
-### 编译iSTA（iSTA位于:bin/）
+### Compiling iSTA (iSTA is located at: bin/)
 
-### 使用iSTA运行tcl文件
+### Running the tcl file using iSTA
 
 ```bash
  cd bin/
- ./iSTA run_ista.tcl
+./iSTA run_ista.tcl
 ```

@@ -1,12 +1,13 @@
+
 #  iEDA-Script
 
-## 1 模块划分与说明
+## 1 Module Division and Description
 
-iEDA-Script：一个iEDA专用执行脚本，用于测试、评估和解析数据。其主要工具流程如下：
+iEDA-Script: a specialized script for iEDA, used for testing, evaluating, and analyzing data. The main tool flow of the iEDA-Script is as follows:
 
 <!-- <img src="../img/iEDA_script/iEDA_script2.png"> -->
 
-图1 iEDA工具流程
+Figure 1: iEDA Tool Flow
 
 ```
 scripts
@@ -31,13 +32,15 @@ scripts
 └── hello.tcl                # Test running iEDA
 ```
 
-**模块说明**
 
-script目录包含物理后端设计需要的所有流程脚本和结果分析评估脚本，并且按流程、功能划分好模块；流程脚本可支持顶层自动化运行脚本run_iEDA.py的调用，也可以支持独立运行。
+
+**Module Description**
+
+The script directory contains all the physical backend design scripts and result analysis and evaluation scripts required for the different designs, and the modules are divided into subdirectories based on the flow and functionality. The flow scripts can be called by the top-level automatic running scripts (run_iEDA.py, run_iEDA.sh) or can be run independently.
 
 <!-- <img src="../img/iEDA_script/iEDA_script1.png"> -->
 
-图2 iEDA-Script工程目录划分，其中run_iEDA.py为脚本主入口
+Figure 2: iEDA-Script Project Directory Structure, with run_iEDA.py as the main script
 
 ```
 scripts/design/sky130_gcd/script
@@ -100,70 +103,72 @@ scripts/design/sky130_gcd/script
     └── run_iTO_setup.tcl               # run Fix Setup Violation
 ```
 
-## 2 Flow运行流程
 
-准备好iEDA和工艺文件后，您可以选择自动运行sky130流程脚本，也可以分步骤运行各个点工具脚本，所有的结果都默认保存在script/sky130/result文件夹
+## 2 Flow Running Process
 
-不管是自动运行顶层 run_iEDA.py 脚本还是单独运行点工具脚本，基于 iEDA 平台设计的脚本都有着相似的步骤，具体流程如下
+After setting up iEDA and the PDK, you can choose to run the sky130_gcd flow scripts either automatically using the top-level running scripts (run_iEDA.py, run_iEDA.sh) or run them independently. All the results are saved in the script/design/sky130_gcd/result directory.
 
-**step 1 路径设置**
+The general process for running a single point tool is as follows:
 
-首先必须先配置工艺环境路径，为方便查找和配置路径参数，脚本将TechLEF、LEF、Lib、sdc、spef的路径统一在文件 ./script/DB_script/db_path_setting.tcl配置，如下表所示
 
-| 功能                              | 配置命令                   | 参考 TCL 样例                                           |
-| --------------------------------- | -------------------------- | ------------------------------------------------------- |
-| 设置 TechLef 路径                 | set TECH_LEF_PATH xxx      | set TECH_LEF_PATH "./lef/sky130_fd_sc_hs.tlef"          |
-| 设置 Lef 路径                     | set LEF_PATH xxx           | set LEF_PATH ./lef/sky130_ef_io__com_bus_slice_10um.lef |
-| 设置 Lib 路径                     | set LIB_PATH xxx           | set LIB_PATH ./lib/sky130_dummy_io.lib                  |
-| 设置 Fix Fanout Lib 路径          | set LIB_PATH_FIXFANOUT xxx | set LIB_PATH_FIXFANOUT ./lib/sky130_dummy_io.lib        |
-| 设置 Fix DRV Violation Lib 路径   | set LIB_PATH_DRV xxx       | set LIB_PATH_DRV ./lib/sky130_dummy_io.lib              |
-| 设置 Fix Hold Violation Lib 路径  | set LIB_PATH_HOLD xxx      | set LIB_PATH_HOLD ./lib/sky130_dummy_io.lib             |
-| 设置 Fix Setup Violation Lib 路径 | set LIB_PATH_SETUP xxx     | set LIB_PATH_SETUP ./lib/sky130_dummy_io.lib            |
-| 设置 SDC 路径                     | set SDC_PATH xxx           | set SDC_PATH "./sdc/gcd.sdc"                            |
-| 设置 SPEF 路径                    | set SPEF_PATH xxx          | set SPEF_PATH "./spef/xxx.spef"                         |
+**Step 1 Path Setting**
 
-**step 2 配置点工具Config**
-所有点工具的参数设置Config都在路径 ./iEDA_config 中，可查看后面章节的 **输入输出一览表** 修改对应的点工具Config文件
+First of all, the process environment path must be configured. To facilitate the search and configuration of path parameters, the paths of TechLEF, LEF, Lib, sdc, and spef are uniformly configured in the file `./script/DB_script/db_path_setting.tcl` for the script. The details are shown in the following table:
 
-**step 3 读 .def 设计文件**
-以 CTS 为例，执行 def_init 命令，读取布局后的结果
+| Function | Configuration Command | Reference TCL Example |
+| ---- | ---- | ---- |
+| Set TechLef Path | set TECH_LEF_PATH xxx | set TECH_LEF_PATH "./lef/sky130_fd_sc_hs.tlef" |
+| Set Lef Path | set LEF_PATH xxx | set LEF_PATH./lef/sky130_ef_io__com_bus_slice_10um.lef |
+| Set Lib Path | set LIB_PATH xxx | set LIB_PATH./lib/sky130_dummy_io.lib |
+| Set Fix Fanout Lib Path | set LIB_PATH_FIXFANOUT xxx | set LIB_PATH_FIXFANOUT./lib/sky130_dummy_io.lib |
+| Set Fix DRV Violation Lib Path | set LIB_PATH_DRV xxx | set LIB_PATH_DRV./lib/sky130_dummy_io.lib |
+| Set Fix Hold Violation Lib Path | set LIB_PATH_HOLD xxx | set LIB_PATH_HOLD./lib/sky130_dummy_io.lib |
+| Set Fix Setup Violation Lib Path | set LIB_PATH_SETUP xxx | set LIB_PATH_SETUP./lib/sky130_dummy_io.lib |
+| Set SDC Path | set SDC_PATH xxx | set SDC_PATH "./sdc/gcd.sdc" |
+| Set SPEF Path | set SPEF_PATH xxx | set SPEF_PATH "./spef/xxx.spef" |
+
+**Step 2 Configuration Point Tool Config**
+The parameter settings Config of all point tools are in the path `./iEDA_config`. You can check the **Input and Output List** in the later chapters to modify the corresponding point tool Config file.
+
+**Step 3 Read.def Design File**
+Taking CTS as an example, execute the `def_init` command to read the result after layout.
 
 ```
 #===========================================================
 ##   read def
 #===========================================================
-def_init -path ./result/iPL_result.def
+def_init -path./result/iPL_result.def
 ```
 
-步骤 1 - 3 后，Tech LEF、LEF、DEF 文件数据将被加载，这是点工具启动的前提条件
+After steps 1 - 3, the data of Tech LEF, LEF, and DEF files will be loaded, which is a prerequisite for the startup of the point tool.
 
-**step 4 启动点工具**
-以 CTS 为例，执行 run_cts 命令，将启动 CTS 流程
+**Step 4 Start Point Tool**
+Taking CTS as an example, execute the `run_cts` command to start the CTS process.
 
 ```
 #===========================================================
 ##   run CTS
 #===========================================================
-run_cts -config ./iEDA_config/cts_default_config.json
+run_cts -config./iEDA_config/cts_default_config.json
 ```
 
-**step 5 保存点工具运行结果**
-以 CTS 为例，执行完点工具流程后，将点工具运行结果保存在路径 ./result/ 中
+**Step 5 Save Point Tool Running Results**
+Taking CTS as an example, after the point tool process is completed, the running results of the point tool are saved in the path `./result/`.
 
 ```
 #===========================================================
 ##   Save def
 #===========================================================
-def_save -path ./result/iCTS_result.def
+def_save -path./result/iCTS_result.def
 
 #===========================================================
 ##   Save netlist 
 #===========================================================
-netlist_save -path ./result/iCTS_result.v -exclude_cell_names {}
+netlist_save -path./result/iCTS_result.v -exclude_cell_names {}
 ```
 
-**step 6 输出报告**
-以 CTS 为例，数据存储后，将输出设计结果相关的总体报告，报告路径存储在 ./result/report/ 中
+**Step 6 Output Report**
+Taking CTS as an example, after the data is stored, the overall report related to the design result will be output, and the report path is stored in `./result/report/`.
 
 ```
 #===========================================================
@@ -172,7 +177,7 @@ netlist_save -path ./result/iCTS_result.v -exclude_cell_names {}
 report_db -path "./result/report/cts_db.rpt"
 ```
 
-**step 7 退出**
+**Step 7 Exit**
 
 ```
 #===========================================================
@@ -181,4 +186,4 @@ report_db -path "./result/report/cts_db.rpt"
 flow_exit
 ```
 
-以上步骤为执行单个点工具的一般流程，其中步骤 1 - 3 初始化配置和数据库，为必须的步骤，步骤 4 之后，可以按照需求灵活接入各个点工具或模块命令
+The above steps are the general process of executing a single point tool. Among them, steps 1 - 3 initialize the configuration and database and are necessary steps. After step 4, various point tools or module commands can be flexibly connected as needed. 

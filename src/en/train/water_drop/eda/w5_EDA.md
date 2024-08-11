@@ -1,107 +1,103 @@
 ---
-title: "EDA学习-Week2"
+title: "EDA Course - Week2"
 order: 6
+icon: file-lines
 ---
 
-## DAY8-DAY10：EDA流程整体学习
+## DAY8 - DAY10: Overall Learning of EDA Process
 
-### 一、具体要求
+### 1. Specific Requirements
 
-（一）**材料阅读**：
-   - 《EDA设计流程-v1.0.pptx》
-   - 《数字IC 后端设计概述.pptx》
-   - 《数字集成电路设计自动化方法教学经验分享-v2.0(1).pptx》
-   - 《后端设计流程_一生一芯.pdf》
+(1) **Material Reading**:
+   - "EDA Design Process - v1.0.pptx"
+   - "Overview of Digital IC Back-End Design.pptx"
+   - "Teaching Experience Sharing of Digital Integrated Circuit Design Automation Methods - v2.0(1).pptx"
+   - "Back-End Design Process - Yishengyixin.pdf"
 
-（二）**学习目录**
-   - **理解后端设计流程**：了解从RTL到GDSII版图的整个后端设计流程
-   -  **工艺库知识**：理解工艺库的内容和重要性，包括Tech文件、PDK、DRC规则等
-   - **综合**：学习综合的基本概念、流程和工具，以及设计可测试性(DFT)的考虑
-   - **物理设计**：学习物理设计布局布线的基本概念、流程和算法
-   - **参数提取与时序分析**：学习参数提取的方法和时序分析的进阶知识
-   - **算法基础**：学习相关图论、组合优化问题、启发式算法等基础算法
+(2) **Learning Contents**
+   - **Understand the back-end design process**: Understand the entire back-end design process from RTL to GDSII layout
+   - **Technology library knowledge**: Understand the content and importance of the technology library, including Tech files, PDK, DRC rules, etc.
+   - **Synthesis**: Learn the basic concepts, processes and tools of synthesis, as well as considerations for design for testability (DFT)
+   - **Physical design**: Learn the basic concepts, processes and algorithms of physical design layout and routing
+   - **Parameter extraction and timing analysis**: Learn the methods of parameter extraction and advanced knowledge of timing analysis
+   - **Algorithm foundation**: Learn basic algorithms related to graph theory, combinatorial optimization problems, heuristic algorithms, etc.
 
-
-### 二、[材料链接](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt)：
-   - 《EDA设计流程-v1.0.pptx》
-   - 《数字IC 后端设计概述.pptx》
-   - 《数字集成电路设计自动化方法教学经验分享-v2.0(1).pptx》
-   - 《后端设计流程_一生一芯.pdf》
-
+### 2. [Material Links](https://gitee.com/oscc-project/iTraining/tree/master/EDA/ppt):
+   - "EDA Design Process - v1.0.pptx"
+   - "Overview of Digital IC Back-End Design.pptx"
+   - "Teaching Experience Sharing of Digital Integrated Circuit Design Automation Methods - v2.0(1).pptx"
+   - "Back-End Design Process - Yishengyixin.pdf"
 
 
+## DAY11 - DAY12: Summary of EDA Foundation Learning
 
-## DAY11-DAY12：EDA基础学习总结
+### 1. Specific Requirements
 
-### 一、具体要求
+**Describe the following must-knows in the form of questions and answers**:
+   - **Placement**:
+     - Briefly describe a placement algorithm you have learned, including: input, output, data structure design, main idea of the algorithm, time complexity, etc.;
+   - **Routing**:
+     - Briefly describe a routing algorithm you have learned, including: input, output, data structure design, main idea of the algorithm, time complexity, etc.;
+   - **Static timing analysis**:
+     - Briefly describe the definitions of cell library, interconnect parasitics, cell delay (NLDM table), wire network delay (Elmore calculation), crosstalk noise, timing check (Setup/Hold), timing path definition, and timing constraint commands;
+   - **EDA performance**:
+     - How to solve the performance problems in EDA software?
+   - **EDA back-end**:
+     - Briefly describe the process of developing EDA back-end software. What are the main tasks in each stage?
+   - **EDA tools**:
+     - What are the common EDA simulation tools and debug tools? What are their advantages and disadvantages?
 
-   **以问答的形式描述以下必知必会**：
-   - **布局：**
-     - 请简述一个你学习的布局算法，包括：输入、输出、数据结构设计、算法主要思想，时间复杂度等；
-   - **布线：**
-     - 请简述一个你学习的布局算法，包括：输入、输出、数据结构设计、算法主要思想，时间复杂度等；
-   - **静态时序分析：**
-     - 请简述单元库，互连寄生，单元时延（NLDM表格），线网时延（Elmore计算），串扰噪声的定义，时序检查（Setup/Hold）,时序路径定义，时序约束命令； 
-   - **EDA性能：**
-     - 如何解决EDA软件中的性能问题？ 
-   - **EDA后端：**
-     - 请简述EDA后端软件开发的流程。每个阶段主要在做哪些工作? 
-   - **EDA工具：**
-     - 常见的EDA仿真工具和Debug工具分别有哪些？它们有什么优势和不足？
+### 2. Learning Outcomes Presentation
+   - Organize the answers to the must-knows into a document and paste the document link in the daily record.
 
-### 二、学习成果展示
-   - 将必知必会的回答整理成文档，并在每日记录中贴上文档链接。
+### 3. Reference Materials
 
-### 三、参考资料
+- Video: ["iEDA-Tutorials"](https://space.bilibili.com/1189298533/channel/series)
+- Book recommendations: Physical Design of Digital Integrated Circuits, Physical Design of VLSI Circuits: From Graph Partitioning to Timing Convergence
 
-- 视频：[《iEDA-Tutorials》](https://space.bilibili.com/1189298533/channel/series)
-- 书籍推荐：数字集成电路物理设计、超大规模集成电路物理设计 从图分割到时序收敛
+## DAY13 - DAY14: iEDA Flow Process Practice
 
+### 1. Specific Requirements
 
+This part is divided into two directions, including system and algorithm. At the same time, this part is also the key focus of the Water-Drop Plan practice. Please pay attention to it:
 
-## DAY13-DAY14：iEDA Flow流程实践
+(1) **Overall goal**
+- Be familiar with the running results of the point tools in the iEDA back-end flow process, the main indicators and features concerned, understand and know how to modify the configuration in the configuration file of the iEDA point tools
+  - Skillfully use the open-source iEDA and tools to run the back-end process of chip design;
+  - Be familiar with the command scripts and parameters of open-source tools in each step: synthesis floorplanning (iFP), placement (iPL), clock tree synthesis (iCTS), routing (iRT), parameter extraction (iRCX), timing optimization (iTO), etc.;
+  - Run the entire process from RTL -> Netlist -> FP_Def -> PL_Def -> CTS_Def -> RT_Def -> GDS. Interpret the key parameters and key steps in the log based on the log content, and describe the entire back-end design process.
 
-### 一、具体要求
+(2) **Task requirements**
+- For the system direction:
+   - Skillfully run the entire iEDA process and understand the indicators included in each point tool process.
+- For the algorithm direction:
+   - Be able to run the entire iEDA process, master the specific configuration and parameters in the specific point tool of interest, and understand the mutual calling of tcl files of point tools.
+- Specific tasks are as follows:
+   - Task 1: Run the open-source tool back-end in iEDA, the design is gcd, and the process is sky130;
+   - Task 2: Change the design, change gcd to uart, and the process is sky130;
+   - Task 3: Change the process library, the design is gcd, and the process is nangate45;
+   - Task 4: Refer to the log and report, and record the values of the features in Tasks 1, 2, and 3 (according to "Water-Drop Plan - iEDA demo learning" in [Reference Materials]);
 
-此部分分为两个方向，包括系统和算法，同时该部分也是水滴计划实践的重点关注部分，请同学们重视：
+(3) The design and foundary of the relevant tasks can be viewed in the internal network disk data of the Water-Drop Plan (Water-Drop Plan/EDA/Practice)
+- PR submission requirements: Upload to the code repository: iTraining/EDA/codes/2023-07/your_name. Do not upload the specific content of the log and report. Just:
+  - A readme.md file, listing: ① foundary + design + [server number] + absolute path ② The link of the Tencent document of "Water-Drop Plan - iEDA demo learning";
+  - Screenshots of the content of the Tencent document of "Water-Drop Plan - iEDA demo learning". Multiple screenshots can be submitted according to different Flow processes;
 
-（一）**整体目标**
-- 熟悉iEDA后端flow流程的点工具的运行结果，关注的主要指标和特征，了解和懂得修改iEDA点工具的配置文件中的配置
-  - 熟练使用开源iEDA和工具跑芯片设计后端流程；
-  - 熟悉各个步骤开源工具命令脚本和参数：综合布图规划（iFP），布局（iPL），时钟树综合（iCTS），布线（iRT），参数提取（iRCX），修时序（iTO）等等； 
-  - 跑通RTL->Netlist->FP_Def->PL_Def->CTS_Def->RT_Def->GDS全流程，根据日志内容解读日志关键参数，关键步骤，描述全流程后端设计过程。
+### 2. Learning Outcomes Presentation
 
-（二）**任务要求**
-- 对于系统方向：
-   - 熟练运行iEDA全流程，了解每个点工具流程所包含的指标。
-- 对于算法方向：
-   - 能够运行iEDA全流程，并掌握具体感兴趣的点工具中的具体配置和参数，了解点工具的tcl文件相互调用。
-- 具体任务如下：
-   - 任务1：在iEDA中跑开源工具后端，设计为gcd，工艺为sky130；
-   - 任务2：更换设计，将gcd改为uart，工艺为sky130；
-   - 任务3：更换工艺库，设计为gcd，工艺为nangate45；
-   - 任务4：参考log日志以及report报告，对任务1、2、3中的特征的值进行记录（根据【参考资料】中的《水滴计划-iEDA demo学习》）；
+- Output the feature result file record. According to the reference document, one column is the result of one Flow. Tasks 1, 2, and 3 each have one column of result records, totaling 3 columns of results.
 
-（三）相关任务的design和foundary可以在水滴计划内部网盘资料（水滴计划/EDA/Practice）中查看 
-- PR提交要求：上传到代码仓库： iTraining/EDA/codes/2023-07/your_name 不用上传log和report具体内容，只需： 
-  - 一个readme.md文件，列出： ①foundary + design + [服务器编号] + 绝对路径 ②"水滴计划-iEDA demo学习"腾讯文档的链接；
-  - "水滴计划-iEDA demo学习"腾讯文档内容的截图，可按照不同Flow流程提交多个截图；
+### 3. Reference Materials
 
-### 二、学习成果展示
+(1) **Materials**:
+   - iFlow: [User Manual](/tools/auto-scripts/iflow.md), [Code Repository](https://gitee.com/oscc-project/iFlow)
+   - iEDA-Script: [User Manual](/tools/ieda-platform/guide.md)
+   - "Reference for Features to be Focused on in Each Point Tool of iEDA" Water-Drop Plan - iEDA demo learning
+   - [Open-Source Chip Design EDA Platform from Netlist to GDS of iEDA](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 
-- 输出特征结果文件记录，按照参考文档，一列为一次Flow的结果，任务1、2、3分别有一列结果记录，共计3列的结果。
-
-### 三、参考资料
-
-（一）**材料：**
-   - iFlow：[用户手册](/tools/auto-scripts/iflow.md)，[代码仓库](https://gitee.com/oscc-project/iFlow)
-   - iEDA-Script：[用户手册](/tools/ieda-platform/guide.md)
-   - 《iEDA各点工具需要关注的特征参考》水滴计划-iEDA demo学习
-   - [iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
-
-（二）**视频链接：**
-   - [iEDA-项目介绍：iEDA流程脚本的设计与使用概述](https://www.bilibili.com/video/BV1xx4y1X7Wq)
-   - [2023 开源芯片技术生态论坛：iEDA构建实践](https://www.bilibili.com/video/BV1mp4y1P7C7)
-   - [2023 开源芯片技术生态论坛：iEDA平台介绍](https://www.bilibili.com/video/BV1T94y147pX)
-   - [2023 开源芯片技术生态论坛：iEDA支撑一次28nm流片的经历](https://www.bilibili.com/video/BV1Th4y1S7Xj)
+(2) **Video Links**:
+   - [iEDA - Project Introduction: Overview of the Design and Use of iEDA Flow Scripts](https://www.bilibili.com/video/BV1xx4y1X7Wq)
+   - [2023 Open Source Chip Technology Ecology Forum: Construction Practice of iEDA](https://www.bilibili.com/video/BV1mp4y1P7C7)
+   - [2023 Open Source Chip Technology Ecology Forum: Introduction of iEDA Platform](https://www.bilibili.com/video/BV1T94y147pX)
+   - [2023 Open Source Chip Technology Ecology Forum: Experience of iEDA Supporting a 28nm Tapeout](https://www.bilibili.com/video/BV1Th4y1S7Xj)
 

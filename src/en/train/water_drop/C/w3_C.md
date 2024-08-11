@@ -1,109 +1,110 @@
 ---
-title: "C++学习-Week3"
+title: "C++ Course - Week3"
 order: 4
+icon: file-lines
 ---
-## DAY15：讲座分享
+## DAY15: Lecture Sharing
 
-### 一、具体要求
+### 1. Specific Requirements
 
-（一）**讲座分享**：
+(1) **Lecture Sharing**:
 
-- 14:30 - 15:30 陶思敏老师分享主题演讲，同时大家可以分享对水滴计划的一些改进建议，对C++编程感兴趣的部分，对C++并发编程/容器等的掌握程度等；
-- 15:30 - 16:30 黄增荣老师分享主题演讲，同时大家可以咨询自己对iEDA项目的一些存在的问题，自己感兴趣的方向，对开源EDA的理解和看法等等；
-- 如果演讲内容无排期，请自行观看参考资料的线上视频。
+- 14:30 - 15:30 Teacher Tao Simin shares the keynote speech. Meanwhile, everyone can share some improvement suggestions for the Water-Drop Plan, the parts interested in C++ programming, the mastery level of C++ concurrent programming/containers, etc.;
+- 15:30 - 16:30 Teacher Huang Zengrong shares the keynote speech. Meanwhile, everyone can consult some existing problems they have with the iEDA project, the directions they are interested in, their understanding and views on open-source EDA, etc.;
+- If there is no schedule for the speech, please watch the online video of the reference materials by yourself.
 
-（二）**实践学习**
+(2) **Practical Learning**
 
-- 下载并查阅iEDA项目的Gitee仓库，了解其代码结构等。
+- Download and review the Gitee repository of the iEDA project to understand its code structure, etc.
 
-### 二、学习成果展示
+### 2. Learning Outcomes Presentation
 
-- 提交每日的学习记录；
+- Submit the daily learning records;
 
-### 三、参考资料
+### 3. Reference Materials
 
-- 论文：
-  - [荣获ISEDA 2023的Best Paper](https://arxiv.org/pdf/2308.01857)
-  - [iEDA：ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473983)
-  - [iPD：ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473932)
-  
-- 仓库：
-  - [iEDA项目仓库Gitee](https://gitee.com/oscc-project/iEDA)
-  - [iEDA项目仓库GitHub](https://github.com/OSCC-Project/iEDA)
+- Papers:
 
-- 视频链接：
-  - [iEDA-水滴计划简介](https://www.bilibili.com/video/BV1TM4y1H7WT)
-  黄增荣老师介绍 iEDA：从网表到版图的开源芯片设计EDA平台简介。包括：概述iEDA项目的架构设计，工程包目录解读，核心代码/配置脚本文件的编译与解读，从软件工程思想举例介绍iEDA项目的模块设计和业务逻辑交互等等。
+  - [Best Paper of ISEDA 2023](https://arxiv.org/pdf/2308.01857)
+  - [iEDA: ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473983)
+  - [iPD: ASPDAC-24](https://ieeexplore.ieee.org/abstract/document/10473932)
+- Repositories:
 
-  - [iEDA项目介绍](https://www.bilibili.com/video/BV1yF411Q7D8)
-  李兴权老师介绍iEDA项目介绍开源EDA项目简介。包括：开源EDA项目的目标、任务、时间规划和预期成果，开源EDA的工具链组成，已有开源EDA工具简介和存在问题，iEDA的架构、系统平台、开源社区设想等等。
+  - [iEDA Project Repository Gitee](https://gitee.com/oscc-project/iEDA)
+  - [iEDA Project Repository GitHub](https://github.com/OSCC-Project/iEDA)
+- Video Links:
 
-  - [2023 开源芯片技术生态论坛](https://www.bilibili.com/video/BV1Th4y1S7Xj)
-  黄增荣老师介绍iEDA支撑一次28nm流片的经历。包括：介绍布图规划iFP/iPDN，网表优化iNO，布局iPL，时钟树综合iCTS，布线iRT，设计规则检测iDRC，介绍各个点工具的目标、流程脚本、报告分析等等。
+  - [Introduction to iEDA - Water-Drop Plan](https://www.bilibili.com/video/BV1TM4y1H7WT)
+    Teacher Huang Zengrong introduces iEDA: An introduction to the open-source chip design EDA platform from netlist to layout. Including: overview of the architecture design of the iEDA project, interpretation of the project package directory, compilation and interpretation of the core code/configuration script files, introduction of the module design and business logic interaction of the iEDA project by examples from the software engineering thought, etc.
+  - [Introduction to the iEDA Project](https://www.bilibili.com/video/BV1yF411Q7D8)
+    Teacher Li Xingquan introduces the iEDA project, an introduction to the open-source EDA project. Including: the goals, tasks, time planning and expected results of the open-source EDA project, the composition of the open-source EDA toolchain, introduction and existing problems of the existing open-source EDA tools, the architecture of iEDA, the system platform, the idea of the open-source community, etc.
+  - [2023 Open Source Chip Technology Ecology Forum](https://www.bilibili.com/video/BV1Th4y1S7Xj)
+    Teacher Huang Zengrong introduces the experience of iEDA supporting a 28nm tapeout. Including: introduction of floorplanning iFP/iPDN, netlist optimization iNO, placement iPL, clock tree synthesis iCTS, routing iRT, design rule checking iDRC, introduction of the goals, process scripts, report analysis of each point tool, etc.
 
-## DAY16: iEDA初体验
+## DAY16: First Experience with iEDA
 
-### 一、具体要求
+### 1. Specific Requirements
 
-（一）EDA项目代码阅读，了解其工程架构，接口，配置文件，简单的交互逻辑等；
-（二）尝试画出自己学习了解的iEDA，可以以学习笔记、思维导图、流程图等梳理。
+(1) Read the EDA project code to understand its engineering architecture, interfaces, configuration files, simple interaction logic, etc.;
+(2) Try to draw the iEDA you have learned and understood, and sort it out in the form of learning notes, mind maps, flowcharts, etc.
 
-### 二、学习成果展示
+### 2. Learning Outcomes Presentation
 
-- 制作iEDA项目的架构图并加以文字描述；
-- 概括iEDA工程各目录的主要内容；
-- 对上两项内容提交PR到指定仓库iTraining/EDA中；
-- 提交每日的学习记录；
+- Make the architecture diagram of the iEDA project and describe it with text;
+- Summarize the main contents of each directory of the iEDA project;
+- Submit PR for the above two contents to the designated repository iTraining/EDA;
+- Submit the daily learning records;
 
-### 三、参考资料
+### 3. Reference Materials
 
-- [iEDA 用户手册](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
-描述iEDA系统部署图、使用前环境的准备、工具流程以及GUI操作手册。
+- [iEDA User Manual](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
+  Describes the iEDA system deployment diagram, the preparation of the environment before use, the tool process and the GUI operation manual.
+- [Introduction to the iEDA Open Source Chip Design Platform](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
+  It is mainly divided into two parts: iEDA and iEDA user guidance, and describes the source of the iEDA name, the main structure, tools and other contents.
 
-- [iEDA 开源芯片设计平台介绍](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
-主要划分为iEDA和iEDA用户指导两个部分，讲述iEDA名字来源、主要结构、工具等内容。
+## DAY17 - DAY21: C++ Major Assignment
 
-## DAY17-DAY21：C++大作业
+Given the following map, black indicates obstacles that cannot be passed through. It is required to implement an obstacle avoidance algorithm to find the optimal path from the red starting point to the green ending point.
 
-已知如下图地图，黑色表示障碍物无法通行，要求实现避障算法寻找从红色起点出发到达绿色终点的最优路径。
-
-<!-- ![](/res/images/train/water_drop/image.png) -->
+<!--![](/res/images/train/water_drop/image.png) -->
 
 <center> <img src="/res/images/train/water_drop/image.png" alt="6" style="zoom:55%;" /></center> 
-<center> 二维网格路径搜索</center>
+<center> Two-Dimensional Grid Path Search</center>
 
-要求：
-（1）	对图中的地图进行建模，抽象成类，对数据进行封装；
-（2）	思考寻路算法的实现，对问题进行拆解，对算法实现也要求抽象接口类；
-（3）	使用给定的C++工程模板，按照模板编写CMakeLists.txt，以及Google Test单元测试，DoxyGen注释的使用。
+Requirements:
+(1) Model the map in the figure, abstract it into a class, and encapsulate the data;
+(2) Consider the implementation of the path-finding algorithm, disassemble the problem, and also require the abstract interface class for the algorithm implementation;
+(3) Use the given C++ project template, write CMakeLists.txt according to the [template](https://github.com/filipdutescu/modern-cpp-template.git), Google Test unit tests, and use DoxyGen annotations.
 
-### 一、具体要求
+### 1. Specific Requirements
 
-（一）**实现A*算法**：
+(1) **Implement the A* Algorithm**:
 
-   - 对地图进行建模，抽象成类并封装数据；
-   - 实现寻路算法，拆解问题，算法实现要求抽象接口类；
-   - 使用给定的C++工程模板，按照[模板](https://github.com/filipdutescu/modern-cpp-template.git)编写CMakeLists.txt，Google Test单元测试，使用DoxyGen注释；
-   - **扩展要求**
-     - 实现带权重的障碍节点的A*寻路算法；
-     - 采用可视化UI界面展示地图及寻路结果；
-     
-（二）**输出C++实习总结的PPT**：
+- Model the map, abstract it into a class and encapsulate the data;
+- Implement the path-finding algorithm, disassemble the problem, and the algorithm implementation requires an abstract interface class;
+- Use the given C++ project template, write CMakeLists.txt according to [template](https://github.com/filipdutescu/modern-cpp-template.git), Google Test unit tests, and use DoxyGen annotations;
+- **Extension Requirements**
+  - Implement the A* path-finding algorithm with weighted obstacle nodes;
+  - Use a visual UI interface to display the map and the path-finding results;
 
-   - 描述已掌握的C++及C++ Modern的内容，用列表大纲的形式展示，类似技术栈罗列；（1 min）
-   - 描述A*算法大作业，类似于做学术报告，可以参考iEDA第二期Tutorial中各位同学做的算法部分的报告，应该在PPT中至少包含：数据结构设计、输入输出描述、主要算法思想，实验结果汇总，运用的C++ Modern新特性； (4 min)
+(2) **Output the PPT of the C++ Internship Summary**:
 
-### 二、学习成果展示
+- Describe the content of C++ and C++ Modern that has been mastered, show it in the form of a list outline, similar to listing the technology stack; (1 min)
+- Describe the A* algorithm major assignment, similar to giving an academic report. You can refer to the reports of the algorithms of the students in the second phase of the iEDA Tutorial. The PPT should at least include: data structure design, input and output description, main algorithm idea, summary of experimental results, and the new features of C++ Modern used; (4 min)
 
-- 提交每日的学习记录；
-- 实验报告中应该至少包含数据结构设计、输入描述、输出描述、主要算法思想的文字描述，测试用例及用例运行结果（如设计两点间通路、死路情况的样例、不同情况通路中对应的最优路径cost消耗）； 代码和实验报告(作为readme.md)一起提交Pull Request；
-- 准备并提交实训总结的PPT。
+### 2. Learning Outcomes Presentation
 
-### 三、参考资料
+- Submit the daily learning records;
+- The experimental report should at least include the textual description of data structure design, input description, output description, and the main algorithm idea, test cases and the running results of the cases (such as designing path examples between two points, dead-end situations, and the corresponding optimal path cost consumption in different path situations); Submit the code and the experimental report (as readme.md) together in a Pull Request;
+- Prepare and submit the PPT of the training summary.
 
-- [题目.docx](https://gitee.com/oscc-project/iTraining/tree/master/C++/CPP-Program-Assignment/Assignment_3)
-- [水滴计划-答辩ppt模板.pptx](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
-- 实现带权重的障碍节点的A*寻路算法参考视频：[A*算法实验-带权重版本](https://www.bilibili.com/video/BV1544y1w7PR)
-- [A*思路分享](https://gitee.com/oscc-project/iTraining/blob/master/C++/ppt/AStar%E9%A1%B9%E7%9B%AE%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB_%E6%9B%BE%E6%99%BA%E5%9C%A3.pptx)
+### 3. Reference Materials
 
-**学习小注：** 至此，C++的系统学习就告一段落，若学有余力提前完成的同学，不妨简单思考三点如何实现最短路径。
+- [Question.docx](https://gitee.com/oscc-project/iTraining/tree/master/C++/CPP-Program-Assignment/Assignment_3)
+- [Water-Drop Plan - Defense PPT Template.pptx](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
+- Reference video for implementing the A* path-finding algorithm with weighted obstacle nodes: [A* Algorithm Experiment - Weighted Version](https://www.bilibili.com/video/BV1544y1w7PR)
+- [A* Idea Sharing](https://gitee.com/oscc-project/iTraining/blob/master/C++/ppt/AStar%E9%A1%B9%E7%9B%AE%E6%80%9D%E8%B7%AF%E5%88%86%E4%BA%AB_%E6%9B%BE%E6%99%BA%E5%9C%A3.pptx)
+
+::: note
+**Learning Notes**: At this point, the systematic learning of C++ comes to an end. If students who have completed it in advance with spare capacity, it might be beneficial to simply consider how to achieve the shortest path in three points.
+:::

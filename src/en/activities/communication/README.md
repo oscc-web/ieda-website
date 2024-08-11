@@ -2,13 +2,16 @@
 title: "Tutorial"
 index: false
 ---
-（主要介绍iEDA团队组织或参与组织的技术交流活动）
 
-**交流列表**
+
+(This primarily introduces the technical exchange activities organized or participated in by the iEDA team.)
+
+**Communication List**
 
 - iEDA Tutorial
-  - 2023年12月29日，[iEDA Tutorial第五期：时钟iCTS与布线iRT工具介绍](https://space.bilibili.com/1189298533/channel/series)
-  - 2023年9月27日，[iEDA Tutorial第四期：工艺映射iMap与测试向量生成iATPG工具介绍](https://space.bilibili.com/1189298533/channel/series)
-  - 2023年8月24日，[iEDA Tutorial第三期：iEDA基础底座介绍](https://space.bilibili.com/1189298533/channel/series)
-  - 2023年7月31日，[iEDA Tutorial第二期：布图iFP与布局iPL工具介绍](https://space.bilibili.com/1189298533/channel/series)
-  - 2023年6月30日，[iEDA Tutorial第一期：时序分析iSTA与功耗分析iPA工具介绍](https://space.bilibili.com/1189298533/channel/series)
+  - On December 29, 2023, [iEDA Tutorial Series, Episode 5: Introduction to Clock iCTS and Routing iRT Tools](https://space.bilibili.com/1189298533/channel/series)
+  - On September 27, 2023, [iEDA Tutorial Series, Episode 4: Introduction to Process Mapping iMap and Test Vector Generation iATPG Tools](https://space.bilibili.com/1189298533/channel/series)
+  - On August 24, 2023, [iEDA Tutorial Series, Episode 3: Introduction to iEDA Foundation Basis](https://space.bilibili.com/1189298533/channel/series)
+  - On July 31, 2023, [iEDA Tutorial Series, Episode 2: Introduction to Layout iPL and Floorplan iFP Tools](https://space.bilibili.com/1189298533/channel/series)
+  - On June 30, 2023, [iEDA Tutorial Series, Episode 1: Introduction to Timing Analysis iSTA and Power Analysis iPA Tools](https://space.bilibili.com/1189298533/channel/series)
+

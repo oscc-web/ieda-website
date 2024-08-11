@@ -1,27 +1,28 @@
 ---
 title: "iEDA Practice"
 index: false
+icon: book
 ---
-（基于开源EDA平台——iEDA设置多种实践训练任务，同学们可以更深入理解EDA工具和算法）
+(Based on the open-source EDA platform - iEDA, multiple practical training tasks are set, allowing students to have a deeper understanding of EDA tools and algorithms)
 
-## **1 实践目标**
+## **1. Practice Objectives**
 
-为了给EDA课程或培训提供教学实践平台，并兼顾学生能力和实际应用，本课程拟将EDA相关实践任务分解成多个子任务，这样可以平衡实践课程的难度和可完成性，让学生在课程内逐步提升技能并完成任务，而不会一开始就面对难度较大的整体项目。例如，可以先让学生熟悉基本算法和数据流，在此基础上逐步引入EDA工具的使用和设计方法。
+In order to provide a teaching practice platform for EDA courses or training, and taking into account students' abilities and practical applications, this course intends to decompose EDA-related practical tasks into multiple subtasks. This can balance the difficulty and achievability of the practical course, allowing students to gradually improve their skills and complete tasks within the course instead of facing a highly difficult overall project at the beginning. For example, students can be familiarized with basic algorithms and data flows first, and then the use of EDA tools and design methods can be gradually introduced.
 
-EDA物理设计流程主要包括：布图规划、布局、布线、时钟树综合、时序和功耗分析等等。各流程之间合理的逻辑交互设计可以提高系统的可靠性和稳定性，并且能够更好地满足用户的需求。因此，我们需要格外关注各个模块之间的信息流动和交互方式，保证系统的正常运行。本课题以iEDA平台为基础，重点关注EDA后端流程之间的数据流变化、提供的接口服务以及逻辑交互，学生能够通过本课题了解EDA后端交互的基本流程。同时，以布局问题为例，布局问题是EDA物理设计的核心问题之一，通过布局合法化可以调整集成电路单元在芯片中的具体位置，在单元互不重叠的基础上优化全局布局的结果。
+The EDA physical design process mainly includes floorplanning, placement, routing, clock tree synthesis, timing and power analysis, etc. The reasonable logical interaction design between each process can improve the reliability and stability of the system and better meet the needs of users. Therefore, we need to pay special attention to the information flow and interaction methods between each module to ensure the normal operation of the system. Based on the iEDA platform, this project focuses on the data flow changes, provided interface services, and logical interactions between the EDA back-end processes. Students can understand the basic process of EDA back-end interaction through this project. At the same time, taking the placement problem as an example, the placement problem is one of the core issues in EDA physical design. Through placement legalization, the specific positions of integrated circuit cells in the chip can be adjusted, and the results of the global placement can be optimized on the basis of no overlap between cells.
 
-同时，为了帮助学生理解实践任务的背景和目标，本课程提供了一些实际的实践内容分析，让学生了解EDA的相关应用，使学生能够逐步掌握EDA技能，并将其应用于实际情境中。同时，提供了评测排名等内容，也可以增加课程的趣味性，提高学生对EDA课程的兴趣和参与度。
+At the same time, to help students understand the background and objectives of the practical tasks, this course provides some actual practical content analysis to allow students to understand the relevant applications of EDA, enabling students to gradually master EDA skills and apply them in actual situations. At the same time, providing evaluation rankings and other content can also increase the interest of the course and improve students' interest and participation in the EDA course.
 
-## **2 课程计划**
+## **2. Course Plan**
 
-课题总体分为工程类实践、算法类实践以及模型类实践三个部分。其主要研究内容如下：
+The project is generally divided into three parts: engineering practice, algorithm practice, and model practice. The main research contents are as follows:
 
-**（1）对于工程类实践**：遵循iEDA平台的模块划分，读取设计文件，依次执行EDA物理设计流程，参考现有平台中实现的点工具输出的统计报告，需要设计相应的Json数据结构，来展示各物理设计流程的相关参数的变化。
+**(1) For engineering practice**: Follow the module division of the iEDA platform, read the design files, and execute the EDA physical design process in sequence. Refer to the statistical reports output by the point tools implemented in the existing platform, and it is necessary to design the corresponding Json data structure to show the changes of the relevant parameters of each physical design process.
 
-**（2）对于算法类实践**：布局流程中，可以分为三个阶段：总体布局、合法化以及详细布局。全局布局把单元放到合适的位置，忽略单元重叠。合法化把单元放到行上，消除单元之间的重叠。详细布局则局部调整单元，使得设计目标更优化。以iEDA平台已有合法化Abacus方法中的接口设计和逻辑交互为基础，在平台上实现另一种合法化方法——Tetris。
+**(2) For algorithm practice**: In the placement process, it can be divided into three stages: global placement, legalization, and detailed placement. Global placement places the units in appropriate positions, ignoring unit overlap. Legalization places the units on rows and eliminates the overlap between units. Detailed placement locally adjusts the units to make the design goal more optimized. Based on the interface design and logical interaction in the existing legalization Abacus method of the iEDA platform, implement another legalization method - Tetris on the platform.
 
-**（3）对于模型类实践**：模型类的课程主要关注建立和使用模型来描述和解决问题。课程实践通常涵盖统计学、机器学习、深度学习等内容。学生将学习如何使用数据和算法构建AI EDA模型，从数据中提取有用的信息，并进行预测、分类等任务。
+**(3) For model practice**: The courses of the model type mainly focus on establishing and using models to describe and solve problems. Course practices usually cover statistics, machine learning, deep learning, etc. Students will learn how to build AI EDA models using data and algorithms, extract useful information from the data, and perform tasks such as prediction and classification.
 
-# **3 预期学习成果**
+# **3. Expected Learning Outcomes**
 
-通过工程类、算法类以及模型类这几部分的实践，学生能够如何基于iEDA平台来使用EDA流程工具、技术和方法来进行数据流的处理、存储和应用，同时通过设计基本的数据结构与算法流程、优化算法等内容对EDA物理设计布局合法化流程中存在的问题进行探讨、分析及解决，对锻炼EDA专业基础实践能力和C++编码能力有很大帮助。
+Through the practice of engineering, algorithm, and model parts, students can learn how to use EDA process tools, techniques, and methods based on the iEDA platform for data flow processing, storage, and application. At the same time, through designing basic data structures and algorithm processes, optimizing algorithms, and other contents, they can discuss, analyze, and solve the problems existing in the EDA physical design layout legalization process, which is of great help in exercising the basic practical ability of the EDA profession and C++ coding ability. 

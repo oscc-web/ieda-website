@@ -1,5 +1,5 @@
 ---
-title: "著作"
+title: "Work"
 order: 4
 ---
-规划中. 电子设计自动化基础和实践
+Under planning. Fundamentals and Practice of Electronic Design Automation 

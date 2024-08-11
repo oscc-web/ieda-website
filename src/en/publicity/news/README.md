@@ -3,58 +3,59 @@ title: "News"
 ---
 ## **2024**
 
-- 2024年7月19日-21日，iEDA团队参加[第二届CCF芯片大会](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action)，并做多场学术报告
+- From July 19th to 21st, 2024, the iEDA team participated in the [Second CCF Chip Conference](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action) and gave multiple academic reports
 
-  - 组织[开源智能EDA工具和模型论坛](https://mp.weixin.qq.com/s/UWoiu0Gafmu6da6hIVURiA)，邀请6位专家做开源和智能EDA相关报告，并针对开源EDA能否实现商业展开讨论
-  - 做题为《数字芯片时钟树和布线算法》的报告；
-  - 做题为《使用开源EDA工具设计开源芯片》的报告；
-- 2024年6月23日-27日，iEDA团队参加[61st Design Automation Conference (DAC)](https://61dac.conference-program.com/)，并做多场学术报告
+  - Organized the [Open-source Intelligent EDA Tools and Models Forum](https://mp.weixin.qq.com/s/UWoiu0Gafmu6da6hIVURiA), inviting 6 experts to give reports related to open-source and intelligent EDA, and discussing whether open-source EDA can achieve commercialization.
+  - Gave a report titled "Digital Chip Clock Tree and Routing Algorithms";
+  - Gave a report titled "Designing Open-source Chips Using Open-source EDA Tools";
+- From June 23rd to 27th, 2024, the iEDA team participated in the [61st Design Automation Conference (DAC)](https://61dac.conference-program.com/) and gave multiple academic reports
 
-  - **Research Manuscript:** "[Net Resource Allocation: A Desirable Initial Routing Step](https://61dac.conference-program.com/presentation/?id=RESEARCH1344&sess=sess144)", Zhisheng, Jikang Liu, Zhipeng Huang, Ye Cai, Biwei Xie, Yungang Bao, Xingquan Li;
-  - **Research Manuscript:** "[Toward Controllable Hierarchical Clock Tree Synthesis with Skew-Latency-Load Tree](https://61dac.conference-program.com/presentation/?id=RESEARCH1369&sess=sess144)"，Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Xingquan Li;
-  - **Birds-of-a-Feather:** "[iEDA：An Open-source EDA Infrasctructure and Toolchain](https://open-source-eda-birds-of-a-feather.github.io/)";
-- 2024年6月3日-6月7日，[一生一芯和iEDA团队参加瑞士EFCL Summer School；](https://mp.weixin.qq.com/s/TKq_5ES2aVAn8Lmid4y4dw)
-- 2024年5月19日-20日，iEDA团队参加国家EDA创新中心组织的Large Circuit Model研讨会
-- 2024年5月10日-12日，iEDA团队参[2024 International Symposium of EDA (ISEDA)](https://www.eda2.com/iseda/index.html)，并做Tutorial和多场报告
+  - **Research Manuscript**: "[Net Resource Allocation: A Desirable Initial Routing Step](https://61dac.conference-program.com/presentation/?id=RESEARCH1344&sess=sess144)", Zhisheng, Jikang Liu, Zhipeng Huang, Ye Cai, Biwei Xie, Yungang Bao, Xingquan Li;
+  - **Research Manuscript**: "[Toward Controllable Hierarchical Clock Tree Synthesis with Skew-Latency-Load Tree](https://61dac.conference-program.com/presentation/?id=RESEARCH1369&sess=sess144)", Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Xingquan Li;
+  - **Birds-of-a-Feather**: "[iEDA: An Open-source EDA Infrasctructure and Toolchain](https://open-source-eda-birds-of-a-feather.github.io/)";
+- From June 3rd to 7th, 2024, [The "Yishengyixin" and iEDA teams participated in the EFCL Summer School in Switzerland;](https://mp.weixin.qq.com/s/TKq_5ES2aVAn8Lmid4y4dw)
+- On May 19th - 20th, 2024, the iEDA team participated in the Large Circuit Model seminar organized by the National EDA Innovation Center.
+- From May 10th to 12th, 2024, the iEDA team participated in [2024 International Symposium of EDA (ISEDA)](https://www.eda2.com/iseda/index.html) and gave a Tutorial and multiple reports
 
-  - **Tutotial 7:** [iEDA: An Open-source Physical Design EDA Infrastructure and Toolchain](https://www.eda2.com/iseda/tutorials.html), Xingquan Li, Zengrong Huang
-  - **Invited Speakers:** [AiEDA: An Open-source AI-native EDA Library](https://www.eda2.com/iseda/invited.html), Xingquan Li
-  - **Panel 2:** LLM for Chip Design: Challenge and Opportunitie, Xingquan Li
-  - **Technical Program:** [Enhancing ASIC Technology Mapping via Parallel Supergate Computing](https://www.eda2.com/iseda/session14.html), Liwei Ni
-  - **Technical Program:** [PCT-Cap: Point Cloud Transformer for Accurate 3D Capacitance Extraction](https://www.eda2.com/iseda/session10.html), Yuyao Liang
-- 2024年1月20日，开源智能EDA平台和工具，中关村论坛，北京，2024.
+  - **Tutotial 7**: [iEDA: An Open-source Physical Design EDA Infrastructure and Toolchain](https://www.eda2.com/iseda/tutorials.html), Xingquan Li, Zengrong Huang
+  - **Invited Speakers**: [AiEDA: An Open-source AI-native EDA Library](https://www.eda2.com/iseda/invited.html), Xingquan Li
+  - **Panel 2**: LLM for Chip Design: Challenge and Opportunitie, Xingquan Li
+  - **Technical Program**: [Enhancing ASIC Technology Mapping via Parallel Supergate Computing](https://www.eda2.com/iseda/session14.html), Liwei Ni
+  - **Technical Program**: [PCT-Cap: Point Cloud Transformer for Accurate 3D Capacitance Extraction](https://www.eda2.com/iseda/session10.html), Yuyao Liang
+- On January 20th, 2024, Open-source Intelligent EDA Platform and Tools, Zhongguancun Forum, Beijing, 2024.
 
 ## **2023**
 
-- 2023年12月9日，iEDA团队参加2023年中国运筹学会，算法与软件应用分会，天津，2023.
+- On December 9th, 2023, the iEDA team participated in the 2023 Chinese Operations Research Society, Algorithm and Software Application Branch, Tianjin, 2023.
 
-  - 做题为《EDA中的数学问题》的青年大会报告
-  - 组织EDA算法与软件论坛，邀请4位青年博士做报告
-- 2023年10月16日，iEDA团队参加第四届CCF-DAC，
+  - Gave a youth conference report titled "Mathematical Problems in EDA"
+  - Organized the EDA Algorithm and Software Forum and invited 4 young doctors to give reports
+- On October 16th, 2023, the iEDA team participated in the 4th CCF-DAC
 
-  - 做题为 “AiEDA：智能EDA框架”，，北京，2023.
-  - 组织开源EDA算法、模型与工具论坛，邀请熊晓明教授，余备副教授，朱文兴教授，蔡少伟研究员，陈松教授，储著飞教授，金洲副教授，谢知遥助理教授，范凤磊特别助理教授，做学术报告
-- 2023年10月9日，iEDA团队参加2023年计算机大会CNCC，沈阳，并做题为“AiEDA：智能EDA框架及其应用”的报告，2023.
-- 2023年8月20日，参加第八届ICICM，并做题为“开源EDA平台与工具链” 的报告，南京，2023.
-- 2023年8月10日，iEDA团队第三届中国RISC-V峰会，北京，2023.
+  - Gave a report titled "AiEDA: Intelligent EDA Framework", Beijing, 2023.
+  - Organized the Open-source EDA Algorithm, Model and Tool Forum and invited Professor Xiong Xiaoming, Associate Professor Yu Bei, Professor Zhu Wenxing, Researcher Cai Shaowei, Professor Chen Song, Professor Chu Zhufei, Associate Professor Jin Zhou, Assistant Professor Xie Zhiyao, Special Assistant Professor Fan Fenglei to give academic reports
+- On October 9th, 2023, the iEDA team participated in the 2023 Computer Conference CNCC, Shenyang, and gave a report titled "AiEDA: Intelligent EDA Framework and Its Applications", 2023.
+- On August 20th, 2023, participated in the 8th ICICM and gave a report titled "Open-source EDA Platform and Toolchain", Nanjing, 2023.
+- On August 10th, 2023, the iEDA team participated in the 3rd China RISC-V Summit, Beijing, 2023.
 
-  - 组织第二届 开源EDA（OSEDA）研讨会，邀请
-  - 做题为“EDA软件设计和算法” 的大会报告，
-- 2023年7月20日，参加，第二届厦门开源芯片产业促进论坛，并做题为“智能EDA平台及其应用”的报告，2023.
-- 2023年7月，参加ISIC
+  - Organized the 2nd Open-source EDA (OSEDA) Workshop and invited
+  - Gave a conference report titled "EDA Software Design and Algorithms",
+- On July 20th, 2023, participated in the 2nd Xiamen Open-source Chip Industry Promotion Forum and gave a report titled "Intelligent EDA Platform and Its Applications", 2023.
+- In July 2023, participated in ISIC
 
-  - “开源EDA促进学术竞赛”，ISIC，南京，2023.
-  - “EDA平台和机器学习”，ISIC，南京，2023.
-- 2023年7月，在北京邮电大学做题为 “智能EDA系统”的报告.
-- 2023年6月，在EDA$^2$ 物理实现分委会做题为“开源智能EDA平台——iEDA”的报告.
-- 2023年5月10日，iEDA团队参加ISEDA 2023
+  - "Open-source EDA Promoting Academic Competitions", ISIC, Nanjing, 2023.
+  - "EDA Platform and Machine Learning", ISIC, Nanjing, 2023.
+- In July 2023, gave a report titled "Intelligent EDA System" at Beijing University of Posts and Telecommunications.
+- In June 2023, gave a report titled "Open-source Intelligent EDA Platform - iEDA" at the Physical Implementation Subcommittee of EDA$^2$.
+- On May 10th, 2023, the iEDA team participated in ISEDA 2023
 
-  - 做题为“iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library”，的学术报告
-  - 参加Panel “Is ML a real cure of modern design automation?”, ISEDA，2023.
-  - 组织Panel "Open-source EDA"
-- 2023年4月，在中南大学做题为“iEDA工作介绍”的报告.
-- 2023年3月，在中国科学院数学与系统科学研究院做，题为“EDA介绍”的报告.
+  - Gave an academic report titled "iEDA: An Open-Source Intelligent Physical Implementation Toolkit and Library",
+  - Participated in the Panel "Is ML a real cure of modern design automation?", ISEDA, 2023.
+  - Organized the Panel "Open-source EDA"
+- In April 2023, gave a report titled "Introduction to iEDA Work" at Central South University.
+- In March 2023, gave a report titled "Introduction to EDA" at the Academy of Mathematics and Systems Science, Chinese Academy of Sciences.
 
 ## **2022**
 
 - TBD
+

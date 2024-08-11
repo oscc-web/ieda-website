@@ -1,46 +1,46 @@
 ---
-title: "8.3 布局问题与建模"
+title: "8.3 Layout Problems and Modeling"
 order: 3
 ---
-## **VLSI全局布局基础介绍**
+## **Introduction to the Basics of VLSI Global Placement**
 
-VLSI是超大规模集成电路的简称。完成一个VLSI设计的流程十分复杂，包含多种数据格式的转化，其中将逻辑网表转变为可制造的几何版图的过程称为物理设计。物理设计流程可以分为布图规划、布局（placement）、时钟树综合、布线等，其中布局由于决定了电路单元的位置进而会影响后续的阶段而显得尤为关键。
+VLSI stands for Very Large Scale Integration. The process of completing a VLSI design is highly complex and involves the transformation of various data formats. The process of transforming the logical netlist into a manufacturable geometric layout is called physical design. The physical design process can be divided into floorplanning, placement, clock tree synthesis, routing, etc. Among them, placement is particularly crucial as it determines the positions of circuit cells and subsequently affects the subsequent stages.
 
-VLSI自动布局的目标是在芯片版图内确定所有电路单元的位置，使得总线长等一些指标最小，同时满足一些设计约束例如单元之间不重叠。由于布局是NP-hard问题，往往无法一步到位解决，因此常拆解为全局布局（global placement）、合法化（legalization）和详细布局（detailed placement）三个阶段求解。全局布局对单元不重叠视为软约束，根据总线长最小等目标确定电路单元的大致位置，布局结果允许单元重叠。合法化在尽量保持全局布局的结果下消除单元重叠，并让单元上下边界对齐行，左边界对齐网格边。详细布局进一步微调合法化的结果，例如局部交换单元位置，以寻求更好的指标结果。由于合法化和详细布局依赖于全局布局的解，因此全局布局至关重要，也是布局中最为关键且耗时的一个环节。
+The goal of VLSI automatic placement is to determine the positions of all circuit cells within the chip layout to minimize certain indicators such as total wire length while satisfying design constraints such as no overlap between cells. Since placement is an NP-hard problem, it is often impossible to solve it in one step. Therefore, it is often decomposed into three stages for solution: global placement, legalization, and detailed placement. In the global placement stage, the non-overlap of cells is regarded as a soft constraint. The approximate positions of the circuit cells are determined based on minimizing the wire length and other objectives, and the placement result allows cell overlap. Legalization eliminates cell overlap while maintaining the results of the global placement as much as possible and aligns the upper and lower boundaries of the cells to rows and the left boundaries to the grid edges. Detailed placement further fine-tunes the results of legalization, such as locally swapping cell positions, to seek better indicator results. Since legalization and detailed placement rely on the solution of global placement, global placement is of utmost importance and is also the most critical and time-consuming link in the placement process.
 
-本文围绕全局布局关心的一些指标，对其评估模型和优化方法进行概述，最后介绍较有代表性的开源工具，并整理了一些可供学习的资料。
+This article focuses on some indicators concerned in global placement, summarizes its evaluation models and optimization methods, and finally introduces more representative open-source tools and compiles some learning materials.
 
-### **评估模型**
-全局布局阶段关心的指标主要有线长、密度、拥塞、时序等，其中线长和密度是最为基础且重要的，优化线长且满足密度约束的全局布局称为线长驱动的全局布局（wirelength-driven global placement）。本节主要介绍线长和密度的评估模型。
+### **Evaluation Models**
+The indicators concerned in the global placement stage mainly include wire length, density, congestion, timing, etc. Among them, wire length and density are the most fundamental and important. Global placement that optimizes the wire length and satisfies the density constraint is called wirelength-driven global placement. This section mainly introduces the evaluation models of wire length and density.
 
-#### **线长（Wirelength）**
-电路单元的位置主要根据单元之间的连接关系来确定。连接关系在布局阶段是一种逻辑概念，到后续布线阶段由于进行了实际的走线才由逻辑概念变成物理概念。在物理设计中，用“网表”来形容电路单元之间所有的连接关系，而用“线网”来形容其中的一组连接关系，即网表包含许多个线网。
+#### **Wirelength**
+The positions of circuit cells are mainly determined based on the connection relationships between cells. The connection relationship is a logical concept in the placement stage and becomes a physical concept in the subsequent routing stage due to the actual routing. In physical design, the "netlist" is used to describe all the connection relationships between circuit cells, and a "net" is used to describe a group of connection relationships, that is, the netlist contains many nets.
 
-已知电路单元之间的连接关系，目前主要采用连线长度（线长）来度量布局质量。一种直觉是，具有连接关系的几个电路单元应该摆放在一起，从而减少布线长度而减少所需布线资源，从而缩短信号传播时间而提高芯片性能。由于一个网表存在多组线网，通过总线长这项指标可以综合度量布局结果。总线长是全局布局中最常用最重要的优化目标，对每组线网算得线长后加和即为总线长，因此关键是计算每组线网的线长。
+Given the connection relationships between circuit cells, the current main method to measure the placement quality is by using the wire length (wirelength). One intuition is that several circuit cells with connection relationships should be placed together to reduce the wiring length and the required wiring resources, thereby shortening the signal propagation time and improving the chip performance. Since a netlist has multiple nets, the placement result can be comprehensively measured by the total wire length. The total wire length is the most commonly used and important optimization objective in global placement. The wire length of each net is calculated and summed up to obtain the total wire length. Therefore, the key is to calculate the wire length of each net.
 
-然而布局阶段的连接关系仅是一种逻辑概念，单元之间尚未实际布线，因此需要对线网长度进行预估。布局阶段最为准确的线长模型是RSMT（Rectilinear Steiner Minimal Tree），RSMT的值等于通过插入斯坦纳点构建的线段长度之和，但是构建RSMT是NP-hard问题，因此不常用于布局迭代优化中。最常用的线长评估模型是半周长线长HPWL（Half-Perimeter Wirelength），其数学表示如下：
+However, the connection relationship in the placement stage is only a logical concept, and there is no actual routing between cells yet. Therefore, the length of the net needs to be estimated. The most accurate wire length model in the placement stage is RSMT (Rectilinear Steiner Minimal Tree), and the value of RSMT is equal to the sum of the lengths of the line segments constructed by inserting Steiner points. However, constructing RSMT is an NP-hard problem and is therefore not commonly used in placement iteration optimization. The most commonly used wire length evaluation model is Half-Perimeter Wirelength (HPWL), and its mathematical representation is as follows:
 $$  HPWL(x,y) =  \max x  - \min x + \max y - \min y$$
-其中$x,y$分别表示线网中单元引脚（pin）的$x$和$y$坐标值。
+where $x,y$ represent the $x$ and $y$ coordinate values of the cell pins in the net, respectively.
 
-HPWL计算简单，但是其无法对大于等于4pin的多pin线网进行准确的线长估计。据统计，尽管2pin和3pin的线网个数一般占比大于70%，但是其贡献的总线长却可能不高于50%。因此对多pin线网的线长进行高效准确的估计仍然是值得研究的问题。一项具有代表性的工作是FLUTE[1]，其通过构建的查找表，可以对9pin以内线网进行快速准确的RSMT估计。
+HPWL is simple to calculate, but it cannot accurately estimate the wire length of multi-pin nets with 4 pins or more. According to statistics, although the number of 2-pin and 3-pin nets generally accounts for more than 70%, their contribution to the total wire length may not exceed 50%. Therefore, efficient and accurate estimation of the wire length of multi-pin nets is still a problem worthy of study. A representative work is FLUTE[1], which can quickly and accurately estimate RSMT for nets within 9 pins through the constructed lookup table.
 
-#### **密度（Density）**
+#### **Density**
 
-单元密度是布局算法中主要的约束项。一方面，全局布局阶段通过权衡好线长减少和密度增加的关系来考虑可布线性。单元摆放越紧凑，线长越短，然而可能造成单元过于拥挤，单元引脚之间的布线空间遭到削减，从而损害可布线性。单元摆放也不能过于松散，这将带来线长的增加，消耗更多的布线资源，进一步损害可布线性。另一方面，在全局布局阶段分散单元，减小单元重叠，也可为后续合法化和详细布局阶段减轻优化的压力，进一步提高布局算法的整体执行效率。
+Cell density is a major constraint in the placement algorithm. On the one hand, in the global placement stage, the relationship between wire length reduction and density increase is balanced to consider routability. The more compact the cell placement, the shorter the wire length. However, it may cause cells to be overly crowded, reducing the routing space between cell pins and thereby damaging routability. Cell placement should not be too loose either, as this will increase the wire length, consume more routing resources, and further damage routability. On the other hand, distributing cells in the global placement stage and reducing cell overlap can also alleviate the optimization pressure in the subsequent legalization and detailed placement stages, further improving the overall execution efficiency of the placement algorithm.
 
-在全局布局中，通常将布局区域划分为若干个相同大小的矩形网格，通过限制每个网格内单元密度的最大值来考虑密度约束。对于每个网格的单元密度，其数学表示如下：
+In global placement, the layout area is usually divided into several rectangular grids of the same size, and the density constraint is considered by limiting the maximum cell density in each grid. For the cell density of each grid, its mathematical representation is as follows:
 $$ D_{b}(x,y) = \sum_{v\in V} P_x(b,v)P_y(b,v) $$
-其中，$b$表示每个网格，$v$表示任意的电路单元，$P_x$和$P_y$分别表示单元$v$和网格$v$重叠的水平和竖直长度。对于限制每个网格内允许单元摆放的最大面积，其数学表示如下：
+where $b$ represents each grid, $v$ represents any circuit cell, and $P_x$ and $P_y$ represent the horizontal and vertical overlap lengths of cell $v$ and grid $v$, respectively. For limiting the maximum allowable area for cell placement within each grid, its mathematical representation is as follows:
 $$ D_{b}(x,y) \leq \rho_t A_b $$
-其中，$\rho_t$表示网格密度阈值（取值不大于1），$A_b$表示每个网格的面积。
+where $\rho_t$ represents the grid density threshold (the value is not greater than 1), and $A_b$ represents the area of each grid.
 
-为计算网格的单元密度$D_b(x,y)$，重点是对网格和单元之间的重叠关系进行数学表示。文献[2]描述了两个模块之间的重叠函数。假设两个模块的左右边界分别为$[L1,R1]$和$[L2,R2]$，则模块之间的水平重叠值可以表示为
+To calculate the cell density $D_b(x,y)$ of the grid, the key is to mathematically represent the overlap relationship between the grid and the cell. Reference [2] describes the overlap function between two modules. Assuming the left and right boundaries of the two modules are $[L1,R1]$ and $[L2,R2]$ respectively, the horizontal overlap value between the modules can be expressed as
 $$f([L1,R1],[L2,R2]) =  |\min (R1,R2) - \max (L1,L2) |^{+} $$
-其中，
+where,
 $$
 [z]^{+}= \begin{cases}z & \text { if } z>0 \\ 0 & \text { if } z \leq 0\end{cases}
 $$
-同理可以表示出模块之间的竖直重叠值。假设两个模块分别记为$i,j$，模块的中心坐标记为$(x,y)$，模块的宽高记为$(w,h)$，则两个模块之间的重叠面积最终可以表示为
+Similarly, the vertical overlap value between the modules can be expressed. Assuming the two modules are denoted as $i,j$, the center coordinates of the modules are denoted as $(x,y)$, and the widths and heights of the modules are denoted as $(w,h)$, then the overlap area between the two modules can finally be expressed as
 $$
 \begin{aligned}
 \operatorname{Overlap}_{i j}\left(x_i, y_i, x_j, y_j\right) & =f\left(\left[x_i-\frac{\omega_i}{2}, x_i+\frac{\omega_i}{2}\right],\left[x_j-\frac{\omega_j}{2}, x_j+\frac{\omega_j}{2}\right]\right) \\
@@ -48,82 +48,82 @@ $$
 \end{aligned}
 $$
 
-### **优化方法**
-文献[2]介绍了全局布局的三类经典算法：基于划分的方法、模拟退火算法、解析法。文献[3]系统梳理了应用解析法求解全局布局的常见优化模型与算法。本节将简单介绍目前学术界的SOTA（state-of-the-art）方案，即解析法中的非线性优化方法，基本元素包括线长光滑、密度光滑、梯度优化。
+### **Optimization Methods**
+Reference [2] introduces three classic algorithms for global placement: partition-based methods, simulated annealing algorithms, and analytical methods. Reference [3] systematically sorts out the common optimization models and algorithms for solving global placement using analytical methods. This section will briefly introduce the current state-of-the-art (SOTA) solutions in academia, namely nonlinear optimization methods in analytical methods, the basic elements of which include wire length smoothing, density smoothing, and gradient optimization.
 
-#### **线长光滑**
+#### **Wire Length Smoothing**
 
-通常来说，全局布局的优化目标是最小化总线长。单个线网的评估模型常选用的是HPWL模型。然而HPWL不可微，为了能应用非线性优化的梯度求解，需要对HPWL模型进行近似光滑。常选用的线长光滑模型是 Weighted-Average(WA)[4]和Log-Sum-Ex(LSE)[5]，其数学表示分别如下：
+Generally speaking, the optimization goal of global placement is to minimize the total wire length. The commonly selected evaluation model for a single net is the HPWL model. However, HPWL is not differentiable. To apply the gradient solution of nonlinear optimization, an approximate smoothing of the HPWL model is required. Commonly selected wire length smoothing models are Weighted-Average (WA)[4] and Log-Sum-Ex (LSE)[5], and their mathematical representations are as follows:
 $$
 	W_{WA}(\mathbf{{e}})=\left(\frac{\sum_{i \in e} x_{i} \exp \left(x_{i} / \gamma\right)}{\sum_{i \in e} \exp \left(x_{i} / \gamma\right)}-\frac{\sum_{i \in e} x_{i} \exp \left(-x_{i} / \gamma\right)}{\sum_{i \in e} \exp \left(-x_{i} / \gamma\right)}\right)
 $$
 $$
 	W_{LSE}(\mathbf{{e}})=\gamma\left(\ln \sum_{i \in e} \exp \left(\frac{x_{i}}{\gamma}\right)+\ln \sum_{i \in e} \exp \left(\frac{-x_{i}}{\gamma}\right)\right)
 $$
-其中，$\gamma$是光滑系数，用于控制线长模型的精度。$\gamma$越大，线长模型越光滑但越不逼近HPWL。假设线网有2pin，坐标分别为$(0,0)$和$(x,0)$，这里给出水平方向的线长光滑模型可视化（竖直方向同理）。
+where $\gamma$ is the smoothing coefficient used to control the accuracy of the wire length model. The larger $\gamma$ is, the smoother the wire length model but the less it approximates HPWL. Assuming a net has 2 pins with coordinates $(0,0)$ and $(x,0)$, here is the visualization of the wire length smoothing model in the horizontal direction (the same for the vertical direction).
 
 <center><img src="/res/images/train/eda/wirelength.png" style="zoom:50%;" /></center>
-<center>图1 线长模型</center>
+<center>Figure 1 Wire Length Model</center>
 
 
-#### **密度光滑**
-全局布局中计算电路单元与网格重叠长度的函数$P_x(b,v)$和$P_y(b,v)$同样不可微。为了能应用非线性优化的梯度求解，同样需要对其进行近似光滑。经典的密度光滑模型是Bell-shape[6]和Sigmoid[7]。应用Bell-shape对$P_x(b,v)$的光滑近似表示如下（$P_x(b,v)$同理）：
+#### **Density Smoothing**
+The functions $P_x(b,v)$ and $P_y(b,v)$ for calculating the overlap length between circuit cells and grids in global placement are also not differentiable. To apply the gradient solution of nonlinear optimization, an approximate smoothing is also required. The classic density smoothing models are Bell-shape[6] and Sigmoid[7]. The smooth approximation of $P_x(b,v)$ using Bell-shape is expressed as follows (the same for $P_x(b,v)$):
 $$
 p_x(b, v)= \begin{cases}1-a d_x^2, & 0 \leq d_x \leq \frac{w_v}{2}+w_b \\ b\left(d_x-\frac{w_v}{2}-2 w_b\right)^2, & \frac{w_v}{2}+w_b \leq d_x \leq \frac{w_v}{2}+2 w_b \\ 0, & \frac{w_v}{2}+2 w_b \leq d_x\end{cases}
 $$
-其中，$d_x$是电路单元与网格的中心点水平距离，$a$和$b$分别表示如下：
+where $d_x$ is the horizontal distance between the center point of the circuit cell and the grid, and $a$ and $b$ are expressed as follows:
 $$
 \begin{aligned}
 a & =\frac{4}{\left(w_v+2 w_b\right)\left(w_v+4 w_b\right)} \\
 b & =\frac{2}{w_b\left(w_v+4 w_b\right)}
 \end{aligned}
 $$
-假设网格宽度为$2$，电路单元宽度为$1$，对原始水平重叠函数$P_x(b,v)$和应用Bell-shape、Sigmoid光滑后的函数进行可视化。可知，相比Bell-shape函数，Sigmoid光滑化可以给出更准确的近似。
+Assuming the grid width is $2$ and the circuit cell width is $1$, visualize the original horizontal overlap function $P_x(b,v)$ and the functions after applying Bell-shape and Sigmoid smoothing. It can be seen that compared to the Bell-shape function, Sigmoid smoothing can provide a more accurate approximation.
 
 <center><img src="/res/images/train/eda/density.png" style="zoom:50%;" /></center>
-<center>图2 密度模型</center>
+<center>Figure 2 Density Model</center>
 
 
-#### **梯度优化**
+#### **Gradient Optimization**
 
-光滑后的线长模型和密度模型随后通过拉格朗日罚方法或松弛整合为一个无约束的非线性优化函数，可表示如下：
+The smoothed wire length model and density model are then integrated into an unconstrained nonlinear optimization function through the Lagrange penalty method or relaxation, which can be expressed as follows:
 $$
 	\min \quad {W}(\mathbf{x}, \mathbf{y})+\lambda \sum_{b}\left({D}_{b}(\mathbf{x}, \mathbf{y})-M_{b}\right)^{2}
 $$
-其中，${W}(\mathbf{x}, \mathbf{y})$是光滑后的总线长，$D_{b}(\mathbf{x}, \mathbf{y})$是光滑后的网格密度， $M_{b} = \rho_t A_b$指每个网格内允许电路单元摆放的最大面积。随后，通过对该函数应用梯度优化算法即可求解出布局结果。
+where ${W}(\mathbf{x}, \mathbf{y})$ is the smoothed total wire length, $D_{b}(\mathbf{x}, \mathbf{y})$ is the smoothed grid density, $M_{b} = \rho_t A_b$ refers to the maximum allowable area for circuit cell placement within each grid. Subsequently, the placement result can be solved by applying the gradient optimization algorithm to this function.
 
-常用的梯度优化算法是Conjugate Gradient（CG）和Nesterov算法。CG算法在执行线搜索时较为耗时，其步长也不够精确，搜索方向在迭代过程中很容易失去共轭性，这些因素导致CG算法的性能较差。ePlace[8]首次利用 Nesterov 算法结合 Lipschitz 常数预测的方法，获得了比 CG 算法更好的布局质量和更短的求解时间。目前全局布局的主流梯度优化方法即是采用ePlace这套方法。
+Commonly used gradient optimization algorithms are Conjugate Gradient (CG) and Nesterov algorithms. The CG algorithm is time-consuming when performing line search, its step size is not precise enough, and the search direction is prone to losing conjugacy during the iteration process, which leads to poor performance of the CG algorithm. ePlace[8] was the first to use the Nesterov algorithm combined with the Lipschitz constant prediction method, achieving better placement quality and shorter solution time than the CG algorithm. Currently, the mainstream gradient optimization method for global placement is to adopt the method of ePlace.
 
-### **相关工具/资料**
+### **Related Tools/Materials**
 
 - **DREAMPlace**
-DREAMPlace[9]是目前学术界布局工具的SOTA解决方案。其特点是将非线性优化方法的求解过程类比为深度学习训练问题，进而可以使用深度学习工具包开发，以实现灵活性和效率。该工具在CPU和GPU上均可运行，采用GPU加速方案可以实现对布局的高效快速求解。DREAMPlace目前已迭代到4.0版本，支持线长驱动（1.0）、可布线性驱动（2.2.0）、时序驱动（4.0）等多种特性的全局布局方案。
+DREAMPlace[9] is the current SOTA solution for placement tools in academia. Its characteristic is that the solution process of the nonlinear optimization method is analogized to the training problem of deep learning, and thus can be developed using deep learning toolkits to achieve flexibility and efficiency. This tool can run on both CPU and GPU, and the GPU acceleration solution can achieve efficient and fast placement. DREAMPlace has currently been iterated to version 4.0 and supports global placement schemes with various characteristics such as wirelength-driven (1.0), routability-driven (2.2.0), and timing-driven (4.0).
 
-代码仓库：https://github.com/limbo018/DREAMPlace.git
+Code Repository: https://github.com/limbo018/DREAMPlace.git
 
 - **iEDA-iPL**
-iPL是iEDA[10]开源平台上的一款布局工具。作为iEDA的一部分，iPL从iEDA的数据库中读取数据到数据访问层，支持常见的工业标准文件，如.v、.DEF、.LEF、.lib等，并支持主要操作包括初始布局、全局布局、全局布局后、合法化、详细布局、缓冲插入、填充插入和检查器。它封装了常见的实用类，如日志、报告和实用程序，以及数学操作库和性能库，为用户提供了TCL、Python和C++的API。
+iPL is a placement tool on the iEDA[10] open-source platform. As part of iEDA, iPL reads data from the iEDA database into the data access layer, supports common industrial standard files such as.v,.DEF,.LEF,.lib, etc., and supports main operations including initial placement, global placement, after global placement, legalization, detailed placement, buffer insertion, filler insertion, and checker. It encapsulates common utility classes such as logs, reports, and utilities, as well as mathematical operation libraries and performance libraries, providing users with APIs in TCL, Python, and C++.
 
-iPL基于iEDA统一设计的数字后端全流程框架开发，代码实现规范，用户友好，同时便于基于iEDA平台实现各类功能扩展，十分具有潜力。目前iPL同样支持线长驱动、可布线性驱动、时序驱动等多种特性的全局布局方法。
+Based on the uniformly designed digital backend full-process framework of iEDA, iPL has standardized code implementation, is user-friendly, and is convenient for implementing various functional expansions based on the iEDA platform, and is very promising. Currently, iPL also supports global placement methods with various characteristics such as wirelength-driven, routability-driven, and timing-driven.
 
-代码仓库：https://gitee.com/oscc-project/iEDA.git
+Code Repository: https://gitee.com/oscc-project/iEDA.git
 
-视频介绍：
-- [2024年EDA人才培养计划：布局最新介绍](https://www.bilibili.com/video/BV1Yx4y147oP/?share_source=copy_web&vd_source=6815ab875317a5897f502233fc7d69c1)
-- [iEDA-Tutorial-第二期：iEDA-iPL 问题介绍、架构、使用与规划](https://www.bilibili.com/video/BV1GN411h7b3/?share_source=copy_web&vd_source=6815ab875317a5897f502233fc7d69c1)
+Video Introduction:
+- [2024 EDA Talent Training Program: Latest Introduction to Placement](https://www.bilibili.com/video/BV1Yx4y147oP/?share_source=copy_web&vd_source=6815ab875317a5897f502233fc7d69c1)
+- [iEDA-Tutorial - Issue Introduction, Architecture, Use and Planning of iEDA-iPL in the Second Phase](https://www.bilibili.com/video/BV1GN411h7b3/?share_source=copy_web&vd_source=6815ab875317a5897f502233fc7d69c1)
 
-参考阅读：
-- [VLSI全局布局基础介绍](https://zhuanlan.zhihu.com/p/712633359)
-- [设计VLSI EDA(7): 布局算法怎么实现芯片“核舟记”](https://zhuanlan.zhihu.com/p/578525808)
+Reference Reading:
+- [Introduction to the Basics of VLSI Global Placement](https://zhuanlan.zhihu.com/p/712633359)
+- [Designing VLSI EDA (7): How the Placement Algorithm Achieves the "Miniature Boat in a Nucleus" of the Chip](https://zhuanlan.zhihu.com/p/578525808)
 
 
 
-### 参考文献
+### References
 [1] Chu, Chris. "FLUTE: Fast lookup table based wirelength estimation technique." In IEEE/ACM International Conference on Computer Aided Design, 2004. ICCAD-2004., pp. 696-701. IEEE, 2004.
 
 [2] Wang, Laung-Terng, Yao-Wen Chang, and Kwang-Ting Tim Cheng, eds. Electronic design automation: synthesis, verification, and test. Morgan Kaufmann, 2009.
 
-[3] 黄志鹏, 李兴权, 朱文兴. "超大规模集成电路布局的优化模型与算法." 运筹学学报 25, no. 3 (2021): 15-36.
+[3] Huang Zhipeng, Li Xingquan, Zhu Wenxing. "Optimization Models and Algorithms for VLSI Layout." Journal of Operations Research 25, no. 3 (2021): 15-36.
 
 [4] Hsu, Meng-Kai, Yao-Wen Chang, and Valeriy Balabanov. "TSV-aware analytical placement for 3D IC designs." In Proceedings of the 48th Design Automation Conference, pp. 664-669. 2011.
 
@@ -137,4 +137,4 @@ iPL基于iEDA统一设计的数字后端全流程框架开发，代码实现规�
 
 [9] Lin, Yibo, Shounak Dhar, Wuxi Li, Haoxing Ren, Brucek Khailany, and David Z. Pan. "Dreamplace: Deep learning toolkit-enabled gpu acceleration for modern vlsi placement." In Proceedings of the 56th Annual Design Automation Conference 2019, pp. 1-6. 2019.
 
-[10] Li X, Tao S, Huang Z, et al. iEDA: An open-source intelligent physical implementation toolkit and library. arXiv preprint arXiv:2308.01857, 2023.
+[10] Li Xingquan, Tao Simin, Huang Zengrong, et al. iEDA: An open-source infrastructure of EDA. in Proc. of ASPDAC, 2024.

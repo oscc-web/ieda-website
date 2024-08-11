@@ -1,4 +1,4 @@
 ---
-title: "算法设计类"
+title: "Algorithm"
 index: false
 ---

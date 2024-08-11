@@ -1,10 +1,8 @@
 ---
-title: "2023年openDACS开源EDA与芯片大赛-赛题一"
+title: "2023 openDACS Open EDA and Chip Design Competition-Topic 1"
 order: 1
 ---
-
 ## 赛题1：功能向量的时序电路故障模拟器
-
 
 **主办单位：** 工业和信息化部、江苏省人民政府、湖南省人民政府
 
@@ -86,7 +84,6 @@ name：数组形式，包含多个相同逻辑功能但驱动能力不同的单�
 signals：包含三种类型的信号，input，output和wire；
 sim_primitives：一个或多个自定义单元，每个自定义单元包括两个属性，sim_type和connection，分别表示单元的类型和连接关系，在connection中第一个信号是输出，其余是输入。
 ```
-
 
 ![](/res/images/activities/contest/openDACS-23-t1/fig4.png)
 
@@ -207,8 +204,6 @@ Change Dump）文件格式进行表示，VCD文件是标准波形文件，在数
 
 > [9] IEEE Standard Verilog Hardware Description Language, in IEEE Std 1364-2001, vol., no., pp.1-792, 28 Sept. 2001.
 
-
-
 ## 附1：10个赛题总体介绍
 
 本赛项包含五个方向共计10道赛题，分别如下：
@@ -260,11 +255,9 @@ Change Dump）文件格式进行表示，VCD文件是标准波形文件，在数
 
 请参赛队伍加入本赛项微信交流群“openDACS开源EDA与芯片大赛”，微信群二维码：
 
-
 <center>
 <img src="/res/images/activities/contest/openDACS-23-t2/fig7-1.png" alt="6" style="zoom:90%;" title ="openDACS开源EDA与芯片大赛" /></center>
 <center>openDACS开源EDA与芯片大赛</center>
-
 
 <center>
 <img src="/res/images/activities/contest/openDACS-23-t2/fig7-2.png" alt="6" style="zoom:110%;" title ="开源iEDA社区群" /></center>

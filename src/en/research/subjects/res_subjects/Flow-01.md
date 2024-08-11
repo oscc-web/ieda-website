@@ -1,20 +1,20 @@
 ---
-title: "Flow-01：Netlist to GDS"
+title: "Flow-01: Netlist to GDS"
 order: 1
 
 ---
 
-### **任务描述**
-评测Netlist to GDS
+### **Task Description**
+Evaluate Netlist to GDS
 
-## 评测用例
+## Evaluation Examples
 
-## 评测指标
+## Evaluation Metrics
 Timing
 Power
-\#DRC
+#DRC
 
-## 评测排名
+## Evaluation Ranking
 Innovus
 ICC2
 iEDA

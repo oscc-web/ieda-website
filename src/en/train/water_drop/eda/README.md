@@ -1,4 +1,4 @@
 ---
-title: "EDA学习"
+title: "EDA Course"
 index: false
 ---

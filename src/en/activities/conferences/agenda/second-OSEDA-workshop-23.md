@@ -1,128 +1,133 @@
 ---
-title: "2023年第二届OSEDA研讨会议程"
+title: "Agenda of the 2nd OSEDA Symposium in 2023"
 order: 5
 ---
 
-开源EDA论坛致力于研发EDA技术和推广开源EDA等开源芯片开发工具在RISC-V社区的使用、推动国内外开源EDA开发者和RISC-V芯片设计者之间的交流、促进开源EDA技术社区的发展壮大，旨在为国内外开源EDA开发者和使用者提供交流与互动的平台，吸引更多的开发人员加入开源EDA社区，为开源项目贡献代码。
+The Open Source EDA Forum is dedicated to researching and developing EDA technologies, promoting the use of open source EDA and other open source chip development tools in the RISC-V community, facilitating communication between domestic and foreign open source EDA developers and RISC-V chip designers, and promoting the growth and development of the open source EDA technology community. It aims to provide a platform for communication and interaction for domestic and foreign open source EDA developers and users, attract more developers to join the open source EDA community, and contribute code to open source projects.
 
-**论坛时间地点：**
+**Forum Time and Location**:
 
-论坛时间：2023年8月24日09：00-12：00
+Forum Time: 09:00 - 12:00, August 24, 2023
 
-论坛地点：北京市海淀区香格里拉饭店3层珍珠厅
+Forum Location: Pearl Hall, 3rd Floor, Shangri-La Hotel, Haidian District, Beijing
 
-腾讯会议：455-601-023
+Tencent Meeting: 455 - 601 - 023
 
-B站直播地址：[https://live.bilibili.com/30593897](https://live.bilibili.com/30593897)
+Bilibili Live Address: [https://live.bilibili.com/30593897](https://live.bilibili.com/30593897)
 
-**论坛联系人：**
+**Forum Contacts**:
 
-李兴权 13515004501 邮箱：[lixq01@pcl.ac.cn](mailto:lixq01@pcl.ac.cn)
+Li Xingquan 13515004501 Email: [lixq01@pcl.ac.cn](mailto:lixq01@pcl.ac.cn)
 
-叶欣雨 19805180398 邮箱：[yxyu613@163.com](mailto:yxyu613@163.com)
+Ye Xinyu 19805180398 Email: [yxyu613@163.com](mailto:yxyu613@163.com)
 
-**论坛日程：**
+**Forum Agenda**:
+<!-- 
+<img src="/res/images/activities/conference/second-OSEDA/fig1.png" alt="6" style="zoom:70%;" /> -->
 
-<img src="/res/images/activities/conference/second-OSEDA/fig1.png" alt="6" style="zoom:70%;" />
+| Report Time | Report Title                                                                 | Report Guest                              | Host                                  |
+| ----------- | ----------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
+| Morning Agenda |                                                                               |                                          |                                       |
+| 9:00 - 9:05  | Opening Introduction                                                          | Li Xingquan, Beijing Open Source Chip Institute / Peng Cheng Laboratory | Li Xingquan, Beijing Open Source Chip Institute / Peng Cheng Laboratory |
+| 9:05 - 9:25  | Machine Learning Assisted SPICE Circuit Simulation Solution Technology         | Jin Zhou, China University of Petroleum    |                                       |
+| 9:25 - 9:45  | Graph Neural Network Enabled High-Level Synthesis Power Modeling and Design Optimization | Lin Zhe, Sun Yat-sen University           |                                       |
+| 9:45 - 10:05 | Machine Learning Based Microarchitecture Power Modeling and Design Space Exploration | Zhai Jianwang, Beijing University of Posts and Telecommunications  |                                       |
+| 10:05 - 10:25 | Preliminary Exploration of Chip Design and Verification Based on AIGC              | Lai Xiaozheng, South China University of Technology |                                       |
+| 10:25 - 10:45 | Tea Break                                                                     |                                          |                                       |
+| 10:45 - 11:00 | AI Framework for EDA and IC Design                                             | Huang Zhipeng, Peng Cheng Laboratory      | Li Xingquan, Beijing Open Source Chip Institute / Peng Cheng Laboratory |
+| 11:00 - 11:15 | Practice of AI-Assisted Chip Automatic Generation                               | Chang Kaiyan, Li Cangyuan, Institute of Computing Technology, Chinese Academy of Sciences |                                       |
+| 11:15 - 11:30 | CircuitNet: An Open-Source Dataset for Machine Learning Tasks in Chip Design  | Jiang Xun, Chai Zhuomin, Peking University |                                       |
+| 11:30 - 11:45 | Implementation and Latest Progress of High-Performance Multithreaded ZVC Hardware Compiler Based on MLIR | Xu Buyun, Zhaosong Technology (Wuhan) Co., Ltd. |                                       |
+| 11:45 - 12:00 | A modified Newton-based                                                       |                                          |                                       |
 
+**Report and Guest Introduction**:
 
-| 报告时间    | 报告名称                                                                      | 报告嘉宾                                | 主持人                               |
-| ----------- | ----------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
-| 上午议程    |                                                                               |                                         |                                      |
-| 9:00-9:05   | 开场介绍                                                                      | 李兴权 北京开源芯片研究院/鹏城实验室    | 李兴权 北京开源芯片研究院/鹏城实验室 |
-| 9:05-9:25   | 机器学习辅助的SPICE电路仿真 求解技术                                          | 金洲 中国石油大学                       |                                      |
-| 9:25-9:45   | 图神经网络赋能高层次综合功耗建模及设计优化                                    | 林哲 中山大学                           |                                      |
-| 9:45-10:05  | 基于机器学习的微架构功耗建模及设计空间探索                                    | 翟建旺 北京邮电大学                     |                                      |
-| 10:05-10:25 | 基于AIGC的芯片设计与验证初探                                                  | 赖晓铮 华南理工大学                     |                                      |
-| 10:25-10:45 | 茶歇                                                                          |                                         |                                      |
-| 10:45-11:00 | 面向EDA和IC设计的AI框架                                                       | 黄志鹏 鹏城实验室                       | 李兴权 北京开源芯片研究院/鹏城实验室 |
-| 11:00-11:15 | AI辅助芯片自动化生成的实践                                                    | 常开颜、李苍源 中国科学院计算技术研究所 |                                      |
-| 11:15-11:30 | CircuitNet: An Open-Source Dataset for Machine Learning Tasks in Chip Design | 江循、柴卓珉 北京大学                   |                                      |
-| 11:30-11:45 | 基于MLIR的高性能多线程ZVC硬件编译器实现及最新进展                             | 徐步云 兆松科技（武汉）有限公司         |                                      |
-| 11:45-12:00 | A modified Newton-based                                                       |                                         |                                      |
+**Report 1: Machine Learning Assisted SPICE Circuit Simulation Solution Technology**
 
-**报告和嘉宾介绍：**
+**Report Abstract**
 
-**报告1：机器学习辅助的SPICE电路仿真求解技术**
+One of the key challenges in the integrated circuit design process is the repeated execution of computationally expensive SPICE circuit simulations when it comes to highly complex chip testing or verification. The pseudo-transient analysis method has been proven to be one of the most promising SPICE simulation solution methods. However, the computational efficiency of this method is greatly limited by the inserted pseudo-device parameters and the simulation time step control. This report will introduce a Bayesian optimization and deep reinforcement learning accelerated pseudo-transient analysis method, which can significantly accelerate the simulation and improve the convergence performance without introducing additional errors. This method is equipped with advanced machine learning techniques, such as deep learning, Gaussian process, Bayesian optimization, non-stationary monotonic transformation, variational inference through reparameterization, deep reinforcement learning, common sample pool, and priority sampling. In addition, this report will also introduce a random forest based circuit matrix sparse LU decomposition acceleration technology, which can effectively accelerate the circuit matrix solution speed through the optimization of the density-aware adaptive matrix multiplication algorithm.
 
-**报告摘要**
+**Speaker Profile**
 
-集成电路设计流程中的一大关键挑战是在涉及高度复杂的芯片测试或验证时，需反复执行计算成本高昂的SPICE电路仿真。伪瞬态分析方法已被证明是最具前途的SPICE仿真求解方法之一，然而该方法的计算效率极大的受限于插入的伪器件参数和仿真时间步长控制的影响，本报告将介绍一种贝叶斯优化和深度强化学习加速的伪瞬态分析方法，可显著加速仿真并改善收敛性能而无需引入额外的误差，该方法配备了先进的机器学习技术，如深度学习、高斯过程、贝叶斯优化、非平稳单调变换、通过重新参数化的变分推断、深度强化学习、公共样本池以及优先级采样等。此外，本报告还将介绍一种基于随机森林的电路矩阵稀疏LU分解加速技术，通过稠密度感知的自适应矩阵乘算法优化，可有效加速电路矩阵求解速度。
+Jin Zhou, an associate professor at China University of Petroleum (Beijing), was selected into the Beijing Association for Science and Technology Youth Talent Support Project and the school's young top talent. He received his bachelor's degree from the Department of Computer Science and Technology, Nanjing University in 2010, and his master's and doctoral degrees from Waseda University, Japan in 2012 and 2015, respectively. He was a postdoctoral fellow and GCOE researcher at the Research Center of Waseda University. His research direction is integrated circuit design automation (EDA), especially focusing on AI and hardware accelerated VLSI circuit simulation and verification technology, and the software and hardware co-design for in-memory computing. He has published more than 40 academic papers in important international conferences and journals such as DAC, SC, PPoPP, TCAD, TODAES, TCAS-II, ASP-DAC, etc. He was nominated for the best paper at SC'23, received the honorary paper at ISEDA'23, and the IEEJ Kyushu Branch Director Award of the Institute of Electrical Engineers of Japan. His research results have been applied in domestic EDA commercial simulation software and significantly accelerated the verification of actual circuits in the industry.
 
-**演讲者简介**
-金洲，中国石油大学（北京）副教授，入选北京市科协青年人才托举工程、校青年拔尖人才。2010年于南京大学计算机科学与技术系获学士学位，2012年和2015年分别于日本早稻田大学获硕士、博士学位，早稻田大学研究中心博士后、GCOE研究员。研究方向为集成电路设计自动化（EDA），尤其关注AI与硬件加速的VLSI电路仿真验证技术、面向存算一体的科学计算软硬件协同设计等。已在DAC、SC、PPoPP、TCAD、TODAES、TCAS-II、ASP-DAC等重要国际会议和期刊上发表学术论文40余篇，获SC‘23最佳论文提名、ISEDA‘23 荣誉论文、日本电气学会IEEJ九州支部长奖等，研究成果已应用于国产EDA商业仿真软件中，并显著加速工业界实际电路的验证。
+**Report 2: Graph Neural Network Enabled High-Level Synthesis Power Modeling and Design Optimization**
 
-**报告2：图神经网络赋能高层次综合功耗建模及设计优化**
+**Report Abstract**
 
-**报告摘要**
+In recent years, semiconductor manufacturing technology has approached the physical limit, and Moore's Law has gradually failed. The dark silicon effect problem has become prominent. These challenges have made the performance improvement of chips tend to moderate. To continuously improve the quality of results (QoR) of hardware accelerators, new technical means need to be studied. This report focuses on FPGA accelerator design and presents the following contents: 1. Using a customized heterogeneous graph neural network (GNN) to achieve power modeling for high-level synthesis (HLS), and effectively reducing the time overhead required for accelerator energy efficiency prediction through early, fast, and accurate power prediction; 2. Large-scale multi-objective design space exploration based on HLS, and significantly improving the accelerator development efficiency of HLS design methods by automatically searching for Pareto optimal solutions through algorithms.
 
-近年来，半导体制造技术接近物理极限，摩尔定律逐渐失效，暗硅效应问题凸显。这些挑战使得芯片的性能提升趋于缓和。为持续提高硬件加速器的结果质量（QoR），需要研究新的技术手段。本次报告聚焦FPGA加速器设计，讲述以下内容：1.利用定制的异构图神经网络（GNN）实现面向高层次综合（HLS）的功耗建模，通过早期、快速、准确的功耗预测，有效降低加速器能效预测所需的时间开销；2.基于HLS的大规模多目标设计空间探索，通过算法自动搜寻帕累托最优解，大幅提升HLS设计方法的加速器开发效率。
+**Speaker Profile**
 
-**演讲者简介**
-林哲，中山大学集成电路学院“百人计划”助理教授，深圳市海外高层次人才（C类）称号获得者。林哲于香港科技大学取得博士学位，曾于鹏城实验室先后担任助理研究员（2020.03-2022.12）、副研究员（2023.01-2023.03）。其主要研究方向包括电子设计自动化（EDA）、可重构计算、异构计算及软硬件协同设计等，在近年内累计发表高水平学术论文10余篇，以第一作者获得国际会议DATE及FCCM的最佳论文奖提名。参与鹏城实验室国家级科研项目、香港大学教育资助委员会项目、香港科技大学-工业界合作项目等集成电路设计及自动化研究领域的多项科研项目。
+Lin Zhe, an assistant professor in the School of Integrated Circuits, Sun Yat-sen University, and a recipient of the Shenzhen Overseas High-level Talent (Category C) title. Lin Zhe obtained his Ph.D. from the Hong Kong University of Science and Technology and served as an assistant researcher (2020.03 - 2022.12) and an associate researcher (2023.01 - 2023.03) at Peng Cheng Laboratory successively. His main research directions include electronic design automation (EDA), reconfigurable computing, heterogeneous computing, and software and hardware co-design. In recent years, he has accumulated more than 10 high-level academic papers and was nominated for the best paper awards at international conferences DATE and FCCM as the first author. He participated in many scientific research projects in the field of integrated circuit design and automation, including national-level scientific research projects of Peng Cheng Laboratory, projects funded by the University Grants Committee of Hong Kong, and industry-university cooperation projects of the Hong Kong University of Science and Technology.
 
-**报告3：基于机器学习的微架构功耗建模及设计空间探索**
+**Report 3: Machine Learning Based Microarchitecture Power Modeling and Design Space Exploration**
 
-**报告摘要**
+**Report Abstract**
 
-随着集成电路发展至后摩尔时代，半导体工艺演进所带来的红利愈发有限，而现代处理器架构复杂、设计空间庞大，功耗等问题愈发突出。如何以较低代价构建精确鲁棒的功耗模型，并在庞大的设计空间内进行自动探索和优化已成为业界关注的核心问题。本报告从处理器的微架构设计方法和工具入手，利用机器学习技术求解微架构功耗建模和设计空间探索问题，提出了一系列精确高效的建模和探索方法，并在RISC-V处理器上进行了评估。
+With the development of integrated circuits to the post-Moore era, the dividends brought by the evolution of semiconductor processes have become increasingly limited. Modern processor architectures are complex and the design space is huge, and power consumption and other issues have become increasingly prominent. How to construct an accurate and robust power consumption model at a lower cost and conduct automatic exploration and optimization in the huge design space has become a core issue of concern in the industry. This report starts with the microarchitecture design methods and tools of the processor, uses machine learning technology to solve the problems of microarchitecture power modeling and design space exploration, and proposes a series of accurate and efficient modeling and exploration methods, and evaluates them on the RISC-V processor.
 
-**演讲者简介**
-翟建旺，北京邮电大学特聘副研究员，曾参与国家自然科学基金重点项目、重点研发计划等课题。主要研究方向为电子设计自动化（EDA），包括微架构功耗建模、设计空间探索以及后端物理设计等，在TCAD、TCAS-II、ICCAD、ASP-DAC等期刊会议上发表多篇论文，曾荣获ICCAD 2021最佳论文奖，以及ASP-DAC 2023最佳论文奖提名。
+**Speaker Profile**
 
-**报告4：基于AIGC的芯片设计与验证初探**
+Zhai Jianwang, a specially-appointed associate researcher at Beijing University of Posts and Telecommunications, has participated in key projects of the National Natural Science Foundation of China, key research and development plans and other projects. His main research direction is electronic design automation (EDA), including microarchitecture power modeling, design space exploration, and back-end physical design. He has published many papers in conferences and journals such as TCAD, TCAS-II, ICCAD, ASP-DAC. He won the best paper award at ICCAD 2021 and was nominated for the best paper award at ASP-DAC 2023.
 
-**报告摘要**
+**Report 4: Preliminary Exploration of Chip Design and Verification Based on AIGC**
 
-AIGC时代的到来，使得芯片设计与验证的流程也开始逐渐引入LLM辅助设计功能。用户通过提示词（prompt）引导LLM完成硬件描述，同时还需要DSA中间层来描述ISA架构。通过“设计-验证”迭代实现提升芯片从设计到验证的整体效率。
+**Report Abstract**
 
-**演讲者简介**
-赖晓铮，华南理工大学计算机科学与工程学院，副教授，CCF会员，华为“智能基座”课程合作讲师。开源图形化EDA项目Digiblock作者。研究方向： (1) 芯片敏捷设计，开源EDA工具链；(2) 基于RISC-V架构的计算机体系结构研究；(3) 嵌入式系统、物联网及RFID技术；主持国家863计划重大科技专项课题1项，国家自然科学基金1项，广东省科技计划项目3项，广东省自然科学基金1项，产学研芯片设计和验证项目2项。2020年指导学生获全国大学生集成电路创新创业大赛总决赛二等奖。
+The advent of the AIGC era has led to the gradual introduction of LLM-assisted design functions in the process of chip design and verification. Users guide the LLM to complete the hardware description through prompts (prompt), and at the same time, a DSA intermediate layer is required to describe the ISA architecture. The overall efficiency of the chip from design to verification is improved through the "design - verification" iteration.
 
-**报告5：面向EDA和IC设计的AI框架**
+**Speaker Profile**
 
-**报告摘要**
+Lai Xiaozheng, an associate professor at the School of Computer Science and Engineering, South China University of Technology, a member of CCF, and a course cooperation lecturer for Huawei's "Intelligent Base". The author of the open source graphical EDA project Digiblock. Research direction: (1) Chip agile design, open source EDA toolchain; (2) Computer architecture research based on RISC-V architecture; (3) Embedded systems, Internet of Things and RFID technology; He presided over 1 major project of the National 863 Program, 1 National Natural Science Foundation project, 3 Guangdong Provincial Science and Technology Planning Projects, 1 Guangdong Provincial Natural Science Foundation project, and 2 industry-university-research chip design and verification projects. In 2020, he guided students to win the second prize in the finals of the National College Students' Integrated Circuit Innovation and Entrepreneurship Competition.
 
-随着摩尔定律的发展，集成电路（IC）和电子设计自动化（EDA）设计面临更多的挑战。另外，人工智能技术（AI）在各行业方向展现了巨大的应用潜力。在IC和EDA方向，也有很多优秀的工作展现了AI+EDA的可能性，AI能够高效地处理和分析设计数据，提供预测和优化建议，从而提升设计效率和质量。但就目前而言，AI模型与EDA工具的交互尚处于初步阶段，为了能够充分发挥AI在EDA上的效用，设计AI+EDA基础框架十分必要，有助于快速探索AI辅助芯片设计的有效方法，并反馈回工具中，同时能让更多人参与到AI+EDA的技术突破中。
+**Report 5: AI Framework for EDA and IC Design**
 
-**演讲者简介**
-黄志鹏，现为鹏城实验室博士后，主要研究方向为超大规模集成电路物理设计。曾在DAC、ICCAD、TCAD等EDA领域主要会议和期刊上发表论文，于2018、2022年获得ICCAD@CAD Contest第一名。
+**Report Abstract**
 
-**报告6：AI辅助芯片自动化生成的实践**
+With the development of Moore's Law, integrated circuits (IC) and electronic design automation (EDA) designs face more challenges. In addition, artificial intelligence technology (AI) has shown great application potential in various industries. In the direction of IC and EDA, many excellent works have also shown the possibility of AI + EDA. AI can efficiently process and analyze design data, provide predictions and optimization suggestions, thereby improving design efficiency and quality. However, at present, the interaction between AI models and EDA tools is still in the initial stage. In order to give full play to the effectiveness of AI in EDA, it is very necessary to design an AI + EDA basic framework, which is helpful to quickly explore effective methods of AI-assisted chip design and feed back to the tools, and at the same time allow more people to participate in the technological breakthrough of AI + EDA.
 
-**报告摘要**
+**Speaker Profile**
 
-像ChatGPT这样的大语言模型展现出前所未有的智能，它也表现出在自然语言交互方面协助硬件工程师。为了评估大语言模型辅助硬件设计流程的潜力，本研究试图展示一个自动化的设计环境，利用大语言模型从自然语言规范生成硬件逻辑设计。为了实现更具可访问性和高效性的芯片开发流程，我们提出了一种基于大语言模型的可扩展的四阶段设计，无需重新训练或微调。首先，为大语言模型生成提示，大语言模型随后会生成初步的Verilog程序。第二，输出管理器会对这些程序进行纠正和优化，然后将它们收集到最终的设计空间中。最终，输出管理器将搜索这个空间，选择符合目标指标的最佳设计。我们的实验揭示了大语言模型是否能够为某些设计规范生成正确且完备的硬件逻辑设计。结果显示，与之前的工作和单独的大语言模型相比，这种方法提高了可编程性和可控性，并展示了更广泛的设计优化空间。
+Huang Zhipeng is currently a postdoctoral fellow at Peng Cheng Laboratory. His main research direction is very-large-scale integrated circuit physical design. He has published papers in major conferences and journals in the EDA field such as DAC, ICCAD, and TCAD, and won the first place in ICCAD@CAD Contest in 2018 and 2022.
 
-**演讲者简介**
-常开颜，本科毕业于电子科技大学，目前在中科院计算所攻读博士学位，师从王颖副研究员、李华伟研究员。主要研究领域为AI辅助计算机自动化设计、编译器和编程语言。
+**Report 6: Practice of AI-Assisted Chip Automatic Generation**
 
-**报告7：CircuitNet: An Open-Source Dataset for Machine Learning Tasks in Chip Design**
+**Report Abstract**
 
-**报告摘要**
+Large language models like ChatGPT have shown unprecedented intelligence and also shown their ability to assist hardware engineers in natural language interaction. To evaluate the potential of large language models to assist the hardware design process, this study attempts to present an automated design environment that uses large language models to generate hardware logic designs from natural language specifications. To achieve a more accessible and efficient chip development process, we propose a scalable four-stage design based on large language models without the need for retraining or fine-tuning. First, prompts are generated for the large language model, which then generates the initial Verilog program. Second, the output manager corrects and optimizes these programs and then collects them into the final design space. Finally, the output manager will search this space and select the best design that meets the target metrics. Our experiments reveal whether large language models can generate correct and complete hardware logic designs for certain design specifications. The results show that this method improves programmability and controllability compared to previous works and individual large language models, and shows a wider design optimization space.
+
+**Speaker Profile**
+
+Chang Kaiyan, graduated from the University of Electronic Science and Technology of China with a bachelor's degree and is currently pursuing a doctoral degree at the Institute of Computing Technology, Chinese Academy of Sciences, under the supervision of Associate Researcher Wang Ying and Researcher Li Huawei. His main research fields are AI-assisted computer automatic design, compilers, and programming languages.
+
+**Report 7: CircuitNet: An Open-Source Dataset for Machine Learning Tasks in Chip Design**
+
+**Report Abstract**
 
 AI for EDA is a booming direction to apply AI techniques in chip design, including cross-stage modeling, design space search, design optimization, and so on. However, the lack of large public datasets in practice limits the scope of related researches and raises a high bar for new researchers. Therefore, in this talk, we propose an open-source dataset, CircuitNet, for MLCAD applications. CircuitNet contains over 20K samples from various open-source CPU, GPU, and AI accelerator designs with commercial 28nm & 14nm PDKs. The dataset supports various tasks like timing, power, congestion, and IR-drop prediction. We also extract various features to support both image-based learning (e.g., ANN and CNN) and graph learning (e.g., GNN). We believe this dataset can open up new opportunities for machine learning in CAD research and beyond.
 
-**演讲者简介**
+**Speaker Profile**
 
-Xun Jiang（江循）is currently pursuing a Ph.D. degree in Integrated Circuit Engineering at Peking University, Beijing, China. His current research interests include physical design and AI for EDA. He is one of the main contributors to the open-source dataset, CircuitNet.
+Xun Jiang (Jiang Xun) is currently pursuing a Ph.D. degree in Integrated Circuit Engineering at Peking University, Beijing, China. His current research interests include physical design and AI for EDA. He is one of the main contributors to the open-source dataset, CircuitNet.
 
-**报告8：基于 MLIR 的高性能多线程 ZVC 硬件编译器实现及最新进展**
+**Report 8: Implementation and Latest Progress of High-Performance Multithreaded ZVC Hardware Compiler Based on MLIR**
 
-**报告摘要**
+**Report Abstract**
 
-CIRCT（Circuit Intermediate Representation Compiler Toolchain）是LLVM旗下基于MLIR的开源项目。旨在将软件世界经典成熟的开发方法学——MLIR/LLVM Project努力拓展到硬件设计工具的领域，为设计硬件（包括但不限于计算机芯片）的EDA工具提供一套可重用、可扩展的、高效的编译器基础设施。兆松在CIRCT框架基础上研发了ZVC编译器（ZhaoSong Verilog Compiler）——一款支持多线程的高性能硬件编译器，围绕Cycle Based的仿真设计，尝试完善从CIRCT的Core IR（核心中间表示）翻译转换到LLVM IR（LLVM中间表示）的完整流程。本次报告的侧重点将从ZVC围绕的核心设计思想，于CIRCT框架上所做的编译流程设计，以算法和例子介绍如何利用CIRCT框架搭建硬件编译器。通过解析No-more-inline设计原则，讲述围绕着电路状态的保存、传递需求，生成各种相对应逻辑的设计细节；多线程的部分将讲解分析LLVM IR用于做图上节点分割的MLIR算法；期间将穿插上游的一些最新进展与后续令人兴奋的规划，分享兆松在推进CIRCT支持编译SystemVerilog即与Slang整合工作的一些新进展。
+CIRCT (Circuit Intermediate Representation Compiler Toolchain) is an open source project based on MLIR under LLVM. It aims to extend the classic and mature development methodology of the software world - MLIR/LLVM Project to the field of hardware design tools, providing a reusable, scalable, and efficient compiler infrastructure for EDA tools for designing hardware (including but not limited to computer chips). Zhaosong has developed the ZVC compiler (ZhaoSong Verilog Compiler) on the CIRCT framework - a high-performance hardware compiler that supports multithreading. Focusing on the simulation design based on Cycle Based, it attempts to complete the entire process from translating the Core IR (core intermediate representation) of CIRCT to LLVM IR (LLVM intermediate representation). The focus of this report will be on the core design idea surrounding ZVC, the compilation process design on the CIRCT framework, and introduce how to build a hardware compiler using the CIRCT framework through algorithms and examples. By analyzing the No-more-inline design principle, it describes the design details of generating various corresponding logics around the preservation and transfer requirements of the circuit state; the multithreading part will explain and analyze the MLIR algorithm of LLVM IR used for node splitting on the graph; during this period, some of the latest upstream progress and subsequent exciting plans will be interspersed, sharing some new progress of Zhaosong in promoting CIRCT to support the compilation of SystemVerilog and the integration with Slang.
 
-**演讲者简介**
+**Speaker Profile**
 
-徐步云，2021 年毕业于太原理工大学信息安全专业，于 2022 年加入兆松科技（武汉）有限公司，现任职于硬件编译器组负责人一职，围绕硬件相关的硬件代码编译、仿真以及调试等内容开展硬件编译器相关的开发工作，交流、协调与 CIRCT 上游完成开发与开源 ZVC 各项功能。
+Xu Buyun graduated from Taiyuan University of Technology with a major in Information Security in 2021 and joined Zhaosong Technology (Wuhan) Co., Ltd. in 2022. Currently, he holds the position of the head of the hardware compiler group and is engaged in the development of hardware compiler-related work related to hardware code compilation, simulation, and debugging, communicating and coordinating with the upstream of CIRCT to complete the development and open source of various functions of ZVC.
 
-**报告9：A modified Newton-based matrix splitting iteration method for mixed-size cell circuit legalization**
+**Report 9: A modified Newton-based matrix splitting iteration method for mixed-size cell circuit legalization**
 
-**报告摘要**
+**Report Abstract**
 
 The mixed-size cell circuit legalization problem can be transformed into the generalized absolute value equations (GAVE). In this work, by simultaneously splitting both coefficient matrices in the differential and non-differential parts of the GAVE, a modified Newton-based matrix splitting (MNMS) iteration method is proposed. The MNMS iteration method not only covers the well-known generalized Newton iteration method as well as the recent proposed modified Newton-based iteration method and the Newton-based matrix splitting iteration method for solving the GAVE, but also results in a series of relaxation versions that are very flexible in real applications. Convergence properties of the MNMS iteration method are studied in detail when the coefficient matrices are general matrices, positive definite matrices and H+-matrices. Finally, three numerical examples are presented to show the feasibility and effectiveness of the proposed MNMS iteration method.
 
-**演讲者简介**
+**Speaker Profile**
 
-Chencan Zhou, graduated from Dalian Maritime University with a master's degree. She is  currently a teacher at the School of Transportation and Civil Engineering of Nantong University. She is also a doctoral student majoring in Information and Communication Engineering at Nantong University. Her research area is EDA technology for integrated circuit. She has published 5 EDA-related research papers, including 3 SCI and 1 EI.
+Chencan Zhou, graduated from Dalian Maritime University with a master's degree. She is currently a teacher at the School of Transportation and Civil Engineering of Nantong University. She is also a doctoral student majoring in Information and Communication Engineering at Nantong University. Her research area is EDA technology for integrated circuits. She has published 5 EDA-related research papers, including 3 SCI and 1 EI. 

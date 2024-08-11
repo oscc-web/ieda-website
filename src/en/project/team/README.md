@@ -1,11 +1,11 @@
 ---
-title: "Contributor"
+title: "Team Member"
 index: false
 ---
-（iEDA团队成员）
+（iEDA Team Member）
 
-## 团队成员
+## Team Member
 
-## 贡献者
+## Contributors
 
 <TheTeamContributors />

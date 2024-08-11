@@ -1,6 +1,7 @@
 ---
-title: "Rust学习-Week3(选)"
+title: "Rust Course - Week3"
 order: 10
+icon: list-check
 ---
 ## DAY15-DAY16：Rust综合实战准备
 

@@ -2,30 +2,31 @@
 title: "Our Plan"
 index: false
 ---
-（主要介绍开源EDA项目的规划）
 
-## **项目计划**
+(Mainly introduces the planning of the open-source EDA project)
 
-### **包老师开源芯片项目规划**
+## **Project Plan**
 
-- **第一步：** 开源SoC——用3-5年为社区提供经过流片验证的高质量RISC-V开源核、开源SoC设计
+### **Prof. Yugang Bao's Plan on Open-Source Chip Project**
 
-  - RISC-V处理器核IP、外围IP等
-- **第二步：** 用开源工具链构建开源SoC——用5-7年逐步构建一套基于开源EDA工具链、开源IP、开源工艺库的开源SoC芯片设计流程
+- **First Step**: Open-source SoC - Provide a high-quality RISC-V open-source core and open-source SoC design verified by tape-out to the community in 3-5 years
 
-  - 将商业版工具、IP逐渐替换为开源版
-  - 实现本科生用全开源工具开发开源芯片，带着自己芯片毕业
-- **第三步：** 用开源工具链自动化构建开源硬件——用10-15年开发更智能、更自动化的开源工具，提高设计验证效率
+  - RISC-V processor core IP, peripheral IP, etc.
+- **Second Step**: Build an open-source SoC with an open-source toolchain - Gradually build an open-source SoC chip design process based on an open-source EDA toolchain, open-source IP, and open-source process library in 5-7 years
 
-  - 形成开源芯片设计生态，降低芯片开发门槛
+  - Gradually replace commercial tools and IP with open-source versions
+  - Enable undergraduates to develop open-source chips with all open-source tools and graduate with their own chips
+- **Third Step**: Automatically build open-source hardware with an open-source toolchain - Develop more intelligent and automated open-source tools in 10-15 years to improve design and verification efficiency
 
-### **开源EDA项目规划**
+  - Form an open-source chip design ecosystem and lower the threshold for chip development
 
-- **第一步：** 用1-2年，iFlow：集成已有的开源EDA工具形成工具链，跑通开源芯片设计
-- **第二步：** 用5-7年，iEDA：构建一套开源EDA工具链，
+### **Open-Source EDA Project Planning**
 
-  - 将商业版工具
-  - 实现学术或教学用全开源工具开发开源芯片
-- **第三步：** 用10-15年，用开源工具链自动化设计商业量产芯片
+- **First Step**: In 1-2 years, iFlow: Integrate existing open-source EDA tools to form a toolchain and run through the open-source chip design
+- **Second Step**: In 5-7 years, iEDA: Build a set of open-source EDA toolchains,
 
-  - 开发更智能、更自动化的开源工具，提高设计验证效率
+  - Replace commercial tools
+  - Enable academic or teaching to develop open-source chips with all open-source tools
+- **Third Step**: In 10-15 years, automatically design commercial mass-produced chips with an open-source toolchain
+
+  - Develop more intelligent and automated open-source tools to improve design and verification efficiency

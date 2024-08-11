@@ -1,4 +1,4 @@
 ---
-title: "iEDA流片成功"
+title: "iEDA Tapeout Success"
 order: 4
 ---

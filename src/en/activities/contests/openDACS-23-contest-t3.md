@@ -1,5 +1,5 @@
 ---
-title: "2023年openDACS开源EDA与芯片大赛-赛题三"
+title: "2023 openDACS Open EDA and Chip Design Competition-Topic 3"
 order: 3
 ---
 ## 赛题3：FPGA工艺映射算法及优化介绍

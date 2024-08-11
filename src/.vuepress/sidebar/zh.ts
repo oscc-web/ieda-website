@@ -1,29 +1,29 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-    "/zh/project/": [{
+    "/project/": [{
         text: "项目介绍",
         prefix: "intro/",
-        link: "/zh/project/intro/README.md",
+        link: "/project/intro/README.md",
         children: "structure",
         collapsible: true
     },{
         text: "项目规划",
         prefix: "plan/",
-        link: "/zh/project/plan/README.md",
+        link: "/project/plan/README.md",
         children: "structure",
         collapsible: true
     },{
         text: "团队成员",
         prefix: "team/",
-        link: "/zh/project/team/README.md",
+        link: "/project/team/README.md",
         // children: "",
         collapsible: true
     }], 
-    "/zh/train/": [{
+    "/train/": [{
         text: "EDA知识",
         prefix: "eda/",
-        link: "/zh/train/eda/README.md",
+        link: "/train/eda/README.md",
         children: [
             {
                 text: "芯片与电路",
@@ -86,10 +86,9 @@ export const zhSidebar = sidebar({
     }, {
         text: "水滴计划",
         prefix: "water_drop/",
-        link: "/zh/train/water_drop/README.md",
+        link: "/train/water_drop/README.md",
         children: [
             "application",
-            "water_drop_plan_overview",
             {
                 text: "C++学习",
                 prefix: "C/",
@@ -116,7 +115,7 @@ export const zhSidebar = sidebar({
     }, {
         text: "iEDA实践",
         prefix: "practice/",
-        link: "/zh/train/practice/README.md",
+        link: "/train/practice/README.md",
         children: [
             {
                 text: "系统工程类",
@@ -138,7 +137,7 @@ export const zhSidebar = sidebar({
         collapsible: true
     }, {
         text: "其他学习",
-        link: "/zh/train/others/README.md",
+        link: "/train/others/README.md",
         children: [
             {
                 text: "PA",
@@ -150,28 +149,28 @@ export const zhSidebar = sidebar({
         ],
         collapsible: true
     }],
-    "/zh/tools/": [{
+    "/tools/": [{
         text: "iEDA底座平台",
         prefix: "ieda-platform/",
-        link: "/zh/tools/ieda-platform/README.md",
+        link: "/tools/ieda-platform/README.md",
         children: "structure",
         collapsible: true
     }, {
         text: "iEDA工具集",
         prefix: "ieda-tools/",
-        link: "/zh/tools/ieda-tools/README.md",
+        link: "/tools/ieda-tools/README.md",
         children: "structure",
         collapsible: true
     }, {        
         text: "自动化设计脚本",
         prefix: "auto-scripts/",
-        link: "/zh/tools/auto-scripts/README.md",
+        link: "/tools/auto-scripts/README.md",
         children: "structure",
         collapsible: true
     }],
-    "/zh/aieda/": [{
+    "/aieda/": [{
         text: "iBM数据集",
-        link: "/zh/aieda/ibm/README.md",
+        link: "/aieda/ibm/README.md",
         prefix: "ibm/",
         children: [
             {
@@ -194,40 +193,40 @@ export const zhSidebar = sidebar({
         collapsible: true
     }, {
         text: "AiEDA模型",
-        link: "/zh/aieda/aieda-model/README.md",
+        link: "/aieda/aieda-model/README.md",
         prefix: "aieda-model/",
         children: "structure",
         collapsible: true
     }, {
         text: "AiEDA框架",
-        link: "/zh/aieda/aieda-framework/README.md",
+        link: "/aieda/aieda-framework/README.md",
         prefix: "aieda-framework/",
         children: "structure",
         collapsible: true
     }],
-    "/zh/research/": [{
+    "/research/": [{
         text: "研究课题",
         prefix: "subjects/",
-        link: "/zh/research/subjects/README.md",
+        link: "/research/subjects/README.md",
         children: "structure",
         collapsible: true
     }, {
         text: "开发任务",
         prefix: "tasks/",
-        link: "/zh/research/tasks/README.md",
+        link: "/research/tasks/README.md",
         children: "structure",
         collapsible: true
     }, {
         text: "学术成果",
         prefix: "achieves/",
-        link: "/zh/research/achieves/README.md",
+        link: "/research/achieves/README.md",
         children: "structure",
         collapsible: true
     }],
-    "/zh/activities/": [{
+    "/activities/": [{
         text: "学术会议",
         prefix: "conferences/",
-        link: "/zh/activities/conferences/README.md",
+        link: "/activities/conferences/README.md",
         children: [
             {
                 text: "会议通知",
@@ -243,40 +242,40 @@ export const zhSidebar = sidebar({
         ],
         collapsible: true
     }, {
-        text: "学术竞赛",
-        prefix: "contests/",
-        link: "/zh/activities/contests/README.md",
-        children: "structure",
-        collapsible: true
-    }, {
         text: "技术交流",
         prefix: "communication/",
-        link: "/zh/activities/communication/README.md",
+        link: "/activities/communication/README.md",
+        children: "structure",
+        collapsible: true
+    },{
+        text: "学术竞赛",
+        prefix: "contests/",
+        link: "/activities/contests/README.md",
         children: "structure",
         collapsible: true
     },{
         text: "流片计划",
         prefix: "tape-out/",
-        link: "/zh/activities/tape-out/README.md",
+        link: "/activities/tape-out/README.md",
         children: "structure",
         collapsible: true
     }],
-    "/zh/publicity/": [{
+    "/publicity/": [{
         text: "新闻动态",
         prefix: "news/",
-        link: "/zh/publicity/news/README.md",
+        link: "/publicity/news/README.md",
         children: "structure",
         collapsible: true
     }, {
         text: "业务合作",
         prefix: "collaborate/",
-        link: "/zh/publicity/collaborate/README.md",
+        link: "/publicity/collaborate/README.md",
         children: "structure",
         collapsible: true
     }, {
         text: "人才招聘",
         prefix: "recruit/",
-        link: "/zh/publicity/recruit/README.md",
+        link: "/publicity/recruit/README.md",
         children: "structure",
         collapsible: true
     }, {

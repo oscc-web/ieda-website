@@ -2,17 +2,17 @@
 title: "EDA Basic"
 index: false
 ---
-（主要介绍EDA相关的基础概念，知识，技能）
+(Mainly introduces the basic concepts, knowledge and skills related to EDA)
 
-## **主要内容**
+## **Main Contents**
 
-- 芯片设计基础知识
-- 数字芯片设计流程涉及的标准文件格式及对应的解析器
-- 芯片设计流程内容
-  - 高层次综合、仿真验证、逻辑综合、工艺映射、测试综合、形式化验证、布图规划、布局、布线、时序功耗分析、物理验证
-- 芯片设计中的名词解析，概念理解
-- 标准单元库
+- Basic knowledge of chip design
+- Standard file formats involved in the digital chip design process and corresponding parsers
+- Contents of the chip design process
+  - High-level synthesis, simulation verification, logic synthesis, technology mapping, test synthesis, formal verification, floorplanning, placement, routing, timing and power analysis, physical verification
+- Explanation of terms and understanding of concepts in chip design
+- Standard cell libraries
 
-## **EDA知识结构**
+## **EDA Knowledge Structure**
 
-<center><img src="/res/images/train/EDA-structure.png" style="zoom:100%;" /></center>
+<center><img src="/res/images/train/EDA-structure.png" style="zoom:100%;" /></center> 
