@@ -28,11 +28,11 @@ Implements checks for non-Spacing type rules, mainly including checks for MinSte
 
 ​                                               Figure 1.2 Check Object Corresponding to the Via Enclosure Rule
 
-<center><img src="/res/images/tools/tool/idrc/Image 1.3.png" style="zoom:60%;" /></center>
+<center><img src="/res/images/tools/tool/idrc/fig1.3.png" style="zoom:60%;" /></center>
 
 ​                                               Figure 1.3 Interior Facing Edge Distance of Conductor Pattern (Check Object Corresponding to the Minimum Width Rule)
 
-<center><img src="/res/images/tools/tool/idrc/Image 1.4.png" style="zoom:50%;" /></center>
+<center><img src="/res/images/tools/tool/idrc/fig1.4.png" style="zoom:50%;" /></center>
 
 ​                                               Figure 1.4 Left: Area of Conductor Pattern (Check Object Corresponding to the Minimum Area Rule)
 
@@ -49,11 +49,11 @@ Implements checks for non-Spacing type rules, mainly including checks for MinSte
 | Metal Minimum CornerFill Spacing Rule | This rule requires that when there is a notch-shaped area at the corner of the outer edge of the metal line that meets the requirements of the TechFile, a virtual piece of metal is created at the notch, and the spacing between the virtual metal and other metals is checked, as shown in Figure 1.10. |
 | Cut Minimum Spacing Rule | This rule requires that the spacing between any two Cuts in the same Cut layer cannot be smaller than the specified value. Although the Spacing calculation of the Cut layer is generally defaulted to the edge-to-edge Euclidean distance, in some cases, it will change due to certain fields in the rule. In some cases, the maximum projected lengths of the two in the X and Y directions will be used instead of the Euclidean distance to calculate the Spacing, as shown in Figure 1.11. |
 
-<center><img src="/res/images/tools/tool/idrc/Image 1.1.png" style="zoom:80%;" /></center>
+<center><img src="/res/images/tools/tool/idrc/fig1.1.png" style="zoom:80%;" /></center>
 
 ​                                               Figure 1.5 Short Circuit Violation
 
-<center><img src="/res/images/tools/tool/idrc/Figure 1.2.png" style="zoom:80%;" /></center>
+<center><img src="/res/images/tools/tool/idrc/fig1.2.png" style="zoom:80%;" /></center>
 
 ​                                               Figure 1.6 Schematic Diagram of the Exterior Facing Edge Spacing of the Conductor Pattern (Check Object Corresponding to the Minimum Spacing Rule)
 
