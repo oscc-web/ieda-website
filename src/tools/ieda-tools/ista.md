@@ -83,8 +83,9 @@ report_timing
 
 - top.rpt（报告 WNS,TNS 和时序路径）
 
-如图所示，报告最开始显示的路径是WNS（Worst Negative Slack）路径，默认max(Setup)/min(Hold)分别显示三条。
-接下来是TNS报告，每个时钟报告一个TNS，分为max/min。
+如图所示，报告最开始显示的路径是WNS（Worst Negative Slack）路径，
+默认max(Setup)/min(Hold)分别显示三条。接下来是TNS报告，每个时钟分别
+报告TNS (Total Negative Slack)，分为max/min。
 
 <div align="center">
 
@@ -94,9 +95,10 @@ report_timing
 
 </div>
 
-后面开始是每个路径的详细报告。时序路径的报告部分，主要包含Arrival Time和Require Time，以及报告的slack三部分。
-Arrival Time和Require Time的分为Point、Fanout、Capacitance、Resistance、Transition、
-Delta Delay、Incr、Path列，如图所示：
+后面开始是每个路径的详细报告。时序路径的报告部分，主要包含Arrival Time
+和Require Time，以及报告的slack三部分。
+Arrival Time和Require Time的分为Point、Fanout、Capacitance、
+Resistance、Transition、Delta Delay、Incr、Path列，如图所示：
 
 <div align="center">
 
