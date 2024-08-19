@@ -83,7 +83,8 @@ report_timing
 
 - top.rpt（报告 WNS,TNS 和时序路径）
 
-如图所示，报告最开始显示的路径是WNS（Worst Negative Slack）路径，默认Setup/Hold分别显示三条。
+如图所示，报告最开始显示的路径是WNS（Worst Negative Slack）路径，默认max(Setup)/min(Hold)分别显示三条。
+接下来是TNS报告，每个时钟报告一个TNS，分为max/min。
 
 <div align="center">
 
@@ -93,8 +94,9 @@ report_timing
 
 </div>
 
-时序路径的报告部分，主要包含Arrival Time和Require Time，以及报告的slack三部分。Arrival Time和Require Time的分为
-Point、Fanout、Capacitance、Resistance、Transition、Delta Delay、Incr、Path列，如图所示：
+后面开始是每个路径的详细报告。时序路径的报告部分，主要包含Arrival Time和Require Time，以及报告的slack三部分。
+Arrival Time和Require Time的分为Point、Fanout、Capacitance、Resistance、Transition、
+Delta Delay、Incr、Path列，如图所示：
 
 <div align="center">
 
@@ -104,7 +106,7 @@ Point、Fanout、Capacitance、Resistance、Transition、Delta Delay、Incr、Pa
 
 </div>
 
-路径slack部分在路径的最后面，如图所示：
+路径Slack部分在路径的最后面，如图所示：
 
 <div align="center">
 
@@ -152,14 +154,15 @@ Fanout报告同样类似，包含Net/Pin列、MaxSlewTime、SlewTime、SlewSlack
 
 - top_setup.skew（报告hold模式下的时钟偏斜)
 
-skew报告类似于时钟路径报告，skew是时钟到达两个时钟Pin的差值，两个时钟Pin分别为发射时钟和接收时钟的Pin，
-两两构成一个时序路径。skew报告分为三部分发射时钟Pin的latency，接收时钟Pin的latency，skew报告。
+skew报告类似于时钟路径报告，skew是时钟到达两个时钟Pin的差值，两个时钟Pin分别为发射时钟
+和接收时钟的Pin，两两构成一个时序路径。skew报告分为三部分发射时钟Pin的latency，
+接收时钟Pin的latency，skew报告。
 
 <div align="center">
 
 <img src="/res/images/tools/tool/ista/skew.png" width="80%" height="35%" alt="iSTA-rpt" />
 
-  **iSTA时序报告transition报告**
+  **iSTA时序报告skew报告**
 
 </div>
 
