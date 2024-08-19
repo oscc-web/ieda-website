@@ -1,6 +1,7 @@
 ---
 title: "EDA学习-Week1"
 order: 5
+icon: file-lines
 ---
 ## DAY1：EDA基础入门
 

@@ -65,6 +65,8 @@ export default hopeTheme({
   docsBranch: "main",
   docsDir: "src",
 
+  //home
+  home: "/",
 
   // Footer
   footer: "GPL License | Copyright © iEDA | 2023 - Now",
@@ -90,14 +92,47 @@ export default hopeTheme({
       sidebar: zhSidebar,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
-      }
-    }
+      },
+    },
+    "/en/": {
+      navbar: enNavbar,
+      sidebar: enSidebar,
+      metaLocales: {
+        editLink: "Edit this page on GitHub",
+      },
+    },
   },
 
   // Theme Plugins
   plugins: {
-    blog: false,
-    comment: false,
+    blog: {
+      medias: {
+        Baidu: "https://example.com",
+        BiliBili: "https://example.com",
+        Facebook: "https://example.com",
+        Gitee: "https://example.com",
+        GitHub: "https://example.com",
+        Gmail: "mailto:info@example.com",
+        Instagram: "https://example.com",
+        Linkedin: "https://example.com",
+        QQ: "https://example.com",
+        Twitter: "https://example.com",
+        Wechat: "https://example.com",
+        Weibo: "https://example.com",
+        Whatsapp: "https://example.com",
+        Youtube: "https://example.com",
+        Zhihu: "https://example.com",
+      },
+    },
+    // comment: false,
+    comment: {
+      provider: "Giscus",
+      repo: "vuepress-theme-hope/giscus-discussions",
+      repoId: "R_kgDOG_Pt2A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOG_Pt2M4COD69",
+    },
+
     copyright: {
       author: "iEDA",
       license: "GPL-3.0",
@@ -112,6 +147,7 @@ export default hopeTheme({
     },
     mdEnhance: {
       gfm: true,
+      alert: true,
       container: true,
       checkLinks: {
         status: "dev"
@@ -137,26 +173,95 @@ export default hopeTheme({
       echarts: true,
       flowchart: true,
       mermaid: true,
-      stylize: [{
-        matcher: "Recommended",
-        replacer: ({ tag }) => {
-          if (tag === "em")
-            return {
-              tag: "Badge",
-              attrs: { type: "tip" },
-              content: "Recommended"
-            };
-        }
-      }],
       playground: {
         presets: ["ts", "vue"],
       },
       vuePlayground: true,
       demo: true,
       presentation: ["highlight", "math", "search", "notes", "zoom"],
+      kotlinPlayground: true,
+      markmap: true,
+      revealJs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
+      sandpack: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({
+            tag,
+          }): {
+            tag: string;
+            attrs: Record<string, string>;
+            content: string;
+          } | void => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
       delay: 800
     },
-    pwa: false,
+    pwa: {
+      favicon: "/favicon.ico",
+      cacheHTML: true,
+      appendBase: true,
+      apple: {
+        icon: "/assets/icon/apple-icon-152.png",
+        statusBarColor: "black",
+      },
+      msTile: {
+        image: "/assets/icon/ms-icon-144.png",
+        color: "#ffffff",
+      },
+      manifest: {
+        icons: [
+          {
+            src: "/assets/icon/chrome-mask-512.png",
+            sizes: "512x512",
+            purpose: "maskable",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-mask-192.png",
+            sizes: "192x192",
+            purpose: "maskable",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+        ],
+        shortcuts: [
+          {
+            name: "Demo",
+            // eslint-disable-next-line @typescript-eslint/naming-convention
+            short_name: "Demo",
+            url: "/demo/",
+            icons: [
+              {
+                src: "/assets/icon/guide-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+            ],
+          },
+        ],
+      },
+    },
     components: {
       components: [
         "AudioPlayer",
@@ -176,7 +281,8 @@ export default hopeTheme({
       wordPerMinute: 300
     },
     seo: false,
-    sitemap: false
+    sitemap: false,
+    searchPro: true,
   }
 }, {
   custom: true

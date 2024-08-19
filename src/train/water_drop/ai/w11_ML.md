@@ -1,6 +1,7 @@
 ---
 title: "AI学习-Week1(选)"
 order: 11
+icon: list-check
 ---
 
 AI为选学模块。
@@ -10,9 +11,10 @@ AI为选学模块。
 ### 一、具体要求
 
 1. **克隆仓库**：
-   - `git clone --recursive https://github.com/fengdu78/Data-Science-Notes.git`
 
+   - `git clone --recursive https://github.com/fengdu78/Data-Science-Notes.git`
 2. **阅读仓库【0.math】部分，复习数学相关知识**：
+
    - **线性代数**：
      - 向量和矩阵运算
      - 矩阵求逆
@@ -29,16 +31,18 @@ AI为选学模块。
      - 假设检验
 
 ### 二、学习成果展示
-  1. 学习笔记、思维导图的分享
-  2. 自选题目进行练习
+
+1. 学习笔记、思维导图的分享
+2. 自选题目进行练习
 
 ### 三、参考资料
-  1. **深度学习**：
-     - 《Deep Learning》 Yoshua Bengio & Ian GoodFellow 第一部分
-  2. **线性代数**：
-     - 《Mathematics for Machine Learning: Linear Algebra》
-  3. **概率论与数理统计**：
-     - 《概率论与数理统计》浙江大学 高等教育出版社
+
+1. **深度学习**：
+   - 《Deep Learning》 Yoshua Bengio & Ian GoodFellow 第一部分
+2. **线性代数**：
+   - 《Mathematics for Machine Learning: Linear Algebra》
+3. **概率论与数理统计**：
+   - 《概率论与数理统计》浙江大学 高等教育出版社
 
 ## DAY5-7：Python和常用库
 
@@ -61,6 +65,7 @@ AI为选学模块。
 ### 二、学习成果展示
 
 选择一些知识点进行针对性练习：
+
 1. **Python练习**：
    - [Python练习](https://exercism.org/tracks/python/exercises)
 2. **Numpy Pandas等练习**：
@@ -69,9 +74,10 @@ AI为选学模块。
 ### 三、参考资料
 
 1. Python和常用库
-  - [菜鸟](https://www.runoob.com/python/python-100-examples.html)
-  - [Python官方学习文档](https://www.python.org/doc/)
-  - [scikit-learn官方学习文档](https://scikit-learn.org/stable/)
-  - [NumPy官方学习文档](https://numpy.org/)
-  - [Pandas官方学习文档](https://pandas.pydata.org/)
-  - [Matplotlib官方学习文档](https://matplotlib.org/)
+
+- [菜鸟](https://www.runoob.com/python/python-100-examples.html)
+- [Python官方学习文档](https://www.python.org/doc/)
+- [scikit-learn官方学习文档](https://scikit-learn.org/stable/)
+- [NumPy官方学习文档](https://numpy.org/)
+- [Pandas官方学习文档](https://pandas.pydata.org/)
+- [Matplotlib官方学习文档](https://matplotlib.org/)

@@ -58,17 +58,22 @@ export const zhSidebar = sidebar({
                 ],
                 collapsible: true
             }, {
+                text: "EDA问题与建模",
+                prefix: "eda-model/",
+                children: "structure",
+                collapsible: true
+            },{
                 text: "算法与数据结构",
                 prefix: "algorithm-data/",
                 children: [            
                     {
-                        text: "EDA数据结构",
+                        text: "数据结构",
                         prefix: "Part_6-data_structure",
                         children: "structure",
                         collapsible: true
                     },
                     {
-                        text: "EDA算法",
+                        text: "算法设计",
                         prefix: "Part_7_algorithm",
                         children: "structure",
                         collapsible: true
@@ -84,7 +89,6 @@ export const zhSidebar = sidebar({
         link: "/train/water_drop/README.md",
         children: [
             "application",
-            "water_drop_plan_overview",
             {
                 text: "C++学习",
                 prefix: "C/",
@@ -238,15 +242,15 @@ export const zhSidebar = sidebar({
         ],
         collapsible: true
     }, {
-        text: "学术竞赛",
-        prefix: "contests/",
-        link: "/activities/contests/README.md",
-        children: "structure",
-        collapsible: true
-    }, {
         text: "技术交流",
         prefix: "communication/",
         link: "/activities/communication/README.md",
+        children: "structure",
+        collapsible: true
+    },{
+        text: "学术竞赛",
+        prefix: "contests/",
+        link: "/activities/contests/README.md",
         children: "structure",
         collapsible: true
     },{

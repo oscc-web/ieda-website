@@ -1,6 +1,7 @@
 ---
 title: "EDA学习-Week2"
 order: 6
+icon: book
 ---
 
 ## DAY8-DAY10：EDA流程整体学习
@@ -94,6 +95,8 @@ order: 6
 ### 三、参考资料
 
 （一）**材料：**
+   - iFlow：[用户手册](/tools/auto-scripts/iflow.md)，[代码仓库](https://gitee.com/oscc-project/iFlow)
+   - iEDA-Script：[用户手册](/tools/ieda-platform/guide.md)
    - 《iEDA各点工具需要关注的特征参考》水滴计划-iEDA demo学习
    - [iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
 

@@ -1,6 +1,7 @@
 ---
 title: "Rust学习-Week1(选)"
 order: 8
+icon: list-check
 ---
 
 RUST为选学模块，计划从DAY1开始。

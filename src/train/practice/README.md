@@ -1,6 +1,7 @@
 ---
-title: "实践训练"
+title: "iEDA实践"
 index: false
+icon: book
 ---
 （基于开源EDA平台——iEDA设置多种实践训练任务，同学们可以更深入理解EDA工具和算法）
 

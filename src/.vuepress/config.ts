@@ -19,7 +19,11 @@ export default defineUserConfig({
         "/": {
             lang: "zh-CN",
             // title: "iEDA",
-        }
+        },
+        "/en/": {
+            lang: "en-US",
+            // title: "iEDA",
+        },
     },
     shouldPrefetch: false,
     plugins: [

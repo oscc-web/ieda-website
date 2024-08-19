@@ -1,11 +1,10 @@
 ---
-lastUpdated: false
-contributors: false
-toc: false
+lastUpdated: true
+contributors: true
+toc: ture
 containerClass: "home"
 home: true
 ---
-
 <TheHomeCarousel />
 <!-- <TheHomeFeatures /> -->
 <!-- <TheHomeApplications /> -->

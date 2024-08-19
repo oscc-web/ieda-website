@@ -1,6 +1,7 @@
 ---
 title: "AI学习-Week3(选)"
 order: 13
+icon: list-check
 ---
 
 ## DAY15-17：动手搭建深度学习神经网络

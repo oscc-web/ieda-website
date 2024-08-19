@@ -1,6 +1,7 @@
 ---
 title: "Rust学习-Week2(选)"
 order: 9
+icon: list-check
 ---
 ## DAY8-DAY9：Rust工程管理和测试
 
