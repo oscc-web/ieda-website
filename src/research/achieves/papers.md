@@ -2,6 +2,10 @@
 title: "论文"
 order: 1
 ---
+
+[**EDA会议论文投稿时间**](http://eda.laais.cn/)
+
+
 ## **Conference**
 
 1. Zhisheng Zeng; Jikang Liu; Zhipeng Huang; Ye Cai; Biwei Xie; Yungang Bao; Xingquan Li*, Net Resource Allocation: A Desirable Initial Routing Step, in Proceedings of Design Automation Conference (DAC), San Francisco CA USA, 2024. **(CCF-A)**
