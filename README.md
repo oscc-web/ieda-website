@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Logo" src="https://github.com/oscc-web/ieda-website-resources/blob/main/images/logo/logo.png" width="150">
+    <img alt="Logo" src="https://github.com/OSCC-Project/ieda-website-resources/blob/main/images/logo/ieda_icon.png" width="150">
 </p>
 
 <h1>
