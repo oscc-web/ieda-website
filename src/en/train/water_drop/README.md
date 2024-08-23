@@ -68,7 +68,6 @@ Currently, the demand for EDA talents still exceeds the supply, and the threshol
 
 Welcome to participate in the Water-Drop Plan learning! Here, you can first understand the overview of the Water-Drop Plan learning, explore the reference materials on academic integrity in depth, and discover the charm of the iEDA team.
 ::: tip
-:::: info
 First, you can watch the video "iEDA - Water-Drop Plan: Overview of the iEDA - Water-Drop Plan Learning System" and enter the world of the Water-Drop Plan learning system. Click the link to watch: [iEDA - Water-Drop Plan: Overview of the iEDA - Water-Drop Plan Learning System](https://www.bilibili.com/video/BV1fz4y1W7si).
 
 In addition to the Water-Drop Plan learning, the iEDA team also brings you exciting content. Explore the video creations of the iEDA team, follow our Bilibili video account: [iEDA Team Video](https://space.bilibili.com/1189298533), or visit our official website: [iEDA Team Website](https://ieda.oscc.cc).
