@@ -50,25 +50,36 @@
     //     date: "2022-10-03",
     //     text: "CAD Contest ICCAD获奖名单公布，华人包揽所有奖项，获两项冠军，创历史佳绩"
     // }]);
+    
     const newsItemList = ref([
     {
+        image: "/res/images/index/home/oseda24.jpg",
+        tags: ["OSEDA", "RISC-V"],
+        date: "2024-8-20",
+        text: "The iEDA team organized the OSEDA forum at the 4th RISC-V China Summit"
+    }, {
+        image: "/res/images/index/home/ccf-chip24.jpg",
+        tags: ["EDA", "Chip", "Open-source", "Intelligent"],
+        date: "2024-7-20",
+        text: "The iEDA team organized the open-source intelligent EDA workshop at the 2nd CCF Chip Conference"
+    }, {
         image: "/res/images/index/home/dac24-zs.jpg",
         tags: ["EDA", "DAC"],
         date: "2024-06-24",
         text: "The iEDA team participated in the 61st Design Automation Conference (DAC) and gave three academic reports"
     },
-    {
-        image: "https://www.anlogic.com/Public/ueditor/upload/image/20231229/1703853669609094.jpeg",
-        tags: ["EDA", "Elite Challenge", "Kirin Cup"],
-        date: "2023-12-26",
-        text: "The second track of the EDA Elite Challenge, which was contributed by the iEDA team, won the highest award - the Kirin Cup Award"
-    },
-    {
-        image: "https://ieda.oscc.cc/res/images/publicity/publicity/iccad_first.png",
-        tags: ["EDA", "ICCAD", "Contest"],
-        date: "2022-10-03",
-        text: "First Place @ ICCAD Contest 2022."
-    }
+    // {
+    //     image: "https://www.anlogic.com/Public/ueditor/upload/image/20231229/1703853669609094.jpeg",
+    //     tags: ["EDA", "Elite Challenge", "Kirin Cup"],
+    //     date: "2023-12-26",
+    //     text: "The second track of the EDA Elite Challenge, which was contributed by the iEDA team, won the highest award - the Kirin Cup Award"
+    // },
+    // {
+    //     image: "https://ieda.oscc.cc/res/images/publicity/publicity/iccad_first.png",
+    //     tags: ["EDA", "ICCAD", "Contest"],
+    //     date: "2022-10-03",
+    //     text: "First Place @ ICCAD Contest 2022."
+    // }
     ]);
 
     const newsBodyStyle = ref({

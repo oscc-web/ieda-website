@@ -25,7 +25,9 @@ export default {
         { url: '/res/images/publicity/ISEDA/tutorial.jpg', text: 'The iEDA team introduced the Tutorial at ISEDA 2024' },
         { url: '/res/images/index/logo_place.gif', text: 'The chip layout logo made with iEDA tools' },
         { url: '/res/images/index/home/IMG_4033.png', text: 'Andrew B. Kahng is introducing the internationally renowned open-source EDA tools' },
-        // { url: '/res/images/index/home/wh-ab.jpg', text: 'A group photo of iEDA team member Wang Hao and Andrew B. Kahng at ETH' },
+        { url: '/res/images/index/home/wh-ab.jpg', text: 'A group photo of iEDA team member Wang Hao and Andrew B. Kahng at ETH' },
+        { url: '/res/images/index/home/ccf-chip24.jpg', text: 'The iEDA team organized the open-source intelligent EDA workshop at the 2nd CCF Chip Conference' },
+        { url: '/res/images/index/home/oseda24.jpg', text: 'The iEDA team organized the OSEDA forum at the 4th RISC-V China Summit' },
         { url: '/res/images/index/home/risc-v24-eu.jpg', text: 'iEDA participated in the 2024 RISC-V European Summit' },
         // { url: '/res/images/index/iEDA-tapeout.png', text: 'Successful tapeout three times' }
       ]
