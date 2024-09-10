@@ -93,3 +93,4 @@ icon: list-check
 2. 相关论文 
  - 《PCT-Cap: Point Cloud Transformer for Accurate 3D Capacitance Extraction》 
  - 《Accurate_Timing_Path_Delay_Learning_Using_Feature_Enhancer_with_Effective_Capacitance》
+3. [《2024年EDA人才培养计划：AI for EDA》](https://www.bilibili.com/video/BV1TEsLeVEVc/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)

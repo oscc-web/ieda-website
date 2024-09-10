@@ -121,10 +121,19 @@ icon: file-lines
 
 - **材料：** [《水滴计划-答辩ppt模板.pptx》](https://gitee.com/oscc-project/iTraining/tree/master/C++/ppt)
   - **视频：**
-  以下为上期学员的答辩视频，以供学习：
+  以下为2023期学员的答辩视频，以供学习：
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(王瑞)》](https://www.bilibili.com/video/BV1y34y1T7GV)
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(郭帆)》](https://www.bilibili.com/video/BV18w411D7mj)
     - [《iEDA-水滴计划：学习成果答辩总结与展示交流(伍振东)》](https://www.bilibili.com/video/BV1Mu4y1y7JL)
+
+   2024期学员的答辩视频，以供学习：
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（万云鹏）》](https://www.bilibili.com/video/BV1GgsKeZESF/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（李子超）》](https://www.bilibili.com/video/BV1uGsseuE3P/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（苏坚荣）》](https://www.bilibili.com/video/BV1sospe8Exv/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（刘谦）》](https://www.bilibili.com/video/BV1gesteDEE3/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（宋彬彬）》](https://www.bilibili.com/video/BV121sTeQEJ5/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（张锦森）》](https://www.bilibili.com/video/BV1McsTeXEzR/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+    - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（龙泽昊）》](https://www.bilibili.com/video/BV1tvs5ekETZ/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
 
 ## DAY23：水滴答辩
@@ -134,3 +143,5 @@ icon: file-lines
   2. 14:30-16:30
   3. 19:30-21:30
 
+  参考水滴计划PPT和总结
+    - [《2024水滴计划答辩PPT和总结》](https://gitee.com/oscc-project/iTraining/tree/master/Summary/2024_07)

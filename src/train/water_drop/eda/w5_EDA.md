@@ -30,8 +30,6 @@ icon: book
    - 《后端设计流程_一生一芯.pdf》
 
 
-
-
 ## DAY11-DAY12：EDA基础学习总结
 
 ### 一、具体要求
@@ -105,4 +103,5 @@ icon: book
    - [2023 开源芯片技术生态论坛：iEDA构建实践](https://www.bilibili.com/video/BV1mp4y1P7C7)
    - [2023 开源芯片技术生态论坛：iEDA平台介绍](https://www.bilibili.com/video/BV1T94y147pX)
    - [2023 开源芯片技术生态论坛：iEDA支撑一次28nm流片的经历](https://www.bilibili.com/video/BV1Th4y1S7Xj)
+   - [2024年EDA人才培养计划：数字IC后端设计流程](https://www.bilibili.com/video/BV1ayiKe9E7z/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 

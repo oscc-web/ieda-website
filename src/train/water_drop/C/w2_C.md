@@ -120,3 +120,5 @@ icon: file-lines
 
 - [《iEDA-水滴计划：C++常用知识点》](https://www.bilibili.com/video/BV19F411y7sq)
   陶思敏老师介绍C++常用知识点。包括：C++版本变化、构造函数、继承、类型自动推导、constexpr、运算符重载、智能指针、lambda函数、可变参数模板、Fold表达式、线程管理、同步异步任务、信号量机制等等。
+- [《2024年EDA人才培养计划：C++核心内容和最新进展》](https://www.bilibili.com/video/BV1LW421971k/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+  陶思敏老师介绍C++核心知识点和C++23的最新特性，以及C++和Rust的相互比较。

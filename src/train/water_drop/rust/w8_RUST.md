@@ -64,6 +64,7 @@ RUST为选学模块，计划从DAY1开始。
    - [Rust官方学习文档](https://doc.rust-lang.org/book/)
    - [清华Rust课程](https://lab.cs.tsinghua.edu.cn/rust/)
    - [Google Rust 教程](https://google.github.io/comprehensive-rust/welcome.html)
+   - [2024年EDA人才培养计划：Rust讲座+实训介绍](https://www.bilibili.com/video/BV1HYs7erEx7/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
 ## DAY4-DAY7：Rust进阶知识学习
 

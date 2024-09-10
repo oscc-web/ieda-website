@@ -71,6 +71,7 @@ icon: file-lines
      - [iEDA-Tutorial-第四期：iEDA-AiMAP工艺映射算法](https://www.bilibili.com/video/BV1kj411479e)
      - [iEDA-Tutorial-第四期：iEDA-并行化逻辑重写算法](https://www.bilibili.com/video/BV1F94y187se)
      - [iEDA-Tutorial-第四期：iEDA-iATPG工具介绍](https://www.bilibili.com/video/BV1cu4y147L7)
+     - [2024年EDA人才培养计划：逻辑综合最新介绍](https://www.bilibili.com/video/BV1CE4m1R7xT/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
    - **工具**：
       1. iMap: https://gitee.com/oscc-project/iMAP
@@ -104,6 +105,7 @@ icon: file-lines
      - [iEDA-Tutorial-第二期：iEDA-iFP及iPDN工具架构、特性与使用](https://www.bilibili.com/video/BV1W14y1B7n)
      - [iEDA-Tutorial-第二期：iEDA-iPL 问题介绍、架构、使用与规划](https://www.bilibili.com/video/BV1GN411h7b3/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
      - [iEDA-Tutorial-第二期：iEDA-iPL关键技术](https://www.bilibili.com/video/BV1CX4y1j7eb)
+     - [2024年EDA人才培养计划：布局最新介绍](https://www.bilibili.com/video/BV1Yx4y147oP/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
 ---
 
@@ -159,6 +161,7 @@ icon: file-lines
    - **视频链接**：[iEDA-Tutorial-第五期：iEDA-iRT整体，GR问题，研究内容与计划](https://www.bilibili.com/video/BV1C94y1g75d/?spm_id_from=333.999.0.0)
    - **视频链接**：[iEDA-Tutorial-第五期：iEDA-iRT详细布线问题、研究内容与计划](https://www.bilibili.com/video/BV1yG411q7EX/?spm_id_from=333.999.0.0)
    - **视频链接**：[iEDA-Tutorial-第五期：iEDA-iDRC问题、研究内容与计划](https://www.bilibili.com/video/BV1s94y1g7nT/?spm_id_from=333.999.0.0)
+   - [2024年EDA人才培养计划：布线最新介绍](https://www.bilibili.com/video/BV1xavkeyEZE/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
 ---
 
@@ -189,6 +192,8 @@ icon: file-lines
      - [iEDA-Tutorial-第一期：iSTA关键技术研究](https://www.bilibili.com/video/BV16X4y177xr)
      - [iEDA-Tutorial-第二期：iEDA-iTO工具架构、特性与关键技术](https://www.bilibili.com/video/BV1LX4y177oQ/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
      - [2023 开源芯片技术生态论坛：基于Yosys和iSTA的数字前端时序评估](https://www.bilibili.com/video/BV1TF411k7kF)
+     - [2024年EDA人才培养计划：时序分析最新介绍](https://www.bilibili.com/video/BV1zHvDesE8m/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+     - [2024年EDA人才培养计划：时序优化最新介绍](https://www.bilibili.com/video/BV1pjv8eTEBd/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
   - **补充阅读材料**：
     1. Neil H. E. Weste, David Money Harris 《CMOS VLSI Design A Circuits and Systems Perspective (4th Edition) 》
     2. 喻文健《超大规模集成电路分析与综合》

@@ -35,3 +35,4 @@ icon: list-check
 
 1. [《iEDA 用户手册》](https://gitee.com/oscc-project/iEDA/blob/master/docs/user_guide/iEDA_user_guide.md)
 2. [《iEDA 从 Netlist 到 GDS 的开源芯片设计 EDA 平台》](https://gitee.com/oscc-project/iEDA/blob/master/README.md)
+3. [《基于Rust构建高性能安全的开源EDA工具：陶思敏》](https://www.bilibili.com/video/BV1cUHNewEB1/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)

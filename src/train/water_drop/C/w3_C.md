@@ -42,6 +42,9 @@ icon: file-lines
   - [2023 开源芯片技术生态论坛](https://www.bilibili.com/video/BV1Th4y1S7Xj)
   黄增荣老师介绍iEDA支撑一次28nm流片的经历。包括：介绍布图规划iFP/iPDN，网表优化iNO，布局iPL，时钟树综合iCTS，布线iRT，设计规则检测iDRC，介绍各个点工具的目标、流程脚本、报告分析等等。
 
+  - [2024年EDA人才培养计划：iEDA平台最新介绍](https://www.bilibili.com/video/BV1kT42167k9/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
+  黄增荣老师介绍iEDA平台2024年最新情况。
+
 ## DAY16: iEDA初体验
 
 ### 一、具体要求
