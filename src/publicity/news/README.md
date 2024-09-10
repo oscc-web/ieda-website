@@ -3,6 +3,8 @@ title: "新闻动态"
 ---
 
 ## **2024**
+- 2024年8月20日，iEDA团队组织第四届RISC-V中国峰会同期活动，第三届OSEDA论坛，邀请6位EDA方向专家做学术报告，[论坛详细](https://mp.weixin.qq.com/s/FuQtnMm9NAtpM4feUS-GbA)
+  
 - 2024年7月19日-21日，iEDA团队参加[第二届CCF芯片大会](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action)，并做多场学术报告
   - 组织[开源智能EDA工具和模型论坛](https://mp.weixin.qq.com/s/UWoiu0Gafmu6da6hIVURiA)，邀请6位专家做开源和智能EDA相关报告，并针对开源EDA能否实现商业展开讨论
   - 做题为《数字芯片时钟树和布线算法》的报告；

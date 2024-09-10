@@ -2,6 +2,7 @@
 title: "News"
 ---
 ## **2024**
+- On August 20, 2024, the iEDA team organized the third OSEDA Forum as a concurrent event of the 4th RISC-V China Summit, inviting six experts in the field of EDA to deliver academic presentations. [Details of the forum](https://mp.weixin.qq.com/s/FuQtnMm9NAtpM4feUS-GbA)
 
 - From July 19th to 21st, 2024, the iEDA team participated in the [Second CCF Chip Conference](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action) and gave multiple academic reports
 

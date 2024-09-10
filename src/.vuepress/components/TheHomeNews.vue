@@ -34,23 +34,35 @@
 
 <script setup>
     import { ref } from "vue";
-
     const newsItemList = ref([{
+        image: "/res/images/index/home/oseda24.jpg",
+        tags: ["开源EDA", "RISC-V"],
+        date: "2024-8-20",
+        text: "iEDA团队在第四届RISC-V中国峰会组织OSEDA论坛"
+    }, {
+        image: "/res/images/index/home/ccf-chip24.jpg",
+        tags: ["EDA", "芯片", "开源", "智能"],
+        date: "2024-7-20",
+        text: "iEDA团队在第二届CCF芯片大会组织开源智能EDA论坛"
+    }, {
         image: "/res/images/index/home/dac24-zs.jpg",
         tags: ["EDA", "DAC"],
         date: "2024-06-24",
         text: "iEDA团队参加61届Design Automation Conference (DAC)，并做3场学术报告"
-    }, {
-        image: "https://www.anlogic.com/Public/ueditor/upload/image/20231229/1703853669609094.jpeg",
-        tags: ["EDA", "精英挑战赛", "麒麟杯"],
-        date: "2023-12-26",
-        text: "由iEDA团队参与出题并组织的EDA精英挑战赛赛题二获得竞赛最高奖—麒麟杯奖"
-    }, {
-        image: "https://ieda.oscc.cc/res/images/publicity/publicity/iccad_first.png",
-        tags: ["EDA", "ICCAD", "Contest"],
-        date: "2022-10-03",
-        text: "CAD Contest ICCAD获奖名单公布，华人包揽所有奖项，获两项冠军，创历史佳绩"
-    }]);
+    }, 
+    // {
+    //     image: "https://www.anlogic.com/Public/ueditor/upload/image/20231229/1703853669609094.jpeg",
+    //     tags: ["EDA", "精英挑战赛", "麒麟杯"],
+    //     date: "2023-12-26",
+    //     text: "由iEDA团队参与出题并组织的EDA精英挑战赛赛题二获得竞赛最高奖—麒麟杯奖"
+    // }, 
+    // {
+    //     image: "https://ieda.oscc.cc/res/images/publicity/publicity/iccad_first.png",
+    //     tags: ["EDA", "ICCAD", "Contest"],
+    //     date: "2022-10-03",
+    //     text: "CAD Contest ICCAD获奖名单公布，华人包揽所有奖项，获两项冠军，创历史佳绩"
+    // }
+    ]);
     const newsBodyStyle = ref({
         "display": "flex",
         "flex-direction": "column"
