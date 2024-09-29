@@ -13,7 +13,8 @@ export default hopeTheme({
     url: "https://github.com/OSCC-Project",
     email: "ieda.oscc@gmail.com"
   },
-  favicon: "/res/images/logo/ieda_icon.png",
+  favicon: "/res/images/logo/ieda.png",
+  // favicon: "/res/images/logo/ieda_icon.png",
 
   // Theme Layout
   // Navbar
