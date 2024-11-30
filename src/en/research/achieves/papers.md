@@ -8,7 +8,7 @@ order: 1
 ## **Conference**
 
 
-**[C25]** Xiaoze Lin, Liyang Lai, Huawei Li, Biwei Xie and Xingquan Li*, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
+**[C25]** Xiaoze Lin, Liyang Lai, Huawei Li*, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
 
 
 **[C24]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities, in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**

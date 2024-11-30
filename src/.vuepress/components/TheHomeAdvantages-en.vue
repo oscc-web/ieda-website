@@ -54,7 +54,7 @@ export default {
         { value: 4, title: 'Successfully taped out 4 times through iEDA tools, 2 times with 110nm process and 2 time with 28nm process' },
         { value: 500, title: 'In the open-source communities github and gitee accumulated over 500 stars' },
         { value: 400000, title: 'The code volume of iEDA exceeds 400,000 lines <br>(excluding third-party libraries and history)' },
-        { value: 49000, title: 'Bilibili iEDA - Video Account <br>has accumulated over 49,000 plays' }
+        { value: 50000, title: 'Bilibili iEDA - Video Account <br>has accumulated over 50,000 plays' }
       ]
       
     };

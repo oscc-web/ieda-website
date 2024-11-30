@@ -46,7 +46,7 @@ export default {
         { value: 4, title: '通过iEDA工具成功进行4次流片<br>2次110nm工艺，2次28nm工艺' },
         { value: 500, title: '在开源社区github和gitee<br>累计超500个标星' },
         { value: 400000, title: 'iEDA代码量超过40万行<br>(不包括第三方库和历史)' },
-        { value: 49000, title: 'B站iEDA-视频号<br>已累计播放超49000次' }
+        { value: 50000, title: 'B站iEDA-视频号<br>已累计播放超50000次' }
       ]
     };
   }
