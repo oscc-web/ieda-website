@@ -450,7 +450,7 @@ priority算法的主要贡献点有两个：
 
 目前实现的iFPGA mapper里面的cut的truth table存储模型，包括仿真以及工艺映射时都会使用到。
 
-<center><img src="/res/images/tools/tool/imap/cut-truth-table.webp" style="zoom:65%;" /></center>
+<center><img src="/res/images/tools/tool/imap/114846_8c9fd635_9646530.webp" style="zoom:65%;" /></center>
 
 ### 3.3 AIG merge
 
@@ -458,7 +458,7 @@ priority算法的主要贡献点有两个：
 
 多个AIGs融合成一个AIG，通过计算choice来减少structural bias的一个手段。要融合的几个AIG是同一个原始的AIG经过了不同的优化处理的结果，它们功能上还是等效的，但是内部结构可能会有差别。
 
-<center><img src="/res/images/tools/tool/imap/aig-merge.webp" style="zoom:65%;" /></center>
+<center><img src="/res/images/tools/tool/imap/181117_4687f7ea_9646530.webp" style="zoom:65%;" /></center>
 
 像上图就是两个等价AIG融合后的结果，我们把两个AIG分别叫做net1和net2，原本net1中的节点有{a,b,c,d,e,p,q,r,t,o}，而net2有{a,b,c,d,e,p,s,u,n}，两个AIG有很多两者都拥有的功能相同的点{a,b,c,d,e,p}，于是这些点只生成一份，供两个AIG使用。这种的结构就是AIG merge后的结构，我们一般称其为miter。
 
