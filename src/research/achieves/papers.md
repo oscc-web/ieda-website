@@ -9,10 +9,12 @@ order: 1
 ## **Conference**
 
 
-**[C25]** Xiaoze Lin, Liyang Lai, Huawei Li*, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
+**[C26]** Xiaoze Lin, Liyang Lai, Huawei Li*, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
 
 
-**[C24]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities, in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
+**[C25]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities, in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
+
+**[C24]** He Liu, Yipei Xu, Simin Tao, Zhipeng Huang, Biwei Xie, Xingquan Li* and Wei Gao, Simultaneous Conjugate Gradient and iAFF-UNet for Accurate IR Drop Calculation, in Proceedings of IEEE International Conference on Computer Design (ICCD), 2024. **(CCF-B)**
 
 **[C23]** Ruizhi Liu, ZhishengZeng, Shizhe Ding, Jingyan Sui, Xingquan Li, Dongbo Bu*, [NeuralSteiner: Learning Steiner Tree for Overflow-avoiding Global Routing in Chip Design](https://openreview.net/pdf?id=oEKFPSOWpp), in Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. **(CCF-A)**
 
