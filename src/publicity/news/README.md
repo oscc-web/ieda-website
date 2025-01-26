@@ -1,13 +1,17 @@
 ---
 title: "新闻动态"
 ---
+ ## **2025**
+- 2025年1月20日-23日，iEDA团队李兴权老师受邀参加[30th Asia and South Pacific Design Automation Conference (ASP-DAC 2025)](https://tsys.jp/aspdac/2025/program/program.html)，并做题为《Toward Advacing 3D-ICs Physical Design: Chances and Challenges》学术报告
 
 ## **2024**
+- 2024年12月21日，iEDA团队受邀参加第一届创芯论坛（Chip Creative Forum）并做题为《RTL-to-Vector-to-GDS》的报告，[论坛详细](https://www.163.com/dy/article/JJ5RB49T05526O4T.html)
+
 - 2024年11月9日，iEDA团队在2024年CCF中国开源大会，组织开源智能EDA与芯片设计论坛，邀请6位EDA方向专家做学术报告，针对如何构建开源芯片设计进行研讨，[论坛详细](http://chinaosc.ccf.org.cn/forum)
 
-- 2024年11月8日，iEDA团队受邀参加第二届集成芯片与芯粒大会并做题为《Toward Advacing 3D-ICs Physical Design》的报告，[论坛详细](http://2024.iccconf.cn/yicheng)
+- 2024年11月8日，iEDA团队李兴权老师受邀参加第二届集成芯片与芯粒大会并做题为《Toward Advacing 3D-ICs Physical Design》的报告，[论坛详细](http://2024.iccconf.cn/yicheng)
 
-- 2024年11月5日，iEDA团队受邀参加第26届中国电子学会青年年会暨第5届半导体青年学术会议并做题为《Layout-to-Vector-to-GDS》的报告，[论坛详细](https://mp.weixin.qq.com/s/6LlkryMfQRC0tBZHQOXUgQ)
+- 2024年11月5日，iEDA团队李兴权老师受邀参加第26届中国电子学会青年年会暨第5届半导体青年学术会议并做题为《Layout-to-Vector-to-GDS》的报告，[论坛详细](https://mp.weixin.qq.com/s/6LlkryMfQRC0tBZHQOXUgQ)
 
 - 2024年8月20日，iEDA团队组织第四届RISC-V中国峰会同期活动，第三届OSEDA论坛，邀请6位EDA方向专家做学术报告，[论坛详细](https://mp.weixin.qq.com/s/FuQtnMm9NAtpM4feUS-GbA)
   

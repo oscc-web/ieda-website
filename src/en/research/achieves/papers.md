@@ -7,7 +7,7 @@ order: 1
 
 ## **Conference**
 
-**[C26]** Xiaoze Lin, Liyang Lai, Huawei Li*, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
+**[C26]** Xiaoze Lin, Liyang Lai*, Huawei Li, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
 
 
 **[C25]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities, in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
@@ -61,7 +61,9 @@ order: 1
 **[C1]** Jiaxi Zhang, Liwei Ni, Shenggen Zheng*, Hao Liu, Xiangfu Zou, Feng Wang, and Guojie Luo. "Enhanced fast Boolean matching based on sensitivity signatures pruning." In Proceedings of IEEE/ACM International Conference on Computer Aided Design (ICCAD), 2021, pp. 1-9. **(CCF-B)**
 
 ## **Journal**
+**[J4]** Junfeng Liu, Liwei Ni, Lei Chen, Xing Li, Qinghua Zhao, Xingquan Li, Shuai Ma*, "[A Delay-Driven Iterative Technology Mapping Framework.](https://ieeexplore.ieee.org/abstract/document/10818751/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
 
+**[J3]** Jie Zhao, Biwei Xie, and Xingquan Li, "[QR-DeepONet: Resolve abnormal convergence issue related to basis dimension in DeepONet.](https://iopscience.iop.org/article/10.1088/2632-2153/ada0a5)", Machine Learning, Science, 2025. **(SCI Q1)**
 
 **[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
 

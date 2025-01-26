@@ -1,7 +1,13 @@
 ---
 title: "News"
 ---
+
+## **2025**
+- From January 20 to 23, 2025, Xingquan Li from the iEDA team was invited to attend the [30th Asia and South Pacific Design Automation Conference (ASP-DAC 2025)](https://tsys.jp/aspdac/2025/program/program.html) and deliver an academic presentation titled "Toward Advancing 3D-ICs Physical Design: Chances and Challenges."
+
 ## **2024**
+- On December 21, 2024, the iEDA team was invited to participate in the 1st Chip Creative Forum and delivered a presentation titled "RTL-to-Vector-to-GDS." [Forum details](https://www.163.com/dy/article/JJ5RB49T05526O4T.html)
+
 - On August 20, 2024, the iEDA team organized the third OSEDA Forum as a concurrent event of the 4th RISC-V China Summit, inviting six experts in the field of EDA to deliver academic presentations. [Details of the forum](https://mp.weixin.qq.com/s/FuQtnMm9NAtpM4feUS-GbA)
 
 - From July 19th to 21st, 2024, the iEDA team participated in the [Second CCF Chip Conference](https://conf.ccf.org.cn/web/api/m1216328594754768896171003693528.action) and gave multiple academic reports
