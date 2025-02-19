@@ -205,6 +205,12 @@ export const enSidebar = sidebar({
         collapsible: true
     }],
     "/en/research/": [{
+        text: "Publications",
+        prefix: "papers/",
+        link: "/en/research/papers/README.md",
+        children: "structure",
+        collapsible: true
+    },{
         text: "Research Subjects",
         prefix: "subjects/",
         link: "/en/research/subjects/README.md",

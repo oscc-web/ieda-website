@@ -39,6 +39,7 @@ export const zhNavbar = navbar([
         text: "学术和研发",
         prefix: "/research/",
         children: [
+            "papers/",
             "subjects/",
             "tasks/",
             "achieves/"

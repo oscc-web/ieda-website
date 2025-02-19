@@ -205,6 +205,12 @@ export const zhSidebar = sidebar({
         collapsible: true
     }],
     "/research/": [{
+        text: "学术论文",
+        prefix: "papers/",
+        link: "/research/papers/README.md",
+        children: "structure",
+        collapsible: true
+    },{
         text: "研究课题",
         prefix: "subjects/",
         link: "/research/subjects/README.md",

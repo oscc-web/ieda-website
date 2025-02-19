@@ -1,18 +1,19 @@
 ---
-title: "Papers"
-order: 1
+title: "学术论文"
+index: false
 ---
 
-[**The EDA Conferences**](http://eda.laais.cn/)
+[**EDA会议论文投稿时间**](http://eda.laais.cn/)
+
 
 ## **Conference**
 
-**[C26]** Xiaoze Lin, Liyang Lai*, Huawei Li, Biwei Xie and Xingquan Li, An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems, IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
+**[C26]** Xiaoze Lin, Liyang Lai*, Huawei Li, Biwei Xie and Xingquan Li,  [An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems](/res/papers/25-DATE_FS.pdf), IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
 
 
-**[C25]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities, in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
+**[C25]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, [Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities](/res/papers/25-ASPDAC_3D-PD.pdf), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
 
-**[C24]** He Liu, Yipei Xu, Simin Tao, Zhipeng Huang, Biwei Xie, Xingquan Li* and Wei Gao, Simultaneous Conjugate Gradient and iAFF-UNet for Accurate IR Drop Calculation, in Proceedings of IEEE International Conference on Computer Design (ICCD), 2024. **(CCF-B)**
+**[C24]** He Liu, Yipei Xu, Simin Tao, Zhipeng Huang, Biwei Xie, Xingquan Li* and Wei Gao, [Simultaneous Conjugate Gradient and iAFF-UNet for Accurate IR Drop Calculation](/res/papers/24-ICCD_IRdrop.pdf), in Proceedings of IEEE International Conference on Computer Design (ICCD), 2024. **(CCF-B)**
 
 **[C23]** Ruizhi Liu, ZhishengZeng, Shizhe Ding, Jingyan Sui, Xingquan Li, Dongbo Bu*, [NeuralSteiner: Learning Steiner Tree for Overflow-avoiding Global Routing in Chip Design](https://openreview.net/pdf?id=oEKFPSOWpp), in Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. **(CCF-A)**
 
@@ -30,9 +31,9 @@ order: 1
 
 **[C16]** Zhipeng Huang, Zengrong Huang, Simin Tao, Shijian Chen, Zhisheng Zeng, Liwei Ni, Chunan Zhuang, Weiguo Li, Xueyan Zhao, He Liu, Biwei Xie, and Xingquan Li*, [AiEDA: An Open-source AI-native EDA Library](https://ieeexplore.ieee.org/abstract/document/10617562), in proceedings of IEEE International Symposium of EDA (ISEDA), 2024.
 
-**[C15]** Xingquan Li, Simin Tao, Shijian Chen, Zhisheng Zeng, Zhipeng Huang, Hongxi Wu, Weiguo Li, Zengrong Huang, Liwei Ni, Xueyan Zhao, He Liu, Shuaiying Long, Ruizhi Liu, Xiaoze Lin, Bo Yang, Fuxing Huang, Zonglin Yang, Yihang Qiu, Zheqing Shao, Jikang Liu, Yuyao Liang, Biwei Xie, Yungang Bao and Bei Yu*, [iPD: An Open-source intelligent Physical Design Tool Chain (invited)](https://ieeexplore.ieee.org/abstract/document/10473932), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2024. **(CCF-C)**
+**[C15]** Xingquan Li, Simin Tao, Shijian Chen, Zhisheng Zeng, Zhipeng Huang, Hongxi Wu, Weiguo Li, Zengrong Huang, Liwei Ni, Xueyan Zhao, He Liu, Shuaiying Long, Ruizhi Liu, Xiaoze Lin, Bo Yang, Fuxing Huang, Zonglin Yang, Yihang Qiu, Zheqing Shao, Jikang Liu, Yuyao Liang, Biwei Xie*, Yungang Bao* and Bei Yu*, [iPD: An Open-source intelligent Physical Design Tool Chain (invited)](https://ieeexplore.ieee.org/abstract/document/10473932), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2024. **(CCF-C)**
 
-**[C14]** Xingquan Li, Zengrong Huang, Simin Tao, Zhipeng Huang, Chunan Zhuang, Hao Wang, Yifan Li, Yihang Qiu, Guojie Luo, Huawei Li, Haihua Shen, Mingyu Chen, Dongbo Bu, Wenxing Zhu, Ye Cai, Xiaoming Xiong, Ying Jiang, Yi Heng, Peng Zhang, Bei Yu, Biwei Xie*, Yungang Bao*, [iEDA: An Open-source infrastructure of EDA (invited)]((https://ieeexplore.ieee.org/abstract/document/10473983)), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2024. **(CCF-C)**
+**[C14]** Xingquan Li, Zengrong Huang, Simin Tao, Zhipeng Huang, Chunan Zhuang, Hao Wang, Yifan Li, Yihang Qiu, Guojie Luo, Huawei Li, Haihua Shen, Mingyu Chen, Dongbo Bu, Wenxing Zhu, Ye Cai, Xiaoming Xiong, Ying Jiang, Yi Heng, Peng Zhang, Bei Yu*, Biwei Xie*, Yungang Bao*, [iEDA: An Open-source infrastructure of EDA (invited)]((https://ieeexplore.ieee.org/abstract/document/10473983)), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2024. **(CCF-C)**
 
 **[C13]** Ping Zhang, Pengju Yao, Xingquan Li, Bei Yu, and Wenxing Zhu*, “[V-GR: 3D Global Routing with Via Minimization and Multi-Strategy Rip-up and Rerouting](https://ieeexplore.ieee.org/abstract/document/10473939)” in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2024. **(CCF-C)**
 

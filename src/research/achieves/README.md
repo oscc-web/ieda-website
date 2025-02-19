@@ -8,7 +8,6 @@ index: false
 
 ## **成果清单**
 
-- [论文](/research/achieves/papers.md)
 - [专利](/research/achieves/patents.md)
 - [软件](/research/achieves/softwares.md)
 - [著作](/research/achieves/books.md)

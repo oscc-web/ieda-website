@@ -1,5 +1,5 @@
 ---
-title: "Software"
+title: "Softwares"
 order: 3
 ---
 ## **Software Links**
