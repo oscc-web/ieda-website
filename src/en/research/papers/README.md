@@ -6,10 +6,14 @@ index: false
 [**The EDA Conferences**](http://eda.laais.cn/)
 
 
+
 ## **Conference**
 
-**[C26]** Xiaoze Lin, Liyang Lai*, Huawei Li, Biwei Xie and Xingquan Li, [An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems](/res/papers/25-DATE_FS.pdf), IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
+**[C28]** Shijian Chen, Yihang Qiu, Biwei Xie, Mingyu Chen and Xingquan Li*, [A Fast, Iterative Clock Skew Scheduling Algorithm with Dynamic Sequential Graph Extraction]，in Proceedings of Design Automation Conference (DAC), 2025. **(CCF-A)*
 
+**[C27]**  Wenchao Li, Hongxi Wu, Duanxiang Liu, Xingquan Li and Wenxing Zhu*, [Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement]，in Proceedings of Design Automation Conference (DAC), 2025. **(CCF-A)*
+
+**[C26]** Xiaoze Lin, Liyang Lai*, Huawei Li, Biwei Xie and Xingquan Li,  [An Efficient Parallel Fault Simulator for Functional Patterns on Multi-core Systems](/res/papers/25-DATE_FS.pdf), IEEE/ACM Design, Automation and Test in Europe Conference (DATE), 2025. **(CCF-B)**
 
 **[C25]**  Xueyan Zhao, Weiguo Li, Zhisheng Zeng, Zhipeng Huang, Biwei Xie, Xingquan Li*, Yungang Bao, [Toward Advancing 3D-ICs Physical Design: Challenges and Opportunities](/res/papers/25-ASPDAC_3D-PD.pdf), in Proceedings of the 28th Asia and South Pacific Design Automation Conference (ASP-DAC), 2025. **(CCF-C)**
 
@@ -62,11 +66,12 @@ index: false
 **[C1]** Jiaxi Zhang, Liwei Ni, Shenggen Zheng*, Hao Liu, Xiangfu Zou, Feng Wang, and Guojie Luo. "Enhanced fast Boolean matching based on sensitivity signatures pruning." In Proceedings of IEEE/ACM International Conference on Computer Aided Design (ICCAD), 2021, pp. 1-9. **(CCF-B)**
 
 ## **Journal**
-**[J4]** Junfeng Liu, Liwei Ni, Lei Chen, Xing Li, Qinghua Zhao, Xingquan Li, Shuai Ma*, "[A Delay-Driven Iterative Technology Mapping Framework.](https://ieeexplore.ieee.org/abstract/document/10818751/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
+**[J5]** Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Jian Chen, Zhixue He, Xingquan Li*, "[A Delay-Driven Iterative Technology Mapping Framework.](https://ieeexplore.ieee.org/document/10916748/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+
+**[J4]** Junfeng Liu, Liwei Ni, Lei Chen, Xing Li, Qinghua Zhao, Xingquan Li, Shuai Ma*, "[iCTS: Iterative and Hierarchical Clock Tree Synthesis With Skew-Latency-Load Tree.](https://ieeexplore.ieee.org/abstract/document/10818751/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
 
 **[J3]** Jie Zhao, Biwei Xie, and Xingquan Li, "[QR-DeepONet: Resolve abnormal convergence issue related to basis dimension in DeepONet.](https://iopscience.iop.org/article/10.1088/2632-2153/ada0a5)", Machine Learning, Science, 2025. **(SCI Q1)**
 
-**[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
+**[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu*, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
 
-
-**[J1]** Hongxi Wu, Zzhipeng Huang, Xingquan Li, Wwenxing Zhu，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
+**[J1]** Hongxi Wu, Zzhipeng Huang, Xingquan Li, Wwenxing Zhu*，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
