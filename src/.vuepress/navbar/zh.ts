@@ -16,6 +16,7 @@ export const zhNavbar = navbar([
             "eda/",
             "water_drop/",
             "practice/",
+            "course/",
             "others/"
             
         ]

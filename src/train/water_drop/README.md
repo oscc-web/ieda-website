@@ -1,7 +1,6 @@
 ---
 title: "水滴计划"
 order: 1
-icon: bell
 ---
 ## **背景和目标**
 

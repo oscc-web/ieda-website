@@ -136,6 +136,24 @@ export const zhSidebar = sidebar({
         ],
         collapsible: true
     }, {
+        text: "EDA课程",
+        prefix: "course/",
+        link: "/train/course/README.md",
+        children: [
+            {
+                text: "数字电路设计",
+                prefix: "digital_circuit/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "光芯片设计",
+                prefix: "photonic_IC/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
+        collapsible: true
+    }, {
         text: "其他学习",
         link: "/train/others/README.md",
         children: [

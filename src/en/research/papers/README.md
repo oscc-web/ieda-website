@@ -66,7 +66,7 @@ index: false
 **[C1]** Jiaxi Zhang, Liwei Ni, Shenggen Zheng*, Hao Liu, Xiangfu Zou, Feng Wang, and Guojie Luo. "Enhanced fast Boolean matching based on sensitivity signatures pruning." In Proceedings of IEEE/ACM International Conference on Computer Aided Design (ICCAD), 2021, pp. 1-9. **(CCF-B)**
 
 ## **Journal**
-**[J6]** Liwei Ni, Rui Wang, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Guojie Luo, Zhufei Chu, Weikang Qian, Xiaoyan Yang, Biwei Xie, Xingquan Li*, and Huawei Li, "[OpenLS-DGF: An Adaptive Open-Source Dataset Generation Framework for Machine Learning Tasks in Logic Synthesis.](https://ieeexplore.ieee.org/document/10916748/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+**[J6]** Liwei Ni, Rui Wang, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Guojie Luo, Zhufei Chu, Weikang Qian, Xiaoyan Yang, Biwei Xie, Xingquan Li*, and Huawei Li, "[OpenLS-DGF: An Adaptive Open-Source Dataset Generation Framework for Machine Learning Tasks in Logic Synthesis.](https://ieeexplore.ieee.org/abstract/document/10943238/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
 
 **[J5]** Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Jian Chen, Zhixue He, Xingquan Li*, "[iCTS: Iterative and Hierarchical Clock Tree Synthesis With Skew-Latency-Load Tree.](https://ieeexplore.ieee.org/document/10916748/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
 
