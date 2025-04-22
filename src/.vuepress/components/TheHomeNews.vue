@@ -14,7 +14,8 @@
                 :xs="24">
                 <el-card
                     :body-style="newsBodyStyle"
-                    shadow="always">
+                    shadow="always"
+                    @click="handleClick(item.link)">
                     <el-image :src="item.image"></el-image>
                     <div class="news-tags">
                         <el-tag
@@ -35,10 +36,11 @@
 <script setup>
     import { ref } from "vue";
     const newsItemList = ref([{
-        image: "/res/images/index/home/oseda24.jpg",
-        tags: ["开源EDA", "RISC-V"],
-        date: "2024-8-20",
-        text: "iEDA团队在第四届RISC-V中国峰会组织OSEDA论坛"
+        image: "/res/images/index/home/ASPDAC.png",
+        tags: ["ASPDAC", "3D IC"],
+        date: "2025-1-21",
+        text: "iEDA团队参加ASPDAC 2025",
+        link: "https://tsys.jp/aspdac/2025/program/program_abst.html#2E-3"
     }, {
         image: "/res/images/index/home/ccf-chip24.jpg",
         tags: ["EDA", "芯片", "开源", "智能"],
@@ -67,6 +69,12 @@
         "display": "flex",
         "flex-direction": "column"
     });
+    const handleClick = (url) => {
+        if (url) {
+            window.open(url, '_blank') // 新标签页打开
+            // 或 location.href = url // 当前页跳转
+        }
+    };
 </script>
 
 <style scoped lang="scss">
@@ -76,6 +84,11 @@
     .el-card {
         height: 440px;
         cursor: pointer;
+        transition: all 0.3s;  /* 新增悬停效果 */
+        &:hover {
+            box-shadow: var(--el-box-shadow-dark) !important;
+            transform: translateY(-3px);
+        }
     }
     .el-image {
         margin-bottom: 10px;

@@ -76,4 +76,4 @@ index: false
 
 **[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu*, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
 
-**[J1]** Hongxi Wu, Zzhipeng Huang, Xingquan Li, Wwenxing Zhu*，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
+**[J1]** Hongxi Wu, Zhipeng Huang, Xingquan Li, Wenxing Zhu*，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
