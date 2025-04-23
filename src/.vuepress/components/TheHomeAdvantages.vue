@@ -27,7 +27,7 @@ export default {
       counters: [
         { value: 1, title: '设计1个EDA公共基础底座<br>包含：解析器，数据库，管理平台，交互引擎' },
         { value: 11, title: '完成11款EDA工具<br>包含：iMap、iNO、iFP、iPDN、iPL、iCTS、iTO、iRT、iSTA、iPA(iIR)、iDRC等' },
-        { value: 5, title: '通过iEDA工具成功进行4次流片<br>2次110nm工艺，2次28nm工艺' },
+        { value: 5, title: '通过iEDA工具成功进行5次流片<br>2次110nm工艺，3次28nm工艺' },
         { value: 500, title: '在开源社区github和gitee<br>累计超500个标星' },
         { value: 400000, title: 'iEDA代码量超过40万行<br>(不包括第三方库和历史)' },
         { value: 60000, title: 'B站iEDA-视频号<br>已累计播放超50000次' }
