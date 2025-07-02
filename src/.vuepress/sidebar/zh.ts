@@ -229,6 +229,12 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     },{
+        text: "论文综述",
+        prefix: "awesome/",
+        link: "/research/awesome/AIEDA.md",
+        children: "structure",
+        collapsible: true
+    },{
         text: "研究课题",
         prefix: "subjects/",
         link: "/research/subjects/README.md",

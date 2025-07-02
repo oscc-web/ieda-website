@@ -211,6 +211,12 @@ export const enSidebar = sidebar({
         children: "structure",
         collapsible: true
     },{
+        text: "Reviews",
+        prefix: "awesome/",
+        link: "/en/research/awesome/README.md",
+        children: "structure",
+        collapsible: true
+    },{
         text: "Research Subjects",
         prefix: "subjects/",
         link: "/en/research/subjects/README.md",

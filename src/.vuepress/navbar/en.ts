@@ -40,6 +40,7 @@ export const enNavbar = navbar([
         prefix: "/en/research/",
         children: [
             "papers/",
+            "awesome/",
             "subjects/",
             "tasks/",
             "achieves/"
