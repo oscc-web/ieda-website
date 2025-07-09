@@ -18,7 +18,6 @@ Implements checks for non-Spacing type rules, mainly including checks for MinSte
 | Minimum Area Rule | The minimum area rule stipulates that the conductor area of each process layer cannot be smaller than the minimum area parameter value specified in the TechFile, as shown by the Area indication in the left figure of Figure 1.4 |
 | Minimum Hole Area Rule | The minimum enclosed area stipulates that the hole area formed by the conductor enclosure cannot be smaller than the minimum area parameter value specified in the TechFile, as shown by the Enclosed Area indication in the right figure of Figure 1.4. |
 
-<center><img src="/res/images/activities/contest/openDACS-23-t1/fig1.png" style="zoom:65%;" /></center>
 
 <center><img src="/res/images/tools/tool/idrc/minstep.png" style="zoom:80%;" /></center>
 
