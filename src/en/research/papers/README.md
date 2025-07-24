@@ -69,7 +69,7 @@ index: false
 **[C1]** Jiaxi Zhang, Liwei Ni, Shenggen Zheng*, Hao Liu, Xiangfu Zou, Feng Wang, and Guojie Luo. "Enhanced fast Boolean matching based on sensitivity signatures pruning." In Proceedings of IEEE/ACM International Conference on Computer Aided Design (ICCAD), 2021, pp. 1-9. **(CCF-B)**
 
 ## **Journal**
-**[J9]** Ye Cai, Rui Wang, Liwei Ni, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Biwei Xie, and Xingquan Li*. [AiLO: A Predictive Framework for Logic Optimization Using Multi-Scale Cross-Attention Transformer.](/res/papers/25-TODAES_AiLO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+**[J9]** Ye Cai, Rui Wang, Liwei Ni, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Biwei Xie, and Xingquan Li*. [AiLO: A Predictive Framework for Logic Optimization Using Multi-Scale Cross-Attention Transformer](/res/papers/25-TODAES_AiLO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
 
 **[J8]** Xinhuan Lai, Miao Liu, Xingquan Li*, Yihang Qiu, Shijian Chen, Xinhao Li, Jungang Xu*, [iPO: Constant Liar Parameter Optimization for Placement with Representation and Transfer Learning](/res/papers/25-TODAES-iPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
 
