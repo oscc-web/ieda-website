@@ -16,6 +16,7 @@ index: false
 <center>Data Transformation from Verilog to Netlist/DEF/GDS/ to Json to Vector Database to Application</center>
 
 
-<center><img src="/res/images/aieda/ibm.png" alt="6" style="zoom:100%;"/></center>
-<center>Data Generation</center>
 
+::: tip Note 
+**Github repo: https://github.com/OSCC-Project/iDATA and https://github.com/OSCC-Project/iEDA-Chips**
+:::

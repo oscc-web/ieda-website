@@ -171,14 +171,14 @@ export const enSidebar = sidebar({
     "/en/aieda/": [
         {
         text: "AiEDA Library",
-        link: "/en/aieda/aieda-library/README.md",
-        prefix: "aieda-library/",
+        link: "/en/aieda/library/README.md",
+        prefix: "library/",
         children: "structure",
         collapsible: true
     }, {
         text: "AiEDA Model",
-        link: "/en/aieda/aieda-model/README.md",
-        prefix: "aieda-model/",
+        link: "/en/aieda/model/README.md",
+        prefix: "model/",
         children: "structure",
         collapsible: true
     }, {

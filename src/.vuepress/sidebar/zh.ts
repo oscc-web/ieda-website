@@ -189,14 +189,14 @@ export const zhSidebar = sidebar({
     "/aieda/": [
         {
         text: "AiEDA Library",
-        link: "/aieda/aieda-library/README.md",
-        prefix: "aieda-library/",
+        link: "/aieda/library/README.md",
+        prefix: "library/",
         children: "structure",
         collapsible: true
     }, {
         text: "AiEDA Model",
-        link: "/aieda/aieda-model/README.md",
-        prefix: "aieda-model/",
+        link: "/aieda/model/README.md",
+        prefix: "model/",
         children: "structure",
         collapsible: true
     }, {

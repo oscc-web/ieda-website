@@ -17,3 +17,8 @@ AiEDA is an open-source AI-native Electronic Design Automation (EDA) library tha
 
 <center><img src="/res/images/aieda/datavector.png" alt="6" style="zoom:70%;"/></center>
 <center>Data Transformation for AI-aided design (AAD)</center>
+
+
+::: tip Note 
+**Github repo: https://github.com/OSCC-Project/AiEDA**
+:::

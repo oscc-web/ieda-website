@@ -31,10 +31,11 @@ export default hopeTheme({
   },
 
 
+  // logo: "/res/images/logo/iEDA-wsy.png",
   logo: "/res/images/logo/ieda_logo_b.png",
   logoDark: "/res/images/logo/ieda_logo_d.png",
 
-  repo: "OSCC-Project/iEDA",
+  repo: "OSCC-Project",
   repoDisplay: true,
   repoLabel: "GitHub",
   navbarAutoHide: "mobile",

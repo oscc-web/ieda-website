@@ -31,8 +31,8 @@ export const enNavbar = navbar([
         text: "Intelligence",
         prefix: "/en/aieda/",
         children: [
-            "aieda-library/",
-            "aieda-model/",
+            "library/",
+            "model/",
             "ipcl/",
             "dataset/"
         ]

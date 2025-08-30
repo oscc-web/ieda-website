@@ -1,5 +1,5 @@
 ---
-title: "AiEDA-Model"
+title: "AiEDA Model"
 index: false
 ---
 
@@ -18,3 +18,7 @@ index: false
   * [AiST](/aieda/aieda-model/aist.md): Steiner tree generation model
   * [AiTO](/aieda/aieda-model/aito.md): Reinforcement learning for buffer insertion and sizing
   * [AiMP](/aieda/aieda-model/aimp.md): Macro placement model
+
+::: note Note 
+**See more, please visit the github repo: https://github.com/OSCC-Project/AiEDA-models**
+:::
