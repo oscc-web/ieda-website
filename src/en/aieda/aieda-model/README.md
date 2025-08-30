@@ -1,18 +1,22 @@
 ---
-title: "AiEDA Models"
+title: "AiEDA-Model"
 index: false
 ---
 
-(Ai+EDA models researched by the iEDA team)
+<center><img src="/res/images/logo/AiEDA.png" alt="6" style="zoom:7%;"/></center>
 
-**Main Content**
-- Small Models (Part of Ai Models)
-   - [AiMap](/aieda/aieda-model/aimap.md): Artificial intelligence-based delay learning and selection for process mapping cuts
-   - [AiSTA](/aieda/aieda-model/aista.md): Delay calculation and prediction model
-   - [AiCap](/aieda/aieda-model/aicap.md): 3D capacitance calculation fitting model
-   - [AiST](/aieda/aieda-model/aist.md): Steiner tree generation model
-   - [AiTO](/aieda/aieda-model/aito.md): Reinforcement learning buffer and sizing
-   - [AiMP](/aieda/aieda-model/aimp.md): Macro cell layout model
+<div align="center">
+<h3>  AI Model for EDA Tasks </h3>
+</div>
 
-- Large Models
-<center><img src="/res/images/aieda/lcm.png" alt="6" style="zoom:100%;"/></center>
+
+## **Selected Models**
+
+- 小模型（部分Ai模型）
+  - [AiMap](/aieda/aieda-model/aimap.md)：工艺映射cut的delay学习和选择
+  - [AiSTA](/aieda/aieda-model/aista.md)：时延计算和预测模型
+  - [AiCap](/aieda/aieda-model/aicap.md)：3D电容计算拟合模型
+  - [AiST](/aieda/aieda-model/aist.md)：斯坦纳树生成模型
+  - [AiTO](/aieda/aieda-model/aito.md)：强化学习buffer和sizing
+  - [AiMP](/aieda/aieda-model/aimp.md)：宏单元布局模型
+

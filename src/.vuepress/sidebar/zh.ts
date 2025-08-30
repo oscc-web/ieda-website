@@ -186,40 +186,47 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     }],
-    "/aieda/": [{
-        text: "iBM数据集",
-        link: "/aieda/ibm/README.md",
-        prefix: "ibm/",
-        children: [
-            {
-                text: "问题数据",
-                prefix: "problem/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "芯片数据",
-                prefix: "chip/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "工具数据",
-                prefix: "tool/",
-                children: "structure",
-                collapsible: true
-            }
-        ],
+    "/aieda/": [
+        {
+        text: "AiEDA Library",
+        link: "/aieda/aieda-library/README.md",
+        prefix: "aieda-library/",
+        children: "structure",
         collapsible: true
     }, {
-        text: "AiEDA模型",
+        text: "AiEDA Model",
         link: "/aieda/aieda-model/README.md",
         prefix: "aieda-model/",
         children: "structure",
         collapsible: true
     }, {
-        text: "AiEDA框架",
-        link: "/aieda/aieda-framework/README.md",
-        prefix: "aieda-framework/",
+        text: "iPCL Large Model",
+        link: "/aieda/ipcl/README.md",
+        prefix: "ipcl/",
         children: "structure",
+        collapsible: true
+    },{
+        text: "EDA Dataset",
+        link: "/aieda/dataset/README.md",
+        prefix: "dataset/",
+        children: [
+            {
+                text: "Chip Data",
+                prefix: "chip/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "EDA Data",
+                prefix: "tool/",
+                children: "structure",
+                collapsible: true
+            },{
+                text: "Vector Data",
+                prefix: "problem/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }],
     "/research/": [{

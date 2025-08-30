@@ -168,40 +168,47 @@ export const enSidebar = sidebar({
         children: "structure",
         collapsible: true
     }],
-    "/en/aieda/": [{
-        text: "iBM Dataset",
-        link: "/en/aieda/ibm/README.md",
-        prefix: "ibm/",
-        children: [
-            {
-                text: "Problem Data",
-                prefix: "problem/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "Chip Data",
-                prefix: "chip/",
-                children: "structure",
-                collapsible: true
-            }, {
-                text: "Tool Data",
-                prefix: "tool/",
-                children: "structure",
-                collapsible: true
-            }
-        ],
+    "/en/aieda/": [
+        {
+        text: "AiEDA Library",
+        link: "/en/aieda/aieda-library/README.md",
+        prefix: "aieda-library/",
+        children: "structure",
         collapsible: true
     }, {
-        text: "AiEDA Models",
+        text: "AiEDA Model",
         link: "/en/aieda/aieda-model/README.md",
         prefix: "aieda-model/",
         children: "structure",
         collapsible: true
     }, {
-        text: "AiEDA Framework",
-        link: "/en/aieda/aieda-framework/README.md",
-        prefix: "aieda-framework/",
+        text: "iPCL Large Model",
+        link: "/en/aieda/ipcl/README.md",
+        prefix: "ipcl/",
         children: "structure",
+        collapsible: true
+    },{
+        text: "EDA Dataset",
+        link: "/en/aieda/dataset/README.md",
+        prefix: "dataset/",
+        children: [
+            {
+                text: "Chip Data",
+                prefix: "chip/",
+                children: "structure",
+                collapsible: true
+            }, {
+                text: "EDA Data",
+                prefix: "tool/",
+                children: "structure",
+                collapsible: true
+            },{
+                text: "Vector Data",
+                prefix: "problem/",
+                children: "structure",
+                collapsible: true
+            }
+        ],
         collapsible: true
     }],
     "/en/research/": [{

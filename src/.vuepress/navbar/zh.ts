@@ -32,9 +32,10 @@ export const zhNavbar = navbar([
         text: "智能和数据",
         prefix: "/aieda/",
         children: [
-            "ibm/",
+            "aieda-library/",
             "aieda-model/",
-            "aieda-framework/"
+            "ipcl/",
+            "dataset/"
         ]
     }, {
         text: "学术和研发",
