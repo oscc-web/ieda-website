@@ -68,6 +68,8 @@ index: false
 
 ## **Journal**
 
+**[J10]** Yifan Li, Ruizhi Liu, Zhisheng Zeng, Zengrong Huang, Zhipeng Huang, Dongbo Bu, and Xingquan Li*. [AiDRC: Accelerating Detailed Routing by AI-Driven Design Rule Violation Prediction and Checking](/res/papers/25-TODAES-AiDRC.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
 **[J9]** Ye Cai, Rui Wang, Liwei Ni, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Biwei Xie, and Xingquan Li*. [AiLO: A Predictive Framework for Logic Optimization Using Multi-Scale Cross-Attention Transformer](/res/papers/25-TODAES_AiLO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
 
 **[J8]** Xinhuan Lai, Miao Liu, Xingquan Li*, Yihang Qiu, Shijian Chen, Xinhao Li, Jungang Xu*, [iPO: Constant Liar Parameter Optimization for Placement with Representation and Transfer Learning](/res/papers/25-TODAES-iPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
