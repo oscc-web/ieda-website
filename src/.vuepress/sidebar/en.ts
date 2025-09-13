@@ -230,9 +230,9 @@ export const enSidebar = sidebar({
         children: "structure",
         collapsible: true
     }, {
-        text: "Development Tasks",
-        prefix: "tasks/",
-        link: "/en/research/tasks/README.md",
+        text: "Benchmark",
+        prefix: "bench/",
+        link: "/en/research/bench/README.md",
         children: "structure",
         collapsible: true
     }, {

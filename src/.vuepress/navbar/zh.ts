@@ -44,7 +44,7 @@ export const zhNavbar = navbar([
             "papers/",
             "awesome/",
             "subjects/",
-            "tasks/",
+            "bench/",
             "achieves/"
         ]
     }, {

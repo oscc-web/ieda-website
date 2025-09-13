@@ -43,7 +43,7 @@ export const enNavbar = navbar([
             "papers/",
             "awesome/",
             "subjects/",
-            "tasks/",
+            "bench/",
             "achieves/"
         ]
     }, {

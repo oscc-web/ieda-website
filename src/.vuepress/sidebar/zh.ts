@@ -248,9 +248,9 @@ export const zhSidebar = sidebar({
         children: "structure",
         collapsible: true
     }, {
-        text: "开发任务",
-        prefix: "tasks/",
-        link: "/research/tasks/README.md",
+        text: "分析评测",
+        prefix: "bench/",
+        link: "/research/bench/README.md",
         children: "structure",
         collapsible: true
     }, {
