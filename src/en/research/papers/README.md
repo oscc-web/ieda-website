@@ -6,6 +6,28 @@ index: false
 [**The EDA Conferences**](http://eda.laais.cn/)
 
 
+## **Journal**
+**[J11]**  Liwei Ni, Jiaxi Zhang, Shenggen Zheng, Junfeng Liu, Xingyu Meng, Biwei Xie, Xingquan Li*, and Huawei Li. [BoolSkeleton: Boolean Network Skeletonization via Homogeneous Pattern Reduction](/res/papers/25-TCAD-BoolSkeleton.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+
+**[J10]** Yifan Li, Ruizhi Liu, Zhisheng Zeng, Zengrong Huang, Zhipeng Huang, Dongbo Bu, and Xingquan Li*. [AiDRC: Accelerating Detailed Routing by AI-Driven Design Rule Violation Prediction and Checking](/res/papers/25-TODAES-AiDRC.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
+**[J9]** Ye Cai, Rui Wang, Liwei Ni, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Biwei Xie, and Xingquan Li*. [AiLO: A Predictive Framework for Logic Optimization Using Multi-Scale Cross-Attention Transformer](/res/papers/25-TODAES_AiLO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
+**[J8]** Xinhuan Lai, Miao Liu, Xingquan Li*, Yihang Qiu, Shijian Chen, Xinhao Li, Jungang Xu*, [iPO: Constant Liar Parameter Optimization for Placement with Representation and Transfer Learning](/res/papers/25-TODAES-iPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
+**[J7]** He Liu, Zhisheng Zeng, Simin Tao, Yifan Li*, Biwei Xie, Wei Gao, Xingquan Li, [AiTPO: KAN-UNet Heterogeneous Network for Timing Prediction and Optimization at Global Routing](/res/papers/25-TODAES-AiTPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
+**[J6]** Liwei Ni, Rui Wang, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Guojie Luo, Zhufei Chu, Weikang Qian, Xiaoyan Yang, Biwei Xie, Xingquan Li*, and Huawei Li, "[OpenLS-DGF: An Adaptive Open-Source Dataset Generation Framework for Machine Learning Tasks in Logic Synthesis.](https://ieeexplore.ieee.org/abstract/document/10943238/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+
+**[J5]** Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Jian Chen, Zhixue He, Xingquan Li*, "[iCTS: Iterative and Hierarchical Clock Tree Synthesis With Skew-Latency-Load Tree.](https://ieeexplore.ieee.org/document/10916748/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+
+**[J4]** Junfeng Liu, Liwei Ni, Lei Chen, Xing Li, Qinghua Zhao, Xingquan Li, Shuai Ma*, "[A Delay-Driven Iterative Technology Mapping Framework.](https://ieeexplore.ieee.org/abstract/document/10818751/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
+
+**[J3]** Jie Zhao, Biwei Xie, and Xingquan Li, "[QR-DeepONet: Resolve abnormal convergence issue related to basis dimension in DeepONet.](https://iopscience.iop.org/article/10.1088/2632-2153/ada0a5)", Machine Learning, Science, 2025. **(SCI Q1)**
+
+**[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu*, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
+
+**[J1]** Hongxi Wu, Zhipeng Huang, Xingquan Li, Wenxing Zhu*，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
 
 
 ## **Conference**
@@ -68,24 +90,3 @@ index: false
 
 **[C1]** Jiaxi Zhang, Liwei Ni, Shenggen Zheng*, Hao Liu, Xiangfu Zou, Feng Wang, and Guojie Luo. "Enhanced fast Boolean matching based on sensitivity signatures pruning." In Proceedings of IEEE/ACM International Conference on Computer Aided Design (ICCAD), 2021, pp. 1-9. **(CCF-B)**
 
-## **Journal**
-
-**[J10]** Yifan Li, Ruizhi Liu, Zhisheng Zeng, Zengrong Huang, Zhipeng Huang, Dongbo Bu, and Xingquan Li*. [AiDRC: Accelerating Detailed Routing by AI-Driven Design Rule Violation Prediction and Checking](/res/papers/25-TODAES-AiDRC.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
-
-**[J9]** Ye Cai, Rui Wang, Liwei Ni, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Biwei Xie, and Xingquan Li*. [AiLO: A Predictive Framework for Logic Optimization Using Multi-Scale Cross-Attention Transformer](/res/papers/25-TODAES_AiLO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
-
-**[J8]** Xinhuan Lai, Miao Liu, Xingquan Li*, Yihang Qiu, Shijian Chen, Xinhao Li, Jungang Xu*, [iPO: Constant Liar Parameter Optimization for Placement with Representation and Transfer Learning](/res/papers/25-TODAES-iPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
-
-**[J7]** He Liu, Zhisheng Zeng, Simin Tao, Yifan Li*, Biwei Xie, Wei Gao, Xingquan Li, [AiTPO: KAN-UNet Heterogeneous Network for Timing Prediction and Optimization at Global Routing](/res/papers/25-TODAES-AiTPO.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
-
-**[J6]** Liwei Ni, Rui Wang, Miao Liu, Xingyu Meng, Xiaoze Lin, Junfeng Liu, Guojie Luo, Zhufei Chu, Weikang Qian, Xiaoyan Yang, Biwei Xie, Xingquan Li*, and Huawei Li, "[OpenLS-DGF: An Adaptive Open-Source Dataset Generation Framework for Machine Learning Tasks in Logic Synthesis.](https://ieeexplore.ieee.org/abstract/document/10943238/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
-
-**[J5]** Weiguo Li, Zhipeng Huang, Bei Yu, Wenxing Zhu, Jian Chen, Zhixue He, Xingquan Li*, "[iCTS: Iterative and Hierarchical Clock Tree Synthesis With Skew-Latency-Load Tree.](https://ieeexplore.ieee.org/document/10916748/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
-
-**[J4]** Junfeng Liu, Liwei Ni, Lei Chen, Xing Li, Qinghua Zhao, Xingquan Li, Shuai Ma*, "[A Delay-Driven Iterative Technology Mapping Framework.](https://ieeexplore.ieee.org/abstract/document/10818751/)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
-
-**[J3]** Jie Zhao, Biwei Xie, and Xingquan Li, "[QR-DeepONet: Resolve abnormal convergence issue related to basis dimension in DeepONet.](https://iopscience.iop.org/article/10.1088/2632-2153/ada0a5)", Machine Learning, Science, 2025. **(SCI Q1)**
-
-**[J2]** Hongxi Wu, Xingquan Li, Liang Chen, Bei Yu, and Wenxing Zhu*, "[Delay-Driven Rectilinear Steiner Tree Construction](https://ieeexplore.ieee.org/document/10756606)", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024. **(CCF-A)**
-
-**[J1]** Hongxi Wu, Zhipeng Huang, Xingquan Li, Wenxing Zhu*，"[AiTO: Simultaneous gate sizing and buffer insertion for timing optimization with GNNs and RL.](https://www.sciencedirect.com/science/article/abs/pii/S0167926024000750)" Integration, the VLSI Journal, 2024. **(CCF-C)**
