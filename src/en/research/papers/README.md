@@ -7,6 +7,8 @@ index: false
 
 
 ## **Journal**
+**[J12]**  Yihang Qiu, Zengrong Huang, Simin Tao, Hongda Zhang, Weiguo Li, Xinhua Lai, Rui Wang, Weiqiang Wang*, Xingquan Li*. [AiEDA: An Open-Source AI-Aided Design Library for Design-to-Vector](/res/papers/25-TCAD-AiEDA.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
+
 **[J11]**  Liwei Ni, Jiaxi Zhang, Shenggen Zheng, Junfeng Liu, Xingyu Meng, Biwei Xie, Xingquan Li*, and Huawei Li. [BoolSkeleton: Boolean Network Skeletonization via Homogeneous Pattern Reduction](/res/papers/25-TCAD-BoolSkeleton.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
 
 **[J10]** Yifan Li, Ruizhi Liu, Zhisheng Zeng, Zengrong Huang, Zhipeng Huang, Dongbo Bu, and Xingquan Li*. [AiDRC: Accelerating Detailed Routing by AI-Driven Design Rule Violation Prediction and Checking](/res/papers/25-TODAES-AiDRC.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
