@@ -1,56 +1,56 @@
 ---
-title: "1.1 芯片类型"
+title: "1.1 Chip Types"
 order: 1
 ---
 
-想必大家都挺说过IC、ASIC、VLSI、FPGA等等专业术语，也听说过芯片前端、后端、设计、制作等等流程，但对其了解比较少，接下来我们将从这些术语定义出发，逐个解开芯片领域**术语**的面纱，理清芯片设计的**内部结构**。
+You must have heard professional terms like IC, ASIC, VLSI, FPGA, as well as processes such as chip front-end, back-end, design, manufacturing, etc. However, you may not know these terms in detail. Next, we will start from the definitions of these terms to uncover the "veil" of **terminology** in the chip field, and clarify the **internal structure** of chip design.
 
-## 1 芯片的“通用”与“专用”
+## 1 "General-Purpose" vs. "Application-Specific" Chips
 
-IC 全称为 integrated circuit，意为**集成电路**。它就是 **芯片(chip)** 的另一个专业别称。
+IC stands for Integrated Circuit, which is another technical term for **chip**.
 
-集成电路按照用途可以分成两大类，一是**通用芯片**，包括经常听到的CPU、 GPU、 DSP等；二是**专用芯片**，包括FPGA、ASIC等。这个大类划分很重要，两者有本质上的不同。需要说明下，芯片的分类有很多种，我们这样的分类是基于芯片的设计理念，这是后续理解一切的基础。
+Integrated circuits can be divided into two main categories according to their purpose: one is **general-purpose chips**, such as CPU, GPU, DSP, etc.; the other is **application-specific chips**, including FPGA, ASIC, etc. This classification is important, as the two are fundamentally different. It is worth noting that there are many ways to classify chips, but here we adopt the classification based on design philosophy, which is the basis for later understanding.
 
-这里“通用”与“专用”的区别是指**该芯片是否是仅为执行某一种特定运算而设计**，用银行来做个简单的比喻，通用芯片就是“银行柜员”，可以处理各种复杂的业务；而专用芯片就是“ATM机”，将某些流程标准化并固化在硬件中，做一台没有感情的处理机器。“通用”与“专用”并不是指该芯片是否仅用于某一种产品或使用场景，比如intel所研发的用于PC的CPU，这颗芯片仅用在PC上，但它不是我们这里说的“专用”芯片。
+Here, the difference between "general-purpose" and "application-specific" refers to **whether the chip is designed only to perform a particular type of computation**. To use a simple analogy: a general-purpose chip is like a "bank teller" who can process various complex tasks, whereas an application-specific chip is like an "ATM", standardizing and hardening some processes in hardware, acting as an emotionless processing machine. "General-purpose" and "application-specific" here do not refer to whether a chip is used in only one product or use case. For example, the CPU developed by Intel for PCs is only used in PCs, but it is not an "application-specific" chip as we mean here.
 
-**# 若想拓展学习“通用”与“专用”芯片，请[点击这里](https://zhuanlan.zhihu.com/p/374131234)。**
+**# To learn more about "general-purpose" and "application-specific" chips, [click here](https://zhuanlan.zhihu.com/p/374131234).**
 
-## 2 ASIC 的全定制、半定制和可编程
+## 2 Full-Custom, Semi-Custom, and Programmable ASICs
 
-专用集成电路英文为 Application Specific Integrated Circuit，即我们常说的 ASIC 专用集成电路。它是指按照特定用户要求和特定电子系统的需要而设计、制作的芯片。
+Application-Specific Integrated Circuit (ASIC) refers to a chip designed and manufactured according to the specific requirements of a user and an electronic system.
 
-按照主流分类标注，ASIC芯片可以分为**全定制、半定制和可编程**。进行 ASIC 设计的方式有很多，两种最为流行的方式为:
+According to mainstream classification, ASICs can be divided into **full-custom, semi-custom, and programmable**. There are many ways to do ASIC design, with the two most popular methods being:
 
-1. CPLD （复杂可编程逻辑器件）
-2. FPGA （现场可编程逻辑阵列）
+1. CPLD (Complex Programmable Logic Device)
+2. FPGA (Field-Programmable Gate Array)
 
-**共性：**
+**Common Features:**
 
-- 可编程性：CPLD和FPGA都可以根据用户的需求进行编程和配置，实现不同的逻辑功能和电路设计。
+- Programmability: Both CPLDs and FPGAs can be programmed and configured according to user needs to implement different logic functions and circuit designs.
 
-- 高集成度：它们都能够将多个逻辑门、触发器以及其他电子器件集成在一个芯片上，从而实现复杂的电路功能。
+- High Integration: Both can integrate multiple logic gates, flip-flops, and other electronic devices into a single chip to achieve complex circuit functionality.
 
-- 可重构性：CPLD和FPGA都具备可重复编程的能力，可以多次修改和重新配置电路设计。
+- Reconfigurability: Both CPLDs and FPGAs can be programmed repeatedly, allowing multiple modifications and reconfigurations of the circuit design.
 
-**区别：**
+**Differences:**
 
-- 架构：CPLD采用的是可编程逻辑阵列和可编程连接器的结构，而FPGA采用的是可编程逻辑阵列和可编程互连的结构。这使得FPGA在逻辑密度和灵活性方面更具优势，而CPLD在时序可靠性和功耗方面较为优秀。
+- Architecture: CPLDs use a programmable logic array and programmable interconnects, whereas FPGAs use a programmable logic array and programmable connections. This gives FPGAs advantages in logic density and flexibility, while CPLDs tend to perform better in timing reliability and power consumption.
 
-- 规模：FPGA通常比CPLD规模更大，具有更高的逻辑资源和更多的可编程单元。这使得FPGA适用于需要更高复杂度和灵活性的设计。
+- Scale: FPGAs are typically larger than CPLDs, with higher logic resources and more programmable units. Therefore, FPGAs are suitable for designs that need higher complexity and flexibility.
 
-- 时序性能：CPLD通常具有更好的时序性能，适用于时序要求较为严格的应用，如时钟分配和同步电路设计。FPGA则在时序性能方面相对较差，更适合于并行处理和大规模数据处理等应用。
+- Timing Performance: CPLDs generally have better timing performance and are suitable for applications with strict timing requirements, such as clock distribution and synchronization circuit design. FPGAs are relatively less strong in timing but better suited for parallel processing and large-scale data processing.
 
-- 功耗：由于CPLD通常采用静态存储器元件，因此其功耗较低。而FPGA由于采用动态存储器元件，其功耗较高。
+- Power Consumption: CPLDs usually use static memory cells and therefore consume less power. FPGAs use dynamic memory cells, resulting in higher power consumption.
 
-**总体来说，CPLD适用于需要更高的时序可靠性和功耗控制的应用，而FPGA适用于需要更高的逻辑密度和灵活性的应用。选择哪种器件取决于具体的应用需求和设计目标。**
+**Overall, CPLDs are suitable for applications that require higher timing reliability and power control, while FPGAs are more suitable for applications that need higher logic density and flexibility. The choice depends on the specific application requirements and design goals.**
 
-**# 若想拓展学习“ASIC芯片分类、优点及应用介绍”，请[点击这里](https://www.sgpjbg.com/info/32937.html)。**
+**# To further learn about "ASIC chip classification, advantages, and applications," [click here](https://www.sgpjbg.com/info/32937.html).**
 
-## 3 芯片的结构层级
+## 3 Hierarchical Structure of Chips
 
-在介绍 SoC 片上系统前，我们先介绍芯片从大到小的结构层次分类（更好理解芯片内部结构）：
+Before introducing SoCs (System on Chip), let's first look at the hierarchical structure of a chip from large to small (to better understand internal structure):
 
-* 系统级：芯片系统架构的设计，具备独立完整功能的IP模块。比如手机，具有玩游戏、打电话、听音乐等多个功能。
+* System Level: Chip system architecture design, with IP modules having independent and complete functions. For example, a mobile phone, which has multiple functions such as gaming, calling, listening to music, etc.
 
   ```
   Port* compute_optimal_route_for_packet (Packet_t *packet, Channel_t *channel){
@@ -58,41 +58,42 @@ IC 全称为 integrated circuit，意为**集成电路**。它就是 **芯片(ch
   }
   ```
 
-* 模块级：在整个系统中分为很多功能模块各司其职，各负责一个功能。
+* Module level: The entire system is divided into many functional modules, each with its own duties and responsible for a specific function.
 
 <div style="text-align:center;">
     <img src="/res/images/train_eda_1/20190925223756583.png" alt="6" style="zoom:40%;">
 </div>      
 
-* 寄存器传输级：借助寄存器将功能实现出来，形成RTL代码。一个复杂的功能模块是由许许多多的寄存器和组合逻辑组成的。
+* Register Transfer Level (RTL): Functions are implemented through registers, forming RTL code. A complex functional module consists of many registers and combinational logic.
 
 <div style="text-align:center;">
     <img src="/res/images/train_eda_1/image.png" alt="6" style="zoom:30%;" />
 </div>
 
-* 门级：经过综合工具，将RTL代码转化为电路，再将电路映射为由GTech或者标准单元库形成的门级网表；
+* Gate level: Through synthesis tools, RTL code is converted into circuits, and the circuits are mapped into gate-level netlists made of GTech or standard cell libraries;
 <div style="text-align:center;">
   <img src="/res/images/train_eda_1/image1.png" alt="6" style="zoom:25%;" />
 </div>
 
-* 晶体管级：标准单元库中的每个单元均已提前设计好，其中关键组建是晶体管，也是最原子的级别；
+* Transistor level: Each element in the standard cell library has been pre-designed, and the key component is the transistor, which is the most atomic level;
 
 <div style="text-align:center;">
   <img src="/res/images/train_eda_1/image2.png" alt="6" style="zoom:25%;" />
 </div>
 
-* 版图级：门级网表经过物理化之后，会形成一个版图GDS，属于芯片制造的图纸；
+* Layout level: After physical implementation of the gate-level netlist, a layout GDS is generated, which serves as the blueprint for chip manufacturing;
 
 <div style="text-align:center;">
   <img src="/res/images/train_eda_1/image3.png" alt="6" style="zoom:25%;" />
 </div>
 
-* 掩膜级：芯片生产厂商会根据版图分层设计掩膜，用于指导光刻机进行曝光，先进工艺甚至需要多次曝光；
+* Mask level: Chip manufacturers design masks by layering the layout, which guide the photolithography machines for exposure; advanced processes may require multiple exposures;
 <div style="text-align:center;">
   <img src="/res/images/train_eda_1/image4.png" alt="6" style="zoom:25%;" />
 </div>
 
-**# 若想拓展学习“芯片层级结构”，请[点击这里](https://blog.csdn.net/YinShiJiaW/article/details/101391597)。**
+**# To further learn about "chip hierarchical structure," please [click here](https://blog.csdn.net/YinShiJiaW/article/details/101391597).**
+
 
 ## 4 SoC、MPU、MCU、CPU、GPU、DSP 简介
 

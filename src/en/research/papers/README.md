@@ -7,6 +7,9 @@ index: false
 
 
 ## **Journal**
+
+**[J13]** Miao Liu, Liwei Ni, Junfeng Liu, Xingyu Meng, Rui Wang, Xiaoze Lin, Xinhua Lai, Xingquan Li*, and Jungang Xu*. [A Survey of Machine Learning Approaches in Logic Synthesis](/res/papers/25-TODAES-ML4LS.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
 **[J12]**  Yihang Qiu, Zengrong Huang, Simin Tao, Hongda Zhang, Weiguo Li, Xinhua Lai, Rui Wang, Weiqiang Wang*, Xingquan Li*. [AiEDA: An Open-Source AI-Aided Design Library for Design-to-Vector](/res/papers/25-TCAD-AiEDA.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
 
 **[J11]**  Liwei Ni, Jiaxi Zhang, Shenggen Zheng, Junfeng Liu, Xingyu Meng, Biwei Xie, Xingquan Li*, and Huawei Li. [BoolSkeleton: Boolean Network Skeletonization via Homogeneous Pattern Reduction](/res/papers/25-TCAD-BoolSkeleton.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
@@ -33,6 +36,7 @@ index: false
 
 
 ## **Conference**
+**[C30]** Xingquan Li*, Weiguo Li, Xinhua Lai, Junfeng Liu, Rui Wang, **iPCL: Pre-training for Chip Layout**, in Proceedings of the 29th Asia and South Pacific Design Automation Conference (ASP-DAC), 2026. **(CCF-C)**
 
 **[C29]** Yihang Qiu, Zengrong Huang, Weiguo Li, Xinhua Lai, Rui Wang, He Liu, Ping Zhou, Simin Tao, Junfeng Liu, Yifang Li, Xingquan Li*, [AiEDA-2.0: An Open-source AI-Aided Design (AAD) Library for Design-to-Vector](/res/papers/25-ISEDA25__AiEDA_2_0.pdf), in Proceedings of IEEE International Symposium of EDA (ISEDA), 2025.
 
