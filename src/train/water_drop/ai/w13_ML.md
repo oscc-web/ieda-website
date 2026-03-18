@@ -1,39 +1,48 @@
 ---
-title: "AI学习-Week3(选)"
+title: "AI学习-Week3"
 order: 13
-icon: list-check
+icon: file-lines
 ---
 
 ## DAY15-17：动手搭建深度学习神经网络
 
 ### 一、具体要求
 
-1. **学习搭建卷积神经网络CNN的构成、卷积层、池化层、全连接层、softmax层**
+1. **从零开始构建大模型**
+   - **任务分解**：
+     - 阅读[《从零开始的大语言模型原理与实践教程》](https://github.com/HZAI-ZJNU/happy-llm-ppt)相关章节，理解LLM的基本原理。
+     - 参照[动手学大模型](https://github.com/datawhalechina/happy-llm)，从0开始构建自己的LLM。
+     
+::: note
+除了上面大模型是必学之外，其他的内容可以根据自己的兴趣和时间酌情学习
+:::
+
+2. **学习搭建卷积神经网络CNN的构成、卷积层、池化层、全连接层、softmax层**
    - **任务分解**：
      - 阅读《Deep Learning》相关章节，理解CNN的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的CNN模型。
 
-2. **学习搭建循环神经网络RNN、长短时神经网络**
+3. **学习搭建循环神经网络RNN、长短时神经网络**
    - **任务分解**：
      - 阅读《Deep Learning》相关章节，理解RNN和LSTM的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的RNN和LSTM模型。
 
-3. **学习搭建生成对抗网络GAN**
+4. **学习搭建生成对抗网络GAN**
    - **任务分解**：
      - 阅读《Deep Learning》相关章节，理解GAN的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的GAN模型。
 
-4. **学习搭建图神经网络GNN、图上卷积的定义**
+5. **学习搭建图神经网络GNN、图上卷积的定义**
    - **任务分解**：
      - 阅读[图神经网络](http://arxiv.org/pdf/1609.02907)论文，理解GNN的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的GNN模型。
 
-5. **学习搭建Transformer，了解注意力机制、掩码张量、编码器解码器**
+6. **学习搭建Transformer，了解注意力机制、掩码张量、编码器解码器**
    - **任务分解**：
      - 观看[Transformer《Attention is all your need》](https://www.bilibili.com/video/BV16U4y1g7mk/?spm_id_from=333.999.0.0&vd_source=31642488dcc2db7a9779c05c640148c2)视频，理解Transformer的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的Transformer模型。
 
-6. **学习搭建强化学习**
+7. **学习搭建强化学习**
    - **任务分解**：
      - 阅读《Deep Reinforcement Learning Fundamentals、Research and Applications》相关章节，理解强化学习的基本原理。
      - 使用TensorFlow或PyTorch实现一个简单的强化学习模型。

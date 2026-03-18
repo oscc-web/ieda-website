@@ -90,7 +90,7 @@ export const zhSidebar = sidebar({
         children: [
             "application",
             {
-                text: "C++学习",
+                text: "Vibe编程学习",
                 prefix: "C/",
                 children: "structure",
                 collapsible: true
@@ -100,20 +100,21 @@ export const zhSidebar = sidebar({
                 children: "structure",
                 collapsible: true
             }, {
-                text: "AI学习(选)",
+                text: "AI学习",
                 prefix: "ai/",
                 children: "structure",
                 collapsible: true
-            }, {
-                text: "RUST学习(选)",
-                prefix: "rust/",
-                children: "structure",
-                collapsible: true
-            }
+            }, 
+            // {
+            //     text: "RUST学习(选)",
+            //     prefix: "rust/",
+            //     children: "structure",
+            //     collapsible: true
+            // }
         ],
         collapsible: true
     }, {
-        text: "iEDA实践",
+        text: "EDA实践",
         prefix: "practice/",
         link: "/train/practice/README.md",
         children: [

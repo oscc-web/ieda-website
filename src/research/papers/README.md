@@ -7,7 +7,18 @@ index: false
 
 ## **Journal**
 
-**[J13]** Miao Liu, Liwei Ni, Junfeng Liu, Xingyu Meng, Rui Wang, Xiaoze Lin, Xinhua Lai, Xingquan Li*, and Jungang Xu*. [A Survey of Machine Learning Approaches in Logic Synthesis](/res/papers/25-TODAES-ML4LS.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025. **(CCF-B)**
+
+
+ **[J16]**  Bo Yang, Xingquan Li, Jie Zhao, Ying Jiang*. **DD-DeepONet: A domain decomposition DeepONet framework for PDEs on structured domains with geometry and physics variations**, Engineering Analysis with Boundary Elements (EABE), 2026. **(SCI Q1)**
+
+
+**[J15]**  Miao Liu , Xinhua Lai , Liwei Ni , Xingyu Meng , Rui Wang , Junfeng Liu , Xingquan Li*, Jungang Xu*. [CircuitFlow: Learning Dynamic Representations for Logic Optimization](/res/papers/26-TCAD-CircuitFlow.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2026. **(CCF-A)**
+
+
+**[J14]** Qiang Yang, Jiahui Li, Hongxi Wu, Xingquan Li, Bei Yu, Wenxing Zhu*. [SensTDDP: A Timing Sensitivity Analysis Framework with Application to Timing-Driven Detailed Placement](/res/papers/26-TODAES26-SensTDDP.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2026. **(CCF-B)**
+
+
+**[J13]** Miao Liu, Liwei Ni, Junfeng Liu, Xingyu Meng, Rui Wang, Xiaoze Lin, Xinhua Lai, Xingquan Li*, and Jungang Xu*. [A Survey of Machine Learning Approaches in Logic Synthesis](/res/papers/25-TODAES-ML4LS.pdf), ACM Transactions on Design Automation of Electronic Systems (TODAES), 2026. **(CCF-B)**
 
 **[J12]**  Yihang Qiu, Zengrong Huang, Simin Tao, Hongda Zhang, Weiguo Li, Xinhua Lai, Rui Wang, Weiqiang Wang*, Xingquan Li*. [AiEDA: An Open-Source AI-Aided Design Library for Design-to-Vector](/res/papers/25-TCAD-AiEDA.pdf), IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. **(CCF-A)**
 
@@ -35,7 +46,13 @@ index: false
 
 
 ## **Conference**
-**[C30]** Xingquan Li*, Weiguo Li, Xinhua Lai, Junfeng Liu, Rui Wang, **iPCL: Pre-training for Chip Layout**, in Proceedings of the 29th Asia and South Pacific Design Automation Conference (ASP-DAC), 2026. **(CCF-C)**
+
+
+**[C32]** Xinhua Lai, He Liu, Weiguo Li, Yihang Qiu, Miao Liu, Simin Tao, Xingquan Li*, Jungang Xu, **iPCL-M: Pre-training of Chip Layout for Metrics Evaluation and Optimization**，in Proceedings of Design Automation Conference (DAC), 2026. **(CCF-A)**
+
+**[C31]** Jiajie Xu, Leilei Jin, Ziyue Han, Yanlong Mao, Liangji Wu, Chenpu Shi, Yunfan Zuo, Lizheng Ren, Hao Yan*, Xingquan Li and Longxing Shi, **DiffDEG: Diffusion-Enhanced Design Evolution Graph Representation Learning for Post-Layout Optimization**，in Proceedings of Design Automation Conference (DAC), 2026. **(CCF-A)**
+
+**[C30]** Xingquan Li*, Weiguo Li, Xinhua Lai, Junfeng Liu, Rui Wang, [iPCL: Pre-training for Chip Layout](/res/papers/26-ASPDAC26-iPCL.pdf), in Proceedings of the 29th Asia and South Pacific Design Automation Conference (ASP-DAC), 2026. **(CCF-C)**
 
 **[C29]** Yihang Qiu, Zengrong Huang, Weiguo Li, Xinhua Lai, Rui Wang, He Liu, Ping Zhou, Simin Tao, Junfeng Liu, Yifang Li, Xingquan Li*, [AiEDA-2.0: An Open-source AI-Aided Design (AAD) Library for Design-to-Vector](/res/papers/25-ISEDA25__AiEDA_2_0.pdf), in Proceedings of IEEE International Symposium of EDA (ISEDA), 2025.
 

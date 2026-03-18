@@ -19,14 +19,14 @@ icon: square-check
   - [iEDA-水滴计划学习体系概述](https://www.bilibili.com/video/BV1fz4y1W7si/?spm_id_from=333.999.0.0&vd_source=2a030c96ab0749ac1be6cf4f1b9af437)
   - [iEDA-项目介绍：EDA平台、人工智能与人才培养](https://www.bilibili.com/video/BV1Bu4y1B7KJ/)
   - [iEDA-水滴计划历史回顾](https://gitee.com/oscc-project/iTraining/blob/master/introduction/%E6%B0%B4%E6%BB%B4%E8%AE%A1%E5%88%92-2024.pdf)
-  - [2024年水滴计划学员学习记录表](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
-  - [2024年水滴计划日程安排](https://docs.qq.com/sheet/DYkFlZFJiZGFNTnBr?tab=BB08J2)
+  - [2026年水滴计划学员学习记录表](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
+  - [2026年水滴计划日程安排](https://docs.qq.com/sheet/DQVBjR3hoSXBGV1dB?tab=BB08J2)
 :::
 
-::: info 2024年水滴计划
-  - 1）培养时间：**2024年7月5日—8月25日**；
-  - 2）报名截止日期：**2024年7月3日**；
-  - 3）此次招生计划在**10名**（在读学生优先，已就业人员也欢迎），优先培养时间内有空闲的；
+::: info 2026年水滴计划
+  - 1）培养时间：**2026年3月24日—4月7日**；
+  - 2）报名截止日期：**2026年3月25日**；
+  - 3）此次招生计划在**60名**（在读学生优先，已就业人员也欢迎），优先培养时间内有空闲的；
   - 4）下面是我们此次的招生报名链接：https://ieda.oscc.cc/train/water_drop/application.html
   - **PS. 此次培训不收取任何费用，此次培训全程线上进行**
 :::
@@ -38,7 +38,7 @@ icon: square-check
   - [**《报名问卷》**](https://wj.qq.com/s2/14858813/b6c2/)，
 - 问卷填写完成即可扫码加入“**水滴计划学习交流群**”，报名前请确保自己确实可以腾出时间学习。
 <div style="text-align:center;">
-    <img src="/res/images/train/communication_group.jpg" alt="6" style="zoom:30%;" />
+    <img src="/res/images/train/wechatgroup.png" alt="6" style="zoom:30%;" />
 </div>
 :::
 
@@ -48,7 +48,7 @@ icon: square-check
 
 ::: tip
 - 复制[**学习记录模版**](https://docs.qq.com/sheet/DVWxnZXh4RU1QTnRp?tab=BB08J2)到自己的腾讯文档账号中。
-- 按照模版提示修改文档的名字，格式为【水滴2024_学校-姓名-学习记录】。
+- 按照模版提示修改文档的名字，格式为【水滴2026_学校-姓名-学习记录】。
 - 学习记录中的内容是允许自定义的，你可以根据自己的需求添加或修改一些表格列。
 - **不要在学习记录中粘贴自己完成某个任务的代码**，防止别的同学借鉴你的思路而失去锻炼的机会。
 - 完整的学习记录是大家进入答辩和认证考核的**必要条件**，如果学习记录缺失比较严重，你的答辩将无法正常通过。

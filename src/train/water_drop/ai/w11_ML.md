@@ -1,10 +1,8 @@
 ---
-title: "AI学习-Week1(选)"
+title: "AI学习-Week1"
 order: 11
-icon: list-check
+icon: file-lines
 ---
-
-AI为选学模块。
 
 ## DAY1-4：准备阶段
 

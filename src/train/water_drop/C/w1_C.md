@@ -1,5 +1,5 @@
 ---
-title: "C++学习-Week1 "
+title: "Vibe编程学习-Week1 "
 order: 2
 # icon: book
 # icon: bell
@@ -178,7 +178,7 @@ icon: file-lines
 
 - 学习重点内容包括：
   - 文件传输方法(cp/scp/rsync)
-    如何从/home/zhuangchunan目录cp或scp或rsync常用lib包到自己目录;
+    如何从远程服务器目录cp或scp或rsync常用lib包到自己目录;
   - 文件权限设置(chmod)
     777 750 读、写、执行 用户 用户组 其他用户区分清楚;
   - 进程监控(top/htop)
@@ -230,7 +230,28 @@ icon: file-lines
 
    陶思敏老师介绍怎样进行软件设计。包括：软件的本质，软件设计过程，软件设计需要考虑的内容等。
 
-## DAY5-DAY7：C++基础学习
+## DAY5：Vibe Coding
+
+（一）**课程学习**
+
+- 斯坦福氛围编程课：[Vibe Coding: Using AI for Programming](https://continuingstudies.stanford.edu/courses/professional-and-personal-development/vibe-coding-using-ai-for-programming/20253_TECH-36)
+
+（二）**工具使用**
+- [Cursor](https://cursor.com/cn/learn)
+- [Claude Code](https://www.runoob.com/ai-agent/claude-code.html)
+- [OpenCode](https://www.runoob.com/ai-agent/opencode-coding-agent.html)
+- [Codex](https://www.runoob.com/codex/codex-tutorial.html)
+- [Trae](https://docs.trae.ai/ide/set-up-trae?_lang=zh)
+
+（三）**技术**
+
+- [Agent, Skill, MCP](https://datawhalechina.github.io/easy-vibe/zh-cn/stage-3/core-skills/skills/)
+
+::: note 
+基于大模型的编程资料网上较多，大家可以在各个渠道获得很有价值的教程和视频，更新也非常快，这边不做过多的展开
+:::
+
+## DAY6-DAY7：C++基础学习
 
 **学习小注：** 接下来正式进入C++编程学习，由于大家学习背景不同，可以根据自己的学习习惯、特长与基础情况，调整适合自己的学习计划与方法。编程是一项实践技能，因此编写尽可能多的代码是至关重要的。可以以书籍为导向，也可以在B站、慕课等网站视频学习，尝试解决实际问题，或在在线平台上练习编程挑战。这部分学习形式不做要求。
 

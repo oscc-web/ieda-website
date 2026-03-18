@@ -1,5 +1,5 @@
 ---
-title: "AI学习-Week2(选)"
+title: "AI学习-Week2"
 order: 12
 icon: list-check
 ---

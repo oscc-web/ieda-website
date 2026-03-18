@@ -1,5 +1,5 @@
 ---
-title: "C++学习-Week2"
+title: "Vibe编程学习-Week2"
 order: 3
 icon: file-lines
 ---
