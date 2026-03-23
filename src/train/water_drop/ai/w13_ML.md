@@ -91,6 +91,10 @@ icon: file-lines
    - 题目参考iEDA实践：[M2-时序矫正](/train/practice/models/m2.md)
 3. 利用电容提取训练数据集，搭建一个计算3D电容的神经网络。
    - 题目参考iEDA实践：[M3-3D电容提取](/train/practice/models/m3.md)
+4. 利用iDATA训练数据集，搭建一个网表后预测PPA的神经网络。
+   - 题目参考iEDA实践：[M4-网表阶段PPA评估和优化](/train/practice/models/m4.md)
+5. 利用iDATA训练数据集，搭建一个布线中资源前瞻预测的经网络。
+   - 题目参考iEDA实践：[M5-布线资源前瞻感知](/train/practice/models/m5.md)
    
 ### 三、学习成果展示
 
