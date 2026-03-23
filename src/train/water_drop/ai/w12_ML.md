@@ -1,7 +1,7 @@
 ---
 title: "AI学习-Week2"
 order: 12
-icon: list-check
+icon: file-lines
 ---
 
 ## DAY8-10：神经网络和深度学习思想
