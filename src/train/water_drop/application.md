@@ -19,8 +19,9 @@ icon: square-check
   - [iEDA-水滴计划学习体系概述](https://www.bilibili.com/video/BV1fz4y1W7si/?spm_id_from=333.999.0.0&vd_source=2a030c96ab0749ac1be6cf4f1b9af437)
   - [iEDA-项目介绍：EDA平台、人工智能与人才培养](https://www.bilibili.com/video/BV1Bu4y1B7KJ/)
   - [iEDA-水滴计划历史回顾](https://gitee.com/oscc-project/iTraining/blob/master/introduction/%E6%B0%B4%E6%BB%B4%E8%AE%A1%E5%88%92-2024.pdf)
-  - [2026年水滴计划学员学习记录表](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
+  - [2026年水滴计划学员学习记录表](https://docs.qq.com/sheet/DYmpxSUxhZ3h1Y1F3?isNewEmptyDoc=1&electronTabTitle=%e7%a9%ba%e7%99%bd%e8%a1%a8%e6%a0%bc&no_promotion=1&is_blank_or_template=blank)
   - [2026年水滴计划日程安排](https://docs.qq.com/sheet/DQVBjR3hoSXBGV1dB?tab=BB08J2)
+  - [2024年水滴计划学员学习记录表(参考)](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
 :::
 
 ::: info 2026年水滴计划
