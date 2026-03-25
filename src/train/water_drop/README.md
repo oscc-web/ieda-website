@@ -119,8 +119,9 @@ order: 1
 
 水滴计划安排、学习记录登记表和Q&A如下：
 [2026水滴计划安排](https://docs.qq.com/sheet/DQVBjR3hoSXBGV1dB?tab=BB08J2)
-[2026水滴计划学习记录汇总](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
+[2026水滴计划学习记录汇总](https://docs.qq.com/sheet/DYmpxSUxhZ3h1Y1F3?isNewEmptyDoc=1&electronTabTitle=%e7%a9%ba%e7%99%bd%e8%a1%a8%e6%a0%bc&no_promotion=1&is_blank_or_template=blank)
 [2026水滴计划Q&amp;A](https://docs.qq.com/doc/DUVdvZ3V6THVHWHRr)
+[2024年水滴计划学员学习记录表(参考)](https://docs.qq.com/sheet/DVXRHZHZkdWVCdnp0?tab=BB08J2)
 
 :::
 
