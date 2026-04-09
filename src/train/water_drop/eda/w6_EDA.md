@@ -135,6 +135,9 @@ icon: file-lines
     - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（张锦森）》](https://www.bilibili.com/video/BV1McsTeXEzR/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
     - [《2024年EDA人才培养计划：学习成果答辩总结与展示交流（龙泽昊）》](https://www.bilibili.com/video/BV1tvs5ekETZ/?spm_id_from=333.999.0.0&vd_source=db6d06160a4c6ef1c3194042b1b9bbe2)
 
+    2026年的学员的答辩材料，以供学习：
+    - [水滴计划2026答辩](https://pan.baidu.com/s/15aQuQWtmhcKCwXwFG-akeA?pwd=v8rr)，提取码: v8rr
+
 
 ## DAY23：水滴答辩
 
