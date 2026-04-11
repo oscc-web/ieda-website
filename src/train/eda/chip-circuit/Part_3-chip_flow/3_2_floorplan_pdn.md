@@ -119,7 +119,7 @@ order: 2
 
 #### 全局电源连接关系
 
-即是alobalnet connect，是指把相应的端口和网络连接到合适的电源和接地网络上去。这些终端和网络的连接信息一部分包含在Verilog网表中，另一部分则包含在相应的LEF文件当中。在工具中，其实就是globalNetConnec整个命令。
+即是globalnet connect，是指把相应的端口和网络连接到合适的电源和接地网络上去。这些终端和网络的连接信息一部分包含在Verilog网表中，另一部分则包含在相应的LEF文件当中。在工具中，其实就是globalNetConnec整个命令。
 
 ```
 globalNetConnect VDD -type pgpin -pin vdd! -all
